@@ -13,7 +13,7 @@
     \latofont
     \color{frontpagedark}
     \vspace*{\baselineskip}
-    \vspace{2\baselineskip} 
+    \vspace{2\baselineskip}
     \vspace{3.5\baselineskip}
 
     % Title.
@@ -55,6 +55,8 @@
 
     \vspace{58pt}    
 
+    % Supervisor
+    \ifdefined\GetSupervisor
     {
     \noindent
     \latofont
@@ -75,6 +77,9 @@
         \fi
     \end{tabular}
     }
+    \else
+        \vspace{24pt}
+    \fi
     
     \vfill
 	
