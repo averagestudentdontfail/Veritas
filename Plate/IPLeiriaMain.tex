@@ -13,7 +13,7 @@
     linkcolor=red!45!black,
     chapterstyle=classic,
     coverstyle=classic,
-    aiack=true
+    aiack=false
 ]{IPLeiriaThesis} % Refer to the Wiki for a list of available options.
 
 %%% Document Version %%%
@@ -46,9 +46,6 @@
 %%% Abstract %%%
 \include{Chapters/00-Abstract}
 
-%%% AI Acknowledgement %%%
-\include{Matter/04-AI}
-
 %%% Table of Contents, List of Figures and List of Tables %%%
 \bookmarktocentry\tableofcontents
 \listoffigures
@@ -62,24 +59,16 @@
 %%% Arabic Numeration %%%
 \pagenumbering{arabic}
 
-%%% Chapters (**Insert Yours Here**) %%%
+%%% Chapters - Burn Injury Review %%%
 \include{Chapters/01-Introduction}
-\include{Chapters/02-User-Guide}
-\include{Chapters/03-Latex-Tutorial}
+\include{Chapters/02-Method}
+\include{Chapters/03-Result}
+\include{Chapters/04-Discussion}
+\include{Chapters/05-Conclusion}
 
 %%% Bibliography %%%
 \renewcommand{\refname}{Bibliography}
 \printbibliography[title={\refname},heading=bibintoc]
-
-%%% Appendices: Work that *YOU* Developed %%%
-\appendix
-\input{Matter/08-Appendices}
-\input{Chapters/Appendices/00-AppendixA}
-\input{Chapters/Appendices/01-AppendixB}
-
-%%% Annexes: Work that *YOU DID NOT* Develop %%%
-\input{Matter/09-Annexes}
-\input{Chapters/Annexes/00-AnnexA}
 
 %%% Back Page %%%
 \input{Matter/10-Back-Page}
