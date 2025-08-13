@@ -5,6 +5,8 @@
     {\raggedleft\fontsize{88}{10}\bfseries{\color{chapterdarkred}{\minionfont\thechapter}}}%
     {0pt}%
     {\hspace{3cm}\garamondfont\fontsize{28}{30}\selectfont}%
+    
+    \titlespacing*{\chapter}{0pt}{-20pt}{30pt}
 }{}
 
 \ifthenelse{\equal{\ChapterOption}{fancy}}{
@@ -14,6 +16,8 @@
     {\minionfont\fontsize{25}{25}\selectfont\hspace*{-1em}\rule[-2pt]{.1pt}{30pt}\hspace{0.5em}\raisebox{4.5pt}{\thechapter}}}%
     {10pt}%
     {\garamondfont\addfontfeature{LetterSpace=6}\huge\scshape}%
+    
+    \titlespacing*{\chapter}{0pt}{-20pt}{30pt}
 }{}
 
 \ifthenelse{\equal{\ChapterOption}{modern}}{
@@ -23,6 +27,8 @@
     {\color{chaptergray}\raisebox{5pt}{\thechapter}}%
     }{10pt}%
     {\garamondfont\addfontfeature{LetterSpace=6}\fontsize{28}{32}\MakeUppercase}%
+    
+    \titlespacing*{\chapter}{0pt}{-20pt}{30pt}
 }{}
 
 \titleformat{\section}{\garamondfont\fontsize{15pt}{17pt}\selectfont\bfseries}{\thesection}{1em}{}

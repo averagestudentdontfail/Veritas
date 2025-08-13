@@ -8,15 +8,23 @@
     dashed=false, % Always display author names in the bibliography.
     uniquelist=false, % Display only the first author (e.g., Author et al., Year).
     urldate=iso, % Use ISO format for accessed dates in online sources.
-    seconds=true % Include seconds in date-time fields.
+    seconds=true, % Include seconds in date-time fields.
+    maxcitenames=2, % Maximum authors in citations.
+    maxbibnames=99, % Maximum authors in bibliography.
+    mincitenames=1, % Minimum authors in citations.
+    minbibnames=1   % Minimum authors in bibliography.
 ]{biblatex}
 
 \setlength\bibitemsep{1.5\itemsep} % Increase spacing between bibliography items.
-\setlength\bibhang{0pt} % Remove hanging indent for bibliography entries.
+\setlength\bibhang{1.5em} % Add hanging indent for bibliography entries.
 \addbibresource{Bibliography/Bibliography.bib} % Load the bibliography file.
 
 % Configure citation style to include both author and year prominently.
-\ExecuteBibliographyOptions{maxcitenames=1}
+\ExecuteBibliographyOptions{maxcitenames=2,maxbibnames=99}
+
+% Use "&" instead of "and" in citations for two authors
+% Results in: Single author (2016), Author1 & Author2 (2016), Author1 et al. (2016)
+\renewcommand*{\finalnamedelim}{\addspace\&\space}
 \DeclareFieldFormat{citehyperref}{%
     \DeclareFieldAlias{bibhyperref}{noformat}%
     \bibhyperref{#1}%
