@@ -5,7 +5,7 @@
 
 \section{Search Strategy}
 
-A comprehensive systematic review following \gls{prisma} guidelines was conducted between December 2023 and February 2024. The search strategy aimed to identify all relevant Australasian studies comparing \gls{multidisciplinary} versus traditional burn care models or evaluating \gls{mdt} implementation with historical controls.
+A comprehensive systematic review following \gls{prisma} guidelines was conducted between December 2023 and February 2025. The search strategy aimed to identify all relevant Australasian studies comparing \gls{multidisciplinary} versus traditional burn care models or evaluating \gls{mdt} implementation with historical controls.
 
 \subsection{Database Search}
 
@@ -51,16 +51,15 @@ Standardized data extraction captured study characteristics, population details,
 
 The systematic search and selection process followed \gls{prisma} guidelines to ensure transparent and reproducible methodology. \autoref{fig:prisma} illustrates the flow of studies through each phase of the systematic review.
 
-\clearpage  % Ensure we start on a new page
+\clearpage
 \begin{landscape}
 \thispagestyle{empty}
-\begin{figure}[H]  % Use H to force placement here
+\begin{figure}[h!]
     \centering
     \caption{PRISMA flow diagram showing systematic search and study selection process}
     \label{fig:prisma}
     \vspace{0.5cm}
-    \adjustbox{width=\linewidth,height=0.75\textheight,keepaspectratio}{%  % Auto-scale to fit
-        \usetikzlibrary{positioning}
+    \resizebox{0.7\linewidth}{!}{%  % Scale to 70% of line width
         \begin{tikzpicture}[
             box/.style={rectangle, draw=black, thick, text width=12cm, minimum height=1.2cm, align=center, fill=white},
             smallbox/.style={rectangle, draw=black, thick, text width=6cm, minimum height=1.2cm, align=center, fill=white},
@@ -70,7 +69,7 @@ The systematic search and selection process followed \gls{prisma} guidelines to 
             \node[box] (identification) {\textbf{Identification}\\Records identified through database searching\\(n = 287)\\
             \small PubMed (n=89), CINAHL (n=67), Cochrane (n=12), EMBASE (n=94), BRANZ (n=25)};
             
-            % After duplicates removed - adjust spacing
+            % After duplicates removed
             \node[box, below=1.5cm of identification] (afterdup) {\textbf{After Duplicates Removed}\\Records after duplicates removed\\(n = 184)\\
             \small 103 duplicates identified and removed};
             

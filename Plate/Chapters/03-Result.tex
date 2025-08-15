@@ -7,50 +7,71 @@
 
 Fifteen studies met inclusion criteria for detailed critical appraisal, representing diverse methodological approaches and disciplinary perspectives across Australian and New Zealand burn centers. The studies span from \textcite{Gabbe2015}'s feasibility pilot through to \textcite{Tracy2025}'s comprehensive long-term outcome evaluation.
 
-\clearpage  % Start on new page
+\clearpage
 \begin{landscape}
 \thispagestyle{empty}
-\begin{table}[H]  % Use H to force placement
-    \centering
+\pagestyle{empty}  % Remove headers/footers for all landscape pages
+
+% Use longtable for multi-page tables
+\begin{longtable}{p{2.5cm}p{2cm}p{2.5cm}p{1.5cm}p{7cm}}
     \caption{Summary of Included Studies for Critical Appraisal}
-    \label{tab:included-studies}
-    \adjustbox{width=\linewidth,height=0.85\textheight,keepaspectratio}{%  % Auto-scale
-    \begin{tabular}{p{2.5cm}p{2cm}p{2.5cm}p{1.5cm}p{7cm}}
-        \toprule
-        \textbf{Study} & \textbf{Design} & \textbf{Setting} & \textbf{Sample} & \textbf{Key Findings} \\
-        \midrule
-        \textcite{Cleland2016} & Registry analysis & 10 \gls{branz} units & 7,184 adults & Established \gls{mdt} as standard across all units; significant variation in implementation completeness \\
-        
-        \textcite{Tracy2022adherence} & Registry analysis & 17 \gls{branz} units & 10,884 patients & Allied health assessment within 48hr achieved in 97\% of cases with structured protocols \\
-        
-        \textcite{Tracy2025} & Prospective cohort & 3 burn centers & 342 patients & \Gls{qol} and \gls{rtw} maintained at 2 years post-injury with coordinated follow-up \\
-        
-        \textcite{Gong2021} & Quality indicators & 17 \gls{branz} units & 31,498 patients & 23 evidence-based \gls{mdt} quality measures defined and validated across all centers \\
-        
-        \textcite{Hunter2024} & Prospective cohort & Queensland & 156 Indigenous children & \Gls{culturalsafety} integration reduces length of stay by 2.8 days (95\% \gls{ci} 1.2-4.4) \\
-        
-        \textcite{Coombes2020} & Qualitative study & Queensland & 18 Indigenous families & First Nations Health Workers critical for \gls{mdt} coordination and family engagement \\
-        
-        \textcite{Plaza2022} & \Gls{rct} & Adelaide & 45 patients & \Gls{telehealth} non-inferior to in-person \gls{mdt} rehabilitation for functional outcomes \\
-        
-        \textcite{Kurmis2022} & Cohort study & ANZ centers & 255 major burns & Early nutrition within \gls{mdt} framework reduces complications by 34\% \\
-        
-        \textcite{Gabbe2015} & Pilot study & Victoria & 150 patients & Framework for long-term \gls{mdt} outcome evaluation established and validated \\
-        
-        \textcite{Cleland2022} & Economic analysis & Victoria & 331 severe burns & \Gls{mdt} daily costs 18\% higher but total episode costs 22\% lower \\
-        
-        \textcite{Cassidy2015} & Retrospective cohort & \gls{branz} units & 2,892 patients & Pre-hospital coordination affects \gls{mdt} activation and outcomes significantly \\
-        
-        \textcite{Singer2022} & Observational & 6 centers & 866 admissions & Out-of-hours \gls{mdt} availability impacts mortality and complication rates \\
-        
-        \textcite{Tracy2020} & Prospective cohort & \gls{branz} units & 328 patients & \gls{mdt} pain management predicts 12-month pain and itch severity outcomes \\
-        
-        \textcite{Fitts2023} & Mixed methods & Remote Australia & 89 patients & \Gls{telehealth} enables \gls{mdt} care delivery in remote settings successfully \\
-        
-        \textcite{McPhail2022} & Economic evaluation & Queensland & 198 patients & \gls{mdt} scar management cost-effective at \gls{aud} \$21,000 per \gls{qaly} gained \\
-        \bottomrule
-    \end{tabular}
-    }
-\end{table}
+    \label{tab:included-studies}\\
+    
+    % First header
+    \toprule
+    \textbf{Study} & \textbf{Design} & \textbf{Setting} & \textbf{Sample} & \textbf{Key Findings} \\
+    \midrule
+    \endfirsthead
+    
+    % Continued header for subsequent pages
+    \multicolumn{5}{c}{\tablename\ \thetable{} -- \textit{Continued from previous page}} \\
+    \toprule
+    \textbf{Study} & \textbf{Design} & \textbf{Setting} & \textbf{Sample} & \textbf{Key Findings} \\
+    \midrule
+    \endhead
+    
+    % Footer for pages except last
+    \midrule
+    \multicolumn{5}{r}{\textit{Continued on next page}} \\
+    \endfoot
+    
+    % Footer for last page
+    \bottomrule
+    \endlastfoot
+    
+    % Table content
+    \textcite{Cleland2016} & Registry analysis & 10 \gls{branz} units & 7,184 adults & Established \gls{mdt} as standard across all units; significant variation in implementation completeness \\
+    
+    \textcite{Tracy2022adherence} & Registry analysis & 17 \gls{branz} units & 10,884 patients & Allied health assessment within 48hr achieved in 97\% of cases with structured protocols \\
+    
+    \textcite{Tracy2025} & Prospective cohort & 3 burn centers & 342 patients & \Gls{qol} and \gls{rtw} maintained at 2 years post-injury with coordinated follow-up \\
+    
+    \textcite{Gong2021} & Quality indicators & 17 \gls{branz} units & 31,498 patients & 23 evidence-based \gls{mdt} quality measures defined and validated across all centers \\
+    
+    \textcite{Hunter2024} & Prospective cohort & Queensland & 156 Indigenous children & \Gls{culturalsafety} integration reduces length of stay by 2.8 days (95\% \gls{ci} 1.2-4.4) \\
+    
+    \textcite{Coombes2020} & Qualitative study & Queensland & 18 Indigenous families & First Nations Health Workers critical for \gls{mdt} coordination and family engagement \\
+    
+    \textcite{Plaza2022} & \Gls{rct} & Adelaide & 45 patients & \Gls{telehealth} non-inferior to in-person \gls{mdt} rehabilitation for functional outcomes \\
+    
+    \textcite{Kurmis2022} & Cohort study & ANZ centers & 255 major burns & Early nutrition within \gls{mdt} framework reduces complications by 34\% \\
+    
+    \textcite{Gabbe2015} & Pilot study & Victoria & 150 patients & Framework for long-term \gls{mdt} outcome evaluation established and validated \\
+    
+    \textcite{Cleland2022} & Economic analysis & Victoria & 331 severe burns & \Gls{mdt} daily costs 18\% higher but total episode costs 22\% lower \\
+    
+    \textcite{Cassidy2015} & Retrospective cohort & \gls{branz} units & 2,892 patients & Pre-hospital coordination affects \gls{mdt} activation and outcomes significantly \\
+    
+    \textcite{Singer2022} & Observational & 6 centers & 866 admissions & Out-of-hours \gls{mdt} availability impacts mortality and complication rates \\
+    
+    \textcite{Tracy2020} & Prospective cohort & \gls{branz} units & 328 patients & \gls{mdt} pain management predicts 12-month pain and itch severity outcomes \\
+    
+    \textcite{Fitts2023} & Mixed methods & Remote Australia & 89 patients & \Gls{telehealth} enables \gls{mdt} care delivery in remote settings successfully \\
+    
+    \textcite{McPhail2022} & Economic evaluation & Queensland & 198 patients & \Gls{mdt} scar management cost-effective at \gls{aud} \$21,000 per \gls{qaly} gained \\
+    
+\end{longtable}
+
 \end{landscape}
 \clearpage
+\pagestyle{fancy} 

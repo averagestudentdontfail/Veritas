@@ -161,9 +161,9 @@
 \RequirePackage{soul} % A better underline.
 \RequirePackage{mfirstuc} % Capitalise words in a sentence.
 \RequirePackage{tikz} % Create high-quality graphics programmatically.
+\usetikzlibrary{positioning}
 \RequirePackage{psvectorian} % To include in-text ornamatentions. 
 \RequirePackage{blindtext} % Generate placeholder text.
-\RequirePackage{adjustbox}  % For automatic scaling
 \RequirePackage{float}      % For [H] placement option
 \RequirePackage{pdflscape} % Landscape pages in PDF documents.
 
