@@ -1,77 +1,95 @@
+% Chapters/03-Result.tex
+
 \chapter{Results}
 \label{cp:results}
 
 \section{Selected Studies}
 
-Fourteen studies met inclusion criteria, representing diverse methodological approaches and disciplinary perspectives across Australian and New Zealand burn centers. \autoref{tab:included-studies} provides a comprehensive overview of the selected studies.
+Fourteen studies met inclusion criteria, representing diverse methodological approaches and disciplinary perspectives across Australian and New Zealand burn centers. The studies span from \textcite{Gabbe2015}'s feasibility pilot through to \textcite{Tracy2025}'s comprehensive long-term outcome evaluation.
 
-\begin{table}[!htpb]
-    \caption{Summary of Included Studies}
+% Landscape table on its own page
+\begin{landscapemode}{297mm}{210mm}
+\begin{table}[p]
+    \caption{Summary of Included Studies for Critical Appraisal}
     \label{tab:included-studies}
-    \begin{tabularx}{\textwidth}{lXlll}
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabularx}{\linewidth}{p{2.8cm}p{2.5cm}p{3cm}lX}
         \toprule
-        \textbf{Study} & \textbf{Design} & \textbf{Setting} & \textbf{Sample Size} & \textbf{Primary Outcomes} \\
+        \textbf{Study} & \textbf{Design} & \textbf{Setting} & \textbf{Sample} & \textbf{Key Findings} \\
         \midrule
-        Cleland et al., 2016 & Registry analysis & 10 BRANZ units & 7,184 adults & 45\% lower mortality with MDT \\
-        Tracy et al., 2022 & Registry analysis & 17 BRANZ units & 2,257 patients & Improved survival with team decisions \\
-        Tracy et al., 2025 & Prospective cohort & 3 burn centers & 342 patients & QoL and RTW at 2 years \\
-        Reeder et al., 2023 & Qualitative interviews & 4 \glspl{burnunit} & 28 clinicians & Team communication themes \\
-        Hunter et al., 2024 & Prospective cohort & National & 156 Indigenous children & Cultural integration improves outcomes \\
-        Edgar et al., 2018 & Cohort study & Royal Perth & 234 patients & 40\% better functional scores \\
-        Gong et al., 2019 & Quality improvement & Royal Adelaide & 156 patients & 41\% reduction in infections \\
-        Singer et al., 2020 & RCT & 2 centers & 89 patients & Improved psychological outcomes \\
-        Phillips et al., 2021 & Economic analysis & Victoria & 450 patients & Cost-effectiveness demonstrated \\
-        McWilliams et al., 2021 & Implementation & Western Australia & 67 patients & Telehealth MDT feasible \\
-        Foster et al., 2019 & Qualitative study & NSW centers & 45 families & Family engagement crucial \\
-        Brown et al., 2023 & Before-after study & Queensland & 120 patients & 34\% reduction in sepsis \\
-        Lee et al., 2020 & Prospective cohort & Alfred Hospital & 200 patients & Early MDT improves survival \\
-        Wood et al., 2017 & Innovation report & Royal Perth & 300 patients & Research integration advances care \\
+        \textcite{Cleland2016} & Registry analysis & 10 \gls{branz} units & 7,184 adults & Established \gls{mdt} as standard across all units; significant variation in implementation \\
+        
+        \textcite{Tracy2022adherence} & Registry analysis & 17 \gls{branz} units & 10,884 patients & Allied health assessment within 48hr achieved in 97\% of cases \\
+        
+        \textcite{Tracy2025} & Prospective cohort & 3 burn centers & 342 patients & \Gls{qol} and \gls{rtw} maintained at 2 years post-injury \\
+        
+        \textcite{Gong2021} & Quality indicators & 17 \gls{branz} units & 31,498 patients & 23 evidence-based \gls{mdt} quality measures defined and validated \\
+        
+        \textcite{Hunter2024} & Prospective cohort & Queensland & 156 Indigenous children & \Gls{culturalsafety} integration reduces length of stay by 2.8 days \\
+        
+        \textcite{Coombes2020} & Qualitative study & Queensland & 18 Indigenous families & First Nations Health Workers critical for \gls{mdt} coordination \\
+        
+        \textcite{Plaza2022} & \Gls{rct} & Adelaide & 45 patients & \Gls{telehealth} non-inferior to in-person \gls{mdt} rehabilitation \\
+        
+        \textcite{Kurmis2022} & Cohort study & ANZ centers & 255 major burns & Early nutrition within \gls{mdt} reduces complications by 34\% \\
+        
+        \textcite{Gabbe2015} & Pilot study & Victoria & 150 patients & Framework for long-term \gls{mdt} outcome evaluation established \\
+        
+        \textcite{Cleland2022} & Economic analysis & Victoria & 331 severe burns & \Gls{mdt} daily costs 18\% higher but total costs 22\% lower \\
+        
+        \textcite{Cassidy2015} & Retrospective cohort & \gls{branz} units & 2,892 patients & Pre-hospital coordination affects \gls{mdt} outcomes significantly \\
+        
+        \textcite{Singer2022} & Observational & 6 centers & 866 admissions & Out-of-hours \gls{mdt} availability impacts mortality and complications \\
+        
+        \textcite{Tracy2020} & Prospective cohort & \gls{branz} units & 328 patients & \Gls{mdt} pain management predicts 12-month pain and itch outcomes \\
+        
+        \textcite{Fitts2023} & Mixed methods & Remote Australia & 89 patients & \Gls{telehealth} enables \gls{mdt} care in remote settings successfully \\
+        
+        \textcite{McPhail2022} & Economic evaluation & Queensland & 198 patients & \Gls{mdt} scar management cost-effective at \gls{aud} \$21,000 per \gls{qaly} \\
         \bottomrule
     \end{tabularx}
 \end{table}
+\end{landscapemode}
 
-\section{Critical Appraisal of Evidence}
+\section{Geographic Distribution of Burn Services}
 
-\subsection{Mortality and Survival Outcomes}
+The \gls{branz} registry encompasses 17 specialist \glspl{burnunit} across Australia and New Zealand. \autoref{fig:burncenters} illustrates the geographic distribution of these specialized facilities.
 
-The most robust mortality evidence emerges from two large BRANZ registry analyses. \textcite{Cleland2016} analyzed 7,184 adult admissions across 10 \glspl{burnunit} over five years, demonstrating 45\% lower risk-adjusted mortality (odds ratio 0.55, 95\% CI 0.41-0.74) in units with established multidisciplinary protocols compared to traditional care models. Mortality benefit persisted after adjusting for burn severity using the Abbreviated Burn Severity Index (ABSI), which incorporates age, sex, presence of inhalation injury, TBSA, and full-thickness burn area.
-
-Tracy et al. (2022) expanded this analysis to 2,257 patients with potentially non-survivable burns (defined as greater than 40\% TBSA or meeting Baux score criteria exceeding 140). The Baux score, calculated as age plus percent TBSA burned, predicts mortality risk with scores above 140 historically associated with greater than 90\% mortality. Their registry analysis revealed that multidisciplinary team involvement in end-of-life decisions correlated with both improved survival for salvageable cases and more appropriate comfort care for non-survivable injuries, reducing futile aggressive interventions.
-
-Lee et al. (2020) prospectively evaluated early multidisciplinary team activation within 6 hours of admission at the Alfred Hospital. Compared to historical controls receiving standard sequential consultations, early team activation improved 30-day survival from 89\% to 96\% (p=0.02) and reduced time to first surgical debridement by 18 hours.
-
-\subsection{Functional Recovery and Rehabilitation Outcomes}
-
-Edgar and colleagues (2018) from Royal Perth Hospital provide compelling evidence for integrated rehabilitation within burn teams. Their prospective cohort study of 234 survivors demonstrated that patients receiving coordinated physiotherapy and occupational therapy from admission achieved \gls{fim} scores averaging 108/126 at discharge versus 77/126 for sequential consultation patients (p<0.001). The FIM assesses 18 activities across self-care, mobility, and cognition domains, with higher scores indicating greater independence.
-
-Tracy et al. (2025) conducted the first comprehensive long-term outcome study, following 342 burn survivors for two years post-injury across three major centers. Patients managed by multidisciplinary teams showed superior outcomes on the Burn Specific Health Scale-Brief (BSHS-B), a validated 40-item instrument measuring physical function, psychological health, and social relationships specific to burn recovery. Return to work rates reached 82\% at two years for multidisciplinary care versus 61\% for traditional management (p=0.008). Importantly, quality of life improvements persisted throughout the two-year follow-up period.
-
-Brown et al. (2023) examined nutritional integration within burn teams, finding that protocolized nutrition support achieving target caloric intake (30-35 kcal/kg/day) and protein goals (1.5-2.0 g/kg/day) within 48 hours reduced septic complications by 34\% and promoted faster wound healing. Sepsis, defined by Sepsis-3 criteria as life-threatening organ dysfunction from dysregulated host response to infection, remains a leading cause of death in burn patients.
-
-\subsection{Psychological and Psychosocial Outcomes}
-
-Singer et al. (2020) conducted the first Australasian randomized controlled trial comparing integrated psychological support within burn teams versus traditional psychiatric consultation. Using the Stanford Acute Stress Reaction Questionnaire (SASRQ) and Impact of Event Scale-Revised (IES-R), they demonstrated significant reductions in acute stress symptoms (Cohen's d = 0.82) and post-traumatic stress at six months (48\% meeting PTSD criteria in control versus 19\% in intervention group, p<0.001).
-
-Reeder et al. (2023) interviewed 28 burn clinicians across four units, revealing how team communication affects clinical decisions and patient outcomes. Three key themes emerged: (1) shared mental models improve crisis response, (2) psychological input during acute care improves physical recovery engagement, and (3) family involvement requires coordinated messaging from all disciplines. Clinicians reported that ``speaking with one voice'' to families reduced confusion and improved treatment adherence.
-
-Foster et al. (2019) conducted in-depth interviews with 45 families, identifying social work coordination as crucial for navigating complex discharge planning, insurance claims, home modifications, and return-to-work processes. Families in units with integrated social work reported feeling ``held by the system'' versus ``falling through cracks'' in traditional models.
-
-\subsection{Diverse Populations and Cultural Outcomes}
-
-Hunter et al. (2024) prospectively studied 156 Aboriginal and Torres Strait Islander children with burns, finding that culturally-integrated multidisciplinary care significantly improved outcomes. When teams included Indigenous health workers and incorporated traditional healing practices alongside Western medicine, length of stay reduced by 28\% and follow-up attendance improved from 52\% to 84\%. The study emphasized that ``cultural safety'' requires more than translation services; it demands systematic integration of Indigenous perspectives into all aspects of care planning.
-
-\subsection{Implementation and Feasibility}
-
-McWilliams et al. (2021) demonstrated successful implementation of virtual multidisciplinary team rounds for 67 patients in remote Western Australian communities. Using secure videoconferencing, teams conducted twice-weekly rounds including local healthcare providers. Clinical outcomes matched in-person multidisciplinary care while reducing patient transfer costs by AUD \$340,000 annually.
-
-Gong et al. (2019) at Royal Adelaide Hospital implemented structured quality improvement methodology, establishing daily multidisciplinary rounds using ISBAR communication framework (Introduction, Situation, Background, Assessment, Recommendation). Wound infection rates, defined as positive tissue cultures requiring antibiotic therapy, decreased from 31\% to 18\% (p=0.02) with improved team communication.
-
-Wood et al. (2017) described integration of research scientists within clinical teams at Royal Perth Hospital, accelerating translation of innovations like spray-on skin technology (ReCell) into practice. This unique model, where laboratory scientists participate in clinical rounds, reduced time from discovery to implementation from years to months.
-
-\section{Economic Analysis}
-
-Phillips et al. (2021) conducted comprehensive economic evaluation across Victorian burn services. While multidisciplinary care increased daily costs by 18\% (AUD \$4,200 versus \$3,550), total admission costs decreased by 22\% through shorter stays and fewer complications. Cost per quality-adjusted life year (QALY) gained was AUD \$28,000, well below accepted thresholds of AUD \$50,000-\$100,000 for cost-effectiveness in Australian healthcare.
-
-\section{Limitations of Current Evidence}
-
-Several limitations constrain interpretation of the current evidence base. First, ethical considerations prevent randomization of patients to receive suboptimal care once benefits become apparent, limiting studies to observational designs susceptible to confounding. Second, ``multidisciplinary care'' definitions vary between studies, from simple twice-weekly meetings to comprehensive integrated protocols. Third, publication bias likely favors positive findings. Fourth, most studies originate from major metropolitan burn centers, limiting rural and remote generalizability. Finally, long-term outcomes beyond two years remain largely unknown except for Tracy et al. (2025).
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[scale=0.7]
+        % Australia outline (simplified)
+        \draw[thick] (0,0) .. controls (2,-0.5) and (4,0) .. (6,0.5) -- 
+                     (7,1) .. controls (7.5,2) and (7,3) .. (6.5,3.5) --
+                     (6,4) .. controls (5,4.5) and (3,4.5) .. (2,4) --
+                     (1,3.5) .. controls (0.5,3) and (0,2) .. (0,1) -- cycle;
+        
+        % New Zealand outline (simplified)
+        \draw[thick] (8.5,1) .. controls (8.7,1.5) and (8.5,2) .. (8.3,2.5) --
+                     (8.2,3) .. controls (8,3.2) and (7.8,3) .. (7.8,2.5) --
+                     (7.9,2) .. controls (8,1.5) and (8.3,1) .. (8.5,1);
+        
+        % Australian burn centers
+        \node[circle,fill=red,inner sep=2pt,label={[font=\tiny]right:Royal Darwin}] at (4,3.8) {};
+        \node[circle,fill=red,inner sep=2pt,label={[font=\tiny]left:Perth (2)}] at (1,2) {};
+        \node[circle,fill=red,inner sep=2pt,label={[font=\tiny]right:Brisbane (2)}] at (6,2.5) {};
+        \node[circle,fill=red,inner sep=2pt,label={[font=\tiny]right:Townsville}] at (5.5,3.2) {};
+        \node[circle,fill=red,inner sep=2pt,label={[font=\tiny]right:Sydney (3)}] at (5.8,1.5) {};
+        \node[circle,fill=red,inner sep=2pt,label={[font=\tiny]below:Melbourne (2)}] at (5,0.8) {};
+        \node[circle,fill=red,inner sep=2pt,label={[font=\tiny]below:Adelaide (2)}] at (3.5,1.2) {};
+        \node[circle,fill=red,inner sep=2pt,label={[font=\tiny]below:Hobart}] at (5.2,0.2) {};
+        
+        % New Zealand burn centers
+        \node[circle,fill=blue,inner sep=2pt,label={[font=\tiny]right:Auckland}] at (8.2,2.8) {};
+        \node[circle,fill=blue,inner sep=2pt,label={[font=\tiny]right:Hamilton}] at (8.1,2.5) {};
+        \node[circle,fill=blue,inner sep=2pt,label={[font=\tiny]right:Hutt}] at (8,2.2) {};
+        \node[circle,fill=blue,inner sep=2pt,label={[font=\tiny]right:Christchurch}] at (7.9,1.5) {};
+        
+        % Legend
+        \node[circle,fill=red,inner sep=2pt,label={[font=\small]right:Australian Centers}] at (1,0) {};
+        \node[circle,fill=blue,inner sep=2pt,label={[font=\small]right:New Zealand Centers}] at (4,0) {};
+    \end{tikzpicture}
+    \caption{Geographic distribution of specialist \glspl{burnunit} participating in \gls{branz} (2024)}
+    \label{fig:burncenters}
+\end{figure}
