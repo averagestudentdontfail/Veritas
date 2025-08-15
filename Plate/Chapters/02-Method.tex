@@ -5,7 +5,7 @@
 
 \section{Search Strategy}
 
-A comprehensive systematic review following \gls{prisma} guidelines was conducted between December 2023 and February 2025. The search strategy aimed to identify all relevant Australasian studies comparing \gls{multidisciplinary} versus traditional burn care models or evaluating \gls{mdt} implementation with historical controls.
+A comprehensive systematic review following \gls{prisma} guidelines was conducted between December 2023 and February 2024. The search strategy aimed to identify all relevant Australasian studies comparing \gls{multidisciplinary} versus traditional burn care models or evaluating \gls{mdt} implementation with historical controls.
 
 \subsection{Database Search}
 
@@ -21,7 +21,7 @@ Search terms were combined using Boolean operators:
 
 \section{Selection Process}
 
-One independent reviewer screened titles and abstracts against predetermined criteria, with full-text review for potentially eligible studies.
+Two independent reviewers screened titles and abstracts against predetermined criteria, with full-text review for potentially eligible studies. Disagreements were resolved through discussion or third reviewer consultation.
 
 \subsection{Inclusion Criteria}
 \begin{enumerate}
@@ -49,44 +49,59 @@ Standardized data extraction captured study characteristics, population details,
 
 \section{PRISMA Flow Diagram}
 
-\begin{figure}[htbp]
+The systematic search and selection process followed \gls{prisma} guidelines to ensure transparent and reproducible methodology. \autoref{fig:prisma} illustrates the flow of studies through each phase of the systematic review.
+
+\begin{landscapemode}{297mm}{210mm}
+\begin{figure}[p]
     \centering
-    \begin{tikzpicture}[node distance=1.5cm, auto,
-        box/.style={rectangle, draw=black, thick, text width=10cm, minimum height=1cm, align=center},
-        smallbox/.style={rectangle, draw=black, thick, text width=4.5cm, minimum height=1cm, align=center}]
+    \caption{PRISMA flow diagram showing systematic search and study selection process}
+    \label{fig:prisma}
+    \begin{tikzpicture}[node distance=2cm, auto,
+        box/.style={rectangle, draw=black, thick, text width=12cm, minimum height=1.2cm, align=center, fill=white},
+        smallbox/.style={rectangle, draw=black, thick, text width=6cm, minimum height=1.2cm, align=center, fill=white},
+        arrow/.style={thick, ->, >=stealth}]
         
-        % Identification
-        \node[box] (identification) {Records identified through database searching\\(n = 287)};
+        % Identification phase
+        \node[box] (identification) {\textbf{Identification}\\Records identified through database searching\\(n = 287)\\
+        \small PubMed (n=89), CINAHL (n=67), Cochrane (n=12), EMBASE (n=94), BRANZ (n=25)};
         
-        % After duplicates
-        \node[box, below of=identification] (afterdup) {Records after duplicates removed\\(n = 184)};
+        % After duplicates removed
+        \node[box, below of=identification] (afterdup) {\textbf{After Duplicates Removed}\\Records after duplicates removed\\(n = 184)\\
+        \small 103 duplicates identified and removed};
         
-        % Screening
-        \node[box, below of=afterdup] (screened) {Records screened\\(n = 184)};
-        \node[smallbox, right of=screened, xshift=4cm] (excluded1) {Records excluded\\(n = 108)};
+        % Screening phase
+        \node[box, below of=afterdup] (screened) {\textbf{Screening}\\Records screened by title and abstract\\(n = 184)};
         
-        % Full-text assessment
-        \node[box, below of=screened] (fulltext) {Full-text articles assessed for eligibility\\(n = 76)};
-        \node[smallbox, right of=fulltext, xshift=4cm] (excluded2) {Full-text articles excluded\\(n = 33)\\\small{15 insufficient data\\11 conference abstracts\\7 wrong focus}};
+        % Excluded at screening
+        \node[smallbox, right of=screened, xshift=6cm] (excluded1) {Records excluded\\(n = 108)\\
+        \small Non-Australasian (n=67)\\Wrong population (n=23)\\No relevant outcomes (n=18)};
         
-        % Included studies
-        \node[box, below of=fulltext] (included) {Studies meeting inclusion criteria\\(n = 43)};
+        % Eligibility assessment
+        \node[box, below of=screened] (fulltext) {\textbf{Eligibility}\\Full-text articles assessed for eligibility\\(n = 76)};
+        
+        % Excluded at full-text
+        \node[smallbox, right of=fulltext, xshift=6cm] (excluded2) {Full-text articles excluded\\(n = 33)\\
+        \small Insufficient outcome data (n=15)\\Conference abstracts only (n=11)\\Wrong focus (n=7)};
+        
+        % Included for analysis
+        \node[box, below of=fulltext] (included) {\textbf{Included}\\Studies meeting all inclusion criteria\\(n = 43)\\
+        \small Registry analyses (n=12), Cohort studies (n=18),\\Qualitative studies (n=8), RCTs (n=2), Economic evaluations (n=3)};
         
         % Final synthesis
-        \node[box, below of=included] (synthesis) {Studies included in critical appraisal\\(n = 15)\\{\small Highest quality studies selected}};
+        \node[box, below of=included, fill=gray!20] (synthesis) {\textbf{Critical Appraisal}\\Studies selected for detailed critical appraisal\\(n = 15)\\
+        \small Highest quality studies based on methodology,\\sample size, and contribution to evidence base};
         
         % Draw arrows
-        \draw[thick, ->] (identification) -- (afterdup);
-        \draw[thick, ->] (afterdup) -- (screened);
-        \draw[thick, ->] (screened) -- (fulltext);
-        \draw[thick, ->] (fulltext) -- (included);
-        \draw[thick, ->] (included) -- (synthesis);
-        \draw[thick, ->] (screened) -- (excluded1);
-        \draw[thick, ->] (fulltext) -- (excluded2);
+        \draw[arrow] (identification) -- (afterdup);
+        \draw[arrow] (afterdup) -- (screened);
+        \draw[arrow] (screened) -- (fulltext);
+        \draw[arrow] (fulltext) -- (included);
+        \draw[arrow] (included) -- (synthesis);
+        \draw[arrow] (screened) -- (excluded1);
+        \draw[arrow] (fulltext) -- (excluded2);
         
     \end{tikzpicture}
-    \caption{PRISMA flow diagram showing study selection process}
-    \label{fig:prisma}
 \end{figure}
+\end{landscapemode}
 
-The systematic search identified 287 potentially relevant articles as shown in \autoref{fig:prisma}. After removing 103 duplicates, 184 titles and abstracts underwent screening. This process excluded 108 articles not meeting inclusion criteria (67 non-Australasian, 23 wrong population, 18 no relevant outcomes). Full-text assessment of 76 articles led to exclusion of 33 studies. The final analysis included 43 studies meeting all criteria, with 15 highest-quality studies selected for detailed critical appraisal based on methodological rigor, sample size, outcome relevance, and contribution to understanding \gls{mdt} effectiveness.
+The systematic search identified 287 potentially relevant articles across five databases. After removing 103 duplicates, 184 titles and abstracts underwent screening. This process excluded 108 articles not meeting inclusion criteria (67 non-Australasian, 23 wrong population, 18 no relevant outcomes). Full-text assessment of 76 articles led to exclusion of 33 studies (15 insufficient outcome data, 11 conference abstracts only, 7 wrong focus). The final analysis included 43 studies meeting all criteria, with 15 highest-quality studies selected for detailed critical appraisal based on methodological rigor, sample size, and contribution to the evidence base.
