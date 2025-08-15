@@ -163,6 +163,9 @@
 \RequirePackage{tikz} % Create high-quality graphics programmatically.
 \RequirePackage{psvectorian} % To include in-text ornamatentions. 
 \RequirePackage{blindtext} % Generate placeholder text.
+\RequirePackage{adjustbox}  % For automatic scaling
+\RequirePackage{float}      % For [H] placement option
+\RequirePackage{pdflscape} % Landscape pages in PDF documents.
 
 \tcbuselibrary{most} % Load most libraries from the tcolorbox package.
 \WarningsOff[blindtext] % Suppress warnings from the blindtext package.

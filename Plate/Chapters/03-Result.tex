@@ -7,14 +7,15 @@
 
 Fifteen studies met inclusion criteria for detailed critical appraisal, representing diverse methodological approaches and disciplinary perspectives across Australian and New Zealand burn centers. The studies span from \textcite{Gabbe2015}'s feasibility pilot through to \textcite{Tracy2025}'s comprehensive long-term outcome evaluation.
 
-% Landscape table using landscapemode
-\begin{landscapemode}{297mm}{210mm}
-\begin{table}[p]
+\clearpage  % Start on new page
+\begin{landscape}
+\thispagestyle{empty}
+\begin{table}[H]  % Use H to force placement
+    \centering
     \caption{Summary of Included Studies for Critical Appraisal}
     \label{tab:included-studies}
-    \small
-    \setlength{\tabcolsep}{4pt}
-    \begin{tabularx}{\linewidth}{p{2.8cm}p{2.5cm}p{3cm}lX}
+    \adjustbox{width=\linewidth,height=0.85\textheight,keepaspectratio}{%  % Auto-scale
+    \begin{tabular}{p{2.5cm}p{2cm}p{2.5cm}p{1.5cm}p{7cm}}
         \toprule
         \textbf{Study} & \textbf{Design} & \textbf{Setting} & \textbf{Sample} & \textbf{Key Findings} \\
         \midrule
@@ -46,8 +47,10 @@ Fifteen studies met inclusion criteria for detailed critical appraisal, represen
         
         \textcite{Fitts2023} & Mixed methods & Remote Australia & 89 patients & \Gls{telehealth} enables \gls{mdt} care delivery in remote settings successfully \\
         
-        \textcite{McPhail2022} & Economic evaluation & Queensland & 198 patients & \Gls{mdt} scar management cost-effective at \gls{aud} \$21,000 per \gls{qaly} gained \\
+        \textcite{McPhail2022} & Economic evaluation & Queensland & 198 patients & \gls{mdt} scar management cost-effective at \gls{aud} \$21,000 per \gls{qaly} gained \\
         \bottomrule
-    \end{tabularx}
+    \end{tabular}
+    }
 \end{table}
-\end{landscapemode}
+\end{landscape}
+\clearpage
