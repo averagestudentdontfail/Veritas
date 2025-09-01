@@ -1,4 +1,7 @@
+%%% Configurations/04-Headers.sty %%%
+
 %%% Header and Footer %%%
+
 \usepackage{fancyhdr} % For custom headers and footers.
 \usepackage[bottom,hang]{footmisc} % Align footnotes to the bottom.
 \pagestyle{fancy} \fancyhf{} % Clear default header and footer style.
@@ -8,24 +11,23 @@
 \renewcommand{\chaptermark}[1]{\markboth{\textit{\thechapter. #1}}{}}
 \renewcommand{\sectionmark}[1]{\markright{\textit{\thesection. #1}}}
 
-% Dynamic section or chapter name in the header.
-\fancyhead[OLH]{\ifnum\value{section}=0\leftmark\else\rightmark\fi\vspace{3pt}}
-\fancyhead[ERH]{\leftmark\vspace{3pt}}
-\fancyhead[ORH,ELH]{\thepage\vspace{3pt}}
+% ONESIDE MODE: Consistent headers on all pages
+\fancyhead[L]{\thepage\vspace{3pt}}  % Page number always on left
+\fancyhead[R]{\leftmark\vspace{3pt}}  % Chapter info always on right
 
 % Style for plain pages (e.g., chapter starting pages).
 \fancypagestyle{plain}{%
     \fancyhf{} % Clear header and footer.
     \renewcommand{\headrulewidth}{0pt} % Remove header rule.
-    \fancyfoot[ORF,ELF]{\thepage\vspace{3pt}} % Place page number at the bottom.
+    \fancyfoot[C]{\thepage\vspace{3pt}} % Place page number at the bottom center.
 
     % Add the document version to the footer of the document.
     \ifthenelse{\equal{\DocStageOption}{working}}{
-        \fancyfoot[OCF,ECF]{\small\GetDocumentVersion~-~\textit{\today}}
+        \fancyfoot[L]{\small\GetDocumentVersion~-~\textit{\today}}
     }{}
 }
 
 % Add the document version to the footer of the document.
 \ifthenelse{\equal{\DocStageOption}{working}}{%
-    \fancyfoot[OCF,ECF]{\small\GetDocumentVersion~-~\textit{\today}}%
+    \fancyfoot[C]{\small\GetDocumentVersion~-~\textit{\today}}%
 }{}
