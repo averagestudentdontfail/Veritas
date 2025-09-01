@@ -1,5 +1,10 @@
 %%% Configurations/12-Floats.sty %%%
 
+% Required packages
+\RequirePackage{lscape}  % Use lscape instead of pdflscape for proper rotation
+\RequirePackage{fancyhdr}
+\RequirePackage{geometry}
+
 % Float placement parameters
 \setcounter{topnumber}{3}           % Max floats at top of page
 \setcounter{bottomnumber}{2}        % Max floats at bottom of page
@@ -53,29 +58,61 @@
     \endoldtable%
 }
 
-% FIXED: Landscape environment for figures WITH HEADERS
+% Landscape figure with PROPERLY ORIENTED headers
 \newenvironment{landscapefigure}[1][htbp]{%
     \clearpage%
-    \begin{landscape}%
-    % Do not change page style here - let it inherit
+    % Change to landscape geometry
+    \newgeometry{
+        paperwidth=297mm,
+        paperheight=210mm,
+        top=2.54cm,
+        bottom=2.54cm,
+        left=3.15cm,
+        right=3.15cm,
+        headsep=0.75cm,
+        footskip=1.6cm
+    }%
+    % Set up headers for landscape page
+    \pagestyle{fancy}%
+    \fancyhf{}% Clear headers
+    \fancyhead[L]{\thepage\vspace{3pt}}% Page number left
+    \fancyhead[R]{\leftmark\vspace{3pt}}% Chapter right
+    \renewcommand{\headrulewidth}{0.3pt}% With line as normal
     \begin{figure}[#1]%
     \centering%
 }{%
     \end{figure}%
-    \end{landscape}%
+    % Restore portrait geometry
+    \restoregeometry%
     \clearpage%
 }
 
-% FIXED: Landscape environment for tables WITH HEADERS
+% Landscape table with PROPERLY ORIENTED headers
 \newenvironment{landscapetable}[1][htbp]{%
     \clearpage%
-    \begin{landscape}%
-    % Do not change page style here - let it inherit
+    % Change to landscape geometry
+    \newgeometry{
+        paperwidth=297mm,
+        paperheight=210mm,
+        top=2.54cm,
+        bottom=2.54cm,
+        left=3.15cm,
+        right=3.15cm,
+        headsep=0.75cm,
+        footskip=1.6cm
+    }%
+    % Set up headers for landscape page
+    \pagestyle{fancy}%
+    \fancyhf{}% Clear headers
+    \fancyhead[L]{\thepage\vspace{3pt}}% Page number left
+    \fancyhead[R]{\leftmark\vspace{3pt}}% Chapter right
+    \renewcommand{\headrulewidth}{0.3pt}% With line as normal
     \begin{table}[#1]%
     \centering%
 }{%
     \end{table}%
-    \end{landscape}%
+    % Restore portrait geometry
+    \restoregeometry%
     \clearpage%
 }
 
@@ -105,18 +142,34 @@
 % Apply automatic spacing to all captions
 \captionsetup{format=autospacing}
 
-% FIXED: Landscape longtable environment WITH HEADERS and proper centering
+% Landscape longtable with PROPERLY ORIENTED headers and centering
 \newenvironment{landscapelongtable}{%
     \clearpage%
-    \begin{landscape}%
-    % Do not change page style here - let it inherit
-    % Center the longtable properly
+    % Change to landscape geometry
+    \newgeometry{
+        paperwidth=297mm,
+        paperheight=210mm,
+        top=2.54cm,
+        bottom=2.54cm,
+        left=3.15cm,
+        right=3.15cm,
+        headsep=0.75cm,
+        footskip=1.6cm
+    }%
+    % Set up headers for landscape pages
+    \pagestyle{fancy}%
+    \fancyhf{}% Clear headers
+    \fancyhead[L]{\thepage\vspace{3pt}}% Page number left
+    \fancyhead[R]{\leftmark\vspace{3pt}}% Chapter right
+    \renewcommand{\headrulewidth}{0.3pt}% With line as normal
+    % Center the longtable
     \setlength\LTleft{\fill}%
     \setlength\LTright{\fill}%
     \setlength\LTpre{0pt}%
     \setlength\LTpost{0pt}%
 }{%
-    \end{landscape}%
+    % Restore portrait geometry
+    \restoregeometry%
     \clearpage%
 }
 
