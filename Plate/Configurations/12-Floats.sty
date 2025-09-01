@@ -4,6 +4,7 @@
 \RequirePackage{lscape}  % Use lscape for proper landscape orientation
 \RequirePackage{fancyhdr}
 \RequirePackage{geometry}
+\RequirePackage{calc}  % For dimension calculations
 
 % Float placement parameters
 \setcounter{topnumber}{3}           % Max floats at top of page
@@ -58,7 +59,7 @@
     \endoldtable%
 }
 
-% Landscape figure with properly oriented headers (ONESIDE MODE)
+% Landscape figure with FULL WIDTH headers (ONESIDE MODE)
 \newenvironment{landscapefigure}[1][htbp]{%
     \clearpage%
     % Change to landscape geometry
@@ -72,12 +73,22 @@
         headsep=0.75cm,
         footskip=1.6cm
     }%
-    % Set up headers for landscape page (consistent with oneside mode)
-    \pagestyle{fancy}%
-    \fancyhf{}% Clear headers
-    \fancyhead[L]{\thepage\vspace{3pt}}% Page number always left
-    \fancyhead[R]{\leftmark\vspace{3pt}}% Chapter always right
-    \renewcommand{\headrulewidth}{0.3pt}% With line
+    % Calculate and set proper text width for landscape
+    \setlength{\textwidth}{\dimexpr 297mm - 6.3cm\relax}%
+    \setlength{\linewidth}{\textwidth}%
+    \setlength{\columnwidth}{\textwidth}%
+    \setlength{\hsize}{\textwidth}%
+    % Set up headers with full width
+    \fancypagestyle{landscapefancy}{%
+        \fancyhf{}%
+        \setlength{\headwidth}{\textwidth}%
+        \fancyheadoffset{0pt}%
+        \fancyhead[L]{\thepage\vspace{3pt}}%
+        \fancyhead[R]{\leftmark\vspace{3pt}}%
+        \renewcommand{\headrulewidth}{0.3pt}%
+    }%
+    \pagestyle{landscapefancy}%
+    \thispagestyle{landscapefancy}%
     \begin{figure}[#1]%
     \centering%
 }{%
@@ -87,7 +98,7 @@
     \clearpage%
 }
 
-% Landscape table with properly oriented headers (ONESIDE MODE)
+% Landscape table with FULL WIDTH headers (ONESIDE MODE)
 \newenvironment{landscapetable}[1][htbp]{%
     \clearpage%
     % Change to landscape geometry
@@ -101,12 +112,22 @@
         headsep=0.75cm,
         footskip=1.6cm
     }%
-    % Set up headers for landscape page (consistent with oneside mode)
-    \pagestyle{fancy}%
-    \fancyhf{}% Clear headers
-    \fancyhead[L]{\thepage\vspace{3pt}}% Page number always left
-    \fancyhead[R]{\leftmark\vspace{3pt}}% Chapter always right
-    \renewcommand{\headrulewidth}{0.3pt}% With line
+    % Calculate and set proper text width for landscape
+    \setlength{\textwidth}{\dimexpr 297mm - 6.3cm\relax}%
+    \setlength{\linewidth}{\textwidth}%
+    \setlength{\columnwidth}{\textwidth}%
+    \setlength{\hsize}{\textwidth}%
+    % Set up headers with full width
+    \fancypagestyle{landscapefancy}{%
+        \fancyhf{}%
+        \setlength{\headwidth}{\textwidth}%
+        \fancyheadoffset{0pt}%
+        \fancyhead[L]{\thepage\vspace{3pt}}%
+        \fancyhead[R]{\leftmark\vspace{3pt}}%
+        \renewcommand{\headrulewidth}{0.3pt}%
+    }%
+    \pagestyle{landscapefancy}%
+    \thispagestyle{landscapefancy}%
     \begin{table}[#1]%
     \centering%
 }{%
@@ -142,7 +163,7 @@
 % Apply automatic spacing to all captions
 \captionsetup{format=autospacing}
 
-% Landscape longtable with properly oriented headers (ONESIDE MODE)
+% Landscape longtable with FULL WIDTH headers (ONESIDE MODE)
 \newenvironment{landscapelongtable}{%
     \clearpage%
     % Change to landscape geometry
@@ -156,12 +177,21 @@
         headsep=0.75cm,
         footskip=1.6cm
     }%
-    % Set up headers for landscape pages (consistent with oneside mode)
-    \pagestyle{fancy}%
-    \fancyhf{}% Clear headers
-    \fancyhead[L]{\thepage\vspace{3pt}}% Page number always left
-    \fancyhead[R]{\leftmark\vspace{3pt}}% Chapter always right
-    \renewcommand{\headrulewidth}{0.3pt}% With line
+    % Calculate and set proper text width for landscape
+    \setlength{\textwidth}{\dimexpr 297mm - 6.3cm\relax}%
+    \setlength{\linewidth}{\textwidth}%
+    \setlength{\columnwidth}{\textwidth}%
+    \setlength{\hsize}{\textwidth}%
+    % Set up headers with full width
+    \fancypagestyle{landscapefancy}{%
+        \fancyhf{}%
+        \setlength{\headwidth}{\textwidth}%
+        \fancyheadoffset{0pt}%
+        \fancyhead[L]{\thepage\vspace{3pt}}%
+        \fancyhead[R]{\leftmark\vspace{3pt}}%
+        \renewcommand{\headrulewidth}{0.3pt}%
+    }%
+    \pagestyle{landscapefancy}%
     % Center the longtable
     \setlength\LTleft{\fill}%
     \setlength\LTright{\fill}%
