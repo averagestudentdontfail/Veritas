@@ -5,6 +5,20 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{geometry}
 \RequirePackage{calc}  % For dimension calculations
+\RequirePackage{etoolbox}  % For AfterEndEnvironment hooks
+
+% Define robust geometry reset command
+\newcommand{\landscapegeometryreset}{%
+    \clearpage%
+    \restoregeometry%
+    \newpage%
+    \thispagestyle{plain}%
+}
+
+% Hook to execute after landscape environments end
+\AfterEndEnvironment{landscapefigure}{\landscapegeometryreset}
+\AfterEndEnvironment{landscapetable}{\landscapegeometryreset}
+\AfterEndEnvironment{landscapelongtable}{\landscapegeometryreset}
 
 % Float placement parameters
 \setcounter{topnumber}{3}           % Max floats at top of page
@@ -93,13 +107,7 @@
     \centering%
 }{%
     \end{figure}%
-    % Restore portrait geometry with complete reset
-    \clearpage%
-    \restoregeometry%
-    \newpage%
-    \thispagestyle{plain}%
-    \pagestyle{fancy}%
-    \clearpage%
+    % Geometry reset handled by AfterEndEnvironment hook
 }
 
 % Landscape table with FULL WIDTH headers (ONESIDE MODE)
@@ -136,13 +144,7 @@
     \centering%
 }{%
     \end{table}%
-    % Restore portrait geometry with complete reset
-    \clearpage%
-    \restoregeometry%
-    \newpage%
-    \thispagestyle{plain}%
-    \pagestyle{fancy}%
-    \clearpage%
+    % Geometry reset handled by AfterEndEnvironment hook
 }
 
 % Smart float placement command
@@ -206,13 +208,7 @@
     \setlength\LTpre{0pt}%
     \setlength\LTpost{0pt}%
 }{%
-    % Restore portrait geometry with complete reset
-    \clearpage%
-    \restoregeometry%
-    \newpage%
-    \thispagestyle{plain}%
-    \pagestyle{fancy}%
-    \clearpage%
+    % Geometry reset handled by AfterEndEnvironment hook
 }
 
 % Command to automatically handle figure width
