@@ -1,3 +1,4 @@
+%%% Enhanced Float Configuration %%%
 %%% Configurations/12-Floats.sty %%%
 
 % Required packages
@@ -70,14 +71,21 @@
         left=3.15cm,
         right=3.15cm,
         headsep=0.75cm,
-        footskip=1.6cm
+        footskip=1.6cm,
+        headwidth=\textwidth  % Ensure header spans full width
     }%
-    % Set up headers for landscape page
-    \pagestyle{fancy}%
-    \fancyhf{}% Clear headers
-    \fancyhead[L]{\thepage\vspace{3pt}}% Page number left
-    \fancyhead[R]{\leftmark\vspace{3pt}}% Chapter right
-    \renewcommand{\headrulewidth}{0.3pt}% With line as normal
+    % Set up headers for landscape page - force both elements on all pages
+    \fancypagestyle{landscapeheaders}{%
+        \fancyhf{}% Clear all headers
+        \fancyheadoffset{0pt}% Reset any offset
+        \fancyhead[L]{\thepage\vspace{3pt}}% Always show page number on left
+        \fancyhead[R]{\leftmark\vspace{3pt}}% Always show chapter on right
+        \renewcommand{\headrulewidth}{0.3pt}% With line
+        % Force header width to match text width
+        \setlength{\headwidth}{\textwidth}%
+    }%
+    \pagestyle{landscapeheaders}%
+    \thispagestyle{landscapeheaders}% Force for this page too
     \begin{figure}[#1]%
     \centering%
 }{%
@@ -99,14 +107,21 @@
         left=3.15cm,
         right=3.15cm,
         headsep=0.75cm,
-        footskip=1.6cm
+        footskip=1.6cm,
+        headwidth=\textwidth  % Ensure header spans full width
     }%
-    % Set up headers for landscape page
-    \pagestyle{fancy}%
-    \fancyhf{}% Clear headers
-    \fancyhead[L]{\thepage\vspace{3pt}}% Page number left
-    \fancyhead[R]{\leftmark\vspace{3pt}}% Chapter right
-    \renewcommand{\headrulewidth}{0.3pt}% With line as normal
+    % Set up headers for landscape page - force both elements on all pages
+    \fancypagestyle{landscapeheaders}{%
+        \fancyhf{}% Clear all headers
+        \fancyheadoffset{0pt}% Reset any offset
+        \fancyhead[L]{\thepage\vspace{3pt}}% Always show page number on left
+        \fancyhead[R]{\leftmark\vspace{3pt}}% Always show chapter on right
+        \renewcommand{\headrulewidth}{0.3pt}% With line
+        % Force header width to match text width
+        \setlength{\headwidth}{\textwidth}%
+    }%
+    \pagestyle{landscapeheaders}%
+    \thispagestyle{landscapeheaders}% Force for this page too
     \begin{table}[#1]%
     \centering%
 }{%
@@ -154,14 +169,21 @@
         left=3.15cm,
         right=3.15cm,
         headsep=0.75cm,
-        footskip=1.6cm
+        footskip=1.6cm,
+        headwidth=\textwidth  % Ensure header spans full width
     }%
-    % Set up headers for landscape pages
-    \pagestyle{fancy}%
-    \fancyhf{}% Clear headers
-    \fancyhead[L]{\thepage\vspace{3pt}}% Page number left
-    \fancyhead[R]{\leftmark\vspace{3pt}}% Chapter right
-    \renewcommand{\headrulewidth}{0.3pt}% With line as normal
+    % Set up headers for all landscape pages - force both elements
+    \fancypagestyle{landscapeheaders}{%
+        \fancyhf{}% Clear all headers
+        \fancyheadoffset{0pt}% Reset any offset
+        \fancyhead[L]{\thepage\vspace{3pt}}% Always show page number on left
+        \fancyhead[R]{\leftmark\vspace{3pt}}% Always show chapter on right
+        \renewcommand{\headrulewidth}{0.3pt}% With line
+        % Force header width to match text width
+        \setlength{\headwidth}{\textwidth}%
+    }%
+    \pagestyle{landscapeheaders}% Apply to all pages in this environment
+    \thispagestyle{landscapeheaders}% And this page specifically
     % Center the longtable
     \setlength\LTleft{\fill}%
     \setlength\LTright{\fill}%
