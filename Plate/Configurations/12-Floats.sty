@@ -6,6 +6,7 @@
 \RequirePackage{geometry}
 \RequirePackage{calc}  % For dimension calculations
 \RequirePackage{etoolbox}  % For AfterEndEnvironment hooks
+\RequirePackage{afterpage}  % For deferred execution
 
 % Define robust geometry reset command
 \newcommand{\landscapegeometryreset}{%
@@ -15,10 +16,11 @@
     \thispagestyle{plain}%
 }
 
-% Hook to execute after landscape environments end
-\AfterEndEnvironment{landscapefigure}{\landscapegeometryreset}
-\AfterEndEnvironment{landscapetable}{\landscapegeometryreset}
-\AfterEndEnvironment{landscapelongtable}{\landscapegeometryreset}
+% Only apply AfterEndEnvironment to single-page environments
+% NOT to longtable which can span multiple pages
+\AfterEndEnvironment{landscapefigure}{\afterpage{\landscapegeometryreset}}
+\AfterEndEnvironment{landscapetable}{\afterpage{\landscapegeometryreset}}
+% Note: NO AfterEndEnvironment for landscapelongtable
 
 % Float placement parameters
 \setcounter{topnumber}{3}           % Max floats at top of page
@@ -74,7 +76,7 @@
 }
 
 % Landscape figure with FULL WIDTH headers (ONESIDE MODE)
-\newenvironment{landscapefigure}[1][htbp]{%
+\newenvironment{landscapefigure}[1][p]{%  % Default to [p] for full page
     \clearpage%
     % Change to landscape geometry
     \newgeometry{
@@ -107,11 +109,11 @@
     \centering%
 }{%
     \end{figure}%
-    % Geometry reset handled by AfterEndEnvironment hook
+    % Geometry reset handled by AfterEndEnvironment + afterpage
 }
 
 % Landscape table with FULL WIDTH headers (ONESIDE MODE)
-\newenvironment{landscapetable}[1][htbp]{%
+\newenvironment{landscapetable}[1][p]{%  % Default to [p] for full page
     \clearpage%
     % Change to landscape geometry
     \newgeometry{
@@ -144,7 +146,7 @@
     \centering%
 }{%
     \end{table}%
-    % Geometry reset handled by AfterEndEnvironment hook
+    % Geometry reset handled by AfterEndEnvironment + afterpage
 }
 
 % Smart float placement command
@@ -174,6 +176,7 @@
 \captionsetup{format=autospacing}
 
 % Landscape longtable with FULL WIDTH headers (ONESIDE MODE)
+% Special handling for multi-page tables
 \newenvironment{landscapelongtable}{%
     \clearpage%
     % Change to landscape geometry
@@ -208,7 +211,14 @@
     \setlength\LTpre{0pt}%
     \setlength\LTpost{0pt}%
 }{%
-    % Geometry reset handled by AfterEndEnvironment hook
+    % For longtable, we need to handle multi-page differently
+    % Use afterpage to ensure geometry reset happens after ALL pages
+    \afterpage{%
+        \clearpage%
+        \restoregeometry%
+        \newpage%
+        \thispagestyle{plain}%
+    }%
 }
 
 % Command to automatically handle figure width
