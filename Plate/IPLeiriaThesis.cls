@@ -149,6 +149,7 @@
 \RequirePackage[toc,page]{appendix} % Formatting for appendices.
 \RequirePackage[bookmarks,pdfusetitle]{hyperref} % Hyperlinks and PDF metadata.
 \RequirePackage[symbols,acronym]{glossaries} % Create glossaries and acronyms.
+\glsdisablehyper  % This removes all hyperlinks from glossary/acronym terms
 \RequirePackage[calc,datesep={/}]{datetime2} % Enhanced date and time formatting.
 \RequirePackage{xparse} % Advanced argument parsing for custom macros.
 \RequirePackage{typearea} % Page layout adjustments (KOMA-Script).

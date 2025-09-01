@@ -7,3 +7,18 @@
 \renewcommand{\glsnamefont}[1]{\textbf{#1}} % Notation in bold.
 \renewcommand{\glossaryentrynumbers}[1]%
 {\textit{(p. \textcolor{maincolor}{#1})}} % Page number customisation.
+
+%%% DISABLE HYPERLINKS AND COLORS FOR GLOSSARY/ACRONYM TERMS %%%
+% Remove all hyperlinks from glossary terms
+\glsdisablehyper
+
+% Alternative: Keep hyperlinks but make them black (same as text)
+% Comment out \glsdisablehyper above and uncomment these lines instead:
+% \renewcommand*{\glstextformat}[1]{\textcolor{black}{#1}}
+% \renewcommand*{\glslinkcheckfirsthyperhook}{}
+% \renewcommand*{\glslinkpostsetkeys}{%
+%   \ifdefempty\glscustomtext{%
+%     \letcs\glslinkpostsetkeys@orig{@gls@\glstype @display}%
+%     \cslet{@gls@\glstype @display}{\glslinkpostsetkeys@orig}%
+%   }{}%
+% }
