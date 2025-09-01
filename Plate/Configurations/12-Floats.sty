@@ -53,11 +53,11 @@
     \endoldtable%
 }
 
-% Improved landscape environment for figures
+% FIXED: Landscape environment for figures WITH HEADERS
 \newenvironment{landscapefigure}[1][htbp]{%
     \clearpage%
     \begin{landscape}%
-    \thispagestyle{empty}%
+    % Do not change page style here - let it inherit
     \begin{figure}[#1]%
     \centering%
 }{%
@@ -66,11 +66,11 @@
     \clearpage%
 }
 
-% Improved landscape environment for tables
+% FIXED: Landscape environment for tables WITH HEADERS
 \newenvironment{landscapetable}[1][htbp]{%
     \clearpage%
     \begin{landscape}%
-    \thispagestyle{empty}%
+    % Do not change page style here - let it inherit
     \begin{table}[#1]%
     \centering%
 }{%
@@ -105,17 +105,19 @@
 % Apply automatic spacing to all captions
 \captionsetup{format=autospacing}
 
-% Fix for landscape longtables
+% FIXED: Landscape longtable environment WITH HEADERS and proper centering
 \newenvironment{landscapelongtable}{%
     \clearpage%
-    \newgeometry{paperwidth=297mm,paperheight=210mm,hmargin=2.5cm,vmargin=2cm,landscape}%
-    \pagestyle{empty}%
-    \setlength\LTleft{0pt}%
-    \setlength\LTright{0pt}%
+    \begin{landscape}%
+    % Do not change page style here - let it inherit
+    % Center the longtable properly
+    \setlength\LTleft{\fill}%
+    \setlength\LTright{\fill}%
+    \setlength\LTpre{0pt}%
+    \setlength\LTpost{0pt}%
 }{%
-    \restoregeometry%
+    \end{landscape}%
     \clearpage%
-    \pagestyle{fancy}%
 }
 
 % Command to automatically handle figure width
