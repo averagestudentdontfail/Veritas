@@ -1,0 +1,96 @@
+% Chapters/Appendices/00-Note.tex
+
+\chapter{Note}
+
+% Define handwriting font and styling
+\newfontfamily\handwritingfont{Kalam}[
+    Path = Configurations/Fonts/,
+    UprightFont = Kalam-Regular.ttf,
+    BoldFont = Kalam-Bold.ttf,
+    Scale = 1.1,
+    Color = 191933, % Dark blue-black ink color
+    LetterSpace = 0.5
+]
+
+% Alternative: If Kalam is not available, use system fonts
+% \newfontfamily\handwritingfont{Caveat}[Scale=1.3, Color=191933]
+% \newfontfamily\handwritingfont{Amatic SC}[Scale=1.4, Color=191933]
+
+% Create handwritten note environment
+\newenvironment{note}{%
+    \clearpage
+    % Add subtle background texture
+    \begin{tikzpicture}[remember picture, overlay]
+        % Very subtle yellow-beige tint for aged paper effect
+        \fill[yellow!3!white, opacity=0.7] (current page.south west) rectangle (current page.north east);
+        % Add subtle noise/texture
+        \foreach \i in {1,...,50}{
+            \fill[gray!10!white, opacity=0.05] ($(current page.south west) + (rand*\paperwidth, rand*\paperheight)$) circle (0.5mm);
+        }
+        % Add very subtle scan line
+        \draw[gray!5!white, line width=0.1pt] ($(current page.north west) + (0,-3cm)$) -- ($(current page.north east) + (0,-3cm)$);
+    \end{tikzpicture}
+    \vspace*{-0.5cm}
+    \handwritingfont
+    \setstretch{1.45} % Irregular line spacing
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{0.8em}
+    % Add slight rotation to simulate scanned document
+    \begin{adjustbox}{angle=0.3}
+    \begin{minipage}{0.98\textwidth}
+}{%
+    \end{minipage}
+    \end{adjustbox}
+    \clearpage
+}
+
+% Alternative simpler version without TikZ background
+\newenvironment{handwrittennotessimple}{%
+    \clearpage
+    \pagecolor{yellow!2!white} % Very subtle paper color
+    \handwritingfont
+    \setstretch{1.5}
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{0.9em}
+    \raggedright
+}{%
+    \clearpage
+    \pagecolor{white} % Reset page color
+}
+
+% Main content
+\begin{handwrittennotes}
+
+\underline{Session Date:} 5/9/25, 4:30pm, Telehealth
+
+\vspace{0.3em}
+
+\textbf{\underline{Home and Environment Domain}}
+
+Lives with mother, stepfather, younger brother age 13. Reports ``always having arguments'' regarding school, clothes, going out, boyfriend. Stepfather ``controls everything'' with mother deferring decisions to him. Biological father has alcohol and drug history, currently in rehabilitation with no contact. Parents divorced when Michelle was 8-9 years old, witnessed significant parental fights. Vietnamese family described as ``conservative'' with clash against Australian culture. Michelle feels unable to be herself, states she is ``letting everyone down.'' Reports no safe space at home, prefers being outside home.
+
+\textbf{\underline{Education and Employment Domain}}
+
+Attends Kingswood Park High School with significant academic struggles. Cannot understand material, experiences teachers as ``not helpful.'' Bullied by ``popular girls'' through verbal harassment and ostracizing. Maintains small friend group but anxious about friendship stability. Works part-time as cook at fast food restaurant for 2 years. Reports being ``really good at it'' with praise from boss. Met boyfriend Adrian at work. Enjoys work and feels competent there.
+
+\textbf{\underline{Activities and Peer Relations}}
+
+Spends time at friends' houses where she experiences ``freedom'' with supportive parents. Enjoys chess, Monopoly, and basketball with friends. Previously enjoyed reading but now feels ``too much reading already.'' Friends help cover for her by saying ``group study'' to parents. Avoids most peers due to bullying. Reports being boycotted by classmates after conflicts.
+
+\textbf{\underline{Alcohol and Drugs Domain}}
+
+Started alcohol use at age 14 initially due to peer pressure. Currently consuming 2 beers daily after school. Reports ``anxiety vanished'' when drinking and helps her ``say what I want.'' Hides use from parents using mints and careful timing. Experiences hangovers affecting morning classes. Father's substance use history noted as risk factor.
+
+\textbf{\underline{Relationships and Sexuality}}
+
+Boyfriend Adrian age 16, met at work. On and off relationship, currently ``on break'' initiated by him stating he doesn't ``have time.'' Relationship hidden from parents. No sexual activity reported, states ``not before marriage'' aligning with family values. Worried relationship might end permanently.
+
+\textbf{\underline{Mental Health Screening}}
+
+\textit{Anxiety:} ``worried all the time'' about school, appearance, peers. \textit{Sleep:} 2-3am bedtime, 7am wake resulting in 3-5 hours sleep. Stays up on phone, ruminating about fights. Worse after parent arguments when sleeps only 3 hours. \textit{Eating:} Controls diet, doesn't want to ``get fat.'' Already bullied for acne, has weight concerns. Denied suicidal ideation, self-harm, or homicidal ideation. Denied current depression but low mood evident in presentation.
+
+\textbf{\underline{Risk Assessment}}
+
+Protective factors identified: Work success, friend support, future-oriented thinking. Risk factors identified: Daily alcohol use, family conflict, social isolation, academic failure, paternal substance use history. Current risk assessed as low to moderate. Denied current suicidal ideation or self-harm behaviors.
+
+\end{note}

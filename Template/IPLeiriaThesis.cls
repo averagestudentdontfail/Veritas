@@ -160,6 +160,8 @@
 \RequirePackage{calc} % Infix notation arithmetic.
 \RequirePackage{soul} % A better underline.
 \RequirePackage{mfirstuc} % Capitalise words in a sentence.
+\RequirePackage{adjustbox}  % For slight rotation
+\RequirePackage{pagecolor}  % For paper background
 \RequirePackage{tikz} % Create high-quality graphics programmatically.
 \usetikzlibrary{positioning}
 \RequirePackage{psvectorian} % To include in-text ornamatentions. 
