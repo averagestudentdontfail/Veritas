@@ -1,70 +1,110 @@
 % Chapters/Appendices/00-AppendixA.tex
 
-\chapter{Handwritten Assessment Notes}
+% Remove chapter heading and start a new page
+\clearpage
+\pagestyle{empty}  % No headers or footers
+\thispagestyle{empty}  % No page number
 
-% Create handwritten effect using built-in fonts and simple formatting
-\newcommand{\handwrittenstyle}{%
-    \Large  % Larger text size
-    \setstretch{1.5}  % More line spacing for handwritten look
-    \color{blue!85!black}  % Blue pen color
-    \raggedright  % Natural, uneven alignment
-    \slshape  % Slanted text to simulate handwriting
-}
+% Create scanned document effect
+\begin{tikzpicture}[remember picture, overlay]
+    % White-gray background like photocopied paper
+    \fill[gray!8!white] (current page.south west) rectangle (current page.north east);
+    
+    % Add photocopy artifacts/noise
+    \foreach \i in {1,...,200}{
+        \pgfmathsetmacro\xpos{rand*\paperwidth}
+        \pgfmathsetmacro\ypos{rand*\paperheight}
+        \pgfmathsetmacro\size{rand*0.3+0.1}
+        \pgfmathsetmacro\opac{rand*0.08+0.02}
+        \fill[black, opacity=\opac] 
+            ($(current page.south west) + (\xpos pt, \ypos pt)$) 
+            circle (\size mm);
+    }
+    
+    % Add vertical scan lines (subtle)
+    \foreach \x in {1,3,...,40}{
+        \pgfmathsetmacro\opac{rand*0.02+0.01}
+        \draw[black!5!white, line width=0.1pt, opacity=\opac] 
+            ($(current page.north west) + (\x cm, 0)$) -- 
+            ($(current page.south west) + (\x cm, 0)$);
+    }
+    
+    % Add slight shadow on left edge (from scanner lid)
+    \shade[left color=black!15!white, right color=white, opacity=0.3] 
+        (current page.south west) rectangle ($(current page.north west) + (0.5cm, 0)$);
+        
+    % Add top shadow (scanner edge)
+    \shade[top color=black!10!white, bottom color=white, opacity=0.2] 
+        (current page.north west) rectangle ($(current page.north east) + (0, -1cm)$);
+\end{tikzpicture}
 
-% Apply light paper background
-\pagecolor{yellow!4!white}  % Very subtle aged paper color
+% Font settings for typewriter/handwritten effect
+\fontfamily{cmtt}\selectfont  % Computer Modern Typewriter (monospace)
+\fontsize{10.5}{13}\selectfont
+\color{black!85!white}  % Slightly faded black (like photocopied text)
 
-% Start handwritten content
-\handwrittenstyle
+% Add slight rotation to simulate imperfect scan alignment
+\begin{adjustbox}{angle=0.2,center}
+\begin{minipage}{0.95\textwidth}
+\vspace*{2cm}  % Start lower on page like handwritten notes
 
 \noindent\underline{Session Date:} 5/9/25, 4:30pm, Telehealth
 
-\vspace{0.5em}
+\vspace{0.8em}
 
-\noindent\textbf{\underline{Home and Environment Domain}}
+\noindent\textbf{HOME AND ENVIRONMENT DOMAIN}
 
-\noindent Lives with mother, stepfather, younger brother age 13. Reports ``always having arguments'' regarding school, clothes, going out, boyfriend. Stepfather ``controls everything'' with mother deferring decisions to him. Biological father has alcohol and drug history, currently in rehabilitation with no contact. Parents divorced when Michelle was 8-9 years old, witnessed significant parental fights. Vietnamese family described as ``conservative'' with clash against Australian culture. Michelle feels unable to be herself, states she is ``letting everyone down.'' Reports no safe space at home, prefers being outside home.
+\vspace{0.3em}
+\noindent Lives with mother, stepfather, younger brother age 13. Reports "always having arguments" regarding school, clothes, going out, boyfriend. Stepfather "controls everything" with mother deferring decisions to him. Biological father has alcohol and drug history, currently in rehabilitation with no contact. Parents divorced when Michelle was 8-9 years old, witnessed significant parental fights. Vietnamese family described as "conservative" with clash against Australian culture. Michelle feels unable to be herself, states she is "letting everyone down." Reports no safe space at home, prefers being outside home.
 
-\vspace{0.5em}
+\vspace{0.8em}
 
-\noindent\textbf{\underline{Education and Employment Domain}}
+\noindent\textbf{EDUCATION AND EMPLOYMENT DOMAIN}
 
-\noindent Attends Kingswood Park High School with significant academic struggles. Cannot understand material, experiences teachers as ``not helpful.'' Bullied by ``popular girls'' through verbal harassment and ostracizing. Maintains small friend group but anxious about friendship stability. Works part-time as cook at fast food restaurant for 2 years. Reports being ``really good at it'' with praise from boss. Met boyfriend Adrian at work. Enjoys work and feels competent there.
+\vspace{0.3em}
+\noindent Attends Kingswood Park High School with significant academic struggles. Cannot understand material, experiences teachers as "not helpful." Bullied by "popular girls" through verbal harassment and ostracizing. Maintains small friend group but anxious about friendship stability. Works part-time as cook at fast food restaurant for 2 years. Reports being "really good at it" with praise from boss. Met boyfriend Adrian at work. Enjoys work and feels competent there.
 
-\vspace{0.5em}
+\vspace{0.8em}
 
-\noindent\textbf{\underline{Activities and Peer Relations}}
+\noindent\textbf{ACTIVITIES AND PEER RELATIONS}
 
-\noindent Spends time at friends' houses where she experiences ``freedom'' with supportive parents. Enjoys chess, Monopoly, and basketball with friends. Previously enjoyed reading but now feels ``too much reading already.'' Friends help cover for her by saying ``group study'' to parents. Avoids most peers due to bullying. Reports being boycotted by classmates after conflicts.
+\vspace{0.3em}
+\noindent Spends time at friends' houses where she experiences "freedom" with supportive parents. Enjoys chess, Monopoly, and basketball with friends. Previously enjoyed reading but now feels "too much reading already." Friends help cover for her by saying "group study" to parents. Avoids most peers due to bullying. Reports being boycotted by classmates after conflicts.
 
-\vspace{0.5em}
+\vspace{0.8em}
 
-\noindent\textbf{\underline{Alcohol and Drugs Domain}}
+\noindent\textbf{ALCOHOL AND DRUGS DOMAIN}
 
-\noindent Started alcohol use at age 14 initially due to peer pressure. Currently consuming 2 beers daily after school. Reports ``anxiety vanished'' when drinking and helps her ``say what I want.'' Hides use from parents using mints and careful timing. Experiences hangovers affecting morning classes. Father's substance use history noted as risk factor.
+\vspace{0.3em}
+\noindent Started alcohol use at age 14 initially due to peer pressure. Currently consuming 2 beers daily after school. Reports "anxiety vanished" when drinking and helps her "say what I want." Hides use from parents using mints and careful timing. Experiences hangovers affecting morning classes. Father's substance use history noted as risk factor.
 
-\vspace{0.5em}
+\vspace{0.8em}
 
-\noindent\textbf{\underline{Relationships and Sexuality}}
+\noindent\textbf{RELATIONSHIPS AND SEXUALITY}
 
-\noindent Boyfriend Adrian age 16, met at work. On and off relationship, currently ``on break'' initiated by him stating he doesn't ``have time.'' Relationship hidden from parents. No sexual activity reported, states ``not before marriage'' aligning with family values. Worried relationship might end permanently.
+\vspace{0.3em}
+\noindent Boyfriend Adrian age 16, met at work. On and off relationship, currently "on break" initiated by him stating he doesn't "have time." Relationship hidden from parents. No sexual activity reported, states "not before marriage" aligning with family values. Worried relationship might end permanently.
 
-\vspace{0.5em}
+\vspace{0.8em}
 
-\noindent\textbf{\underline{Mental Health Screening}}
+\noindent\textbf{MENTAL HEALTH SCREENING}
 
-\noindent\textit{Anxiety:} ``worried all the time'' about school, appearance, peers. \textit{Sleep:} 2-3am bedtime, 7am wake resulting in 3-5 hours sleep. Stays up on phone, ruminating about fights. Worse after parent arguments when sleeps only 3 hours. \textit{Eating:} Controls diet, doesn't want to ``get fat.'' Already bullied for acne, has weight concerns. Denied suicidal ideation, self-harm, or homicidal ideation. Denied current depression but low mood evident in presentation.
+\vspace{0.3em}
+\noindent \textit{Anxiety:} "worried all the time" about school, appearance, peers. \textit{Sleep:} 2-3am bedtime, 7am wake resulting in 3-5 hours sleep. Stays up on phone, ruminating about fights. Worse after parent arguments when sleeps only 3 hours. \textit{Eating:} Controls diet, doesn't want to "get fat." Already bullied for acne, has weight concerns. Denied suicidal ideation, self-harm, or homicidal ideation. Denied current depression but low mood evident in presentation.
 
-\vspace{0.5em}
+\vspace{0.8em}
 
-\noindent\textbf{\underline{Risk Assessment}}
+\noindent\textbf{RISK ASSESSMENT}
 
+\vspace{0.3em}
 \noindent Protective factors identified: Work success, friend support, future-oriented thinking. Risk factors identified: Daily alcohol use, family conflict, social isolation, academic failure, paternal substance use history. Current risk assessed as low to moderate. Denied current suicidal ideation or self-harm behaviors.
 
-% Reset formatting for rest of document
+\end{minipage}
+\end{adjustbox}
+
+% Restore normal page style for subsequent pages
 \clearpage
-\pagecolor{white}  % Reset page color
+\pagestyle{fancy}  % Restore headers/footers
+\normalfont
 \normalsize
-\upshape
 \color{black}
-\setstretch{1.2}
