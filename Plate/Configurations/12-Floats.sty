@@ -1,32 +1,10 @@
 %%% Configurations/12-Floats.sty %%%
 
 % Required packages
-\RequirePackage{lscape}  % Use lscape for landscape orientation
+\RequirePackage{lscape}  % Use lscape for proper landscape orientation
 \RequirePackage{fancyhdr}
 \RequirePackage{geometry}
 \RequirePackage{calc}  % For dimension calculations
-\RequirePackage{etoolbox}  % For patching commands
-
-% Global flag to track if we're in landscape mode
-\newif\iflandscapeactive
-\landscapeactivefalse
-
-% Robust geometry reset command
-\newcommand{\ensureportraitmode}{%
-    \iflandscapeactive%
-        \clearpage%
-        \restoregeometry%
-        \newpage%
-        \thispagestyle{plain}%
-        \global\landscapeactivefalse%
-    \fi%
-}
-
-% Patch the chapter command to always ensure portrait mode
-\pretocmd{\chapter}{\ensureportraitmode}{}{}
-
-% Also patch section command for safety
-\pretocmd{\section}{\iflandscapeactive\ensureportraitmode\fi}{}{}
 
 % Float placement parameters
 \setcounter{topnumber}{3}           % Max floats at top of page
@@ -82,9 +60,8 @@
 }
 
 % Landscape figure with FULL WIDTH headers (ONESIDE MODE)
-\newenvironment{landscapefigure}[1][p]{%
+\newenvironment{landscapefigure}[1][htbp]{%
     \clearpage%
-    \global\landscapeactivetrue%  % Set flag
     % Change to landscape geometry
     \newgeometry{
         paperwidth=297mm,
@@ -116,13 +93,18 @@
     \centering%
 }{%
     \end{figure}%
-    % Flag remains true; will be reset by next chapter/section
+    % Restore portrait geometry with complete reset
+    \clearpage%
+    \restoregeometry%
+    \newpage%
+    \thispagestyle{plain}%
+    \pagestyle{fancy}%
+    \clearpage%
 }
 
 % Landscape table with FULL WIDTH headers (ONESIDE MODE)
-\newenvironment{landscapetable}[1][p]{%
+\newenvironment{landscapetable}[1][htbp]{%
     \clearpage%
-    \global\landscapeactivetrue%  % Set flag
     % Change to landscape geometry
     \newgeometry{
         paperwidth=297mm,
@@ -154,7 +136,13 @@
     \centering%
 }{%
     \end{table}%
-    % Flag remains true; will be reset by next chapter/section
+    % Restore portrait geometry with complete reset
+    \clearpage%
+    \restoregeometry%
+    \newpage%
+    \thispagestyle{plain}%
+    \pagestyle{fancy}%
+    \clearpage%
 }
 
 % Smart float placement command
@@ -186,7 +174,6 @@
 % Landscape longtable with FULL WIDTH headers (ONESIDE MODE)
 \newenvironment{landscapelongtable}{%
     \clearpage%
-    \global\landscapeactivetrue%  % Set flag
     % Change to landscape geometry
     \newgeometry{
         paperwidth=297mm,
@@ -219,12 +206,13 @@
     \setlength\LTpre{0pt}%
     \setlength\LTpost{0pt}%
 }{%
-    % Flag remains true; will be reset by next chapter/section
-}
-
-% Manual reset command (optional - for use between sections if needed)
-\newcommand{\resetlandscape}{%
-    \ensureportraitmode%
+    % Restore portrait geometry with complete reset
+    \clearpage%
+    \restoregeometry%
+    \newpage%
+    \thispagestyle{plain}%
+    \pagestyle{fancy}%
+    \clearpage%
 }
 
 % Command to automatically handle figure width
