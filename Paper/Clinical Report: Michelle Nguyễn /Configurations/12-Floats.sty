@@ -1,0 +1,269 @@
+%%% Configurations/12-Floats.sty %%%
+
+% Required packages
+\RequirePackage{lscape}  % Use lscape for proper landscape orientation
+\RequirePackage{fancyhdr}
+\RequirePackage{geometry}
+\RequirePackage{calc}  % For dimension calculations
+
+% Float placement parameters
+\setcounter{topnumber}{3}           % Max floats at top of page
+\setcounter{bottomnumber}{2}        % Max floats at bottom of page
+\setcounter{totalnumber}{4}         % Max floats per page
+\setcounter{dbltopnumber}{3}        % Max double-column floats at top
+
+% Float fractions
+\renewcommand{\topfraction}{0.85}      % Max fraction of page for top floats
+\renewcommand{\bottomfraction}{0.7}    % Max fraction of page for bottom floats
+\renewcommand{\textfraction}{0.15}     % Min fraction of page for text
+\renewcommand{\floatpagefraction}{0.7} % Min fraction for float page
+\renewcommand{\dbltopfraction}{0.85}   % Max fraction for double-column top floats
+
+% Float spacing parameters
+\setlength{\floatsep}{12pt plus 4pt minus 4pt}        % Between floats
+\setlength{\textfloatsep}{15pt plus 5pt minus 5pt}    % Between text and float
+\setlength{\intextsep}{12pt plus 4pt minus 4pt}       % For floats in text
+\setlength{\dblfloatsep}{12pt plus 4pt minus 4pt}     % Between double-column floats
+\setlength{\dbltextfloatsep}{15pt plus 5pt minus 5pt} % Between text and double-column float
+
+% Above and below caption spacing
+\setlength{\abovecaptionskip}{8pt}
+\setlength{\belowcaptionskip}{6pt}
+
+% Custom commands for automatic float adjustment
+\newcommand{\autofloatspacing}{%
+    \@ifundefined{@captype}{}{%
+        \vspace{3pt plus 2pt minus 1pt}%
+    }%
+}
+
+% Enhanced figure environment with automatic spacing
+\let\oldfigure\figure
+\let\endoldfigure\endfigure
+\renewenvironment{figure}[1][htbp]{%
+    \oldfigure[#1]%
+    \centering%
+}{%
+    \autofloatspacing%
+    \endoldfigure%
+}
+
+% Enhanced table environment with automatic spacing
+\let\oldtable\table
+\let\endoldtable\endtable
+\renewenvironment{table}[1][htbp]{%
+    \oldtable[#1]%
+    \centering%
+}{%
+    \autofloatspacing%
+    \endoldtable%
+}
+
+% Landscape figure with FULL WIDTH headers (ONESIDE MODE)
+\newenvironment{landscapefigure}[1][htbp]{%
+    \clearpage%
+    % Change to landscape geometry
+    \newgeometry{
+        paperwidth=297mm,
+        paperheight=210mm,
+        top=2.54cm,
+        bottom=2.54cm,
+        left=3.15cm,
+        right=3.15cm,
+        headsep=0.75cm,
+        footskip=1.6cm
+    }%
+    % Calculate and set proper text width for landscape
+    \setlength{\textwidth}{\dimexpr 297mm - 6.3cm\relax}%
+    \setlength{\linewidth}{\textwidth}%
+    \setlength{\columnwidth}{\textwidth}%
+    \setlength{\hsize}{\textwidth}%
+    % Set up headers with full width
+    \fancypagestyle{landscapefancy}{%
+        \fancyhf{}%
+        \setlength{\headwidth}{\textwidth}%
+        \fancyheadoffset{0pt}%
+        \fancyhead[L]{\thepage\vspace{3pt}}%
+        \fancyhead[R]{\leftmark\vspace{3pt}}%
+        \renewcommand{\headrulewidth}{0.3pt}%
+    }%
+    \pagestyle{landscapefancy}%
+    \thispagestyle{landscapefancy}%
+    \begin{figure}[#1]%
+    \centering%
+}{%
+    \end{figure}%
+    % Restore portrait geometry with complete reset
+    \clearpage%
+    \restoregeometry%
+    \newpage%
+    \thispagestyle{plain}%
+    \pagestyle{fancy}%
+    \clearpage%
+}
+
+% Landscape table with FULL WIDTH headers (ONESIDE MODE)
+\newenvironment{landscapetable}[1][htbp]{%
+    \clearpage%
+    % Change to landscape geometry
+    \newgeometry{
+        paperwidth=297mm,
+        paperheight=210mm,
+        top=2.54cm,
+        bottom=2.54cm,
+        left=3.15cm,
+        right=3.15cm,
+        headsep=0.75cm,
+        footskip=1.6cm
+    }%
+    % Calculate and set proper text width for landscape
+    \setlength{\textwidth}{\dimexpr 297mm - 6.3cm\relax}%
+    \setlength{\linewidth}{\textwidth}%
+    \setlength{\columnwidth}{\textwidth}%
+    \setlength{\hsize}{\textwidth}%
+    % Set up headers with full width
+    \fancypagestyle{landscapefancy}{%
+        \fancyhf{}%
+        \setlength{\headwidth}{\textwidth}%
+        \fancyheadoffset{0pt}%
+        \fancyhead[L]{\thepage\vspace{3pt}}%
+        \fancyhead[R]{\leftmark\vspace{3pt}}%
+        \renewcommand{\headrulewidth}{0.3pt}%
+    }%
+    \pagestyle{landscapefancy}%
+    \thispagestyle{landscapefancy}%
+    \begin{table}[#1]%
+    \centering%
+}{%
+    \end{table}%
+    % Restore portrait geometry with complete reset
+    \clearpage%
+    \restoregeometry%
+    \newpage%
+    \thispagestyle{plain}%
+    \pagestyle{fancy}%
+    \clearpage%
+}
+
+% Smart float placement command
+\newcommand{\smartfloat}[2][htbp]{%
+    \begingroup%
+    \setlength{\intextsep}{10pt plus 3pt minus 3pt}%
+    \begin{figure}[#1]%
+    \centering%
+    #2%
+    \end{figure}%
+    \endgroup%
+}
+
+% Command to force good page breaks around floats
+\newcommand{\floatbarrier}{%
+    \par\vspace{0pt plus 10pt minus 5pt}%
+    \FloatBarrier%
+    \par\vspace{0pt plus 10pt minus 5pt}%
+}
+
+% Automatic spacing adjustment for captions
+\DeclareCaptionFormat{autospacing}{%
+    \vspace{2pt}#1#2#3\vspace{4pt}%
+}
+
+% Apply automatic spacing to all captions
+\captionsetup{format=autospacing}
+
+% Landscape longtable with FULL WIDTH headers (ONESIDE MODE)
+\newenvironment{landscapelongtable}{%
+    \clearpage%
+    % Change to landscape geometry
+    \newgeometry{
+        paperwidth=297mm,
+        paperheight=210mm,
+        top=2.54cm,
+        bottom=2.54cm,
+        left=3.15cm,
+        right=3.15cm,
+        headsep=0.75cm,
+        footskip=1.6cm
+    }%
+    % Calculate and set proper text width for landscape
+    \setlength{\textwidth}{\dimexpr 297mm - 6.3cm\relax}%
+    \setlength{\linewidth}{\textwidth}%
+    \setlength{\columnwidth}{\textwidth}%
+    \setlength{\hsize}{\textwidth}%
+    % Set up headers with full width
+    \fancypagestyle{landscapefancy}{%
+        \fancyhf{}%
+        \setlength{\headwidth}{\textwidth}%
+        \fancyheadoffset{0pt}%
+        \fancyhead[L]{\thepage\vspace{3pt}}%
+        \fancyhead[R]{\leftmark\vspace{3pt}}%
+        \renewcommand{\headrulewidth}{0.3pt}%
+    }%
+    \pagestyle{landscapefancy}%
+    % Center the longtable
+    \setlength\LTleft{\fill}%
+    \setlength\LTright{\fill}%
+    \setlength\LTpre{0pt}%
+    \setlength\LTpost{0pt}%
+}{%
+    % Restore portrait geometry with complete reset
+    \clearpage%
+    \restoregeometry%
+    \newpage%
+    \thispagestyle{plain}%
+    \pagestyle{fancy}%
+    \clearpage%
+}
+
+% Command to automatically handle figure width
+\newcommand{\autofigurewidth}[2][0.8]{%
+    \ifdim\width>#1\textwidth%
+        \resizebox{#1\textwidth}{!}{#2}%
+    \else%
+        #2%
+    \fi%
+}
+
+% Environment for side-by-side figures
+\newenvironment{sidebysideFigures}[1][0.45]{%
+    \begin{figure}[htbp]%
+    \centering%
+    \newcommand{\subfigwidth}{#1\textwidth}%
+}{%
+    \end{figure}%
+}
+
+% Macro for consistent subfigure handling
+\newcommand{\autosubfigure}[3][0.45]{%
+    \begin{subfigure}[b]{#1\textwidth}%
+        \centering%
+        \autofigurewidth[0.95]{#2}%
+        \caption{#3}%
+    \end{subfigure}%
+}
+
+% Better handling of float pages
+\makeatletter
+\setlength{\@fptop}{0pt plus 1fil}
+\setlength{\@fpsep}{8pt plus 2fil}
+\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother
+
+% Ensure floats don't get lost
+\RequirePackage{placeins}
+
+% Place a float barrier at each section
+\makeatletter
+\AtBeginDocument{%
+  \let\oldsection\section
+  \renewcommand{\section}{%
+    \FloatBarrier
+    \oldsection
+  }%
+  \let\oldsubsection\subsection
+  \renewcommand{\subsection}{%
+    \FloatBarrier
+    \oldsubsection
+  }%
+}
+\makeatother

@@ -23,10 +23,10 @@
 \input{Metadata/Metadata}
 
 %%% Loading of Glossary and Acronyms %%%
-\makeglossaries
-\loadglsentries{Matter/05-Glossary}
-\loadglsentries[\acronymtype]{Matter/06-Acronyms}
-\loadglsentries[\symboltype]{Matter/07-Symbols}
+%%%\makeglossaries
+%%%\loadglsentries{Matter/05-Glossary}
+%%%\loadglsentries[\acronymtype]{Matter/06-Acronyms}
+%%%%\loadglsentries[\symboltype]{Matter/07-Symbols}
 
 \begin{document}
 
@@ -44,24 +44,27 @@
 %%%\include{Matter/03-Acknowledgements}
 
 %%% Abstract %%%
-\include{Chapters/00-Abstract}
+%%%\include{Chapters/00-Abstract}
 
 %%% Table of Contents, List of Figures and List of Tables %%%
 \bookmarktocentry\tableofcontents
-\listoffigures
+%%%\listoffigures
 \listoftables
 
 %%% Print: Glossary and Acronyms %%%
-\glsaddall
-\glossarytoc\printnormalglossary
-\acronymtoc\printacronymglossary
-\symboltoc\printsymbolglossary
+%%%\glsaddall
+%%%\glossarytoc\printnormalglossary
+%%%\acronymtoc\printacronymglossary
+%%%\symboltoc\printsymbolglossary
 
 %%% Arabic Numeration %%%
 \pagenumbering{arabic}
 
-%%% Chapters - Grant Proposal %%%
-\include{Chapters/01-Introduction}
+%%% Chapters - Clinical Report %%%
+\include{Chapters/01-Assessment Process}
+\include{Chapters/02-Treatment Process}
+\include{Chapters/03-Therapeutic Process}
+\include{Chapters/04-Reflection Process}
 
 %%% Bibliography %%%
 \nocite{*} % This will include all entries from the .bib file
