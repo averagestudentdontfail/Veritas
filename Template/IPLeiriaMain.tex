@@ -23,10 +23,10 @@
 \input{Metadata/Metadata}
 
 %%% Loading of Glossary and Acronyms %%%
-\makeglossaries
-\loadglsentries{Matter/05-Glossary}
-\loadglsentries[\acronymtype]{Matter/06-Acronyms}
-\loadglsentries[\symboltype]{Matter/07-Symbols}
+%%%\makeglossaries
+%%%\loadglsentries{Matter/05-Glossary}
+%%%\loadglsentries[\acronymtype]{Matter/06-Acronyms}
+%%%%\loadglsentries[\symboltype]{Matter/07-Symbols}
 
 \begin{document}
 
@@ -48,14 +48,14 @@
 
 %%% Table of Contents, List of Figures and List of Tables %%%
 \bookmarktocentry\tableofcontents
-\listoffigures
+%%%\listoffigures
 \listoftables
 
 %%% Print: Glossary and Acronyms %%%
-\glsaddall
-\glossarytoc\printnormalglossary
-\acronymtoc\printacronymglossary
-\symboltoc\printsymbolglossary
+%%%\glsaddall
+%%%\glossarytoc\printnormalglossary
+%%%\acronymtoc\printacronymglossary
+%%%\symboltoc\printsymbolglossary
 
 %%% Arabic Numeration %%%
 \pagenumbering{arabic}
@@ -71,9 +71,9 @@
 \printbibliography[title={\refname},heading=bibintoc]
 
 %%% Appendices %%%
-\appendix
-\input{Matter/08-Appendices}
-\input{Chapters/Appendices/00-AppendixA}
+%%%\appendix
+%%%\input{Matter/08-Appendices}
+%%%\input{Chapters/Appendices/00-AppendixA}
 
 %%% Back Page %%%
 \input{Matter/10-Back-Page}
