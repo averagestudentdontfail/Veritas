@@ -1,0 +1,81 @@
+% Author Name: José Areia 
+% Author Contact: jose.apareia@gmail.com
+% Version: 2.2.10 - 2025-07-18
+% Public Repository: https://github.com/joseareia/ipleiria-thesis
+% Wiki/Getting Help: https://github.com/joseareia/ipleiria-thesis/wiki
+
+%%% Document Options %%%
+\documentclass[
+    language=english,
+    docstage=final,
+    media=screen,
+    bookprint=false,
+    linkcolor=red!45!black,
+    chapterstyle=fancy,
+    coverstyle=fancy,
+    aiack=false
+]{IPLeiriaThesis} % Refer to the Wiki for a list of available options.
+
+%%% Document Version %%%
+\DocumentVersion{1.0.0} % Required only if the 'docstage' is set to 'working'.
+
+%%% Document Metadata %%%
+\input{Metadata/Metadata}
+
+%%% Loading of Glossary and Acronyms %%%
+%%%\makeglossaries
+%%%\loadglsentries{Matter/05-Glossary}
+%%%\loadglsentries[\acronymtype]{Matter/06-Acronyms}
+%%%%\loadglsentries[\symboltype]{Matter/07-Symbols}
+
+\begin{document}
+
+%%% Front Matter %%%
+\include{Matter/00-Cover}
+\include{Matter/01-Front-Page}
+
+%%% Copyright Statement %%%
+%%%\include{Matter/02-Copyright}
+
+%%% Roman Numeration %%%
+\pagenumbering{roman}
+
+%%% Acknowledgements %%%
+%%%\include{Matter/03-Acknowledgements}
+
+%%% Abstract %%%
+%%%\include{Chapters/00-Abstract}
+
+%%% Table of Contents, List of Figures and List of Tables %%%
+\bookmarktocentry\tableofcontents
+%%%\listoffigures
+\listoftables
+
+%%% Print: Glossary and Acronyms %%%
+%%%\glsaddall
+%%%\glossarytoc\printnormalglossary
+%%%\acronymtoc\printacronymglossary
+%%%\symboltoc\printsymbolglossary
+
+%%% Arabic Numeration %%%
+\pagenumbering{arabic}
+
+%%% Chapters - Grant Proposal %%%
+\include{Chapters/01-Introduction}
+\include{Chapters/02-Method}
+
+%%% Bibliography %%%
+\nocite{*} % This will include all entries from the .bib file
+
+\renewcommand{\refname}{Bibliography}
+\printbibliography[title={\refname},heading=bibintoc]
+
+%%% Appendices %%%
+%%%\appendix
+%%%\input{Matter/08-Appendices}
+%%%\input{Chapters/Appendices/00-AppendixA}
+
+%%% Back Page %%%
+\input{Matter/10-Back-Page}
+
+\end{document}
