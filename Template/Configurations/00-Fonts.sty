@@ -5,8 +5,32 @@
 \usepackage{csquotes} % Context-sensitive quotation marks.
 \usepackage{fontspec} % Required for custom fonts with XeLaTeX or LuaLaTeX.
 
-\linespread{1.2} % Slightly increase line spacing.
+\linespread{1.2}
+
+% Set Minion Pro as the main text font
 \setmainfont{Minion Pro}[
+    Path = Configurations/Fonts/,
+    UprightFont = Minion-Pro-Regular.ttf,
+    BoldFont = Minion-Pro-Bold.ttf,
+    ItalicFont = Minion-Pro-Italic.ttf,
+    BoldItalicFont = Minion-Pro-Bold-Italic.ttf,
+    Ligatures=TeX,
+    LetterSpace=0.7
+]
+
+% Define Myriad Pro for display/headings
+\newfontfamily\myriaddisplay{Myriad Pro}[
+    Path = Configurations/Fonts/,
+    UprightFont = Myriad-Pro-Regular.otf,
+    BoldFont = Myriad-Pro-Bold.otf,
+    ItalicFont = Myriad-Pro-Semibold-Italic.otf,
+    BoldItalicFont = Myriad-Pro-Bold-Italic.otf,
+    Ligatures=TeX,
+    LetterSpace=0.5
+]
+
+% Define Minion Pro Display variant
+\newfontfamily\miniondisplay{Minion Pro}[
     Path = Configurations/Fonts/,
     UprightFont = Minion-Pro-Display.otf,
     BoldFont = Minion-Pro-Bold.ttf,
@@ -16,14 +40,30 @@
     LetterSpace=0.7
 ]
 
-\newcommand{\latofont}{\fontspec{Lato}}
-\newcommand{\garamondfont}{\fontspec{EB Garamond}}
-\newcommand{\minionfont}{\fontspec[
+% Define Myriad Pro variants
+\newfontfamily\myriadlight{Myriad Pro Light}[
     Path = Configurations/Fonts/,
-    % UprightFont = Minion-Pro-Regular.ttf,
-    % UprightFont = Minion-Pro-Subhead.otf,
-    UprightFont = Minion-Pro-Display.otf,
-    BoldFont = Minion-Pro-Bold.ttf,
-    ItalicFont = Minion-Pro-Italic.ttf,
-    BoldItalicFont = Minion-Pro-Bold-Italic.ttf,
-]{Minion Pro}}
+    UprightFont = Myriad-Pro-Light.otf,
+    BoldFont = Myriad-Pro-Regular.otf,
+    ItalicFont = Myriad-Pro-Light.otf, % No light italic available
+    BoldItalicFont = Myriad-Pro-Semibold-Italic.otf,
+    Ligatures=TeX
+]
+
+\newfontfamily\myriadcondensed{Myriad Pro Condensed}[
+    Path = Configurations/Fonts/,
+    UprightFont = Myriad-Pro-Condensed.otf,
+    BoldFont = Myriad-Pro-Bold-Condensed.otf,
+    ItalicFont = Myriad-Pro-Condensed-Italic.otf,
+    BoldItalicFont = Myriad-Pro-Bold-Condensed-Italic.otf,
+    Ligatures=TeX
+]
+
+% Convenient switching commands
+\newcommand{\latofont}{\fontspec{Lato}} % Keep existing Lato command
+\newcommand{\garamondfont}{\fontspec{EB Garamond}} % Keep existing Garamond command
+\newcommand{\minionfont}{\fontfamily{\rmdefault}\selectfont} % Main Minion (already set as default)
+\newcommand{\myriaddisplayfont}{\myriaddisplay} % Use Myriad for headings/display
+\newcommand{\miniondisplayfont}{\miniondisplay} % Alternative Minion Display
+\newcommand{\myriadlightfont}{\myriadlight}
+\newcommand{\myriadcondensedfont}{\myriadcondensed}

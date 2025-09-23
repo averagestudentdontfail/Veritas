@@ -1,29 +1,26 @@
 %%% Bibliography %%%
 \usepackage[
-	backend=biber, % Use Biber for bibliography compilation.
-	citestyle=authoryear, % Style for in-text citations.
-	bibstyle=authoryear, % Style for the bibliography.
-	sorting=nyt, % Sort references by name, year, and title.
-    natbib=true, % Enable natbib compatibility.
-    dashed=false, % Always display author names in the bibliography.
-    uniquelist=false, % Display only the first author (e.g., Author et al., Year).
-    urldate=iso, % Use ISO format for accessed dates in online sources.
-    seconds=true, % Include seconds in date-time fields.
-    maxcitenames=2, % Maximum authors in citations.
-    maxbibnames=99, % Maximum authors in bibliography.
-    mincitenames=1, % Minimum authors in citations.
-    minbibnames=1   % Minimum authors in bibliography.
+	backend=biber,
+	citestyle=authoryear,
+	bibstyle=authoryear,
+	sorting=nyt,
+    natbib=true,
+    dashed=false,
+    uniquelist=false,
+    urldate=iso,
+    seconds=true,
+    maxcitenames=2,
+    maxbibnames=99,
+    mincitenames=1,
+    minbibnames=1
 ]{biblatex}
 
-\setlength\bibitemsep{1.5\itemsep} % Increase spacing between bibliography items.
-\setlength\bibhang{1.5em} % Add hanging indent for bibliography entries.
-\addbibresource{Bibliography/Bibliography.bib} % Load the bibliography file.
+\setlength\bibitemsep{1.5\itemsep}
+\setlength\bibhang{1.5em}
+\addbibresource{Bibliography/Bibliography.bib}
 
-% Configure citation style to include both author and year prominently.
 \ExecuteBibliographyOptions{maxcitenames=2,maxbibnames=99}
 
-% Use "&" instead of "and" in citations for two authors
-% Results in: Single author (2016), Author1 & Author2 (2016), Author1 et al. (2016)
 \renewcommand*{\finalnamedelim}{\addspace\&\space}
 \DeclareFieldFormat{citehyperref}{%
     \DeclareFieldAlias{bibhyperref}{noformat}%
@@ -62,14 +59,13 @@
     \usebibmacro{textcite}}%
 }
 
-% Hyperlink settings.
+% Hyperlink settings using consistent theme color
 \hypersetup{
-    bookmarksnumbered, % Enables the chapter and section numbers within the PDF bookmarks.
-	colorlinks=true, % Enable colored text for links.
-	urlcolor=maincolor, % Color for \url and \href links.
-	linkcolor=maincolor, % Color for internal links (e.g., \nameref).
-	citecolor=maincolor, % Color for citation links.
+    bookmarksnumbered,
+	colorlinks=true,
+	urlcolor=maincolor,
+	linkcolor=maincolor,
+	citecolor=maincolor,
 }
 
-% Add a "." after the number in the PDF bookmark.
 \def\Hy@numberline#1{\ifHy@bookmarksnumbered{#1.\hspace{0.3em}}\else#1\fi}

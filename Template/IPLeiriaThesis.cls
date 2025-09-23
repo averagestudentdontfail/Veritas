@@ -1,4 +1,4 @@
-% Author Name: José Areia 
+% Author Name: JosÃ© Areia 
 % Author Contact: jose.apareia@gmail.com
 % Version: 2.2.10 - 2025-07-18
 % Public Repository: https://github.com/joseareia/ipleiria-thesis
@@ -134,9 +134,14 @@
 \RequirePackage{subcaption} % Subfigures and side-by-side captions.
 \RequirePackage{tabularx} % Flexible-width tables.
 \RequirePackage{xltabular} % Same as tabularx but to be used in long tables.
+\RequirePackage{afterpage} % Execute commands after the current page.
 \RequirePackage{booktabs} % Professional table styling.
 \RequirePackage{multirow} % Support for multirow cells in tables.
 \RequirePackage{longtable} % Tables spanning multiple pages.
+\RequirePackage{array} % Enhanced table column specifications.
+\RequirePackage{colortbl} % Add color to table rows and columns.
+\RequirePackage{makecell} % Enhanced cell formatting in tables.
+\RequirePackage{siunitx} % Consistent formatting of numbers and units.
 \RequirePackage{caption} % Customisation of captions.
 \RequirePackage{enumitem} % Customisation of lists.
 \RequirePackage{amsmath} % Advanced mathematical expressions.
@@ -167,10 +172,23 @@
 \RequirePackage{psvectorian} % To include in-text ornamatentions. 
 \RequirePackage{blindtext} % Generate placeholder text.
 \RequirePackage{float}      % For [H] placement option
-\RequirePackage{lscape} % Landscape pages with proper orientation
+\RequirePackage{pdflscape} % Landscape pages with proper PDF orientation
 
 \tcbuselibrary{most} % Load most libraries from the tcolorbox package.
 \WarningsOff[blindtext] % Suppress warnings from the blindtext package.
+
+%%% Configure siunitx for tables %%%
+\sisetup{
+    detect-mode,
+    tight-spacing = true,
+    group-digits = false,
+    input-signs = ,
+    input-symbols = (),
+    input-open-uncertainty = ,
+    input-close-uncertainty = ,
+    table-align-text-pre = false,
+    table-align-text-post = false,
+}
 
 %%% Import Configurations - Maintain the Specified Order! %%%
 \usepackage{Configurations/00-Fonts}

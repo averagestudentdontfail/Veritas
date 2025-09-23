@@ -1,35 +1,65 @@
 %%% Chapters and Sections %%%
+
+\definecolor{lightblue}{RGB}{70,130,180}
+
+% Classic style
 \ifthenelse{\equal{\ChapterOption}{classic}}{
     \titleformat{\chapter}[display]%
     {\raggedleft\huge}%
-    {\raggedleft\fontsize{88}{10}\bfseries{\color{chapterdarkred}{\minionfont\thechapter}}}%
-    {0pt}%
-    {\hspace{3cm}\garamondfont\fontsize{28}{30}\selectfont}%
+    {\raggedleft\myriaddisplayfont\fontsize{96}{10}\bfseries%
+        {\color{lightblue}\addfontfeature{LetterSpace=4}\thechapter}}%
+    {15pt}%
+    {\hspace{2cm}\myriaddisplayfont\fontsize{36}{42}\selectfont\addfontfeature{LetterSpace=2}}%
     
-    \titlespacing*{\chapter}{0pt}{-20pt}{30pt}
+    \titlespacing*{\chapter}{0pt}{-30pt}{40pt}
 }{}
 
+% Fancy style  
 \ifthenelse{\equal{\ChapterOption}{fancy}}{
     \titleformat{\chapter}[display]
     {\flushright\normalsize\huge\color{black}}%
     {\flushright\normalsize%
-    {\minionfont\fontsize{25}{25}\selectfont\hspace*{-1em}\rule[-2pt]{.1pt}{30pt}\hspace{0.5em}\raisebox{4.5pt}{\thechapter}}}%
-    {10pt}%
-    {\garamondfont\addfontfeature{LetterSpace=6}\huge\scshape}%
+        {\myriaddisplayfont\fontsize{32}{34}\selectfont\bfseries%
+        \textcolor{lightblue!60}{\rule[-4pt]{2pt}{40pt}}\hspace{1em}%
+        \raisebox{8pt}{\color{lightblue}\addfontfeature{LetterSpace=6}\thechapter}}}%
+    {18pt}%
+    {\myriadcondensedfont\addfontfeature{LetterSpace=12}\fontsize{28}{34}\selectfont\scshape}%
     
-    \titlespacing*{\chapter}{0pt}{-20pt}{30pt}
+    \titlespacing*{\chapter}{0pt}{-30pt}{45pt}
 }{}
 
+% Modern style
 \ifthenelse{\equal{\ChapterOption}{modern}}{
     \titleformat{\chapter}[display]
     {\normalsize\huge\color{black}}%
-    {\minionfont\flushright\fontsize{84}{10}\bfseries%
-    {\color{chaptergray}\raisebox{5pt}{\thechapter}}%
-    }{10pt}%
-    {\garamondfont\addfontfeature{LetterSpace=6}\fontsize{28}{32}\MakeUppercase}%
+    {\myriaddisplayfont\flushright\fontsize{92}{10}\bfseries%
+        {\color{lightblue}\addfontfeature{LetterSpace=0}%
+        \raisebox{10pt}{\thechapter}}%
+    }{20pt}%
+    {\myriadlightfont\addfontfeature{LetterSpace=16}\fontsize{26}{32}\selectfont%
+        \MakeUppercase}%
     
-    \titlespacing*{\chapter}{0pt}{-20pt}{30pt}
+    \titlespacing*{\chapter}{0pt}{-30pt}{50pt}
 }{}
 
-\titleformat{\section}{\garamondfont\fontsize{15pt}{17pt}\selectfont\bfseries}{\thesection}{1em}{}
-\titleformat{\subsection}{\garamondfont\fontsize{13.5pt}{15.5pt}\selectfont\bfseries}{\thesubsection}{1em}{}
+\titleformat{\section}
+    {\myriaddisplayfont\fontsize{18pt}{22pt}\selectfont\bfseries\addfontfeature{LetterSpace=1}}
+    {\textcolor{lightblue}{\thesection}}
+    {1.2em}
+    {}
+
+\titleformat{\subsection}
+    {\myriaddisplayfont\fontsize{15pt}{19pt}\selectfont\bfseries\addfontfeature{LetterSpace=0.5}}
+    {\textcolor{lightblue}{\thesubsection}}
+    {1em}
+    {}
+
+\titleformat{\subsubsection}
+    {\myriaddisplayfont\fontsize{13pt}{17pt}\selectfont\bfseries}
+    {\textcolor{lightblue!80}{\thesubsubsection}}
+    {0.8em}
+    {}
+
+\titlespacing*{\section}{0pt}{28pt}{14pt}
+\titlespacing*{\subsection}{0pt}{22pt}{10pt}
+\titlespacing*{\subsubsection}{0pt}{18pt}{8pt}
