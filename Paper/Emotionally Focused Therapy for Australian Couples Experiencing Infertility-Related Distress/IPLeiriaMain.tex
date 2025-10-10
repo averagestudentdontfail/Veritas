@@ -14,10 +14,10 @@
     chapterstyle=fancy,
     coverstyle=fancy,
     aiack=false
-]{IPLeiriaThesis} % Refer to the Wiki for a list of available options.
+]{IPLeiriaThesis}
 
 %%% Document Version %%%
-\DocumentVersion{1.0.0} % Required only if the 'docstage' is set to 'working'.
+\DocumentVersion{1.0.0}
 
 %%% Document Metadata %%%
 \input{Metadata/Metadata}
@@ -26,56 +26,39 @@
 %%%\makeglossaries
 %%%\loadglsentries{Matter/05-Glossary}
 %%%\loadglsentries[\acronymtype]{Matter/06-Acronyms}
-%%%%\loadglsentries[\symboltype]{Matter/07-Symbols}
 
 \begin{document}
 
-%%% Front Matter %%%
+%%% Front Matter - No numbering for covers %%%
+\pagenumbering{gobble}
 \include{Matter/00-Cover}
 \include{Matter/01-Front-Page}
 
-%%% Copyright Statement %%%
-%%%\include{Matter/02-Copyright}
-
-%%% Roman Numeration %%%
+%%% Front Matter - Roman numerals %%%
 \pagenumbering{roman}
+\pagestyle{frontmatter}
 
-%%% Acknowledgements %%%
-%%%\include{Matter/03-Acknowledgements}
-
-%%% Abstract %%%
-%%%\include{Chapters/00-Abstract}
-
-%%% Table of Contents, List of Figures and List of Tables %%%
+%%% Table of Contents, Lists %%%
 \bookmarktocentry\tableofcontents
-%%%\listoffigures
 \listoftables
 
-%%% Print: Glossary and Acronyms %%%
-%%%\glsaddall
-%%%\glossarytoc\printnormalglossary
-%%%\acronymtoc\printacronymglossary
-%%%\symboltoc\printsymbolglossary
-
-%%% Arabic Numeration %%%
+%%% Main Matter - Arabic numerals starting from 1 %%%
+\clearpage
 \pagenumbering{arabic}
+\pagestyle{mainmatter}
 
-%%% Chapters - Grant Proposal %%%
+%%% Chapters %%%
 \include{Chapters/01-Introduction}
 \include{Chapters/02-Method}
 
 %%% Bibliography %%%
-\nocite{*} % This will include all entries from the .bib file
-
+\nocite{*}
 \renewcommand{\refname}{Bibliography}
 \printbibliography[title={\refname},heading=bibintoc]
 
-%%% Appendices %%%
-%%%\appendix
-%%%\input{Matter/08-Appendices}
-%%%\input{Chapters/Appendices/00-AppendixA}
-
 %%% Back Page %%%
+\clearpage
+\pagenumbering{gobble}
 \input{Matter/10-Back-Page}
 
 \end{document}
