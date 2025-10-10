@@ -1,9 +1,9 @@
 %%% Fonts %%%
-\usepackage[T1]{fontenc} % Font encoding for extended character sets.
-\usepackage{newpxmath} % Use PX fonts for math (alternative to standard fonts).
-\usepackage{fvextra} % Enhanced customisation of verbatim environments.
-\usepackage{csquotes} % Context-sensitive quotation marks.
-\usepackage{fontspec} % Required for custom fonts with XeLaTeX or LuaLaTeX.
+\usepackage[T1]{fontenc}
+\usepackage{newpxmath}
+\usepackage{fvextra}
+\usepackage{csquotes}
+\usepackage{fontspec}
 
 \linespread{1.2}
 
@@ -18,18 +18,7 @@
     LetterSpace=0.7
 ]
 
-% Define Myriad Pro for display/headings
-\newfontfamily\myriaddisplay{Myriad Pro}[
-    Path = Configurations/Fonts/,
-    UprightFont = Myriad-Pro-Regular.otf,
-    BoldFont = Myriad-Pro-Bold.otf,
-    ItalicFont = Myriad-Pro-Semibold-Italic.otf,
-    BoldItalicFont = Myriad-Pro-Bold-Italic.otf,
-    Ligatures=TeX,
-    LetterSpace=0.5
-]
-
-% Define Minion Pro Display variant
+% Define Minion Pro Display variant for headings
 \newfontfamily\miniondisplay{Minion Pro}[
     Path = Configurations/Fonts/,
     UprightFont = Minion-Pro-Display.otf,
@@ -37,33 +26,43 @@
     ItalicFont = Minion-Pro-Italic.ttf,
     BoldItalicFont = Minion-Pro-Bold-Italic.ttf,
     Ligatures=TeX,
-    LetterSpace=0.7
+    LetterSpace=1.5
 ]
 
-% Define Myriad Pro variants
-\newfontfamily\myriadlight{Myriad Pro Light}[
+% Define Minion Pro Semibold for emphasis
+\newfontfamily\minionsemibold{Minion Pro}[
     Path = Configurations/Fonts/,
-    UprightFont = Myriad-Pro-Light.otf,
-    BoldFont = Myriad-Pro-Regular.otf,
-    ItalicFont = Myriad-Pro-Light.otf, % No light italic available
-    BoldItalicFont = Myriad-Pro-Semibold-Italic.otf,
+    UprightFont = Minion-Pro-Semibold.ttf,
+    BoldFont = Minion-Pro-Bold.ttf,
+    ItalicFont = Minion-Pro-Italic.ttf,
+    BoldItalicFont = Minion-Pro-Bold-Italic.ttf,
     Ligatures=TeX
 ]
 
-\newfontfamily\myriadcondensed{Myriad Pro Condensed}[
+% Define Minion Pro Subhead for chapter numbers
+\newfontfamily\minionsubhead{Minion Pro}[
     Path = Configurations/Fonts/,
-    UprightFont = Myriad-Pro-Condensed.otf,
-    BoldFont = Myriad-Pro-Bold-Condensed.otf,
-    ItalicFont = Myriad-Pro-Condensed-Italic.otf,
-    BoldItalicFont = Myriad-Pro-Bold-Condensed-Italic.otf,
+    UprightFont = Minion-Pro-Subhead.otf,
+    BoldFont = Minion-Pro-Bold.ttf,
+    ItalicFont = Minion-Pro-Italic.ttf,
+    BoldItalicFont = Minion-Pro-Bold-Italic.ttf,
+    Ligatures=TeX,
+    LetterSpace=2
+]
+
+% Define Myriad Pro for cover pages
+\newfontfamily\myriadpro{Myriad Pro}[
+    Path = Configurations/Fonts/,
+    UprightFont = Myriad-Pro-Regular.otf,
+    BoldFont = Myriad-Pro-Bold.otf,
+    ItalicFont = Myriad-Pro-Regular.otf,
+    BoldItalicFont = Myriad-Pro-Bold.otf,
     Ligatures=TeX
 ]
 
 % Convenient switching commands
-\newcommand{\latofont}{\fontspec{Lato}} % Keep existing Lato command
-\newcommand{\garamondfont}{\fontspec{EB Garamond}} % Keep existing Garamond command
-\newcommand{\minionfont}{\fontfamily{\rmdefault}\selectfont} % Main Minion (already set as default)
-\newcommand{\myriaddisplayfont}{\myriaddisplay} % Use Myriad for headings/display
-\newcommand{\miniondisplayfont}{\miniondisplay} % Alternative Minion Display
-\newcommand{\myriadlightfont}{\myriadlight}
-\newcommand{\myriadcondensedfont}{\myriadcondensed}
+\newcommand{\minionfont}{\fontfamily{\rmdefault}\selectfont}
+\newcommand{\miniondisplayfont}{\miniondisplay}
+\newcommand{\minionsemiboldfont}{\minionsemibold}
+\newcommand{\minionsubheadfont}{\minionsubhead}
+\newcommand{\myriadfont}{\myriadpro}

@@ -134,12 +134,12 @@
     \cleardoublepage%
 }
 
-% FIXED: Landscape longtable with proper chapter mark restoration
+% ROBUST FIX: Landscape longtable with complete cleanup
+\makeatletter
 \newenvironment{landscapelongtable}{%
-    % Save current chapter information
-    \edef\savedleftmark{\leftmark}%
-    \edef\savedrightmark{\rightmark}%
     \clearpage%
+    % Save the current chapter title from the mark
+    \let\saved@leftmark\leftmark
     \newgeometry{
         paperwidth=297mm,
         paperheight=210mm,
@@ -159,7 +159,7 @@
         \setlength{\headwidth}{\textwidth}%
         \fancyheadoffset{0pt}%
         \fancyhead[L]{\thepage\vspace{3pt}}%
-        \fancyhead[R]{\savedleftmark\vspace{3pt}}%
+        \fancyhead[R]{\saved@leftmark\vspace{3pt}}%
         \renewcommand{\headrulewidth}{0.3pt}%
     }%
     \pagestyle{landscapefancy}%
@@ -170,11 +170,43 @@
 }{%
     \clearpage%
     \restoregeometry%
+    % CRITICAL FIX: Completely reset plain and mainmatter page styles
+    \fancypagestyle{plain}{%
+        \fancyhf{}%
+        \renewcommand{\headrulewidth}{0pt}%
+        \fancyfoot[C]{%
+            \miniondisplayfont\fontsize{11}{13}\selectfont\bfseries%
+            \thepage%
+            \vspace{3pt}%
+        }%
+        \setlength{\footskip}{1.6cm}%
+    }%
+    \fancypagestyle{mainmatter}{%
+        \fancyhf{}%
+        \renewcommand{\headrulewidth}{0.3pt}%
+        \fancyhead[L]{%
+            \miniondisplayfont\fontsize{10}{12}\selectfont\bfseries%
+            \thepage%
+            \vspace{3pt}%
+        }%
+        \fancyhead[R]{%
+            \miniondisplayfont\fontsize{9}{11}\selectfont%
+            \leftmark%
+            \vspace{3pt}%
+        }%
+    }%
+    % Reset page style to mainmatter
     \pagestyle{mainmatter}%
-    % Force chapter mark restoration
-    \markboth{\savedleftmark}{\savedrightmark}%
+    % Restore the chapter mark
+    \markboth{\saved@leftmark}{}%
+    % Use afterpage to ensure next page starts clean
+    \afterpage{%
+        \global\pdfpagewidth=\paperwidth%
+        \global\pdfpageheight=\paperheight%
+    }%
     \cleardoublepage%
 }
+\makeatother
 
 % Smart float placement
 \newcommand{\smartfloat}[2][htbp]{%
