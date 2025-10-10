@@ -56,14 +56,6 @@
 \apptocmd\newgeometry{%
     \pdfpagewidth=\paperwidth
     \pdfpageheight=\paperheight}{}{}
-\newenvironment{landscapemode}[2]{%
-    \newgeometry{paperwidth=#1,paperheight=#2,hmargin=3cm,vmargin=5cm,top=3cm,landscape}
-    \fancyheadoffset{0pt}
-    %\titlespacing*{\chapter}{0pt}{0pt}{40pt}
-}{%
-    \restoregeometry
-    \fancyheadoffset{0pt}
-}
 
 % Custom Markdown quote block implementation in LaTeX.
 \newtcolorbox[auto counter,number within=section]{block}[1][]{

@@ -1,27 +1,51 @@
 %%% Configurations/04-Headers.sty %%%
 
-%%% Header and Footer %%%
-
 \usepackage{fancyhdr}
 \usepackage[bottom,hang]{footmisc}
-\pagestyle{fancy} \fancyhf{}
-\renewcommand{\headrulewidth}{0.3pt}
 \setlength{\footnotemargin}{6pt}
 
-\renewcommand{\chaptermark}[1]{\markboth{\myriaddisplayfont\fontsize{10}{12}\selectfont\bfseries\textsc{\thechapter. #1}}{}}
-\renewcommand{\sectionmark}[1]{\markright{\myriaddisplayfont\fontsize{9}{11}\selectfont\bfseries\textsc{\thesection. #1}}}
+% Define custom page styles
 
-\fancyhead[L]{%
-    \myriaddisplayfont\fontsize{10}{12}\selectfont\bfseries%
-    \thepage%
-    \vspace{3pt}%
-}
-\fancyhead[R]{%
-    \myriaddisplayfont\fontsize{9}{11}\selectfont%
-    \leftmark%
-    \vspace{3pt}%
+% Front matter style (Roman numerals, centered footer, no header)
+\fancypagestyle{frontmatter}{%
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyfoot[C]{%
+        \myriaddisplayfont\fontsize{11}{13}\selectfont%
+        \thepage%
+        \vspace{3pt}%
+    }
+    \ifthenelse{\equal{\DocStageOption}{working}}{%
+        \fancyfoot[L]{%
+            \myriadlightfont\fontsize{8}{10}\selectfont%
+            \textit{\GetDocumentVersion} \textbullet{} \textit{\today}%
+        }%
+    }{}%
 }
 
+% Main matter style (Arabic numerals, with headers)
+\fancypagestyle{mainmatter}{%
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0.3pt}
+    \fancyhead[L]{%
+        \myriaddisplayfont\fontsize{10}{12}\selectfont\bfseries%
+        \thepage%
+        \vspace{3pt}%
+    }
+    \fancyhead[R]{%
+        \myriaddisplayfont\fontsize{9}{11}\selectfont%
+        \leftmark%
+        \vspace{3pt}%
+    }
+    \ifthenelse{\equal{\DocStageOption}{working}}{%
+        \fancyfoot[C]{%
+            \myriadlightfont\fontsize{8}{10}\selectfont%
+            \textit{\GetDocumentVersion} \textbullet{} \textit{\today}%
+        }%
+    }{}%
+}
+
+% Plain style for chapter opening pages
 \fancypagestyle{plain}{%
     \fancyhf{}
     \renewcommand{\headrulewidth}{0pt}
@@ -31,18 +55,28 @@
         \vspace{3pt}%
     }
     \setlength{\footskip}{1.6cm}
-
-    \ifthenelse{\equal{\DocStageOption}{working}}{
+    \ifthenelse{\equal{\DocStageOption}{working}}{%
         \fancyfoot[L]{%
             \myriadlightfont\fontsize{8}{10}\selectfont%
-            \textsc{\GetDocumentVersion} \textbullet{} \textit{\today}%
-        }
-    }{}
+            \textit{\GetDocumentVersion} \textbullet{} \textit{\today}%
+        }%
+    }{}%
 }
 
-\ifthenelse{\equal{\DocStageOption}{working}}{%
-    \fancyfoot[C]{%
-        \myriadlightfont\fontsize{8}{10}\selectfont%
-        \textsc{\GetDocumentVersion} \textbullet{} \textit{\today}%
+% Set default page style
+\pagestyle{mainmatter}
+
+% Configure chapter and section marks - REMOVED \textsc
+\renewcommand{\chaptermark}[1]{%
+    \markboth{%
+        \myriaddisplayfont\fontsize{10}{12}\selectfont\bfseries%
+        \ifnum\value{chapter}>0 \thechapter.\ \fi#1%
+    }{}%
+}
+
+\renewcommand{\sectionmark}[1]{%
+    \markright{%
+        \myriaddisplayfont\fontsize{9}{11}\selectfont\bfseries%
+        \thesection.\ #1%
     }%
-}{}
+}

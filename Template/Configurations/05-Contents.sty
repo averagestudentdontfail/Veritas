@@ -1,16 +1,8 @@
+%%% Configurations/05-Contents.sty %%%
 %%% Custom ToC Entries %%%
+
 \newcommand{\bookmarktocentry}{\pdfbookmark[0]{\contentsname}{toc}}
 \ProvideDocumentCommand\MakeLinkTarget{sO{}m}{}
-
-\patchcmd{\listoffigures}
-{\chapter*{\listfigurename}}
-{\chapter*{\myriaddisplayfont\listfigurename}\MakeLinkTarget*{listoffigures}%
-\addcontentsline{toc}{frontmatter}{\listfigurename}}{}{}
-
-\patchcmd{\listoftables}
-{\chapter*{\listtablename}}
-{\chapter*{\myriaddisplayfont\listtablename}\MakeLinkTarget*{listoftables}%
-\addcontentsline{toc}{frontmatter}{\listtablename}}{}{}
 
 \NewCommandCopy\l@frontmatter\l@chapter
 \NewCommandCopy\l@backmatter\l@chapter
@@ -24,8 +16,40 @@
 \patchcmd{\l@backmatter}{\bfseries}{\myriaddisplayfont\itshape}{}{}
 \patchcmd{\l@backmatter}{\nobreak\hfil}{\upshape\nobreak\hfil}{}{}
 
+% Part entries in TOC
+\renewcommand*\l@part[2]{%
+  \ifnum \c@tocdepth >-2\relax
+    \addpenalty{-\@highpenalty}%
+    \addvspace{1em \@plus\p@}%
+    \setlength\@tempdima{3em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      {\leavevmode
+       \large\myriaddisplayfont\bfseries #1\hfil
+       \hb@xt@\@pnumwidth{\hss}}\par
+       \nobreak
+         \global\@nobreaktrue
+         \everypar{\global\@nobreakfalse\everypar{}}%
+    \endgroup
+  \fi}
+
+% Enhanced List of Figures
+\patchcmd{\listoffigures}
+{\chapter*{\listfigurename}}
+{\chapter*{\myriaddisplayfont\listfigurename}\MakeLinkTarget*{listoffigures}%
+\addcontentsline{toc}{frontmatter}{\listfigurename}}{}{}
+
+% Enhanced List of Tables
+\patchcmd{\listoftables}
+{\chapter*{\listtablename}}
+{\chapter*{\myriaddisplayfont\listtablename}\MakeLinkTarget*{listoftables}%
+\addcontentsline{toc}{frontmatter}{\listtablename}}{}{}
+
+% Bibliography heading
 \defbibheading{bibintoc}{\chapter*{\myriaddisplayfont#1}\addcontentsline{toc}{backmatter}{\refname}}
 
+% Glossary entries
 \newcommand{\glossarytoc}{\MakeLinkTarget*{glossary}%
 \addcontentsline{toc}{frontmatter}{\glossaryname}}
 
