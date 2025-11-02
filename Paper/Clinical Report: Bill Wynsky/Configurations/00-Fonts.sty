@@ -1,0 +1,68 @@
+%%% Fonts %%%
+\usepackage[T1]{fontenc}
+\usepackage{newpxmath}
+\usepackage{fvextra}
+\usepackage{csquotes}
+\usepackage{fontspec}
+
+\linespread{1.2}
+
+% Set Minion Pro as the main text font
+\setmainfont{Minion Pro}[
+    Path = Configurations/Fonts/,
+    UprightFont = Minion-Pro-Regular.ttf,
+    BoldFont = Minion-Pro-Bold.ttf,
+    ItalicFont = Minion-Pro-Italic.ttf,
+    BoldItalicFont = Minion-Pro-Bold-Italic.ttf,
+    Ligatures=TeX,
+    LetterSpace=0.7
+]
+
+% Define Minion Pro Display variant for headings
+\newfontfamily\miniondisplay{Minion Pro}[
+    Path = Configurations/Fonts/,
+    UprightFont = Minion-Pro-Display.otf,
+    BoldFont = Minion-Pro-Bold.ttf,
+    ItalicFont = Minion-Pro-Italic.ttf,
+    BoldItalicFont = Minion-Pro-Bold-Italic.ttf,
+    Ligatures=TeX,
+    LetterSpace=1.5
+]
+
+% Define Minion Pro Semibold for emphasis
+\newfontfamily\minionsemibold{Minion Pro}[
+    Path = Configurations/Fonts/,
+    UprightFont = Minion-Pro-Semibold.ttf,
+    BoldFont = Minion-Pro-Bold.ttf,
+    ItalicFont = Minion-Pro-Italic.ttf,
+    BoldItalicFont = Minion-Pro-Bold-Italic.ttf,
+    Ligatures=TeX
+]
+
+% Define Minion Pro Subhead for chapter numbers
+\newfontfamily\minionsubhead{Minion Pro}[
+    Path = Configurations/Fonts/,
+    UprightFont = Minion-Pro-Subhead.otf,
+    BoldFont = Minion-Pro-Bold.ttf,
+    ItalicFont = Minion-Pro-Italic.ttf,
+    BoldItalicFont = Minion-Pro-Bold-Italic.ttf,
+    Ligatures=TeX,
+    LetterSpace=2
+]
+
+% Define Myriad Pro for cover pages
+\newfontfamily\myriadpro{Myriad Pro}[
+    Path = Configurations/Fonts/,
+    UprightFont = Myriad-Pro-Regular.otf,
+    BoldFont = Myriad-Pro-Bold.otf,
+    ItalicFont = Myriad-Pro-Regular.otf,
+    BoldItalicFont = Myriad-Pro-Bold.otf,
+    Ligatures=TeX
+]
+
+% Convenient switching commands
+\newcommand{\minionfont}{\fontfamily{\rmdefault}\selectfont}
+\newcommand{\miniondisplayfont}{\miniondisplay}
+\newcommand{\minionsemiboldfont}{\minionsemibold}
+\newcommand{\minionsubheadfont}{\minionsubhead}
+\newcommand{\myriadfont}{\myriadpro}
