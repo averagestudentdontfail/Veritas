@@ -1,22 +1,16 @@
 # Fdb version 4
-["biber Main"] 0 "Main.bcf" "Main.bbl" "Main" 0 -1
-  "Bibliography/Bibliography.bib" 1765509980.09823 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "Bibliography/bill-wynsky.bib" 1765523849.18694 11705 113390b2486bc3c29bfec16c4cc9d43d ""
-  "Bibliography/burn-injury.bib" 1765523849.18694 12606 86db58952e93814f431cdc32c76e574a ""
-  "Bibliography/environmental-agency.bib" 1765523849.18694 2721 c345883b8d0c53f851da09eb8bb6942b ""
-  "Bibliography/infertility-therapy.bib" 1765523849.18694 3980 b971420062a26b8b32ab63531f764fea ""
-  "Bibliography/max-verstappen.bib" 1765523849.18694 16256 33f32bae7d4646ede203c366bb22fb51 ""
-  "Main.bcf" 0 -1 0 "xelatex"
+["biber Main"] 1765524521.4944 "Main.bcf" "Main.bbl" "Main" 1765524528.83419 0
+  "Main.bcf" 1765524528.48594 108343 399f28e3e08b87e54917f6b8dfcc4129 "xelatex"
   (generated)
   "Main.bbl"
   "Main.blg"
   (rewritten before read)
-["xdvipdfmx"] 0 "Main.xdv" "Main.pdf" "Main" 0 -1
-  "Main.xdv" 1765523851.66742 217952 fca44d4c7d88bc3b00f4321f41dc6d23 "xelatex"
+["xdvipdfmx"] 1765524528.64191 "Main.xdv" "Main.pdf" "Main" 1765524528.83725 0
+  "Main.xdv" 1765524528.48594 267008 aefb174db06c0d72408342efe6cf7003 "xelatex"
   (generated)
   "Main.pdf"
   (rewritten before read)
-["xelatex"] 1765523849.38458 "Main.tex" "Main.xdv" "Main" 1765523851.84187 2
+["xelatex"] 1765524524.30997 "Main.tex" "Main.xdv" "Main" 1765524528.83426 0
   "/etc/texmf/web2c/texmf.cnf" 1751854650.88492 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -377,9 +371,12 @@
   "Configuration/12-Floats.sty" 1765510063.05349 7485 095f97b45bce282bf6ab61868e326988 ""
   "Configuration/13-Mathematics.sty" 1765513509.07948 5532 8fe6f7175ba3081639e61e2b7f0a3246 ""
   "Figure/Theme/Front-Page.pdf" 1765509980.0906 100016 0a71fbe20eff016b56e8b47f5d8bd3b4 ""
-  "Main.aux" 1765523851.66742 1748 04239f3a0b576db6b65d9a7d7adb0c3f "xelatex"
-  "Main.bbl" 0 -1 0 "biber Main"
-  "Main.tex" 1765523849.17166 25329 1838143421d97e353ae7d16383f39b36 ""
+  "Main.aux" 1765524528.47796 1835 12b6c7e0e072604712638779c5be8050 "xelatex"
+  "Main.bbl" 1765524521.9652 466 ee04f40f768daeed26442158e95aba61 "biber Main"
+  "Main.out" 1765524528.48195 928 edefcaba6487013f53de9b7b2f06899c "xelatex"
+  "Main.run.xml" 1765524528.48594 2655 e8819a2f7885923f35536a77c550fb64 "xelatex"
+  "Main.tex" 1765524518.92539 26956 a0e6f865cee4b68aa76dbf6ab4dcb85e ""
+  "Matter/Title-Page.aux" 1765524528.40609 5582 44a27db1014de8374b32f87ea6fae393 "xelatex"
   "Matter/Title-Page.tex" 1765518519.93363 4587 526f545cb47e4e50fb69e67fe25af1a0 ""
   "Veritas.cls" 1765513055.0348 7276 4b2fcececab89b56cd0c6ef129797cbb ""
   (generated)
@@ -387,6 +384,7 @@
   "Main.bcf"
   "Main.log"
   "Main.out"
+  "Main.run.xml"
   "Main.xdv"
   "Matter/Title-Page.aux"
   (rewritten before read)

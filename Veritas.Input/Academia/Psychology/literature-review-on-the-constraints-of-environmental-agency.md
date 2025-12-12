@@ -3,170 +3,78 @@ title: "On the Constraints of Environmental Agency"
 subtitle: "A Single-Case Phenomenological Examination of Nature Attachment and Moral Distress"
 author: "Kiran Nath"
 date: "2025"
-lang: en
-chapterstyle: minimal
+lang: "en"
+chapterstyle: "minimal"
 references:
   - id: braun2006
-    author:
-      - family: "Braun"
-        given: "Virginia"
-      - family: "Clarke"
-        given: "Victoria"
+    author: "Braun, Virginia and Clarke, Victoria"
     title: "Using thematic analysis in psychology"
-    container-title: "Qualitative Research in Psychology"
-    issued:
-      date-parts:
-        - [2006]
+    journal: "Qualitative Research in Psychology"
+    year: 2006
     volume: 3
     issue: 2
-    page: "77-101"
-    DOI: "10.1191/1478088706qp063oa"
-    type: article-journal
+    pages: "77-101"
+    doi: "10.1191/1478088706qp063oa"
+    type: "article-journal"
   - id: braun2019
-    author:
-      - family: "Braun"
-        given: "Virginia"
-      - family: "Clarke"
-        given: "Victoria"
+    author: "Braun, Virginia and Clarke, Victoria"
     title: "Reflecting on reflexive thematic analysis"
-    container-title: "Qualitative Research in Sport, Exercise and Health"
-    issued:
-      date-parts:
-        - [2019]
+    journal: "Qualitative Research in Sport, Exercise and Health"
+    year: 2019
     volume: 11
     issue: 4
-    page: "589-597"
-    DOI: "10.1080/2159676X.2019.1628806"
-    type: article-journal
+    pages: "589-597"
+    doi: "10.1080/2159676X.2019.1628806"
+    type: "article-journal"
   - id: bratman2019
-    author:
-      - family: "Bratman"
-        given: "Gregory N."
-      - family: "Anderson"
-        given: "Christopher B."
-      - family: "Berman"
-        given: "Marc G."
-      - family: "Cochran"
-        given: "Bobby"
-      - family: "de Vries"
-        given: "Sjerp"
-      - family: "Flanders"
-        given: "Jon"
-      - family: "Folke"
-        given: "Carl"
-      - family: "Frumkin"
-        given: "Howard"
-      - family: "Gross"
-        given: "James J."
-      - family: "Hartig"
-        given: "Terry"
-      - family: "Kahn"
-        given: "Peter H."
-      - family: "Kuo"
-        given: "Ming"
-      - family: "Lawler"
-        given: "Joshua J."
-      - family: "Levin"
-        given: "Phillip S."
-      - family: "Lindahl"
-        given: "Therese"
-      - family: "Meyer-Lindenberg"
-        given: "Andreas"
-      - family: "Mitchell"
-        given: "Richard"
-      - family: "Ouyang"
-        given: "Zhiyun"
-      - family: "Roe"
-        given: "Jenny"
-      - family: "Daily"
-        given: "Gretchen C."
+    author: "Bratman, Gregory N. and Anderson, Christopher B. and Berman, Marc G. and Cochran, Bobby and de Vries, Sjerp and Flanders, Jon and Folke, Carl and Frumkin, Howard and Gross, James J. and Hartig, Terry and Kahn, Peter H. and Kuo, Ming and Lawler, Joshua J. and Levin, Phillip S. and Lindahl, Therese and Meyer-Lindenberg, Andreas and Mitchell, Richard and Ouyang, Zhiyun and Roe, Jenny and Daily, Gretchen C."
     title: "Nature and mental health: An ecosystem service perspective"
-    container-title: "Science Advances"
-    issued:
-      date-parts:
-        - [2019]
+    journal: "Science Advances"
+    year: 2019
     volume: 5
     issue: 7
-    page: "eaax0903"
-    DOI: "10.1126/sciadv.aax0903"
-    type: article-journal
+    pages: "eaax0903"
+    doi: "10.1126/sciadv.aax0903"
+    type: "article-journal"
   - id: cox2017
-    author:
-      - family: "Cox"
-        given: "Daniel T. C."
-      - family: "Hudson"
-        given: "Hilary L."
-      - family: "Shanahan"
-        given: "Danielle F."
-      - family: "Fuller"
-        given: "Richard A."
-      - family: "Gaston"
-        given: "Kevin J."
+    author: "Cox, Daniel T. C. and Hudson, Hilary L. and Shanahan, Danielle F. and Fuller, Richard A. and Gaston, Kevin J."
     title: "The rarity of direct experiences of nature in an urban population"
-    container-title: "Landscape and Urban Planning"
-    issued:
-      date-parts:
-        - [2017]
+    journal: "Landscape and Urban Planning"
+    year: 2017
     volume: 160
-    page: "79-84"
-    DOI: "10.1016/j.landurbplan.2016.12.006"
-    type: article-journal
+    pages: "79-84"
+    doi: "10.1016/j.landurbplan.2016.12.006"
+    type: "article-journal"
   - id: gascon2015
-    author:
-      - family: "Gascon"
-        given: "Mireia"
-      - family: "Triguero-Mas"
-        given: "Margarita"
-      - family: "Martínez"
-        given: "David"
-      - family: "Dadvand"
-        given: "Payam"
-      - family: "Forns"
-        given: "Joan"
-      - family: "Plasència"
-        given: "Antoni"
-      - family: "Nieuwenhuijsen"
-        given: "Mark J."
+    author: "Gascon, Mireia and Triguero-Mas, Margarita and Martínez, David and Dadvand, Payam and Forns, Joan and Plasència, Antoni and Nieuwenhuijsen, Mark J."
     title: "Mental health benefits of long-term exposure to residential green and blue spaces: A systematic review"
-    container-title: "International Journal of Environmental Research and Public Health"
-    issued:
-      date-parts:
-        - [2015]
+    journal: "International Journal of Environmental Research and Public Health"
+    year: 2015
     volume: 12
     issue: 4
-    page: "4354-4379"
-    DOI: "10.3390/ijerph120404354"
-    type: article-journal
+    pages: "4354-4379"
+    doi: "10.3390/ijerph120404354"
+    type: "article-journal"
   - id: kaplan1995
-    author:
-      - family: "Kaplan"
-        given: "Stephen"
+    author: "Kaplan, Stephen"
     title: "The restorative benefits of nature: Toward an integrative framework"
-    container-title: "Journal of Environmental Psychology"
-    issued:
-      date-parts:
-        - [1995]
+    journal: "Journal of Environmental Psychology"
+    year: 1995
     volume: 15
     issue: 3
-    page: "169-182"
-    DOI: "10.1016/0272-4944(95)90001-2"
-    type: article-journal
+    pages: "169-182"
+    doi: "10.1016/0272-4944(95)90001-2"
+    type: "article-journal"
   - id: soga2023
-    author:
-      - family: "Soga"
-        given: "Masashi"
-      - family: "Gaston"
-        given: "Kevin J."
+    author: "Soga, Masashi and Gaston, Kevin J."
     title: "Nature benefit hypothesis: Direct experiences of nature predict self-reported pro-biodiversity behaviors"
-    container-title: "Conservation Letters"
-    issued:
-      date-parts:
-        - [2023]
+    journal: "Conservation Letters"
+    year: 2023
     volume: 16
     issue: 3
-    page: "e12945"
-    DOI: "10.1111/conl.12945"
-    type: article-journal
+    pages: "e12945"
+    doi: "10.1111/conl.12945"
+    type: "article-journal"
 ---
 
 # RATIONALE

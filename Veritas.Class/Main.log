@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  12 DEC 2025 18:17
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  12 DEC 2025 18:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2385,6 +2385,8 @@ Package: thm-amsthm 2023/05/04 v0.76
 ))
 \c@theorem=\count648
 ))
+\cslhangindent=\skip124
+\csllabelwidth=\skip125
 runsystem(command -v pygmentize && touch Main.aex)...executed.
 
 runsystem(rm Main.aex)...executed.
@@ -2394,62 +2396,63 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 
-(./Main.aux)
+(./Main.aux (./Matter/Title-Page.aux))
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 31.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 45.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
- 31.
- (/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
+ 45.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
-1.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 45.
 LaTeX Font Info:    Trying to load font information for U+npxexa on input line 
-31.
+45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 45.
 LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line
- 31.
+ 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 45.
 LaTeX Font Info:    Trying to load font information for LMX+npxexx on input lin
-e 31.
+e 45.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    ... okay on input line 45.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -2468,16 +2471,13 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 31.
-LaTeX Info: Command `\dddot' is already robust on input line 31.
-LaTeX Info: Command `\ddddot' is already robust on input line 31.
-Package hyperref Info: Link coloring ON on input line 31.
+or `english'. on input line 45.
+LaTeX Info: Command `\dddot' is already robust on input line 45.
+LaTeX Info: Command `\ddddot' is already robust on input line 45.
+Package hyperref Info: Link coloring ON on input line 45.
+ (./Main.out) (./Main.out)
 \@outlinefile=\write7
 \openout7 = `Main.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-months-dictionar
@@ -2536,8 +2536,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Main.bbl' found.
  (./Main.bbl)
-Package biblatex Info: Reference section=0 on input line 31.
-Package biblatex Info: Reference segment=0 on input line 31.
+Package biblatex Info: Reference section=0 on input line 45.
+Package biblatex Info: Reference segment=0 on input line 45.
 \openout2 = `Matter/Title-Page.aux'.
 
 (./Matter/Title-Page.tex
@@ -2621,70 +2621,85 @@ File: Figure/Theme/Front-Page.pdf Graphic file (type pdf)
 ]
 
 LaTeX Warning: Reference `tab:thematic-structure' on page 2 undefined on input 
-line 141.
+line 165.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
 []|\TU/MinionPro(0)/m/n/10 Nature experiences providing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
 \TU/MinionPro(0)/m/n/10 mental relief from cognitive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
 []|\TU/MinionPro(0)/m/n/10 Immersive nature experiences
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 159--159
+Underfull \hbox (badness 5403) in paragraph at lines 183--183
 \TU/MinionPro(0)/m/n/10 realities, sometimes intensified
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 159--159
+Underfull \hbox (badness 1087) in paragraph at lines 183--183
 \TU/MinionPro(0)/m/n/10 places motivating conservation-
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 159--159
+Underfull \hbox (badness 2635) in paragraph at lines 183--183
 \TU/MinionPro(0)/m/n/10 oriented actions despite recog-
  []
 
 
-Underfull \hbox (badness 4229) in paragraph at lines 159--159
+Underfull \hbox (badness 4229) in paragraph at lines 183--183
 \TU/MinionPro(0)/m/n/10 nized limitations of individual
  []
 
 [2] [3]
-Overfull \hbox (0.43889pt too wide) in paragraph at lines 208--214
+Overfull \hbox (0.43889pt too wide) in paragraph at lines 232--238
 \TU/MinionPro(0)/m/n/10.95 ing feelings the participant characterized as both h
 umbling and oddly comforting; and extending
  []
 
 [4] [5
 
-] [6] [7
+] [6]
+Overfull \hbox (0.3513pt too wide) in paragraph at lines 361--428
+\TU/MinionPro(0)/m/n/10.95 disconnect between environmental values and behaviou
+rs suggests that nature experiences alone
+ []
 
-]
+[7
 
-! LaTeX Error: Environment CSLReferences undefined.
+] [8]
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.400 \begin{CSLReferences}
-                           {1}{0} 
+LaTeX Warning: Empty bibliography on input line 476.
+
+[9] (./Main.aux (./Matter/Title-Page.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `Main.out' has not changed.
+(rerunfilecheck)             Checksum: EDEFCABA6487013F53DE9B7B2F06899C;928.
+Package logreq Info: Writing requests to 'Main.run.xml'.
+\openout1 = `Main.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 64336 strings out of 474878
- 1341035 string characters out of 5762517
- 2353343 words of memory out of 5000000
- 85270 multiletter control sequences out of 15000+600000
- 600101 words of font info for 138 fonts, out of 8000000 for 9000
+ 64362 strings out of 474878
+ 1341261 string characters out of 5762517
+ 2359605 words of memory out of 5000000
+ 85281 multiletter control sequences out of 15000+600000
+ 600125 words of font info for 141 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 123i,12n,121p,2368b,940s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,13n,121p,2368b,3870s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Main.xdv (8 pages, 217952 bytes).
+Output written on Main.xdv (10 pages, 267008 bytes).
