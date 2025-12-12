@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber Main"] 1765513523.31083 "Main.bcf" "Main.bbl" "Main" 1765518264.64455 0
+["biber Main"] 1765513523.31083 "Main.bcf" "Main.bbl" "Main" 1765518922.63649 0
   "Bibliography/Bibliography.bib" 1765509980.09823 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "Main.bcf" 1765518264.32247 107845 daf5740d3e2e213d4751601ff218c4aa "xelatex"
+  "Main.bcf" 1765518922.34078 107845 daf5740d3e2e213d4751601ff218c4aa "xelatex"
   (generated)
   "Main.bbl"
   "Main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1765518264.46731 "Main.xdv" "Main.pdf" "Main" 1765518264.64862 0
-  "Main.xdv" 1765518264.32628 13056 e4923456a44e8d38c6781231e86496a0 "xelatex"
+["xdvipdfmx"] 1765518922.48324 "Main.xdv" "Main.pdf" "Main" 1765518922.63966 0
+  "Main.xdv" 1765518922.34078 13232 8cc706fba492c0684d56db85e9ee5db9 "xelatex"
   (generated)
   "Main.pdf"
   (rewritten before read)
-["xelatex"] 1765518262.25757 "Main.tex" "Main.xdv" "Main" 1765518264.64465 0
+["xelatex"] 1765518919.94356 "Main.tex" "Main.xdv" "Main" 1765518922.63656 0
   "/etc/texmf/web2c/texmf.cnf" 1751854650.88492 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -354,13 +354,13 @@
   "/usr/share/texmf/tex/latex/lm/t1lmr.fd" 1616454256 1867 996fe743d88a01aca041ed22cc10e1bb ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1751854741 10843776 d3bfac28d781a2a8fb3dddc336662138 ""
-  "Chapter/01-Diagnosis.aux" 1765518264.30723 5585 a9f41132328ae47d7c1d47809f5f7ccc "xelatex"
+  "Chapter/01-Diagnosis.aux" 1765518922.32176 5585 a9f41132328ae47d7c1d47809f5f7ccc "xelatex"
   "Chapter/01-Diagnosis.tex" 0 -1 0 ""
-  "Chapter/02-Formulation.aux" 1765518264.30723 5587 a216069445d5121b81c8efa7667e75fa "xelatex"
+  "Chapter/02-Formulation.aux" 1765518922.32176 5587 a216069445d5121b81c8efa7667e75fa "xelatex"
   "Chapter/02-Formulation.tex" 0 -1 0 ""
-  "Chapter/03-Intervention.aux" 1765518264.31104 5588 fcf9b5f263eb691b916054cda2e05746 "xelatex"
+  "Chapter/03-Intervention.aux" 1765518922.32556 5588 fcf9b5f263eb691b916054cda2e05746 "xelatex"
   "Chapter/03-Intervention.tex" 0 -1 0 ""
-  "Chapter/04-Reflection.aux" 1765518264.31104 5586 bfc3741b80adb174adadaaa8243efc49 "xelatex"
+  "Chapter/04-Reflection.aux" 1765518922.32937 5586 bfc3741b80adb174adadaaa8243efc49 "xelatex"
   "Chapter/04-Reflection.tex" 0 -1 0 ""
   "Configuration/00-Fonts.sty" 1765510063.05349 3879 b6d298a1e786aa647a4223878b9bafd3 ""
   "Configuration/01-Colors.sty" 1765510063.05349 1990 133f3e2795b3d7b75fb513914515d423 ""
@@ -376,13 +376,14 @@
   "Configuration/11-Metadata.sty" 1765510063.05349 3468 3cbf33cdf9fd2a0ec7349344bbacc984 ""
   "Configuration/12-Floats.sty" 1765510063.05349 7485 095f97b45bce282bf6ab61868e326988 ""
   "Configuration/13-Mathematics.sty" 1765513509.07948 5532 8fe6f7175ba3081639e61e2b7f0a3246 ""
-  "Main.aux" 1765518264.31104 714 b24ec53af472e0251296f3015a612196 "xelatex"
+  "Figure/Theme/Front-Page.pdf" 1765509980.0906 100016 0a71fbe20eff016b56e8b47f5d8bd3b4 ""
+  "Main.aux" 1765518922.32937 714 b24ec53af472e0251296f3015a612196 "xelatex"
   "Main.bbl" 1765513523.92557 466 ee04f40f768daeed26442158e95aba61 "biber Main"
-  "Main.out" 1765518264.22721 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
-  "Main.run.xml" 1765518264.32628 2395 a500639e83d06542fdb74dd205194587 "xelatex"
+  "Main.out" 1765518922.22665 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "Main.run.xml" 1765518922.34078 2395 a500639e83d06542fdb74dd205194587 "xelatex"
   "Main.tex" 1765513053.01741 1757 8fed4c61fd0fab347b0f789c13be3745 ""
-  "Matter/Title-Page.aux" 1765518264.29961 5582 44a27db1014de8374b32f87ea6fae393 "xelatex"
-  "Matter/Title-Page.tex" 1765509980.09441 4595 db41745aa77eed7d01a2d047cbb41359 ""
+  "Matter/Title-Page.aux" 1765518922.31795 5582 44a27db1014de8374b32f87ea6fae393 "xelatex"
+  "Matter/Title-Page.tex" 1765518519.93363 4587 526f545cb47e4e50fb69e67fe25af1a0 ""
   "Metadata/Metadata.tex" 1765509980.10204 1055 9eb782a7329fcd89ad7ae67f421e3e2c ""
   "Veritas.cls" 1765513055.0348 7276 4b2fcececab89b56cd0c6ef129797cbb ""
   (generated)

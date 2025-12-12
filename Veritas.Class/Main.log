@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  12 DEC 2025 16:44
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  12 DEC 2025 16:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2603,7 +2603,10 @@ LaTeX Font Info:    Trying to load font information for U+npxsyc on input line
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
-) [1
+)
+File: Figure/Theme/Front-Page.pdf Graphic file (type pdf)
+<use Figure/Theme/Front-Page.pdf>
+ [1
 
 
 
@@ -2647,12 +2650,12 @@ Package logreq Info: Writing requests to 'Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64284 strings out of 474878
- 1339661 string characters out of 5762517
- 2353564 words of memory out of 5000000
- 85197 multiletter control sequences out of 15000+600000
+ 64292 strings out of 474878
+ 1339894 string characters out of 5762517
+ 2354564 words of memory out of 5000000
+ 85203 multiletter control sequences out of 15000+600000
  580989 words of font info for 98 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 123i,7n,121p,2368b,3870s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,12n,121p,2368b,3870s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Main.xdv (1 page, 13056 bytes).
+Output written on Main.xdv (1 page, 13232 bytes).

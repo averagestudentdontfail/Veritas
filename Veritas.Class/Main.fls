@@ -777,6 +777,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/zplsyc.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm
+INPUT ./Figure/Theme/Front-Page.pdf
+INPUT ./Figure/Theme/Front-Page.pdf
 OUTPUT Main.xdv
 OUTPUT Chapter/01-Diagnosis.aux
 OUTPUT Chapter/02-Formulation.aux
