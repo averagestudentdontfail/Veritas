@@ -6,28 +6,35 @@ A templated LaTeX engine with markdown conversion support.
 
 | Component | Description |
 |-----------|-------------|
-| `Veritas.Engine/` | Pandoc-based markdown→LaTeX conversion |
-| `Veritas.Class/` | Core LaTeX template (.cls, .sty modules) |
-| `Veritas.Document/` | Document collections (Article, Assignment, Thesis) |
-| `Veritas.LyX/` | LyX WYSIWYG frontend integration |
-| `Veritas.Governance/` | Coding standards and compliance docs |
+| `Veritas.Input/` | Source markdown files |
+| `Veritas.Output/` | Generated PDF documents |
+| `Veritas.Engine/` | Pandoc-based conversion pipeline |
+| `Veritas.Class/` | LaTeX document class (.cls, .sty) |
+| `Veritas.Pandoc/` | Pandoc source (local) |
+| `Veritas.LyX/` | LyX source (local) |
+| `Veritas.Governance/` | Coding standards |
 
 ## Quick Start
 
-### From LaTeX
-```bash
-cd Veritas.Class
-make
-```
+1. Add `.md` files to `Veritas.Input/`
+2. Run: `./Veritas.Engine/Script/build.sh`
+3. Find PDFs in `Veritas.Output/`
 
-### From Markdown
-```bash
-./Veritas.Engine/Script/convert.sh input.md output.tex
-cd Veritas.Class && xelatex output.tex
-```
+## Markdown Format
 
-### With LyX
-See `Veritas.LyX/README.md` for setup instructions.
+```yaml
+---
+title: "Document Title"
+author: "Author Name"
+date: "December 2025"
+lang: en
+chapterstyle: minimal
+---
+
+# Content
+
+Your markdown content with $LaTeX$ math support.
+```
 
 ## Features
 
@@ -35,13 +42,11 @@ See `Veritas.LyX/README.md` for setup instructions.
 - **Mathematics**: amsthm theorem environments
 - **Chapter Styles**: Minimal, Classic, Fancy, Modern
 - **Languages**: English, German
-- **Conversion**: Markdown → LaTeX via Pandoc
 
 ## Requirements
 
-- XeLaTeX (TeX Live or MiKTeX)
-- Pandoc ≥ 2.0 (for markdown conversion)
-- Biber (for bibliography)
+- XeLaTeX (TeX Live)
+- Pandoc ≥ 2.0
 
 ## License
 

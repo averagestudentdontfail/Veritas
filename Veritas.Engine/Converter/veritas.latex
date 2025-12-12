@@ -29,6 +29,10 @@ $endif$
 $endif$
 $if(date)$\Date{$date$}$else$\Date{\today}$endif$
 
+%%% Pandoc Compatibility %%%
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 \begin{document}
 
 %%% Title Page %%%

@@ -1,50 +1,15 @@
-%%% Veritas Pandoc Template %%%
-%%% Converts Markdown to LaTeX using Veritas class
-%%%
-%%% YAML Frontmatter Variables:
-%%%   title: Document title
-%%%   subtitle: Document subtitle (optional)
-%%%   author: Author name or list
-%%%   date: Publication date
-%%%   lang: en or de
-%%%   chapterstyle: minimal, classic, fancy, modern
-%%%   abstract: Abstract text (optional)
+---
+title: "The Integral of 1/(xⁿ + 1)"
+date: "December 2025"
+lang: en
+chapterstyle: minimal
+---
 
-\documentclass[
-    language=en,
-    chapterstyle=minimal,
-    media=screen,
-    doctype=article
-]{Veritas}
+# Roots of xⁿ + 1
 
-%%% Metadata from YAML %%%
-\Title{The Integral of 1/(xⁿ + 1)}
+We seek the solutions to $x^n = -1$. Writing $-1 = e^{i\pi(2m+1)}$ for any integer $m$, we obtain:
 
-\Date{December 2025}
-
-%%% Pandoc Compatibility %%%
-\providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-
-\begin{document}
-
-%%% Title Page %%%
-\pagenumbering{gobble}
-\include{Matter/Title-Page}
-
-%%% Abstract (if present) %%%
-
-%%% Main Content %%%
-\pagenumbering{arabic}
-\pagestyle{mainmatter}
-
-\hypertarget{roots-of-xux207f-1}{%
-\section{Roots of xⁿ + 1}\label{roots-of-xux207f-1}}
-
-We seek the solutions to \(x^n = -1\). Writing \(-1 = e^{i\pi(2m+1)}\)
-for any integer \(m\), we obtain:
-
-\[x = e^{i\pi(2k+1)/n}, \quad k = 0, 1, \ldots, n-1\]
+$$x = e^{i\pi(2k+1)/n}, \quad k = 0, 1, \ldots, n-1$$
 
 \begin{definition}
 Let $\omega_k = e^{i\pi(2k+1)/n}$ denote the $k$-th root of $x^n + 1 = 0$.
@@ -67,8 +32,7 @@ $$\omega_{n-1-k} = e^{i\pi(2(n-1-k)+1)/n} = e^{i\pi(2n-2k-1)/n} = e^{i\pi(2 - (2
 since $e^{2\pi i} = 1$. For (3), a real root requires $(2k+1)/n \in \mathbb{Z}$; with odd $n$, this occurs when $k = (n-1)/2$, yielding $e^{i\pi} = -1$. For even $n$, $(2k+1)/n$ is never an integer.
 \end{proof}
 
-\hypertarget{factorisation-over-ux211d}{%
-\section{Factorisation over ℝ}\label{factorisation-over-ux211d}}
+# Factorisation over ℝ
 
 \begin{theorem}[Real Factorisation]
 The polynomial $x^n + 1$ factors over $\mathbb{R}$ as follows:
@@ -88,12 +52,10 @@ $$= x^2 - 2\,\text{Re}(\omega_k)\,x + 1 = x^2 - 2\cos\frac{\pi(2k+1)}{n}\,x + 1$
 The quadratics are irreducible over $\mathbb{R}$ since their discriminant $4\cos^2(\pi(2k+1)/n) - 4 < 0$ for $0 < (2k+1)/n < 1$. The stated index ranges enumerate precisely one representative from each conjugate pair.
 \end{proof}
 
-\textbf{Notation.} Henceforth, define:
-\[\theta_k = \frac{\pi(2k+1)}{n}, \qquad Q_k(x) = x^2 - 2\cos\theta_k\,x + 1\]
+**Notation.** Henceforth, define:
+$$\theta_k = \frac{\pi(2k+1)}{n}, \qquad Q_k(x) = x^2 - 2\cos\theta_k\,x + 1$$
 
-\hypertarget{partial-fraction-decomposition}{%
-\section{Partial Fraction
-Decomposition}\label{partial-fraction-decomposition}}
+# Partial Fraction Decomposition
 
 \begin{lemma}[Residue at Simple Pole]
 If $P(a) = 0$ and $P'(a) \neq 0$, then:
@@ -148,9 +110,7 @@ $$B_k = -2\,\text{Re}(r_k\overline{\omega_k}) = \frac{2}{n}$$
 as claimed.
 \end{proof}
 
-\hypertarget{integration-of-component-terms}{%
-\section{Integration of Component
-Terms}\label{integration-of-component-terms}}
+# Integration of Component Terms
 
 \begin{lemma}[Linear Factor]
 $$\int\frac{dx}{x+1} = \ln|x+1| + C$$
@@ -183,8 +143,7 @@ $$\int\frac{dx}{Q_k(x)} = \frac{1}{\sin\theta_k}\arctan\frac{x - \cos\theta_k}{\
 $$\int\frac{A_k x + B_k}{Q_k(x)}\,dx = -\frac{\cos\theta_k}{n}\ln Q_k(x) + \frac{1}{n\sin\theta_k}\arctan\frac{x - \cos\theta_k}{\sin\theta_k} + C$$
 \end{theorem}
 
-\hypertarget{the-general-solution}{%
-\section{The General Solution}\label{the-general-solution}}
+# The General Solution
 
 \begin{theorem}[Main Result]
 The integral of $1/(x^n + 1)$ is given by:
@@ -198,8 +157,7 @@ $$\int\frac{dx}{x^n+1} = \sum_{k=0}^{n/2-1}\left[-\frac{\cos\theta_k}{n}\ln Q_k(
 where $\theta_k = \pi(2k+1)/n$ and $Q_k(x) = x^2 - 2\cos\theta_k\, x + 1$.
 \end{theorem}
 
-\hypertarget{unified-compact-form}{%
-\section{Unified Compact Form}\label{unified-compact-form}}
+# Unified Compact Form
 
 \begin{corollary}
 The integral admits the symmetric representation:
@@ -207,48 +165,25 @@ $$\int\frac{dx}{x^n+1} = \frac{1}{n}\sum_{j=0}^{n-1}\overline{\omega_j}\ln(x - \
 where the sum is interpreted over $\mathbb{C}$ and the logarithm is complex. Taking real parts and combining conjugates recovers the main theorem.
 \end{corollary}
 
-\hypertarget{application-to-n-5}{%
-\section{Application to n = 5}\label{application-to-n-5}}
+# Application to n = 5
 
-Setting \(n = 5\), we have \(\theta_0 = \pi/5\) and
-\(\theta_1 = 3\pi/5\). The exact values are:
+Setting $n = 5$, we have $\theta_0 = \pi/5$ and $\theta_1 = 3\pi/5$. The exact values are:
 
-\[\cos\frac{\pi}{5} = \frac{1+\sqrt{5}}{4}, \quad \sin\frac{\pi}{5} = \frac{\sqrt{10-2\sqrt{5}}}{4}\]
+$$\cos\frac{\pi}{5} = \frac{1+\sqrt{5}}{4}, \quad \sin\frac{\pi}{5} = \frac{\sqrt{10-2\sqrt{5}}}{4}$$
 
-\[\cos\frac{3\pi}{5} = \frac{1-\sqrt{5}}{4}, \quad \sin\frac{3\pi}{5} = \frac{\sqrt{10+2\sqrt{5}}}{4}\]
+$$\cos\frac{3\pi}{5} = \frac{1-\sqrt{5}}{4}, \quad \sin\frac{3\pi}{5} = \frac{\sqrt{10+2\sqrt{5}}}{4}$$
 
 Substitution into the main theorem (Case I) yields the explicit formula.
 
-\hypertarget{algorithmic-summary}{%
-\section{Algorithmic Summary}\label{algorithmic-summary}}
+# Algorithmic Summary
 
-To integrate \(1/(x^n + 1)\):
+To integrate $1/(x^n + 1)$:
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  \textbf{Compute} \(\theta_k = \pi(2k+1)/n\) for
-  \(k = 0, 1, \ldots, \lfloor(n-2)/2\rfloor\)
-\item
-  \textbf{Form} \(Q_k(x) = x^2 - 2\cos\theta_k\, x + 1\)
-\item
-  \textbf{If \(n\) odd}, include \((1/n)\ln|x+1|\)
-\item
-  \textbf{For each \(k\)}, add:
+1. **Compute** $\theta_k = \pi(2k+1)/n$ for $k = 0, 1, \ldots, \lfloor(n-2)/2\rfloor$
+2. **Form** $Q_k(x) = x^2 - 2\cos\theta_k\, x + 1$
+3. **If $n$ odd**, include $(1/n)\ln|x+1|$
+4. **For each $k$**, add:
+   - $-(\cos\theta_k)/n \cdot \ln Q_k(x)$
+   - $(1/(n\sin\theta_k)) \cdot \arctan((x - \cos\theta_k)/\sin\theta_k)$
 
-  \begin{itemize}
-  \tightlist
-  \item
-    \(-(\cos\theta_k)/n \cdot \ln Q_k(x)\)
-  \item
-    \((1/(n\sin\theta_k)) \cdot \arctan((x - \cos\theta_k)/\sin\theta_k)\)
-  \end{itemize}
-\end{enumerate}
-
-This procedure generalises immediately to integrals of the form
-\(1/(x^n + a^n)\) via the substitution \(u = x/a\).
-
-%%% Bibliography (if citations) %%%
-
-\end{document}
+This procedure generalises immediately to integrals of the form $1/(x^n + a^n)$ via the substitution $u = x/a$.
