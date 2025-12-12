@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  12 DEC 2025 18:28
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  12 DEC 2025 18:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2399,60 +2399,60 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 (./Main.aux (./Matter/Title-Page.aux))
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 45.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 48.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
- 45.
+ 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
-5.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 48.
 LaTeX Font Info:    Trying to load font information for U+npxexa on input line 
-45.
+48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 48.
 LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line
- 45.
+ 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 48.
 LaTeX Font Info:    Trying to load font information for LMX+npxexx on input lin
-e 45.
+e 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    ... okay on input line 48.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -2471,10 +2471,10 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 45.
-LaTeX Info: Command `\dddot' is already robust on input line 45.
-LaTeX Info: Command `\ddddot' is already robust on input line 45.
-Package hyperref Info: Link coloring ON on input line 45.
+or `english'. on input line 48.
+LaTeX Info: Command `\dddot' is already robust on input line 48.
+LaTeX Info: Command `\ddddot' is already robust on input line 48.
+Package hyperref Info: Link coloring ON on input line 48.
  (./Main.out) (./Main.out)
 \@outlinefile=\write7
 \openout7 = `Main.out'.
@@ -2536,8 +2536,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Main.bbl' found.
  (./Main.bbl)
-Package biblatex Info: Reference section=0 on input line 45.
-Package biblatex Info: Reference segment=0 on input line 45.
+Package biblatex Info: Reference section=0 on input line 48.
+Package biblatex Info: Reference segment=0 on input line 48.
 \openout2 = `Matter/Title-Page.aux'.
 
 (./Matter/Title-Page.tex
@@ -2621,64 +2621,75 @@ File: Figure/Theme/Front-Page.pdf Graphic file (type pdf)
 ]
 
 LaTeX Warning: Reference `tab:thematic-structure' on page 2 undefined on input 
-line 165.
+line 167.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--183
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
 []|\TU/MinionPro(0)/m/n/10 Nature experiences providing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--183
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
 \TU/MinionPro(0)/m/n/10 mental relief from cognitive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--183
+Underfull \hbox (badness 10000) in paragraph at lines 185--185
 []|\TU/MinionPro(0)/m/n/10 Immersive nature experiences
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 183--183
+Underfull \hbox (badness 5403) in paragraph at lines 185--185
 \TU/MinionPro(0)/m/n/10 realities, sometimes intensified
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 183--183
+Underfull \hbox (badness 1087) in paragraph at lines 185--185
 \TU/MinionPro(0)/m/n/10 places motivating conservation-
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 183--183
+Underfull \hbox (badness 2635) in paragraph at lines 185--185
 \TU/MinionPro(0)/m/n/10 oriented actions despite recog-
  []
 
 
-Underfull \hbox (badness 4229) in paragraph at lines 183--183
+Underfull \hbox (badness 4229) in paragraph at lines 185--185
 \TU/MinionPro(0)/m/n/10 nized limitations of individual
  []
 
 [2] [3]
-Overfull \hbox (0.43889pt too wide) in paragraph at lines 232--238
+Overfull \hbox (0.43889pt too wide) in paragraph at lines 238--244
 \TU/MinionPro(0)/m/n/10.95 ing feelings the participant characterized as both h
 umbling and oddly comforting; and extending
  []
 
-[4] [5
-
-] [6]
-Overfull \hbox (0.3513pt too wide) in paragraph at lines 361--428
-\TU/MinionPro(0)/m/n/10.95 disconnect between environmental values and behaviou
-rs suggests that nature experiences alone
+[4]
+Overfull \hbox (1.79669pt too wide) in paragraph at lines 275--279
+\TU/MinionPro(0)/m/n/10.95 Despite articulating strong environmental values and
+ expressing concern about ecological degra-
  []
 
-[7
+
+Overfull \hbox (1.79231pt too wide) in paragraph at lines 275--279
+\TU/MinionPro(0)/m/n/10.95 dation, the participant simultaneously described gap
+s between these values and their behavioural
+ []
+
+[5
+
+] [6] [7
 
 ] [8]
+Overfull \hbox (16.33849pt too wide) in paragraph at lines 454--458
+\TU/MinionPro(0)/m/it/10.95 tive Research in Psychology \TU/MinionPro(0)/m/n/10
+.95 3 (2): 77–101. [][]$[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][
+] [] [][][][][][][][][][][][][][][][][]$[][]. 
+ []
 
-LaTeX Warning: Empty bibliography on input line 476.
+[9
 
-[9] (./Main.aux (./Matter/Title-Page.aux))
+] (./Main.aux (./Matter/Title-Page.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -2688,18 +2699,18 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: EDEFCABA6487013F53DE9B7B2F06899C;928.
+(rerunfilecheck)             Checksum: 691574FDF47DB61D475BE346618E6440;2770.
 Package logreq Info: Writing requests to 'Main.run.xml'.
 \openout1 = `Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64362 strings out of 474878
- 1341261 string characters out of 5762517
- 2359605 words of memory out of 5000000
- 85281 multiletter control sequences out of 15000+600000
- 600125 words of font info for 141 fonts, out of 8000000 for 9000
+ 64364 strings out of 474878
+ 1341273 string characters out of 5762517
+ 2360987 words of memory out of 5000000
+ 85285 multiletter control sequences out of 15000+600000
+ 600109 words of font info for 139 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 123i,13n,121p,2368b,3870s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,12n,121p,2368b,3870s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Main.xdv (10 pages, 267008 bytes).
+Output written on Main.xdv (10 pages, 259628 bytes).

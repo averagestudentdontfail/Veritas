@@ -19,29 +19,39 @@ def compact_author(author_list):
     return " and ".join(authors)
 
 def compact_reference(ref):
-    """Convert a reference dict to compact YAML lines."""
-    lines = []
+    """Convert a reference dict to compact YAML lines - keeping CSL format."""
     ref_id = ref.get('id', 'unknown')
     
-    # Build compact representation
+    # Keep CSL-compatible format but more compact
     compact = {'id': ref_id}
     
+    # Authors need to stay as structured data for citeproc
     if 'author' in ref:
-        compact['author'] = compact_author(ref['author'])
+        # Keep as list of dicts but compact
+        authors = []
+        for a in ref['author']:
+            given = a.get('given', '').replace('"', '')
+            family = a.get('family', '').replace('"', '')
+            authors.append({'family': family, 'given': given})
+        compact['author'] = authors
+    
     if 'title' in ref:
         compact['title'] = ref['title'].replace('"', '')
     if 'container-title' in ref:
-        compact['journal'] = ref['container-title'].replace('"', '')
+        compact['container-title'] = ref['container-title'].replace('"', '')
+    
+    # Keep issued in proper CSL format
     if 'issued' in ref and 'date-parts' in ref['issued']:
-        compact['year'] = ref['issued']['date-parts'][0][0]
+        compact['issued'] = ref['issued']
+    
     if 'volume' in ref:
-        compact['volume'] = ref['volume']
+        compact['volume'] = str(ref['volume'])
     if 'issue' in ref:
-        compact['issue'] = ref['issue']
+        compact['issue'] = str(ref['issue'])
     if 'page' in ref:
-        compact['pages'] = str(ref['page']).replace('"', '')
+        compact['page'] = str(ref['page']).replace('"', '')
     if 'DOI' in ref:
-        compact['doi'] = ref['DOI'].replace('"', '')
+        compact['DOI'] = ref['DOI'].replace('"', '')
     if 'publisher' in ref:
         compact['publisher'] = ref['publisher'].replace('"', '')
     if 'type' in ref:
@@ -75,34 +85,19 @@ def reformat_markdown(md_path):
         return
     
     # Extract and compact references
-    refs = frontmatter.pop('references')
+    refs = frontmatter['references']
     compact_refs = [compact_reference(ref) for ref in refs]
+    frontmatter['references'] = compact_refs
     
-    # Rebuild frontmatter with compact references at end
-    new_fm_lines = ['---']
-    for key, value in frontmatter.items():
-        if isinstance(value, str):
-            new_fm_lines.append(f'{key}: "{value}"')
-        else:
-            new_fm_lines.append(f'{key}: {value}')
-    
-    # Add references in compact format
-    new_fm_lines.append('references:')
-    for ref in compact_refs:
-        ref_id = ref.pop('id')
-        new_fm_lines.append(f'  - id: {ref_id}')
-        for key, value in ref.items():
-            if isinstance(value, str):
-                # Escape quotes in values
-                value = value.replace('"', '\\"')
-                new_fm_lines.append(f'    {key}: "{value}"')
-            else:
-                new_fm_lines.append(f'    {key}: {value}')
-    
-    new_fm_lines.append('---')
+    # Serialize with yaml.dump for proper formatting
+    new_frontmatter = yaml.dump(frontmatter, 
+                                 default_flow_style=False, 
+                                 allow_unicode=True,
+                                 sort_keys=False,
+                                 width=120)
     
     # Combine and write
-    new_content = '\n'.join(new_fm_lines) + body
+    new_content = '---\n' + new_frontmatter + '---' + body
     
     with open(md_path, 'w') as f:
         f.write(new_content)
