@@ -27,7 +27,12 @@
 \ProvidesPackage{13-Mathematics}[2025/12/12 v1.0.0 Veritas Mathematical Typesetting]
 
 %%% Core Packages %%%
+% Fix amssymb/amsthm conflict: amssymb defines \openbox, amsthm tries to redefine
+% Save amssymb's definition, undefine it so amsthm doesn't error, then restore
+\let\amssymbopenbox\openbox
+\let\openbox\undefined
 \RequirePackage{amsthm}     % Theorem environments
+\let\openbox\amssymbopenbox % Restore amssymb's \openbox
 \RequirePackage{mathtools}  % Enhanced amsmath (includes amsmath)
 \RequirePackage{thmtools}   % Enhanced theorem customisation
 

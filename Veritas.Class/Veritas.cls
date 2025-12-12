@@ -80,15 +80,8 @@
     media .default:n = { screen },
     media .initial:n = { screen },
 
-    % Hyperlink color
-    linkcolor .code:n = {
-        \tl_gset:Nn \g_Veritas_linkcolor_tl { #1 }
-        \Veritas_check_color:n { #1 }
-        \tl_if_eq:NNTF \l_tmpa_tl \q_no_value {
-            \tl_gset:Nn \g_Veritas_linkcolor_tl { black }
-            \ClassWarningNoLine{Veritas}{Specified~'linkcolor'~not~available.~Defaulting~to~'black'}
-        }
-    },
+    % Hyperlink color (validated when hyperref is configured)
+    linkcolor .tl_gset:N = \g_Veritas_linkcolor_tl,
     linkcolor .default:n = { black },
     linkcolor .initial:n = { black },
 
