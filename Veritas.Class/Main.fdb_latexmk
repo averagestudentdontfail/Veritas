@@ -1,25 +1,23 @@
 # Fdb version 4
-["biber Main"] 1765525422.60103 "Main.bcf" "Main.bbl" "Main" 1765525427.50255 0
-  "Main.bcf" 1765525427.20329 107993 ef1118ee721f2c7e3fcf73deb06352ee "xelatex"
+["biber Main"] 1765525713.6119 "Main.bcf" "Main.bbl" "Main" 1765525718.46059 0
+  "Main.bcf" 1765525718.14078 107993 ef1118ee721f2c7e3fcf73deb06352ee "xelatex"
   (generated)
   "Main.bbl"
   "Main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1765525427.34193 "Main.xdv" "Main.pdf" "Main" 1765525427.50522 0
-  "Main.xdv" 1765525427.20689 259628 20844bfd1848dbb6ded17cad4a6352ca "xelatex"
+["xdvipdfmx"] 1765525718.27861 "Main.xdv" "Main.pdf" "Main" 1765525718.46351 0
+  "Main.xdv" 1765525718.14078 61428 460d12579e99a285eb296ebd212a9050 "xelatex"
   (generated)
   "Main.pdf"
   (rewritten before read)
-["xelatex"] 1765525425.33811 "Main.tex" "Main.xdv" "Main" 1765525427.50261 0
+["xelatex"] 1765525716.2453 "Main.tex" "Main.xdv" "Main" 1765525718.46066 0
   "/etc/texmf/web2c/texmf.cnf" 1751854650.88492 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1246382020 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm" 1589834291 760 1bbb6b93780440b947a1a84c0a1886d8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/zplexx.tfm" 1699652218 1788 6330755b94fc63d40588b98071d174ed ""
@@ -350,7 +348,6 @@
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm" 1254269338 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmr10.tfm" 1254269338 11868 4f81e9b6033c032bdaf9884f4d7ef412 ""
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmr6.tfm" 1254269338 11836 e3b6ce3e601aec94f64a536e7f4224d5 ""
-  "/usr/share/texmf/fonts/tfm/public/lm/rm-lmr7.tfm" 1254269338 11852 5a9022f105fd1ee2797df861e79ae9a0 ""
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmr8.tfm" 1254269338 11864 309fd7f43e4a0ba39f6f7644d76e8edf ""
   "/usr/share/texmf/tex/latex/lm/ot1lmr.fd" 1616454256 1882 28c08db1407ebff35a658fd141753d16 ""
   "/usr/share/texmf/tex/latex/lm/t1lmr.fd" 1616454256 1867 996fe743d88a01aca041ed22cc10e1bb ""
@@ -371,12 +368,12 @@
   "Configuration/12-Floats.sty" 1765510063.05349 7485 095f97b45bce282bf6ab61868e326988 ""
   "Configuration/13-Mathematics.sty" 1765513509.07948 5532 8fe6f7175ba3081639e61e2b7f0a3246 ""
   "Figure/Theme/Front-Page.pdf" 1765509980.0906 100016 0a71fbe20eff016b56e8b47f5d8bd3b4 ""
-  "Main.aux" 1765525427.19969 3528 ef0635337abdacb61bf23c2fab9e3510 "xelatex"
-  "Main.bbl" 1765525423.2136 466 ee04f40f768daeed26442158e95aba61 "biber Main"
-  "Main.out" 1765525427.19969 2770 691574fdf47db61d475be346618e6440 "xelatex"
-  "Main.run.xml" 1765525427.20689 2655 e8819a2f7885923f35536a77c550fb64 "xelatex"
-  "Main.tex" 1765525419.88882 26611 d7ccc90b0a85a55c2e0c78b782c15c8e ""
-  "Matter/Title-Page.aux" 1765525427.12409 5582 44a27db1014de8374b32f87ea6fae393 "xelatex"
+  "Main.aux" 1765525718.12946 4492 c3cb1a9be056e8e8fadb4b1aef1fabc1 "xelatex"
+  "Main.bbl" 1765525714.17358 466 ee04f40f768daeed26442158e95aba61 "biber Main"
+  "Main.out" 1765525718.13701 1440 f472fd0461e757826f464ef8174457c0 "xelatex"
+  "Main.run.xml" 1765525718.14078 2655 e8819a2f7885923f35536a77c550fb64 "xelatex"
+  "Main.tex" 1765525710.85992 9958 42b6efd020a4908ec56da0480642a1f8 ""
+  "Matter/Title-Page.aux" 1765525718.09549 5582 44a27db1014de8374b32f87ea6fae393 "xelatex"
   "Matter/Title-Page.tex" 1765518519.93363 4587 526f545cb47e4e50fb69e67fe25af1a0 ""
   "Veritas.cls" 1765513055.0348 7276 4b2fcececab89b56cd0c6ef129797cbb ""
   (generated)
