@@ -11,7 +11,7 @@
   (generated)
   "Main.pdf"
   (rewritten before read)
-["xelatex"] 1765521207.86232 "Main.tex" "Main.xdv" "Main" 1765521276.90645 2
+["xelatex"] 1765521299.56645 "Main.tex" "Main.xdv" "Main" 1765521322.89731 2
   "/etc/texmf/web2c/texmf.cnf" 1751854650.88492 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -348,9 +348,9 @@
   "Configuration/11-Metadata.sty" 1765510063.05349 3468 3cbf33cdf9fd2a0ec7349344bbacc984 ""
   "Configuration/12-Floats.sty" 1765510063.05349 7485 095f97b45bce282bf6ab61868e326988 ""
   "Configuration/13-Mathematics.sty" 1765513509.07948 5532 8fe6f7175ba3081639e61e2b7f0a3246 ""
-  "Main.aux" 1765521276.73877 186 6c8186d3a557dd7a1b3a023c291ef78d "xelatex"
+  "Main.aux" 1765521322.73496 186 6c8186d3a557dd7a1b3a023c291ef78d "xelatex"
   "Main.bbl" 0 -1 0 "biber Main"
-  "Main.tex" 1765521207.7125 2068 ed86e0ff1833ae9b72e3e20d5523ae41 ""
+  "Main.tex" 1765521299.42545 2068 ed86e0ff1833ae9b72e3e20d5523ae41 ""
   "Veritas.cls" 1765513055.0348 7276 4b2fcececab89b56cd0c6ef129797cbb ""
   (generated)
   "Main.aux"
