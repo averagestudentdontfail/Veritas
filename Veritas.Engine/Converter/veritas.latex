@@ -35,6 +35,14 @@ $if(date)$\Date{$date$}$else$\Date{\today}$endif$
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
+% Quote blocks
+\RequirePackage{csquotes}
+\SetBlockEnvironment{displayquote}
+
+% Citation commands (if not using biblatex)
+\providecommand{\textcite}[1]{\textbf{#1}}
+\providecommand{\parencite}[1]{(\textbf{#1})}
+
 \begin{document}
 
 %%% Title Page %%%
@@ -51,12 +59,12 @@ $endif$
 %%% Main Content %%%
 \pagenumbering{arabic}
 \pagestyle{mainmatter}
+\setcounter{section}{0}
 
 $body$
 
-%%% Bibliography (if citations) %%%
-$if(bibliography)$
-\printbibliography
-$endif$
+%%% Bibliography %%%
+\nocite{*}
+\printbibliography[heading=bibintoc]
 
 \end{document}

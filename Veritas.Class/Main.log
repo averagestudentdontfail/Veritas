@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  12 DEC 2025 17:34
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  12 DEC 2025 17:48
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -19,6 +19,10 @@ File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
 \g__pdf_backend_annotation_int=\count185
 \g__pdf_backend_link_int=\count186
 ))
+
+Class Veritas Warning: Specified 'language' not available. Defaulting to 'engli
+sh'.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -2390,62 +2394,63 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 
-(./Main.aux)
+(./Main.aux (./Matter/Title-Page.aux))
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 30.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 39.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
- 30.
- (/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
+ 39.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
-0.
+9.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 39.
 LaTeX Font Info:    Trying to load font information for U+npxexa on input line 
-30.
+39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 39.
 LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line
- 30.
+ 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 39.
 LaTeX Font Info:    Trying to load font information for LMX+npxexx on input lin
-e 30.
+e 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    ... okay on input line 39.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -2464,16 +2469,13 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 30.
-LaTeX Info: Command `\dddot' is already robust on input line 30.
-LaTeX Info: Command `\ddddot' is already robust on input line 30.
-Package hyperref Info: Link coloring ON on input line 30.
+or `english'. on input line 39.
+LaTeX Info: Command `\dddot' is already robust on input line 39.
+LaTeX Info: Command `\ddddot' is already robust on input line 39.
+Package hyperref Info: Link coloring ON on input line 39.
+ (./Main.out) (./Main.out)
 \@outlinefile=\write7
 \openout7 = `Main.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-months-dictionar
@@ -2532,20 +2534,376 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Main.bbl' found.
  (./Main.bbl)
-Package biblatex Info: Reference section=0 on input line 30.
-Package biblatex Info: Reference segment=0 on input line 30.
-! Interruption.
-\sl@StoreMessage ...oveGobbletwo #1\sl@Terminator 
-                                                  \@gobbletwo \sl@Terminator...
-l.30 \begin{document}
-                      
-Here is how much of TeX's memory you used:
- 63977 strings out of 474878
- 1331305 string characters out of 5762517
- 2331981 words of memory out of 5000000
- 84971 multiletter control sequences out of 15000+600000
- 561924 words of font info for 63 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 123i,2n,121p,2368b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Package biblatex Info: Reference section=0 on input line 39.
+Package biblatex Info: Reference segment=0 on input line 39.
+\openout2 = `Matter/Title-Page.aux'.
 
-No pages of output.
+(./Matter/Title-Page.tex
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 688.5567pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=688.5567pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-28.25128pt
+* \headheight=20.0pt
+* \headsep=21.33955pt
+* \topskip=11.0pt
+* \footskip=45.52458pt
+* \marginparwidth=59.7508pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
+4.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+npxmia on input line 
+34.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxmia.fd
+File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
+)
+LaTeX Font Info:    Trying to load font information for U+npxsym on input line 
+34.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsym.fd
+File: unpxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/npxsym.
+)
+LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 
+34.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsyc.fd
+File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
+)
+File: Figure/Theme/Front-Page.pdf Graphic file (type pdf)
+<use Figure/Theme/Front-Page.pdf>
+ [1
+
+
+
+])
+
+LaTeX Warning: Citation 'cox2017' on page 1 undefined on input line 56.
+
+
+LaTeX Warning: Citation 'bratman2019' on page 1 undefined on input line 60.
+
+
+LaTeX Warning: Citation 'gascon2015' on page 1 undefined on input line 60.
+
+
+LaTeX Warning: Citation 'braun2019' on page 1 undefined on input line 80.
+
+
+Overfull \hbox (7.15155pt too wide) in paragraph at lines 80--128
+\TU/lmtt/m/n/10.95 elicit intellectualized explanations divorced from experient
+ial immediacy.
+ []
+
+
+Overfull \hbox (18.64905pt too wide) in paragraph at lines 80--128
+\TU/lmtt/m/n/10.95 The interview concluded with invitation for additional refle
+ctions and brief
+ []
+
+
+Overfull \hbox (12.9003pt too wide) in paragraph at lines 80--128
+\TU/lmtt/m/n/10.95 summary checking, providing opportunity to clarify misunders
+tandings or add
+ []
+
+
+Overfull \hbox (47.39279pt too wide) in paragraph at lines 80--128
+\TU/lmtt/m/n/10.95 dimensions not emerging through preceding questions. The aud
+io-recorded interview
+ []
+
+
+Overfull \hbox (12.9003pt too wide) in paragraph at lines 80--128
+\TU/lmtt/m/n/10.95 was transcribed verbatim, producing approximately 6,800 word
+s of text, with
+ []
+
+
+Overfull \hbox (12.9003pt too wide) in paragraph at lines 80--128
+\TU/lmtt/m/n/10.95 transcription capturing paralinguistic features such as paus
+es and laughter
+ []
+
+
+Overfull \hbox (1.4028pt too wide) in paragraph at lines 80--128
+\TU/lmtt/m/n/10.95 that might convey emotional significance. ## Analytical Prot
+ocol Analysis
+ []
+
+
+Overfull \hbox (12.9003pt too wide) in paragraph at lines 80--128
+\TU/lmtt/m/n/10.95 followed \citet{braun2006} reflexive approach through six re
+cursive phases.
+ []
+
+
+Overfull \hbox (24.3978pt too wide) in paragraph at lines 80--128
+\TU/lmtt/m/n/10.95 Phase 1 involved repeated reading of the transcript while li
+stening to audio,
+ []
+
+
+Overfull \hbox (12.9003pt too wide) in paragraph at lines 80--128
+\TU/lmtt/m/n/10.95 developing familiarity with both semantic content and emotio
+nal tone. Phase
+ []
+
+
+Overfull \hbox (1.4028pt too wide) in paragraph at lines 80--128
+\TU/lmtt/m/n/10.95 2 generated 78 initial codes through systematic line-by-line
+ examination,
+ []
+
+
+Overfull \hbox (41.64404pt too wide) in paragraph at lines 80--128
+\TU/lmtt/m/n/10.95 capturing both semantic content and latent meanings while ma
+intaining sufficient
+ []
+
+
+Overfull \hbox (1.5889pt too wide) in paragraph at lines 80--128
+\TU/lmtt/m/n/10.95 surrounding context to preserve meaning. Examples included\T
+U/MinionPro(0)/m/n/10.95 childhood nature as
+ []
+
+
+Overfull \hbox (5.27457pt too wide) in paragraph at lines 80--128
+\TU/MinionPro(0)/m/n/10.95 freedom,’’ \TU/lmtt/m/n/10.95 nature reducing mental
+ clutter,[][]\TU/MinionPro(0)/m/n/10.95 feeling small in natural settings,’’ an
+d “guilt
+ []
+
+[1
+
+
+
+]
+
+LaTeX Warning: Reference `tab:thematic-structure' on page 2 undefined on input 
+line 134.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[]|\TU/MinionPro(0)/m/n/10 Nature experiences providing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+\TU/MinionPro(0)/m/n/10 mental relief from cognitive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--152
+[]|\TU/MinionPro(0)/m/n/10 Immersive nature experiences
+ []
+
+
+Underfull \hbox (badness 5403) in paragraph at lines 152--152
+\TU/MinionPro(0)/m/n/10 realities, sometimes intensified
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 152--152
+\TU/MinionPro(0)/m/n/10 places motivating conservation-
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 152--152
+\TU/MinionPro(0)/m/n/10 oriented actions despite recog-
+ []
+
+
+Underfull \hbox (badness 4229) in paragraph at lines 152--152
+\TU/MinionPro(0)/m/n/10 nized limitations of individual
+ []
+
+[2]
+Overfull \hbox (4.14662pt too wide) in paragraph at lines 159--179
+\TU/MinionPro(0)/m/n/10.95 nitive demands, characterizing urban work environmen
+ts as producing what they termed \TU/lmtt/m/n/10.95 mental
+ []
+
+
+Overfull \hbox (18.64905pt too wide) in paragraph at lines 159--179
+\TU/lmtt/m/n/10.95 clutter[][] requiring constant attention management: \begin{
+displayquote} When
+ []
+
+
+Overfull \hbox (18.64905pt too wide) in paragraph at lines 159--179
+\TU/lmtt/m/n/10.95 I[]m in the office all day, it[]s like my brain gets... clut
+tered. There[]s too
+ []
+
+
+Overfull \hbox (7.15155pt too wide) in paragraph at lines 159--179
+\TU/lmtt/m/n/10.95 much going on, too many things competing for attention. Even
+ just stepping
+ []
+
+
+Overfull \hbox (1.4028pt too wide) in paragraph at lines 159--179
+\TU/lmtt/m/n/10.95 out to the park at lunch, there[]s something about being aro
+und trees that
+ []
+
+
+Overfull \hbox (64.63904pt too wide) in paragraph at lines 159--179
+\TU/lmtt/m/n/10.95 makes that feeling ease up. \end{displayquote} This restorat
+ion involved attentional
+ []
+
+
+Overfull \hbox (7.15155pt too wide) in paragraph at lines 159--179
+\TU/lmtt/m/n/10.95 shifts rather than mental emptiness. The participant disting
+uished between
+ []
+
+
+Overfull \hbox (35.8953pt too wide) in paragraph at lines 159--179
+\TU/lmtt/m/n/10.95 effortful attention required by work tasks and a more recept
+ive, less demanding
+ []
+
+
+Overfull \hbox (12.9003pt too wide) in paragraph at lines 159--179
+\TU/lmtt/m/n/10.95 quality of attention experienced during nature contact, char
+acterizing this
+ []
+
+
+Overfull \hbox (76.13654pt too wide) in paragraph at lines 159--179
+\TU/lmtt/m/n/10.95 not merely as relaxation but as specific cognitive replenish
+ment: \begin{displayquote}
+ []
+
+
+Overfull \hbox (12.9003pt too wide) in paragraph at lines 159--179
+\TU/lmtt/m/n/10.95 After a walk in natural areas, I notice I can focus better. 
+Tasks that felt
+ []
+
+
+Overfull \hbox (30.14655pt too wide) in paragraph at lines 159--179
+\TU/lmtt/m/n/10.95 overwhelming before seem more manageable. It[]s like my capa
+city to concentrate
+ []
+
+
+Overfull \hbox (12.9003pt too wide) in paragraph at lines 159--179
+\TU/lmtt/m/n/10.95 gets recharged somehow. \end{displayquote} The restorative q
+uality appeared
+ []
+
+
+Overfull \hbox (1.20235pt too wide) in paragraph at lines 159--179
+\TU/lmtt/m/n/10.95 to emerge from what the participant termed nature[]s\TU/Mini
+onPro(0)/m/n/10.95 gentle’’ engagement of atten-
+ []
+
+[3]
+Overfull \hbox (0.43889pt too wide) in paragraph at lines 184--190
+\TU/MinionPro(0)/m/n/10.95 ing feelings the participant characterized as both h
+umbling and oddly comforting; and extending
+ []
+
+[4] [5
+
+] [6]
+
+LaTeX Warning: Citation 'bratman2019' on page 7 undefined on input line 322.
+
+
+LaTeX Warning: Citation 'kaplan1995' on page 7 undefined on input line 323.
+
+
+LaTeX Warning: Citation 'soga2023' on page 7 undefined on input line 324.
+
+
+LaTeX Warning: Citation 'kaplan1995' on page 7 undefined on input line 330.
+
+
+Overfull \hbox (0.23741pt too wide) in paragraph at lines 313--374
+\TU/MinionPro(0)/m/n/10.95 and pro-environmental action, suggesting that these 
+relationships may be mediated by structural
+ []
+
+
+Overfull \hbox (0.12135pt too wide) in paragraph at lines 313--374
+\TU/MinionPro(0)/m/n/10.95 locations or access to natural environments. The int
+erview method relied on retrospective reflec-
+ []
+
+[7
+
+]
+
+LaTeX Warning: Empty bibliography on input line 377.
+
+[8] (./Main.aux (./Matter/Title-Page.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `Main.out' has not changed.
+(rerunfilecheck)             Checksum: D7FCED0E20B915E59F32DB33A75E60F2;988.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'Main.run.xml'.
+\openout1 = `Main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 64507 strings out of 474878
+ 1343531 string characters out of 5762517
+ 2355578 words of memory out of 5000000
+ 85426 multiletter control sequences out of 15000+600000
+ 600125 words of font info for 141 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 123i,12n,121p,2368b,3870s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on Main.xdv (9 pages, 234552 bytes).

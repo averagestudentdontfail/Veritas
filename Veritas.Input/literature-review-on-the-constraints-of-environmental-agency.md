@@ -2,7 +2,7 @@
 title: "On the Constraints of Environmental Agency"
 subtitle: "A Single-Case Phenomenological Examination of Nature Attachment and Moral Distress"
 author: "Kiran Nath"
-date: "2025"
+date: "December 2025"
 lang: en
 chapterstyle: minimal
 ---

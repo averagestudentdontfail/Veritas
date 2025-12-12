@@ -49,6 +49,11 @@ convert_file() {
         --standalone \
         --output="$tex_file"
     
+    # Copy bibliography files if they exist
+    if [[ -d "$INPUT_DIR/Bibliography" ]]; then
+        cp "$INPUT_DIR/Bibliography/"*.bib "$CLASS_DIR/Bibliography/" 2>/dev/null || true
+    fi
+    
     # Build PDF in Veritas.Class
     echo "  → Building PDF..."
     (cd "$CLASS_DIR" && make clean > /dev/null 2>&1 && make > /dev/null 2>&1)
