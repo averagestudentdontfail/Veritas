@@ -1,22 +1,18 @@
 # Fdb version 4
-["biber Main"] 1765522465.09639 "Main.bcf" "Main.bbl" "Main" 1765522475.57211 0
+["biber Main"] 1765522698.71749 "Main.bcf" "Main.bbl" "Main" 1765522706.10102 0
   "Bibliography/Bibliography.bib" 1765509980.09823 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "Bibliography/bill-wynsky.bib" 1765522462.36103 11705 113390b2486bc3c29bfec16c4cc9d43d ""
-  "Bibliography/burn-injury.bib" 1765522462.36484 12606 86db58952e93814f431cdc32c76e574a ""
-  "Bibliography/environmental-agency.bib" 1765522462.36484 2721 c345883b8d0c53f851da09eb8bb6942b ""
-  "Bibliography/infertility-therapy.bib" 1765522462.36484 3980 b971420062a26b8b32ab63531f764fea ""
-  "Bibliography/max-verstappen.bib" 1765522462.36484 16256 33f32bae7d4646ede203c366bb22fb51 ""
-  "Main.bcf" 1765522475.20347 108926 19c5c15ee905521904e650437a214d71 "xelatex"
+  "Bibliography/environmental-agency.bib" 1765522695.64816 2721 c345883b8d0c53f851da09eb8bb6942b ""
+  "Main.bcf" 1765522705.78573 108859 6934c7d127e4616239e1b91d3c85a680 "xelatex"
   (generated)
   "Main.bbl"
   "Main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1765522475.35905 "Main.xdv" "Main.pdf" "Main" 1765522475.57512 0
-  "Main.xdv" 1765522475.20347 577180 abb6a0f233f409b189cbc96ed7431454 "xelatex"
+["xdvipdfmx"] 1765522705.933 "Main.xdv" "Main.pdf" "Main" 1765522706.10385 0
+  "Main.xdv" 1765522705.78573 257068 ca268c2d14f59ec543f4911e0b1740f1 "xelatex"
   (generated)
   "Main.pdf"
   (rewritten before read)
-["xelatex"] 1765522472.40771 "Main.tex" "Main.xdv" "Main" 1765522475.57223 0
+["xelatex"] 1765522703.70719 "Main.tex" "Main.xdv" "Main" 1765522706.1011 0
   "/etc/texmf/web2c/texmf.cnf" 1751854650.88492 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -377,12 +373,12 @@
   "Configuration/12-Floats.sty" 1765510063.05349 7485 095f97b45bce282bf6ab61868e326988 ""
   "Configuration/13-Mathematics.sty" 1765513509.07948 5532 8fe6f7175ba3081639e61e2b7f0a3246 ""
   "Figure/Theme/Front-Page.pdf" 1765509980.0906 100016 0a71fbe20eff016b56e8b47f5d8bd3b4 ""
-  "Main.aux" 1765522475.19587 15146 0fae5018a9b99859e45c5d7779685da2 "xelatex"
-  "Main.bbl" 1765522466.55054 243796 eed4ee49275bc45d452421a8fc002b5b "biber Main"
-  "Main.out" 1765522475.19967 1082 8b11699dc4ad82e96452fdd486ba3edc "xelatex"
-  "Main.run.xml" 1765522475.20347 2655 e8819a2f7885923f35536a77c550fb64 "xelatex"
-  "Main.tex" 1765522462.3458 23522 58b5fb8c119557dda7df8769b108fddd ""
-  "Matter/Title-Page.aux" 1765522474.38968 5582 7e7045bb5b225e512a34308e59fa752a "xelatex"
+  "Main.aux" 1765522705.77813 3129 e1cd13af366aa2c2ba120630897b7ca3 "xelatex"
+  "Main.bbl" 1765522699.22666 14462 72d071667a6faf3d73fd937de214f653 "biber Main"
+  "Main.out" 1765522705.78193 1082 8b11699dc4ad82e96452fdd486ba3edc "xelatex"
+  "Main.run.xml" 1765522705.78573 2655 e8819a2f7885923f35536a77c550fb64 "xelatex"
+  "Main.tex" 1765522695.62912 23434 cecfac7fcbc6b1b82661d7c480502d6c ""
+  "Matter/Title-Page.aux" 1765522705.64132 5582 44a27db1014de8374b32f87ea6fae393 "xelatex"
   "Matter/Title-Page.tex" 1765518519.93363 4587 526f545cb47e4e50fb69e67fe25af1a0 ""
   "Veritas.cls" 1765513055.0348 7276 4b2fcececab89b56cd0c6ef129797cbb ""
   (generated)

@@ -1,32 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'Main.blg'
-[53] biber:340> INFO - === Fri Dec 12, 2025, 17:54:25
-[64] Biber.pm:419> INFO - Reading 'Main.bcf'
-[94] Biber.pm:976> INFO - Using all citekeys in bib section 0
+[53] biber:340> INFO - === Fri Dec 12, 2025, 17:58:19
+[63] Biber.pm:419> INFO - Reading 'Main.bcf'
+[94] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
 [100] Biber.pm:4419> INFO - Processing section 0
-[105] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography/Bibliography.bib' for section 0
+[106] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography/Bibliography.bib' for section 0
 [106] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography/environmental-agency.bib' for section 0
 [106] bibtex.pm:1713> INFO - LaTeX decoding ...
 [110] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography/environmental-agency.bib'
-[161] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography/bill-wynsky.bib' for section 0
-[162] bibtex.pm:1713> INFO - LaTeX decoding ...
-[175] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography/bill-wynsky.bib'
-[312] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography/max-verstappen.bib' for section 0
-[313] bibtex.pm:1713> INFO - LaTeX decoding ...
-[330] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography/max-verstappen.bib'
-[526] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography/infertility-therapy.bib' for section 0
-[526] bibtex.pm:1713> INFO - LaTeX decoding ...
-[532] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography/infertility-therapy.bib'
-[572] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography/burn-injury.bib' for section 0
-[573] bibtex.pm:1713> INFO - LaTeX decoding ...
-[590] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography/burn-injury.bib'
-[811] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[811] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[811] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[811] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[925] bbl.pm:660> INFO - Writing 'Main.bbl' with encoding 'UTF-8'
-[960] bbl.pm:763> INFO - Output to Main.bbl
-[961] Biber.pm:131> WARN - Data source 'Bibliography/Bibliography.bib' is empty, ignoring
-[961] Biber.pm:131> WARN - Duplicate entry key: 'Kurmis2022' in file 'Bibliography/burn-injury.bib', skipping ...
-[961] Biber.pm:131> WARN - Duplicate entry key: 'Tracy2020b' in file 'Bibliography/burn-injury.bib', skipping ...
-[961] Biber.pm:133> INFO - WARNINGS: 3
+[166] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[166] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[166] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[166] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[170] bbl.pm:660> INFO - Writing 'Main.bbl' with encoding 'UTF-8'
+[172] bbl.pm:763> INFO - Output to Main.bbl
+[172] Biber.pm:131> WARN - Data source 'Bibliography/Bibliography.bib' is empty, ignoring
+[172] Biber.pm:133> INFO - WARNINGS: 1

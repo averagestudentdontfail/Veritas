@@ -35,10 +35,6 @@ $if(date)$\Date{$date$}$else$\Date{\today}$endif$
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-% Quote blocks
-\RequirePackage{csquotes}
-\SetBlockEnvironment{displayquote}
-
 \begin{document}
 
 %%% Title Page %%%
@@ -60,7 +56,6 @@ $endif$
 $body$
 
 %%% Bibliography %%%
-\nocite{*}
 \printbibliography[heading=bibintoc]
 
 \end{document}

@@ -2375,7 +2375,6 @@
     <bcf:citekey order="5" intorder="1">kaplan1995</bcf:citekey>
     <bcf:citekey order="6" intorder="1">soga2023</bcf:citekey>
     <bcf:citekey order="7" intorder="1">kaplan1995</bcf:citekey>
-    <bcf:citekey order="8" intorder="1" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
