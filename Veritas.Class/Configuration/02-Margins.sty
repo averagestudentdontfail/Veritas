@@ -1,0 +1,86 @@
+%%% Configuration/02-Margins.sty %%%
+%%% Page Geometry for Veritas Template
+%%%
+%%% FIRST PRINCIPLES BASIS:
+%%% This module implements page proportions derived from:
+%%%
+%%% 1. Tschichold, J. (1991). The Form of the Book: Essays on the 
+%%%    Morality of Good Design. Lund Humphries.
+%%%    - Classical page proportions for A4 paper
+%%%    - Gutter compensation for bound documents
+%%%
+%%% 2. Bringhurst, R. (2012). The Elements of Typographic Style.
+%%%    - Line length 45-75 characters for optimal readability (§2.1.2)
+%%%    - At 11pt Minion Pro, ~65 chars/line with 3.15cm margins
+%%%
+%%% 3. Williamson, H. (1983). Methods of Book Design. Yale University Press.
+%%%    - Industry-standard binding margins
+%%%    - Gutter: 25mm for perfect binding (6mm glue + 19mm clearance)
+%%%    - Outer: 1.5× inner for thumb grip
+%%%
+%%% 4. ISO 216 (A4 Paper: 210mm × 297mm)
+%%%    - Text block ratio approximating √2 page ratio
+%%%
+%%% COMPLIANCE: Standard.md
+%%% - LOC-1 Rule 1: LaTeX2e conformant
+%%% - LOC-2 Rule 6: Deterministic page dimensions
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{02-Margins}[2025/12/12 v2.0.0 Veritas Page Geometry]
+
+\usepackage{geometry}
+
+%%% Screen/Single-sided Layout (Default) %%%
+% Rationale: Symmetric margins for digital reading.
+% Optimised for screen display without binding considerations.
+\ifthenelse{\equal{\BookPrintOption}{false}}{%
+    \geometry{
+        paper=a4paper,
+        top=2.54cm,
+        bottom=2.54cm,
+        left=3.15cm,
+        right=3.15cm,
+        footskip=1.6cm,
+        headsep=0.75cm,
+        % showframe % Uncomment for debugging
+    }
+}{%
+    %%% Book Printing Layout (Physical Binding) %%%
+    %%% 
+    %%% Derived from Williamson (1983) and industry standards:
+    %%%
+    %%% Perfect Binding (adhesive spine):
+    %%% - Glue strip: 6mm consumed by binding
+    %%% - Minimum text clearance: 19mm from spine
+    %%% - Total gutter: 25mm inner margin
+    %%%
+    %%% Case Binding (hardcover):
+    %%% - Hinge allowance: 6mm binding offset
+    %%% - Inner margin: 25mm (same as perfect)
+    %%%
+    %%% Outer Margin Formula:
+    %%% - outer = inner × 1.5 (thumb grip ratio)
+    %%% - 25mm × 1.5 = 37.5mm outer margin
+    %%%
+    %%% Vertical Margins:
+    %%% - Top: 30mm (headroom for running heads)
+    %%% - Bottom: 40mm (larger for page numbers, visual weight)
+    %%% - Ratio approximates 3:4 (classical proportion)
+    %%%
+    \geometry{
+        paper=a4paper,
+        inner=25mm,          % Gutter: glue binding allowance
+        outer=37.5mm,        % 1.5× inner for thumb grip
+        top=30mm,            % Headroom for running heads
+        bottom=40mm,         % Visual weight, page numbers
+        footskip=1.6cm,
+        headsep=0.75cm,
+        bindingoffset=6mm,   % Physical glue/hinge strip
+        twoside,             % Alternating margins for recto/verso
+        % showframe % Uncomment for debugging
+    }
+}
+
+%%% Fine-tune Text Block %%%
+\addtolength{\textheight}{-20pt}
+\setlength{\headheight}{20pt}

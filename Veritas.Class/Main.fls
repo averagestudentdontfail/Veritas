@@ -1,0 +1,13 @@
+PWD /home/sunny/.project/Veritas/Veritas.Class
+INPUT /etc/texmf/web2c/texmf.cnf
+INPUT /usr/share/texmf/web2c/texmf.cnf
+INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
+INPUT /var/lib/texmf/web2c/xetex/xelatex.fmt
+INPUT Main.tex
+OUTPUT Main.log
+INPUT ./Veritas.cls
+INPUT Veritas.cls
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def

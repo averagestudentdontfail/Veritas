@@ -1,0 +1,74 @@
+% Veritas LaTeX Template
+% Version: 2.0.0 - 2025-12-12
+% Based on: IPLeiria Thesis by José Areia (jose.apareia@gmail.com)
+% Compliance: Standard.md LOC-1 through LOC-5
+
+%%% Document Options %%%
+\documentclass[
+    language=english,
+    docstage=final,
+    media=screen,
+    bookprint=false,
+    linkcolor=burgundy,
+    chapterstyle=minimal,
+    cover=false,
+    doctype=article
+]{Veritas}
+
+%%% Document Version (only shown if docstage=working) %%%
+\DocumentVersion{1.0.0}
+
+%%% Document Metadata %%%
+\input{Metadata/Metadata}
+
+%%% Glossary Setup (optional — uncomment if needed) %%%
+% \makeglossaries
+% \loadglsentries{Matter/05-Glossary}
+% \loadglsentries[\acronymtype]{Matter/06-Acronyms}
+
+\begin{document}
+
+%%% Title Page %%%
+\pagenumbering{gobble}
+\ifthenelse{\equal{\CoverOption}{true}}{%
+    \include{Matter/00-Cover}%
+}{}
+\include{Matter/Title-Page}
+
+%%% Front Matter (optional) %%%
+\pagenumbering{roman}
+\pagestyle{frontmatter}
+
+%%% Table of Contents (optional — uncomment if needed) %%%
+% \bookmarktocentry\tableofcontents
+
+%%% Main Matter %%%
+\clearpage
+\pagenumbering{arabic}
+\pagestyle{mainmatter}
+
+%%% Content Chapters %%%
+% Replace with your chapter files
+\include{Chapter/01-Diagnosis}
+\include{Chapter/02-Formulation}
+\include{Chapter/03-Intervention}
+\include{Chapter/04-Reflection}
+
+%%% Appendices (optional — uncomment if needed) %%%
+% \appendix
+% \input{Matter/08-Appendices}
+% \input{Chapter/Appendices/00-AppendixA}
+
+%%% Bibliography %%%
+\nocite{*}
+\renewcommand{\refname}{Bibliography}
+\printbibliography[title={\refname},heading=bibintoc]
+
+%%% Back Page (optional — for print versions) %%%
+\ifthenelse{\equal{\MediaOption}{paper}}{%
+    \clearpage
+    \pagenumbering{gobble}
+    \input{Matter/10-Back-Page}%
+}{}
+
+\end{document}

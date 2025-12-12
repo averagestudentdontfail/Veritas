@@ -1,0 +1,152 @@
+%%% Matter/Title-Page.tex %%%
+%%% Unified Title Page for Veritas Template
+%%%
+%%% FIRST PRINCIPLES: All fields are optional.
+%%% Only defined metadata will be displayed.
+
+\newcommand\BackgroundPicTitlePage{%
+    \put(0,0){%
+    \parbox[b][\paperheight]{\paperwidth}{%
+    \vfill
+    \centering
+    \IfFileExists{Figures/Theme/Front-Page-BG.pdf}{%
+        \includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{Figures/Theme/Front-Page-BG.pdf}%
+    }{}%
+    \vfill
+}}}
+\AddToShipoutPictureBG*{\BackgroundPicTitlePage}
+
+\newgeometry{margin=2.5cm, top=3cm, bottom=2.5cm}
+\begin{titlepage}
+    \miniondisplayfont
+    \color{frontpagedark}
+    
+    \vspace*{2\baselineskip}
+    
+    %%% Title (if defined) %%%
+    \ifdefined\GetTitle
+        \noindent
+        \makebox[\textwidth][l]{%
+            \parbox{\dimexpr\textwidth-1cm\relax}{%
+                \setstretch{1.05}%
+                \raggedright\bfseries\fontsize{24}{30}\selectfont\GetTitle
+            }%
+        }
+        \vspace{0.8\baselineskip}
+    \fi
+    
+    %%% Subtitle (if defined) %%%
+    \ifdefined\GetSubtitle
+        \noindent
+        \makebox[\textwidth][l]{%
+            \parbox{\dimexpr\textwidth-3cm\relax}{%
+                \setstretch{1.03}%
+                \raggedright\fontsize{14}{18}\selectfont\itshape\GetSubtitle
+            }%
+        }
+        \vspace{1.5\baselineskip}
+    \fi
+    
+    \vspace{1\baselineskip}
+    
+    %%% Authors (if defined) %%%
+    \ifdefined\GetFirstAuthor
+        {\noindent\fontsize{14}{18}\selectfont\GetFirstAuthor}
+        
+        % Show student number only if explicitly defined
+        \ifdefined\GetFirstAuthorNumber
+            \ifdefined\ShowStudentNumber
+                \\[2pt]
+                {\noindent\fontsize{10}{12}\selectfont\itshape\GetFirstAuthorNumber}
+            \fi
+        \fi
+        \vspace{8pt}
+    \fi
+    
+    \ifdefined\GetSecondAuthor
+        \\[4pt]
+        {\noindent\fontsize{14}{18}\selectfont\GetSecondAuthor}
+    \fi
+    
+    \ifdefined\GetThirdAuthor
+        \\[4pt]
+        {\noindent\fontsize{14}{18}\selectfont\GetThirdAuthor}
+    \fi
+    
+    %%% Supervisor Section (if any supervisor defined) %%%
+    \ifdefined\GetSupervisor
+        \vspace{2\baselineskip}
+        {
+        \noindent
+        \fontsize{10}{12}\selectfont
+        \renewcommand{\arraystretch}{0.1}
+        \hspace*{-2.5pt}\begin{tabular}{@{}r@{\hspace{5pt}}>{\raggedright\arraybackslash}m{6cm}@{}}
+            \textbf{Supervisor:} & \GetSupervisor \\ [-.7ex]
+            \ifdefined\GetSupervisorTitle
+                & \setstretch{0.9}{\fontsize{8}{10}\selectfont\itshape \GetSupervisorTitle} \\ [2ex]
+            \fi
+            
+            \ifdefined\GetCoSupervisor
+                \textbf{Co-supervisor:} & \GetCoSupervisor \\ [-.7ex]
+                \ifdefined\GetCoSupervisorTitle
+                    & \setstretch{0.9}{\fontsize{8}{10}\selectfont\itshape \GetCoSupervisorTitle} \\ [.5ex]
+                \fi
+            \fi
+
+            \ifdefined\GetSecCoSupervisor        
+                & \GetSecCoSupervisor \\ [-.7ex]
+                \ifdefined\GetSecCoSupervisorTitle
+                    & \setstretch{0.9}{\fontsize{8}{10}\selectfont\itshape \GetSecCoSupervisorTitle} \\
+                \fi
+            \fi
+        \end{tabular}
+        }
+    \fi
+    
+    \vfill
+    
+    %%% Institution Section (if any defined) %%%
+    \ifdefined\GetUniversity
+        {\noindent\fontsize{10}{12}\selectfont\GetUniversity}\\[2pt]
+    \fi
+    
+    \ifdefined\GetSchool
+        {\noindent\fontsize{10}{12}\selectfont\GetSchool}\\[2pt]
+    \fi
+    
+    \ifdefined\GetDepartment
+        {\noindent\fontsize{10}{12}\selectfont\GetDepartment}\\[2pt]
+    \fi
+    
+    \ifdefined\GetDegree
+        {\noindent\fontsize{10}{12}\selectfont\GetDegree}\\[2pt]
+    \fi
+
+    \ifdefined\GetCourse
+        {\noindent\fontsize{10}{12}\selectfont\GetCourse}
+    \fi
+
+    %%% Document Type (if defined) %%%
+    \ifdefined\GetThesisType
+        \vspace{1.5\baselineskip}
+        {\noindent\fontsize{10}{12}\itshape\selectfont\GetThesisType}
+    \fi
+
+    %%% Working Draft Version (only in working stage) %%%
+    \ifthenelse{\equal{\DocStageOption}{working}}{%
+        \vspace{1.5\baselineskip}
+        \ifdefined\GetDocumentVersion
+            {\noindent\fontsize{10}{12}\selectfont\textcolor{burgundy}{\GetDocumentVersion}}
+        \fi
+    }{}
+
+    %%% Date (if defined) %%%
+    \ifdefined\GetDate
+        \vspace{1.5\baselineskip}
+        {\noindent\fontsize{10}{12}\selectfont\GetDate}
+    \fi
+
+    \vspace{2\baselineskip}
+\end{titlepage}
+\restoregeometry
+\MediaOptionLogicBlank

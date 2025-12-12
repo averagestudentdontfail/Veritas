@@ -1,0 +1,198 @@
+%%% Configuration/07-Chapters.sty %%%
+%%% Chapter and Section Formatting for Veritas Template
+%%%
+%%% FIRST PRINCIPLES BASIS:
+%%% This module implements chapter design derived from:
+%%%
+%%% 1. Bringhurst, R. (2012). The Elements of Typographic Style.
+%%%    - Chapter openings as "doorways" to content (§6.4)
+%%%    - White space before chapter titles for pause and transition
+%%%
+%%% 2. Tschichold, J. (1991). The Form of the Book.
+%%%    - Large chapter numbers as visual anchors
+%%%    - Consistent vertical rhythm across pages
+%%%
+%%% 3. Müller-Brockmann, J. (1981). Grid Systems in Graphic Design.
+%%%    - Modular scale for typographic hierarchy
+%%%    - Consistent spacing based on leading multiples
+%%%
+%%% 4. Swiss Typography (International Typographic Style)
+%%%    - Minimal style: clean lines, negative space, no decoration
+%%%    - Function over ornamentation
+%%%
+%%% COMPLIANCE: Standard.md
+%%% - LOC-1 Rule 1: LaTeX2e conformant
+%%% - LOC-4 Rule 14: Semantic environments for structural elements
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{07-Chapters}[2025/12/12 v2.0.0 Veritas Chapter Formatting]
+
+%%% burgundy color defined in 01-Colors.sty %%%
+
+%%% ========================================= %%%
+%%%              MINIMAL STYLE                %%%
+%%% ========================================= %%%
+%%% Derived from Swiss Typography principles:
+%%% - No decorative numerals
+%%% - Clean sans-serif hierarchy
+%%% - Maximum negative space
+%%% - Horizontal rule as only embellishment
+
+\ifthenelse{\equal{\ChapterOption}{minimal}}{
+    \titleformat{\chapter}[display]
+    {\miniondisplayfont\huge\bfseries}%
+    {}%  No chapter number displayed
+    {0pt}%
+    {\vspace{-20pt}}%
+    [\vspace{4pt}\titlerule\vspace{8pt}]
+    
+    % Show chapter number only if non-zero
+    \titleformat{name=\chapter,numberless}[display]
+    {\miniondisplayfont\huge\bfseries}%
+    {}%
+    {0pt}%
+    {\vspace{-20pt}}%
+    [\vspace{4pt}\titlerule\vspace{8pt}]
+    
+    \titlespacing*{\chapter}{0pt}{40pt}{30pt}
+}{}
+
+%%% ========================================= %%%
+%%%              CLASSIC STYLE                %%%
+%%% ========================================= %%%
+%%% Traditional right-aligned large numeral
+\ifthenelse{\equal{\ChapterOption}{classic}}{
+    \titleformat{\chapter}[display]%
+    {\raggedleft\huge}%
+    {\raggedleft\minionsubheadfont\fontsize{72}{80}\bfseries%
+        {\color{burgundy}\addfontfeature{LetterSpace=4}\thechapter}}%
+    {15pt}%
+    {\hspace{2cm}\miniondisplayfont\fontsize{28}{34}\selectfont\addfontfeature{LetterSpace=2}}%
+    
+    \titlespacing*{\chapter}{0pt}{-30pt}{40pt}
+}{}
+
+%%% ========================================= %%%
+%%%               FANCY STYLE                 %%%
+%%% ========================================= %%%
+%%% Modern design with vertical rule accent
+\ifthenelse{\equal{\ChapterOption}{fancy}}{
+    \titleformat{\chapter}[display]
+    {\flushright\normalsize\huge\color{black}}%
+    {\flushright\normalsize%
+        {\minionsubheadfont\fontsize{28}{32}\selectfont\bfseries%
+        \textcolor{burgundy!60}{\rule[-4pt]{2pt}{36pt}}\hspace{0.8em}%
+        \raisebox{6pt}{\color{burgundy}\addfontfeature{LetterSpace=4}\thechapter}}}%
+    {16pt}%
+    {\miniondisplayfont\addfontfeature{LetterSpace=8}\fontsize{24}{30}\selectfont}%
+    
+    \titlespacing*{\chapter}{0pt}{-30pt}{40pt}
+}{}
+
+%%% ========================================= %%%
+%%%              MODERN STYLE                 %%%
+%%% ========================================= %%%
+%%% Bold minimalist with uppercase title
+\ifthenelse{\equal{\ChapterOption}{modern}}{
+    \titleformat{\chapter}[display]
+    {\normalsize\huge\color{black}}%
+    {\minionsubheadfont\flushright\fontsize{64}{70}\bfseries%
+        {\color{burgundy}\addfontfeature{LetterSpace=0}%
+        \raisebox{8pt}{\thechapter}}%
+    }{16pt}%
+    {\miniondisplayfont\addfontfeature{LetterSpace=8}\fontsize{22}{28}\selectfont%
+        \MakeUppercase}%
+    
+    \titlespacing*{\chapter}{0pt}{-30pt}{45pt}
+}{}
+
+%%% ========================================= %%%
+%%%             PART FORMATTING               %%%
+%%% ========================================= %%%
+\makeatletter
+\renewcommand\part{%
+  \if@openright
+    \cleardoublepage
+  \else
+    \clearpage
+  \fi
+  \thispagestyle{empty}%
+  \if@twocolumn
+    \onecolumn
+    \@tempswatrue
+  \else
+    \@tempswafalse
+  \fi
+  \null\vfil
+  \secdef\@part\@spart}
+
+\def\@part[#1]#2{%
+    \ifnum \c@secnumdepth >-2\relax
+      \refstepcounter{part}%
+      \addcontentsline{toc}{part}{\thepart\hspace{1em}#1}%
+    \else
+      \addcontentsline{toc}{part}{#1}%
+    \fi
+    \markboth{}{}%
+    {\centering
+     \interlinepenalty \@M
+     \normalfont
+     \miniondisplayfont\fontsize{12}{16}\selectfont\addfontfeature{LetterSpace=10}%
+     \MakeUppercase{\partname\nobreakspace\thepart}%
+     \par
+     \vskip 2em
+     \miniondisplayfont\fontsize{28}{36}\selectfont\addfontfeature{LetterSpace=2}%
+     #2\par}%
+    \@endpart}
+
+\def\@spart#1{%
+    {\centering
+     \interlinepenalty \@M
+     \normalfont
+     \miniondisplayfont\fontsize{28}{36}\selectfont\addfontfeature{LetterSpace=2}%
+     #1\par}%
+    \@endpart}
+
+\def\@endpart{\vfil\newpage
+              \if@twoside
+               \if@openright
+                \null
+                \thispagestyle{empty}%
+                \newpage
+               \fi
+              \fi
+              \if@tempswa
+                \twocolumn
+              \fi}
+\makeatother
+
+%%% ========================================= %%%
+%%%           SECTION FORMATTING              %%%
+%%% ========================================= %%%
+%%% Body text size (11pt/13.2pt) for hierarchy
+\titleformat{\section}
+    {\minionfont\fontsize{11pt}{13.2pt}\selectfont\bfseries}
+    {\textcolor{burgundy}{\thesection}}
+    {1em}
+    {}
+
+\titlespacing*{\section}{0pt}{18pt}{6pt}
+
+%%% Subsection %%%
+\titleformat{\subsection}
+    {\minionfont\fontsize{11pt}{13.2pt}\selectfont\bfseries}
+    {\textcolor{burgundy}{\thesubsection}}
+    {1em}
+    {}
+
+\titlespacing*{\subsection}{0pt}{14pt}{4pt}
+
+%%% Subsubsection (run-in) %%%
+\titleformat{\subsubsection}[runin]
+    {\minionfont\fontsize{11pt}{13.2pt}\selectfont\itshape}
+    {\textcolor{burgundy!80}{\thesubsubsection}}
+    {0.8em}
+    {}
+    [.]
+
+\titlespacing*{\subsubsection}{0pt}{10pt}{0.5em}

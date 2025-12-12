@@ -1,0 +1,21 @@
+# Fdb version 4
+["xdvipdfmx"] 0 "Main.xdv" "Main.pdf" "Main" 0 -1
+  "Main.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "Main.pdf"
+  (rewritten before read)
+["xelatex"] 1765512687.8644 "Main.tex" "Main.xdv" "Main" 1765512688.27437 2
+  "/etc/texmf/web2c/texmf.cnf" 1751854650.88492 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def" 1704491087 31815 935a376385ab1feff82e3d2187c4f47a ""
+  "/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty" 1705955748 6565 cfd9fd0a1d5f5ad985151778771ff7a9 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
+  "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1751854741 10843776 d3bfac28d781a2a8fb3dddc336662138 ""
+  "Main.aux" 1765512687.85844 32 3985256e7290058c681f74d7a3565a19 "xelatex"
+  "Main.tex" 1765510063.08725 1760 1516433fa9872ca05bab19204c5fed7c ""
+  "Veritas.cls" 1765510018.60635 7523 d4a98d867c0bae07930a186656e9d9ea ""
+  (generated)
+  "Main.aux"
+  "Main.log"
+  "Main.xdv"
+  (rewritten before read)

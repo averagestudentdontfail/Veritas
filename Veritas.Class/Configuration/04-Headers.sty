@@ -1,0 +1,110 @@
+%%% Configuration/04-Headers.sty %%%
+%%% Page Headers and Footers for Veritas Template
+%%%
+%%% FIRST PRINCIPLES BASIS:
+%%% This module implements page rhythm derived from:
+%%%
+%%% 1. Tschichold, J. (1991). The Form of the Book.
+%%%    - Running heads as navigation aids in long documents
+%%%    - Page numbers positioned for quick reference
+%%%
+%%% 2. Bringhurst, R. (2012). The Elements of Typographic Style.
+%%%    - Running heads set in smaller size than body (§4.2)
+%%%    - Book typography traditions from incunabula period
+%%%
+%%% 3. Classical Printing Tradition:
+%%%    - Roman numerals for front matter (tradition since 15th century)
+%%%    - Arabic numerals for main matter starting at 1
+%%%
+%%% COMPLIANCE: Standard.md
+%%% - LOC-1 Rule 1: LaTeX2e conformant
+%%% - LOC-4 Rule 14: Clear semantic environments
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{04-Headers}[2025/12/12 v1.0.0 Veritas Page Headers]
+
+\usepackage{fancyhdr}
+\usepackage[bottom,hang]{footmisc}
+\setlength{\footnotemargin}{6pt}
+
+%%% Front Matter Style %%%
+% Roman numerals, centered footer, no header
+% Rationale: Front matter is auxiliary; minimal distraction
+\fancypagestyle{frontmatter}{%
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyfoot[C]{%
+        \miniondisplayfont\fontsize{11}{13}\selectfont%
+        \thepage%
+        \vspace{3pt}%
+    }
+    \ifthenelse{\equal{\DocStageOption}{working}}{%
+        \fancyfoot[L]{%
+            \minionfont\fontsize{8}{10}\selectfont\itshape%
+            \GetDocumentVersion\ \textbullet{}\ \today%
+        }%
+    }{}%
+}
+
+%%% Main Matter Style %%%
+% Arabic numerals with headers showing chapter context
+% Rationale: Reader orientation in long documents
+\fancypagestyle{mainmatter}{%
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0.3pt}
+    \fancyhead[L]{%
+        \miniondisplayfont\fontsize{10}{12}\selectfont\bfseries%
+        \thepage%
+        \vspace{3pt}%
+    }
+    \fancyhead[R]{%
+        \miniondisplayfont\fontsize{9}{11}\selectfont%
+        \leftmark%
+        \vspace{3pt}%
+    }
+    \ifthenelse{\equal{\DocStageOption}{working}}{%
+        \fancyfoot[C]{%
+            \minionfont\fontsize{8}{10}\selectfont\itshape%
+            \GetDocumentVersion\ \textbullet{}\ \today%
+        }%
+    }{}%
+}
+
+%%% Plain Style (Chapter Openings) %%%
+% Clean page with only centered page number
+% Rationale: Chapter openings are moments of pause
+\fancypagestyle{plain}{%
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyfoot[C]{%
+        \miniondisplayfont\fontsize{11}{13}\selectfont\bfseries%
+        \thepage%
+        \vspace{3pt}%
+    }
+    \setlength{\footskip}{1.6cm}
+    \ifthenelse{\equal{\DocStageOption}{working}}{%
+        \fancyfoot[L]{%
+            \minionfont\fontsize{8}{10}\selectfont\itshape%
+            \GetDocumentVersion\ \textbullet{}\ \today%
+        }%
+    }{}%
+}
+
+%%% Default Style %%%
+\pagestyle{mainmatter}
+
+%%% Chapter and Section Marks %%%
+% Configure running head content
+\renewcommand{\chaptermark}[1]{%
+    \markboth{%
+        \miniondisplayfont\fontsize{10}{12}\selectfont\bfseries%
+        \ifnum\value{chapter}>0 \thechapter.\ \fi#1%
+    }{}%
+}
+
+\renewcommand{\sectionmark}[1]{%
+    \markright{%
+        \miniondisplayfont\fontsize{9}{11}\selectfont%
+        \thesection.\ #1%
+    }%
+}

@@ -1,0 +1,56 @@
+%%% Veritas Pandoc Template %%%
+%%% Converts Markdown to LaTeX using Veritas class
+%%%
+%%% YAML Frontmatter Variables:
+%%%   title: Document title
+%%%   subtitle: Document subtitle (optional)
+%%%   author: Author name or list
+%%%   date: Publication date
+%%%   lang: en or de
+%%%   chapterstyle: minimal, classic, fancy, modern
+%%%   abstract: Abstract text (optional)
+
+\documentclass[
+    language=$if(lang)$$lang$$else$english$endif$,
+    chapterstyle=$if(chapterstyle)$$chapterstyle$$else$minimal$endif$,
+    media=screen,
+    doctype=article
+]{Veritas}
+
+%%% Metadata from YAML %%%
+$if(title)$\Title{$title$}$endif$
+$if(subtitle)$\Subtitle{$subtitle$}$endif$
+$if(author)$
+$if(author.name)$
+\FirstAuthor{$author.name$}
+$else$
+\FirstAuthor{$author$}
+$endif$
+$endif$
+$if(date)$\Date{$date$}$else$\Date{\today}$endif$
+
+\begin{document}
+
+%%% Title Page %%%
+\pagenumbering{gobble}
+\include{Matter/Title-Page}
+
+%%% Abstract (if present) %%%
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+%%% Main Content %%%
+\pagenumbering{arabic}
+\pagestyle{mainmatter}
+
+$body$
+
+%%% Bibliography (if citations) %%%
+$if(bibliography)$
+\printbibliography
+$endif$
+
+\end{document}

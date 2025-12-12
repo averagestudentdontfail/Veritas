@@ -1,0 +1,57 @@
+%%% Configuration/09-Code.sty %%%
+%%% Code Listing Configuration for Veritas Template
+%%%
+%%% FIRST PRINCIPLES BASIS:
+%%% This module implements code display derived from:
+%%%
+%%% 1. Knuth, D.E. (1984). Literate Programming. The Computer Journal.
+%%%    - Code as literature: readable, well-formatted
+%%%    - Line numbers for reference and discussion
+%%%
+%%% 2. Oram, A. & Wilson, G. (2007). Beautiful Code.
+%%%    - Syntax highlighting for cognitive chunking
+%%%    - Monospace fonts for alignment
+%%%
+%%% 3. minted Package (Geoffrey Poore)
+%%%    - Pygments-based highlighting for accuracy
+%%%    - Language-aware tokenisation
+%%%
+%%% COMPLIANCE: Standard.md
+%%% - LOC-1 Rule 1: LaTeX2e conformant
+%%% - LOC-5 Rule 15: Non-critical package (minted loaded conditionally in class)
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{09-Code}[2025/12/12 v1.0.0 Veritas Code Listing Configuration]
+
+%%% Code Environment %%%
+\newenvironment{code}{\captionsetup{type=listing}}{}
+
+%%% Listing Caption (Language-aware) %%%
+\ifthenelse{\equal{\LanguageOption}{portuguese}}{%
+    \SetupFloatingEnvironment{listing}{name=Listagem,within=none}
+}{%
+    \SetupFloatingEnvironment{listing}{name=Listing,within=none}
+}
+\captionsetup[listing]{position=above,skip=-6pt}
+
+%%% Long Listing Environment %%%
+\newenvironment{longlisting}{\bigskip\medskip\captionsetup{type=listing}}{}
+
+%%% Minted Configuration %%%
+% Frame and spacing for visual separation from prose
+\setminted{
+    frame=lines,
+    framesep=2mm,
+    baselinestretch=1.2,
+    fontsize=\footnotesize,
+    linenos,
+    tabsize=4,
+    breaklines=true,
+    breakanywhere=true
+}
+
+%%% Line Number Styling %%%
+% Gray line numbers for minimal distraction (data-ink ratio)
+\renewcommand{\theFancyVerbLine}{%
+    \scriptsize\textcolor[rgb]{0.7,0.7,0.7}{\arabic{FancyVerbLine}}%
+}

@@ -1,0 +1,204 @@
+%%% Configuration/13-Mathematics.sty %%%
+%%% Mathematical Typesetting for Veritas Template
+%%%
+%%% FIRST PRINCIPLES BASIS:
+%%% This module implements mathematical conventions derived from:
+%%%
+%%% 1. Halmos, P.R. (1970). How to Write Mathematics.
+%%%    - Theorem numbering conventions
+%%%    - QED symbol (Halmos tombstone: ∎)
+%%%
+%%% 2. Knuth, D.E. (1989). Mathematical Writing.
+%%%    - Equation display conventions
+%%%    - Proof structure and formatting
+%%%
+%%% 3. AMS Style Guide (American Mathematical Society)
+%%%    - amsthm theorem environments
+%%%    - Consistent numbering within sections
+%%%
+%%% 4. ISO 80000-2: Mathematical Signs and Symbols
+%%%    - Standard mathematical notation
+%%%
+%%% COMPLIANCE: Standard.md
+%%% - LOC-1 Rule 1: LaTeX2e conformant
+%%% - LOC-4 Rule 14: Semantic environments for mathematical structures
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{13-Mathematics}[2025/12/12 v1.0.0 Veritas Mathematical Typesetting]
+
+%%% Core Packages %%%
+\RequirePackage{amsthm}     % Theorem environments
+\RequirePackage{mathtools}  % Enhanced amsmath (includes amsmath)
+\RequirePackage{thmtools}   % Enhanced theorem customisation
+
+%%% Theorem Styling %%%
+% Plain style: theorems, lemmas, propositions, corollaries
+% Upright labels, italic body text (classical convention)
+\declaretheoremstyle[
+    headfont=\miniondisplayfont\bfseries,
+    bodyfont=\itshape,
+    spaceabove=12pt,
+    spacebelow=12pt,
+    headpunct={.},
+    postheadspace=0.5em
+]{veritasplain}
+
+% Definition style: definitions, examples
+% Upright body text (definitions are statements of fact, not claims)
+\declaretheoremstyle[
+    headfont=\miniondisplayfont\bfseries,
+    bodyfont=\normalfont,
+    spaceabove=12pt,
+    spacebelow=12pt,
+    headpunct={.},
+    postheadspace=0.5em
+]{veritasdefinition}
+
+% Remark style: remarks, notes
+% Italic head, upright body (less formal than theorems)
+\declaretheoremstyle[
+    headfont=\miniondisplayfont\itshape,
+    bodyfont=\normalfont,
+    spaceabove=6pt,
+    spacebelow=6pt,
+    headpunct={.},
+    postheadspace=0.5em
+]{veritasremark}
+
+%%% Theorem Environments %%%
+% Numbering: shared counter per section (Halmos convention)
+% All theorem-like environments share the same counter for easy reference
+
+\declaretheorem[
+    style=veritasplain,
+    numberwithin=section,
+    name=Theorem
+]{theorem}
+
+\declaretheorem[
+    style=veritasplain,
+    sibling=theorem,
+    name=Lemma
+]{lemma}
+
+\declaretheorem[
+    style=veritasplain,
+    sibling=theorem,
+    name=Proposition
+]{proposition}
+
+\declaretheorem[
+    style=veritasplain,
+    sibling=theorem,
+    name=Corollary
+]{corollary}
+
+\declaretheorem[
+    style=veritasplain,
+    sibling=theorem,
+    name=Conjecture
+]{conjecture}
+
+\declaretheorem[
+    style=veritasdefinition,
+    sibling=theorem,
+    name=Definition
+]{definition}
+
+\declaretheorem[
+    style=veritasdefinition,
+    sibling=theorem,
+    name=Example
+]{example}
+
+\declaretheorem[
+    style=veritasdefinition,
+    sibling=theorem,
+    name=Axiom
+]{axiom}
+
+\declaretheorem[
+    style=veritasremark,
+    sibling=theorem,
+    name=Remark
+]{remark}
+
+\declaretheorem[
+    style=veritasremark,
+    sibling=theorem,
+    name=Note
+]{note}
+
+%%% Unnumbered Variants %%%
+\declaretheorem[
+    style=veritasplain,
+    numbered=no,
+    name=Theorem
+]{theorem*}
+
+\declaretheorem[
+    style=veritasdefinition,
+    numbered=no,
+    name=Definition
+]{definition*}
+
+%%% Proof Environment %%%
+% QED symbol: Halmos tombstone (filled square)
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+% Enhanced proof environment with optional title
+\renewenvironment{proof}[1][\proofname]{\par
+    \pushQED{\qed}%
+    \normalfont \topsep6\p@\@plus6\p@\relax
+    \trivlist
+    \item[\hskip\labelsep
+        \miniondisplayfont\itshape#1\@addpunct{.}]\ignorespaces
+}{%
+    \popQED\endtrivlist\@endpefalse
+}
+
+%%% Equation Numbering %%%
+% Number equations within sections: (1.1), (1.2), etc.
+\numberwithin{equation}{section}
+
+%%% Mathematical Operators %%%
+% Common operators not in standard LaTeX
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\E}{\mathbb{E}}
+\DeclareMathOperator{\Prob}{\mathbb{P}}
+\DeclareMathOperator{\argmax}{arg\,max}
+\DeclareMathOperator{\argmin}{arg\,min}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\range}{range}
+
+%%% Convenient Notation %%%
+% Number sets
+\newcommand{\N}{\mathbb{N}}     % Natural numbers
+\newcommand{\Z}{\mathbb{Z}}     % Integers
+\newcommand{\Q}{\mathbb{Q}}     % Rationals
+\newcommand{\R}{\mathbb{R}}     % Reals
+\newcommand{\C}{\mathbb{C}}     % Complex
+
+% Delimiters (auto-sizing)
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\DeclarePairedDelimiter{\inner}{\langle}{\rangle}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+
+%%% Proof Techniques %%%
+% Case environment for proof by cases
+\newenvironment{case}[1]{%
+    \par\noindent\textit{Case #1:}\space\ignorespaces
+}{\par}
+
+% Claim environment for intermediate results
+\newenvironment{claim}{%
+    \par\noindent\textit{Claim:}\space\ignorespaces
+}{\par}

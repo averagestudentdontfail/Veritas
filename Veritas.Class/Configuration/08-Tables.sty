@@ -1,0 +1,51 @@
+%%% Configuration/08-Tables.sty %%%
+%%% Table Design for Veritas Template
+%%%
+%%% FIRST PRINCIPLES BASIS:
+%%% This module implements table design derived from:
+%%%
+%%% 1. Tufte, E.R. (2001). The Visual Display of Quantitative Information.
+%%%    - Minimise non-data ink (no vertical rules)
+%%%    - Let data speak without chartjunk
+%%%
+%%% 2. Few, S. (2012). Show Me the Numbers.
+%%%    - Clear alignment for numeric data
+%%%    - Sufficient white space for scanning
+%%%
+%%% 3. booktabs Package Philosophy (Simon Fear)
+%%%    - Horizontal rules only: \toprule, \midrule, \bottomrule
+%%%    - No vertical rules in professional tables
+%%%
+%%% COMPLIANCE: Standard.md
+%%% - LOC-1 Rule 1: LaTeX2e conformant
+%%% - LOC-4 Rule 11: Semantic column types
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{08-Tables}[2025/12/12 v1.0.0 Veritas Table Design]
+
+%%% Table Formatting %%%
+% Increased row stretch and smaller font for data density
+\newcommand{\customtableformatting}{\renewcommand{\arraystretch}{1.1}\small}
+\AtBeginEnvironment{tabular}{\customtableformatting}
+\AtBeginEnvironment{tabularx}{\customtableformatting}
+\preto\longtable{\customtableformatting}
+
+%%% Semantic Column Types %%%
+% Extend tabularx with meaningful column type names
+\renewcommand\tabularxcolumn[1]{m{#1}}
+\newcolumntype{C}{>{\centering\arraybackslash}X}      % Center-aligned flex
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}    % Left-aligned flex
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}     % Right-aligned flex
+
+%%% Caption Formatting %%%
+% Sufficient skip for visual separation
+\captionsetup{skip=6pt}
+\captionsetup{
+    labelfont={bf,small},
+    textfont={it,small}
+}
+\captionsetup[table]{skip=4pt}
+
+%%% List Formatting %%%
+% Compact lists for academic writing
+\setlist{noitemsep}

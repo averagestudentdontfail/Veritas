@@ -1,0 +1,107 @@
+%%% Configuration/03-References.sty %%%
+%%% Bibliography and Citation Configuration for Veritas Template
+%%%
+%%% FIRST PRINCIPLES BASIS:
+%%% This module implements citation standards derived from:
+%%%
+%%% 1. The Chicago Manual of Style, 17th Edition (2017).
+%%%    - Author-date system for sciences and social sciences
+%%%    - Parenthetical citations for minimal textual disruption
+%%%
+%%% 2. Turabian, K.L. (2018). A Manual for Writers, 9th ed.
+%%%    - Bibliography formatting for academic dissertations
+%%%
+%%% 3. APA Publication Manual, 7th Edition (2019).
+%%%    - Two-author threshold before "et al." in citations
+%%%    - Full author list in bibliography
+%%%
+%%% COMPLIANCE: Standard.md
+%%% - LOC-1 Rule 1: LaTeX2e conformant
+%%% - LOC-3 Rule 7: hyperref configured after biblatex
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{03-References}[2025/12/12 v1.0.0 Veritas Bibliography Configuration]
+
+%%% Biblatex Configuration %%%
+% Author-year style: readable, informative in-text citations
+% Sorting: by name, then year, then title (alphabetical bibliography)
+\usepackage[
+	backend=biber,
+	citestyle=authoryear,
+	bibstyle=authoryear,
+	sorting=nyt,
+    natbib=true,
+    dashed=false,
+    uniquelist=false,
+    uniquename=false,
+    urldate=iso,
+    seconds=true,
+    maxcitenames=2,      % Show max 2 authors in-text before "et al."
+    maxbibnames=99,      % Show all authors in bibliography
+    mincitenames=1,
+    minbibnames=1
+]{biblatex}
+
+%%% Bibliography Formatting %%%
+\setlength\bibitemsep{1.5\itemsep}
+\setlength\bibhang{1.5em}
+\addbibresource{Bibliography/Bibliography.bib}
+
+\ExecuteBibliographyOptions{maxcitenames=2,maxbibnames=99}
+
+%%% Citation Formatting %%%
+% Use ampersand for final author separator
+\renewcommand*{\finalnamedelim}{\addspace\&\space}
+
+%%% Hyperlinked Citations %%%
+% Entire citation is clickable, not just author name
+\DeclareFieldFormat{citehyperref}{%
+    \DeclareFieldAlias{bibhyperref}{noformat}%
+    \bibhyperref{#1}%
+}
+
+\DeclareFieldFormat{textcitehyperref}{%
+    \DeclareFieldAlias{bibhyperref}{noformat}%
+    \bibhyperref{%
+        #1%
+        \ifbool{cbx:parens}
+        {\bibcloseparen\global\boolfalse{cbx:parens}}
+    {}}%
+}
+    
+\savebibmacro{cite}
+\savebibmacro{textcite}
+\renewbibmacro*{cite}{%
+    \printtext[citehyperref]{%
+        \restorebibmacro{cite}%
+        \usebibmacro{cite}%
+    }}
+    
+\renewbibmacro*{textcite}{%
+    \ifboolexpr{
+        ( not test {\iffieldundef{prenote}} and
+          test {\ifnumequal{\value{citecount}}{1}} )
+        or
+        ( not test {\iffieldundef{postnote}} and
+          test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+    }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+    \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}%
+}
+
+%%% Hyperlink Configuration %%%
+% LOC-3 Rule 7: hyperref settings after all other packages
+% Consistent color theme throughout document
+\hypersetup{
+    bookmarksnumbered,
+	colorlinks=true,
+	urlcolor=maincolor,
+	linkcolor=maincolor,
+	citecolor=maincolor,
+}
+
+%%% PDF Bookmark Numbering %%%
+\def\Hy@numberline#1{\ifHy@bookmarksnumbered{#1.\hspace{0.3em}}\else#1\fi}
