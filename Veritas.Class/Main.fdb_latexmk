@@ -1,16 +1,19 @@
 # Fdb version 4
-["biber Main"] 1765525713.6119 "Main.bcf" "Main.bbl" "Main" 1765525718.46059 0
-  "Main.bcf" 1765525718.14078 107993 ef1118ee721f2c7e3fcf73deb06352ee "xelatex"
+["biber Main"] 1765530699.19541 "Main.bcf" "Main.bbl" "Main" 1765530706.83287 0
+  "Bibliography/Bibliography.bib" 1765509980.09823 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "Bibliography/bill-wynsky.bib" 1765525419.90777 11705 113390b2486bc3c29bfec16c4cc9d43d ""
+  "Bibliography/environmental-agency.bib" 1765525419.91156 2721 c345883b8d0c53f851da09eb8bb6942b ""
+  "Main.bcf" 1765530706.49937 108058 221e0505aad0f0e5d08965420b3648f7 "xelatex"
   (generated)
   "Main.bbl"
   "Main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1765525718.27861 "Main.xdv" "Main.pdf" "Main" 1765525718.46351 0
-  "Main.xdv" 1765525718.14078 61428 460d12579e99a285eb296ebd212a9050 "xelatex"
+["xdvipdfmx"] 1765530706.64162 "Main.xdv" "Main.pdf" "Main" 1765530706.83588 0
+  "Main.xdv" 1765530706.49937 187552 f25aa0c9436237f9cf98535a5fe81fdc "xelatex"
   (generated)
   "Main.pdf"
   (rewritten before read)
-["xelatex"] 1765525716.2453 "Main.tex" "Main.xdv" "Main" 1765525718.46066 0
+["xelatex"] 1765530704.42609 "Main.tex" "Main.xdv" "Main" 1765530706.83298 0
   "/etc/texmf/web2c/texmf.cnf" 1751854650.88492 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -368,12 +371,12 @@
   "Configuration/12-Floats.sty" 1765510063.05349 7485 095f97b45bce282bf6ab61868e326988 ""
   "Configuration/13-Mathematics.sty" 1765513509.07948 5532 8fe6f7175ba3081639e61e2b7f0a3246 ""
   "Figure/Theme/Front-Page.pdf" 1765509980.0906 100016 0a71fbe20eff016b56e8b47f5d8bd3b4 ""
-  "Main.aux" 1765525718.12946 4492 c3cb1a9be056e8e8fadb4b1aef1fabc1 "xelatex"
-  "Main.bbl" 1765525714.17358 466 ee04f40f768daeed26442158e95aba61 "biber Main"
-  "Main.out" 1765525718.13701 1440 f472fd0461e757826f464ef8174457c0 "xelatex"
-  "Main.run.xml" 1765525718.14078 2655 e8819a2f7885923f35536a77c550fb64 "xelatex"
-  "Main.tex" 1765525710.85992 9958 42b6efd020a4908ec56da0480642a1f8 ""
-  "Matter/Title-Page.aux" 1765525718.09549 5582 44a27db1014de8374b32f87ea6fae393 "xelatex"
+  "Main.aux" 1765530706.49148 4476 52dfb0ec1856e03ab32cd9770aa54fd6 "xelatex"
+  "Main.bbl" 1765530699.86616 1844 2856d9ed24c22da317706fb4ba045160 "biber Main"
+  "Main.out" 1765530706.49542 2774 bd818bf2e7cdf1e344dac4cf8210f8ed "xelatex"
+  "Main.run.xml" 1765530706.49937 2655 e8819a2f7885923f35536a77c550fb64 "xelatex"
+  "Main.tex" 1765530696.33866 19897 3a0924c5697a4c2ea57ae549dee81c86 ""
+  "Matter/Title-Page.aux" 1765530706.44804 5582 44a27db1014de8374b32f87ea6fae393 "xelatex"
   "Matter/Title-Page.tex" 1765518519.93363 4587 526f545cb47e4e50fb69e67fe25af1a0 ""
   "Veritas.cls" 1765513055.0348 7276 4b2fcececab89b56cd0c6ef129797cbb ""
   (generated)
