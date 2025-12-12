@@ -5,18 +5,180 @@ author: "Kiran Nath"
 date: "2025"
 lang: en
 chapterstyle: minimal
+references:
+  - id: braun2006
+    author:
+      - family: "Braun"
+        given: "Virginia"
+      - family: "Clarke"
+        given: "Victoria"
+    title: "Using thematic analysis in psychology"
+    container-title: "Qualitative Research in Psychology"
+    issued:
+      date-parts:
+        - [2006]
+    volume: 3
+    issue: 2
+    page: "77-101"
+    DOI: "10.1191/1478088706qp063oa"
+    type: article-journal
+  - id: braun2019
+    author:
+      - family: "Braun"
+        given: "Virginia"
+      - family: "Clarke"
+        given: "Victoria"
+    title: "Reflecting on reflexive thematic analysis"
+    container-title: "Qualitative Research in Sport, Exercise and Health"
+    issued:
+      date-parts:
+        - [2019]
+    volume: 11
+    issue: 4
+    page: "589-597"
+    DOI: "10.1080/2159676X.2019.1628806"
+    type: article-journal
+  - id: bratman2019
+    author:
+      - family: "Bratman"
+        given: "Gregory N."
+      - family: "Anderson"
+        given: "Christopher B."
+      - family: "Berman"
+        given: "Marc G."
+      - family: "Cochran"
+        given: "Bobby"
+      - family: "de Vries"
+        given: "Sjerp"
+      - family: "Flanders"
+        given: "Jon"
+      - family: "Folke"
+        given: "Carl"
+      - family: "Frumkin"
+        given: "Howard"
+      - family: "Gross"
+        given: "James J."
+      - family: "Hartig"
+        given: "Terry"
+      - family: "Kahn"
+        given: "Peter H."
+      - family: "Kuo"
+        given: "Ming"
+      - family: "Lawler"
+        given: "Joshua J."
+      - family: "Levin"
+        given: "Phillip S."
+      - family: "Lindahl"
+        given: "Therese"
+      - family: "Meyer-Lindenberg"
+        given: "Andreas"
+      - family: "Mitchell"
+        given: "Richard"
+      - family: "Ouyang"
+        given: "Zhiyun"
+      - family: "Roe"
+        given: "Jenny"
+      - family: "Daily"
+        given: "Gretchen C."
+    title: "Nature and mental health: An ecosystem service perspective"
+    container-title: "Science Advances"
+    issued:
+      date-parts:
+        - [2019]
+    volume: 5
+    issue: 7
+    page: "eaax0903"
+    DOI: "10.1126/sciadv.aax0903"
+    type: article-journal
+  - id: cox2017
+    author:
+      - family: "Cox"
+        given: "Daniel T. C."
+      - family: "Hudson"
+        given: "Hilary L."
+      - family: "Shanahan"
+        given: "Danielle F."
+      - family: "Fuller"
+        given: "Richard A."
+      - family: "Gaston"
+        given: "Kevin J."
+    title: "The rarity of direct experiences of nature in an urban population"
+    container-title: "Landscape and Urban Planning"
+    issued:
+      date-parts:
+        - [2017]
+    volume: 160
+    page: "79-84"
+    DOI: "10.1016/j.landurbplan.2016.12.006"
+    type: article-journal
+  - id: gascon2015
+    author:
+      - family: "Gascon"
+        given: "Mireia"
+      - family: "Triguero-Mas"
+        given: "Margarita"
+      - family: "Martínez"
+        given: "David"
+      - family: "Dadvand"
+        given: "Payam"
+      - family: "Forns"
+        given: "Joan"
+      - family: "Plasència"
+        given: "Antoni"
+      - family: "Nieuwenhuijsen"
+        given: "Mark J."
+    title: "Mental health benefits of long-term exposure to residential green and blue spaces: A systematic review"
+    container-title: "International Journal of Environmental Research and Public Health"
+    issued:
+      date-parts:
+        - [2015]
+    volume: 12
+    issue: 4
+    page: "4354-4379"
+    DOI: "10.3390/ijerph120404354"
+    type: article-journal
+  - id: kaplan1995
+    author:
+      - family: "Kaplan"
+        given: "Stephen"
+    title: "The restorative benefits of nature: Toward an integrative framework"
+    container-title: "Journal of Environmental Psychology"
+    issued:
+      date-parts:
+        - [1995]
+    volume: 15
+    issue: 3
+    page: "169-182"
+    DOI: "10.1016/0272-4944(95)90001-2"
+    type: article-journal
+  - id: soga2023
+    author:
+      - family: "Soga"
+        given: "Masashi"
+      - family: "Gaston"
+        given: "Kevin J."
+    title: "Nature benefit hypothesis: Direct experiences of nature predict self-reported pro-biodiversity behaviors"
+    container-title: "Conservation Letters"
+    issued:
+      date-parts:
+        - [2023]
+    volume: 16
+    issue: 3
+    page: "e12945"
+    DOI: "10.1111/conl.12945"
+    type: article-journal
 ---
 
 # RATIONALE
-Modern urbanisation patterns have reduced opportunities for regular nature contact among many populations \citep{cox2017}, raising questions about consequences for both individual wellbeing and environmental stewardship. While quantitative research has documented associations between nature exposure and mental health outcomes \citep{bratman2019,gascon2015}, these approaches may not fully capture the subjective meanings individuals attach to their nature experiences or the personal narratives through which people understand connections between nature contact and their psychological states. This study explored how one person articulates the psychological impacts of their nature experiences, with particular attention to perceived influences on wellbeing and environmental attitudes, addressing the research question: How do personal experiences with nature appear to shape an individual's psychological wellbeing and environmental attitudes? Through detailed examination of one person's account, this analysis aimed to identify themes that might illuminate broader patterns while respecting the particular context and meaning-making processes of the individual participant.
+Modern urbanisation patterns have reduced opportunities for regular nature contact among many populations [@cox2017], raising questions about consequences for both individual wellbeing and environmental stewardship. While quantitative research has documented associations between nature exposure and mental health outcomes [@bratman2019; @gascon2015], these approaches may not fully capture the subjective meanings individuals attach to their nature experiences or the personal narratives through which people understand connections between nature contact and their psychological states. This study explored how one person articulates the psychological impacts of their nature experiences, with particular attention to perceived influences on wellbeing and environmental attitudes, addressing the research question: How do personal experiences with nature appear to shape an individual's psychological wellbeing and environmental attitudes? Through detailed examination of one person's account, this analysis aimed to identify themes that might illuminate broader patterns while respecting the particular context and meaning-making processes of the individual participant.
 
 # METHOD
 ## Theoretical Positioning
-This study employed reflexive thematic analysis \citep{braun2019}, positioned within a contextualist epistemology that acknowledges both individual meaning-making and broader social-cultural contexts shaping experience. The analysis sought patterns of meaning across the dataset rather than quantifying explicit content, privileging interpretative depth over descriptive coverage, with themes understood as analytical constructs created through the interpretive process rather than emerging passively from data. As researcher, my own positive experiences with nature and interest in environmental psychology inevitably shaped both the interview and analytical process. Rather than positioning this as bias requiring elimination, I approached it as productive context enabling empathetic engagement while maintaining analytical awareness, attending throughout analysis to how my interpretations reflected particular theoretical lenses and personal experiences, considering alternative readings while making transparent the rationale for interpretations presented here.
+This study employed reflexive thematic analysis [@braun2019], positioned within a contextualist epistemology that acknowledges both individual meaning-making and broader social-cultural contexts shaping experience. The analysis sought patterns of meaning across the dataset rather than quantifying explicit content, privileging interpretative depth over descriptive coverage, with themes understood as analytical constructs created through the interpretive process rather than emerging passively from data. As researcher, my own positive experiences with nature and interest in environmental psychology inevitably shaped both the interview and analytical process. Rather than positioning this as bias requiring elimination, I approached it as productive context enabling empathetic engagement while maintaining analytical awareness, attending throughout analysis to how my interpretations reflected particular theoretical lenses and personal experiences, considering alternative readings while making transparent the rationale for interpretations presented here.
 ## Participant Procedure
-The participant was a 34-year-old urban professional with self-reported regular nature engagement throughout childhood and continuing into adulthood, recruited through purposive sampling based on their history of diverse nature experiences and willingness to reflect on potential psychological impacts. Following informed consent assuring confidentiality, a semi-structured 45-minute interview explored the participant's nature experiences and perceived psychological impacts, prioritizing phenomenological attention to lived experience through prompts such as ``What happened during that experience?'' and ``How did you feel then?'' rather than ``Why?'' questions that might elicit intellectualized explanations divorced from experiential immediacy. The interview concluded with invitation for additional reflections and brief summary checking, providing opportunity to clarify misunderstandings or add dimensions not emerging through preceding questions. The audio-recorded interview was transcribed verbatim, producing approximately 6,800 words of text, with transcription capturing paralinguistic features such as pauses and laughter that might convey emotional significance.
+The participant was a 34-year-old urban professional with self-reported regular nature engagement throughout childhood and continuing into adulthood, recruited through purposive sampling based on their history of diverse nature experiences and willingness to reflect on potential psychological impacts. Following informed consent assuring confidentiality, a semi-structured 45-minute interview explored the participant's nature experiences and perceived psychological impacts, prioritizing phenomenological attention to lived experience through prompts such as "What happened during that experience?" and "How did you feel then?" rather than "Why?" questions that might elicit intellectualized explanations divorced from experiential immediacy. The interview concluded with invitation for additional reflections and brief summary checking, providing opportunity to clarify misunderstandings or add dimensions not emerging through preceding questions. The audio-recorded interview was transcribed verbatim, producing approximately 6,800 words of text, with transcription capturing paralinguistic features such as pauses and laughter that might convey emotional significance.
 ## Analytical Protocol
-Analysis followed \citet{braun2006} reflexive approach through six recursive phases. Phase 1 involved repeated reading of the transcript while listening to audio, developing familiarity with both semantic content and emotional tone. Phase 2 generated 78 initial codes through systematic line-by-line examination, capturing both semantic content and latent meanings while maintaining sufficient surrounding context to preserve meaning. Examples included ``childhood nature as freedom,'' ``nature reducing mental clutter,'' ``feeling small in natural settings,'' and ``guilt about environmental impact.'' Phase 3 involved sorting codes into candidate themes through visual mapping, exploring relationships and patterns to identify potential clustering, generating approximately eight candidate themes with tentative boundaries. Phase 4 reviewed candidate themes for internal homogeneity and external heterogeneity, leading to collapsing two overlapping themes, subdividing one encompassing qualitatively different content, and eliminating one weakly supported candidate. Phase 5 defined and named each theme, developing preliminary analytical narratives specifying scope and boundaries while clarifying relationships among themes. Phase 6 involved selecting illustrative extracts and constructing the analytical narrative presented below, with extract selection aimed at providing vivid examples capturing theme essence while representing content range within themes. Throughout this process, I maintained awareness that theme identification represented one possible reading shaped by my theoretical understanding and experiences, considering alternative interpretations while presenting the structure judged most strongly supported by the data.
+Analysis followed [@braun2006] reflexive approach through six recursive phases. Phase 1 involved repeated reading of the transcript while listening to audio, developing familiarity with both semantic content and emotional tone. Phase 2 generated 78 initial codes through systematic line-by-line examination, capturing both semantic content and latent meanings while maintaining sufficient surrounding context to preserve meaning. Examples included "childhood nature as freedom," "nature reducing mental clutter," "feeling small in natural settings," and "guilt about environmental impact." Phase 3 involved sorting codes into candidate themes through visual mapping, exploring relationships and patterns to identify potential clustering, generating approximately eight candidate themes with tentative boundaries. Phase 4 reviewed candidate themes for internal homogeneity and external heterogeneity, leading to collapsing two overlapping themes, subdividing one encompassing qualitatively different content, and eliminating one weakly supported candidate. Phase 5 defined and named each theme, developing preliminary analytical narratives specifying scope and boundaries while clarifying relationships among themes. Phase 6 involved selecting illustrative extracts and constructing the analytical narrative presented below, with extract selection aimed at providing vivid examples capturing theme essence while representing content range within themes. Throughout this process, I maintained awareness that theme identification represented one possible reading shaped by my theoretical understanding and experiences, considering alternative interpretations while presenting the structure judged most strongly supported by the data.
 
 # FINDINGS
 Analysis identified four themes characterizing how this participant understood psychological impacts of nature experiences. Table~\ref{tab:thematic-structure} presents the thematic structure with brief definitions.
@@ -25,7 +187,7 @@ Analysis identified four themes characterizing how this participant understood p
 \caption{Thematic Structure Overview}
 \begin{tabularx}{\textwidth}{>{\bfseries}l X}
 \toprule
-**Theme** & **Definition** \\
+\textbf{Theme} & \textbf{Definition} \\
 \midrule
 1. Nature as Cognitive Restoration & Nature experiences providing mental relief from cognitive demands through shift in attentional mode \\
 \addlinespace
@@ -38,7 +200,7 @@ Analysis identified four themes characterizing how this participant understood p
 \end{tabularx}
 \end{table}
 ## Theme 1: Nature as Cognitive Restoration
-The participant consistently described nature contact as providing mental relief from daily cognitive demands, characterizing urban work environments as producing what they termed ``mental clutter'' requiring constant attention management:
+The participant consistently described nature contact as providing mental relief from daily cognitive demands, characterizing urban work environments as producing what they termed "mental clutter" requiring constant attention management:
 \begin{displayquote}
 When I'm in the office all day, it's like my brain gets... cluttered. There's too much going on, too many things competing for attention. Even just stepping out to the park at lunch, there's something about being around trees that makes that feeling ease up.
 \end{displayquote}
@@ -46,7 +208,7 @@ This restoration involved attentional shifts rather than mental emptiness. The p
 \begin{displayquote}
 After a walk in natural areas, I notice I can focus better. Tasks that felt overwhelming before seem more manageable. It's like my capacity to concentrate gets recharged somehow.
 \end{displayquote}
-The restorative quality appeared to emerge from what the participant termed nature's ``gentle'' engagement of attention through inherently fascinating features such as moving water, rustling leaves, and varied natural forms that captured interest without requiring directed mental effort. This contrasted sharply with urban environments described as demanding constant attention filtering and navigation of social stimuli. However, the participant acknowledged variability in these effects, noting that brief or interrupted nature contact sometimes provided less benefit than longer, more immersive experiences, suggesting the importance of both quality and duration for restoration to occur, though the participant struggled to articulate precise thresholds distinguishing more from less restorative encounters.
+The restorative quality appeared to emerge from what the participant termed nature's "gentle" engagement of attention through inherently fascinating features such as moving water, rustling leaves, and varied natural forms that captured interest without requiring directed mental effort. This contrasted sharply with urban environments described as demanding constant attention filtering and navigation of social stimuli. However, the participant acknowledged variability in these effects, noting that brief or interrupted nature contact sometimes provided less benefit than longer, more immersive experiences, suggesting the importance of both quality and duration for restoration to occur, though the participant struggled to articulate precise thresholds distinguishing more from less restorative encounters.
 ## Theme 2: Perspective Transformation Through Immersion
 Beyond immediate cognitive restoration, certain nature experiences, particularly those involving remote or expansive natural landscapes, produced shifts in psychological perspective that persisted beyond the experience itself, involving changes in how the participant situated themselves in relation to broader temporal and spatial scales:
 \begin{displayquote}
@@ -72,7 +234,7 @@ The participant identified several perceived barriers maintaining this gap: stru
 \begin{displayquote}
 It's like I'm part of the problem even though I don't want to be. And knowing that makes the problem worse because now I'm also dealing with feeling guilty, which is exhausting, but the guilt doesn't actually change what i do about it.
 \end{displayquote}
-Notably, the participant suggested that their nature experiences sometimes intensified this psychological tension rather than resolving it. Moments of connection with natural environments could highlight the severity of environmental degradation and the preciousness of what might be lost, making the participant more acutely aware of the gap between their values and actions: ``When I'm hiking in a beautiful forest, I sometimes think about how many places like this have been lost, how many more are threatened. And then I think about my own contribution to that loss, even indirectly, and it feels heavy.'' This theme revealed complexity in relationships between nature experiences and environmental behaviour that might not be captured by models assuming straightforward pathways from nature contact through positive attitudes to pro-environmental action.
+Notably, the participant suggested that their nature experiences sometimes intensified this psychological tension rather than resolving it. Moments of connection with natural environments could highlight the severity of environmental degradation and the preciousness of what might be lost, making the participant more acutely aware of the gap between their values and actions: "When I'm hiking in a beautiful forest, I sometimes think about how many places like this have been lost, how many more are threatened. And then I think about my own contribution to that loss, even indirectly, and it feels heavy." This theme revealed complexity in relationships between nature experiences and environmental behaviour that might not be captured by models assuming straightforward pathways from nature contact through positive attitudes to pro-environmental action.
 ## Theme 4: Nature Connection as Moral Motivation
 Despite the behavioural inconsistencies described in Theme 3, the participant identified ways that their ongoing nature experiences influenced environmental attitudes and motivated certain conservation-oriented actions through emotional rather than purely rational pathways:
 \begin{displayquote}
@@ -93,7 +255,7 @@ The four themes demonstrated important interconnections suggesting that nature e
 
 # DISCUSSION
 This analysis revealed that one individual's understanding of how nature experiences influenced psychological wellbeing and environmental attitudes involved multiple dimensions operating both independently and in interaction, with nature contact providing immediate cognitive-emotional benefits and contributing to longer-term shifts in environmental perspective and motivation, while also highlighting tensions between environmental values and behavioural realities that nature experiences alone appeared unable to resolve.
-These findings resonate with existing research documenting relationships between nature exposure and mental health outcomes \citep{bratman2019}, attention restoration \citep{kaplan1995}, and pro-environmental behaviour \citep{soga2023}, while revealing subjective dimensions that quantitative studies may not fully capture, particularly regarding the participant's experience of psychological tension between environmental values and actions, and the complex, sometimes ambivalent ways that nature experiences appeared to influence environmental motivation. The cognitive restoration theme aligns with attention restoration theory \citep{kaplan1995}, though the participant's experiential account provides texture regarding how this restoration feels subjectively and what specific features of nature might contribute to restorative effects. The perspective transformation theme extends research on nature experiences and psychological wellbeing by highlighting how certain encounters might produce lasting cognitive-emotional resources for managing stress, though the participant's observation that these effects attenuate without reinforcement suggests the importance of regular rather than occasional nature contact. The theme of disconnection between values and behaviours adds nuance to research examining relationships between nature contact and pro-environmental action, suggesting that these relationships may be mediated by structural and psychological factors deserving greater attention.
+These findings resonate with existing research documenting relationships between nature exposure and mental health outcomes [@bratman2019], attention restoration [@kaplan1995], and pro-environmental behaviour [@soga2023], while revealing subjective dimensions that quantitative studies may not fully capture, particularly regarding the participant's experience of psychological tension between environmental values and actions, and the complex, sometimes ambivalent ways that nature experiences appeared to influence environmental motivation. The cognitive restoration theme aligns with attention restoration theory [@kaplan1995], though the participant's experiential account provides texture regarding how this restoration feels subjectively and what specific features of nature might contribute to restorative effects. The perspective transformation theme extends research on nature experiences and psychological wellbeing by highlighting how certain encounters might produce lasting cognitive-emotional resources for managing stress, though the participant's observation that these effects attenuate without reinforcement suggests the importance of regular rather than occasional nature contact. The theme of disconnection between values and behaviours adds nuance to research examining relationships between nature contact and pro-environmental action, suggesting that these relationships may be mediated by structural and psychological factors deserving greater attention.
 Several limitations warrant acknowledgment. As single-case analysis, findings reflect one individual's particular experiences and sense-making processes, limiting generalizability to broader populations. The participant's demographic characteristics as urban professional with discretionary time and resources for nature recreation may shape their experiences in ways differing from individuals with different social locations or access to natural environments. The interview method relied on retrospective reflection and verbal articulation, which may not fully capture pre-reflective dimensions of experience or non-verbal forms of knowing. My own relationship with nature and assumptions about its psychological significance likely influenced both the interview process and analytical interpretations, though I maintained reflexive awareness of these influences throughout analysis.
 The findings may hold implications for environmental psychology and public health approaches to promoting both wellbeing and environmental stewardship. The participant's account suggested that nature experiences might contribute to multiple outcomes simultaneously, including cognitive restoration, emotional wellbeing, perspective shifts, and environmental motivation, implying that policies supporting equitable nature access could serve diverse individual and societal goals. However, the disconnect between environmental values and behaviours suggests that nature experiences alone may be insufficient for generating substantial behavioural change without addressing structural barriers, including transportation infrastructure, urban design, economic systems, and social norms that constrain pro-environmental action even among concerned individuals. This analysis demonstrates the value of qualitative approaches for understanding subjective dimensions of human-nature relationships that complement quantitative research on nature exposure and wellbeing, with themes identified here suggesting patterns that might be explored with larger, more diverse samples through further qualitative or mixed-methods research.
 

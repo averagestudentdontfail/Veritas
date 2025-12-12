@@ -663,9 +663,6 @@ INPUT ./Main.aex
 INPUT ./Main.aux
 INPUT ./Main.aux
 INPUT Main.aux
-INPUT ./Matter/Title-Page.aux
-INPUT ./Matter/Title-Page.aux
-INPUT Matter/Title-Page.aux
 OUTPUT Main.aux
 INPUT /usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 INPUT /usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
@@ -687,12 +684,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 INPUT /usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 INPUT /usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
-INPUT ./Main.out
-INPUT ./Main.out
-INPUT Main.out
-INPUT Main.out
-INPUT ./Main.out
-INPUT ./Main.out
 OUTPUT Main.out
 INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator-months-dictionary-English.dict
 INPUT /usr/share/texlive/texmf-dist/tex/latex/translator/translator-months-dictionary-English.dict
@@ -793,11 +784,3 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/zplsyc.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm
-INPUT Main.aux
-INPUT ./Matter/Title-Page.aux
-INPUT ./Matter/Title-Page.aux
-INPUT Matter/Title-Page.aux
-INPUT ./Main.out
-INPUT ./Main.out
-INPUT Main.run.xml
-OUTPUT Main.run.xml

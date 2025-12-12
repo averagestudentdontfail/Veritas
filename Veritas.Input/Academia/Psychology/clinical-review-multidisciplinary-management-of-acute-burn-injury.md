@@ -5,6 +5,718 @@ author: "Kiran Nath"
 date: "2025"
 lang: en
 chapterstyle: minimal
+references:
+  - id: Cleland2016
+    author:
+      - family: "Cleland"
+        given: "H."
+      - family: "Greenwood"
+        given: "John E"
+      - family: "Wood"
+        given: "Fiona M"
+      - family: "Read"
+        given: "David J"
+      - family: "Wong She"
+        given: "Richard"
+      - family: "Maitz"
+        given: "Peter"
+      - family: "Vandervord"
+        given: "John"
+      - family: "Riedel"
+        given: "B"
+      - family: "Gabbe"
+        given: "Belinda J."
+    title: "The Burns Registry of Australia and New Zealand: Progressing the Evidence Base for Burn Care"
+    container-title: "Medical Journal of Australia"
+    issued:
+      date-parts:
+        - [2016]
+    volume: 204
+    issue: 5
+    page: "195"
+    DOI: "10.5694/mja15.00989"
+    type: article-journal
+  - id: Tracy2022a
+    author:
+      - family: "Tracy"
+        given: "L. M."
+      - family: "Kurmis"
+        given: "R."
+      - family: "Heath"
+        given: "K"
+      - family: "Edgar"
+        given: "D. W."
+    title: "Adherence with Early Allied Health Assessments in Specialist Burn Services"
+    container-title: "Journal of Burn Care & Research"
+    issued:
+      date-parts:
+        - [2023]
+    volume: 44
+    issue: 4
+    page: "963-968"
+    DOI: "10.1093/jbcr/irac153"
+    type: article-journal
+  - id: Tracy2025a
+    author:
+      - family: "Tracy"
+        given: "L. M."
+      - family: "Cameron"
+        given: "P. A."
+      - family: "Cleland"
+        given: "H."
+      - family: "Kimmel"
+        given: "L."
+      - family: "J."
+        given: "Teague W."
+      - family: "J."
+        given: "Gabbe B."
+    title: "Quality of life and return to work in the first two years following burn injury: A prospective, multicentre cohort study"
+    container-title: "Burns"
+    issued:
+      date-parts:
+        - [2025]
+    volume: 51
+    issue: 3
+    page: "107-118"
+    DOI: "10.1016/j.burns.2024.107355"
+    type: article-journal
+  - id: Gong2021
+    author:
+      - family: "Gong"
+        given: "J."
+      - family: "Singer"
+        given: "Y."
+      - family: "Cleland"
+        given: "H."
+      - family: "Wood"
+        given: "F."
+      - family: "Cameron"
+        given: "P."
+      - family: "Tracy"
+        given: "L. M."
+      - family: "Gabbe"
+        given: "B. J."
+    title: "Driving Improved Burns Care and Patient Outcomes Through Clinical Registry Data: A Review of Quality Indicators in the Burns Registry of Australia and New Zealand"
+    container-title: "Burns"
+    issued:
+      date-parts:
+        - [2021]
+    volume: 47
+    issue: 1
+    page: "14-24"
+    DOI: "10.1016/j.burns.2020.01.005"
+    type: article-journal
+  - id: Hunter2024
+    author:
+      - family: "Hunter"
+        given: "K."
+      - family: "Ryder"
+        given: "C."
+      - family: "Coombes"
+        given: "J."
+      - family: "Clapham"
+        given: "K."
+      - family: "Mackean"
+        given: "T."
+      - family: "Holland"
+        given: "A.J.A."
+      - family: "Fraser"
+        given: "S."
+      - family: "Williams"
+        given: "H."
+      - family: "Griffin"
+        given: "B."
+      - family: "M{"o"
+    title: "Understanding Burn Injury Among Aboriginal and Torres Strait Islander Children: Results of a Two-year Prospective Cohort Study"
+    container-title: "Australian and New Zealand Journal of Public Health"
+    issued:
+      date-parts:
+        - [2024]
+    volume: 50
+    issue: 8
+    page: "1947-1956"
+    DOI: "10.1016/j.burns.2024.07.018"
+    type: article-journal
+  - id: Coombes2020
+    author:
+      - family: "Coombes"
+        given: "J."
+      - family: "Hunter"
+        given: "K."
+      - family: "Mackean"
+        given: "T."
+      - family: "Ivers"
+        given: "R."
+    title: "The Journey of Aftercare for Australia's First Nations Families Whose Child had Sustained a Burn Injury: A Qualitative Study"
+    container-title: "BMC Health Services Research"
+    issued:
+      date-parts:
+        - [2020]
+    volume: 20
+    issue: 1
+    page: "536"
+    DOI: "10.1186/s12913-020-05404-1"
+    type: article-journal
+  - id: Plaza2022
+    author:
+      - family: "Plaza"
+        given: "A."
+      - family: "Paratz"
+        given: "J. D."
+      - family: "Cottrell"
+        given: "M."
+    title: "A Six-Week Physical Therapy Exercise Program Delivered via Home-Based Telerehabilitation is Comparable to In-Person Programs for Patients with Burn Injuries: A Randomized, Controlled, Non-Inferiority Clinical Pilot Trial"
+    container-title: "Burns"
+    issued:
+      date-parts:
+        - [2023]
+    volume: 49
+    issue: 1
+    page: "55-67"
+    DOI: "10.1016/j.burns.2022.08.014"
+    type: article-journal
+  - id: Kurmis2022
+    author:
+      - family: "Kurmis"
+        given: "R."
+      - family: "Nicholls"
+        given: "C."
+      - family: "Singer"
+        given: "Y."
+      - family: "Edgar"
+        given: "D. W."
+      - family: "Wood"
+        given: "F."
+      - family: "J."
+        given: "Gabbe B."
+      - family: "Tracy"
+        given: "L. M."
+    title: "An Investigation of Early Enteral Nutrition Provision in Major Burn Patients in Australia and New Zealand"
+    container-title: "Nutrition & Dietetics"
+    issued:
+      date-parts:
+        - [2022]
+    volume: 79
+    issue: 5
+    page: "582-589"
+    DOI: "10.1111/1747-0080.12746"
+    type: article-journal
+  - id: Gabbe2015
+    author:
+      - family: "Gabbe"
+        given: "B. J."
+      - family: "Cleland"
+        given: "H."
+      - family: "Watterson"
+        given: "D. M."
+      - family: "Schrale"
+        given: "R."
+      - family: "Mcrae"
+        given: "S."
+      - family: "Parker"
+        given: "C."
+      - family: "Taggart"
+        given: "S"
+      - family: "Edgar"
+        given: "D. W."
+    title: "Long Term Outcomes Data for the Burns Registry of Australia and New Zealand: Feasible?"
+    container-title: "Burns"
+    issued:
+      date-parts:
+        - [2015]
+    volume: 41
+    issue: 8
+    page: "1732-1740"
+    DOI: "10.1016/j.burns.2015.09.005"
+    type: article-journal
+  - id: Cleland2022
+    author:
+      - family: "Cleland"
+        given: "H."
+      - family: "Sriubaite"
+        given: "I."
+      - family: "Gabbe"
+        given: "B. J."
+    title: "Burden and Costs of Severe Burn Injury in Victoria, Australia"
+    container-title: "European Burn Journal"
+    issued:
+      date-parts:
+        - [2022]
+    volume: 3
+    issue: 3
+    page: "391-400"
+    DOI: "10.3390/ebj3030034"
+    type: article-journal
+  - id: Cassidy2015
+    author:
+      - family: "Cassidy"
+        given: "J. T."
+      - family: "Edgar"
+        given: "D. W."
+      - family: "Phillips"
+        given: "M."
+      - family: "Cameron"
+        given: "P."
+      - family: "Cleland"
+        given: "H."
+      - family: "Wood"
+        given: "F."
+    title: "Transfer Time to a Specialist Burn Service and Influence on Burn Mortality in Australia and New Zealand: A Multi-Centre, Hospital-Based Retrospective Cohort Study"
+    container-title: "Burns"
+    issued:
+      date-parts:
+        - [2015]
+    volume: 41
+    issue: 4
+    page: "735-741"
+    DOI: "10.1016/j.burns.2015.01.016"
+    type: article-journal
+  - id: Singer2022
+    author:
+      - family: "Singer"
+        given: "Y."
+      - family: "Gabbe"
+        given: "B. J."
+      - family: "Cleland"
+        given: "H."
+      - family: "Holden"
+        given: "D."
+      - family: "Schnekenburger"
+        given: "M."
+      - family: "Tracy"
+        given: "L. M."
+    title: "The Association Between Out Of Hours Burn Centre Admission and In-Hospital Outcomes in Patients with Severe Burns"
+    container-title: "Burns"
+    issued:
+      date-parts:
+        - [2023]
+    volume: 49
+    issue: 5
+    page: "1062-1072"
+    DOI: "10.1016/j.burns.2022.08.002"
+    type: article-journal
+  - id: Tracy2020a
+    author:
+      - family: "Tracy"
+        given: "L. M."
+      - family: "Edgar"
+        given: "D. W."
+      - family: "Schrale"
+        given: "R."
+      - family: "Cleland"
+        given: "H."
+      - family: "Gabbe"
+        given: "B. J."
+    title: "Predictors of Itch and Pain in the 12 Months Following Burn Injury: Results from the Burns Registry of Australia and New Zealand Long-Term Outcomes Project"
+    container-title: "Burns & Trauma"
+    issued:
+      date-parts:
+        - [2020]
+    volume: 8
+    page: "tkz004"
+    DOI: "10.1093/burnst/tkz004"
+    type: article-journal
+  - id: Matthew2023
+    author:
+      - family: "Matthew"
+        given: "S."
+      - family: "Fitts"
+        given: "M. S."
+      - family: "Liddle"
+        given: "Z."
+      - family: "Bourke"
+        given: "L."
+      - family: "Campbell"
+        given: "N."
+      - family: "Murakami-Gold"
+        given: "L."
+      - family: "Russel"
+        given: "D. J."
+      - family: "Humphreys"
+        given: "J. S."
+      - family: "Mullholand"
+        given: "E."
+      - family: "Zhao"
+        given: "Y."
+      - family: "Jones"
+        given: "M. P."
+      - family: "Boffa"
+        given: "J."
+      - family: "Ramjam"
+        given: "M."
+      - family: "Tangey"
+        given: "A."
+      - family: "Schultz"
+        given: "R."
+      - family: "Wakerman"
+        given: "J."
+    title: "Telehealth in Remote Australia: A Supplementary Tool or an Alternative Model of Care Replacing Face-to-Face Consultations?"
+    container-title: "BMC Health Services Research"
+    issued:
+      date-parts:
+        - [2023]
+    volume: 23
+    issue: 1
+    page: "265"
+    DOI: "10.1186/s12913-023-09265-2"
+    type: article-journal
+  - id: McPhail2022
+    author:
+      - family: "McPhail"
+        given: "S. M."
+      - family: "Wiseman"
+        given: "J."
+      - family: "Simons"
+        given: "M."
+      - family: "Kimble"
+        given: "R."
+      - family: "Tyack"
+        given: "Z."
+    title: "Cost-Effectiveness of Scar Management Post-Burn: A Trial-Based Economic Evaluation of Three Intervention Models"
+    container-title: "Scientific Reports"
+    issued:
+      date-parts:
+        - [2022]
+    volume: 12
+    issue: 1
+    page: "638-647"
+    DOI: "10.1038/s41598-022-22488-3"
+    type: article-journal
+  - id: Capell2024
+    author:
+      - family: "Capell"
+        given: "E. L."
+      - family: "Kazis"
+        given: "L. E."
+      - family: "Gabbe"
+        given: "B. J."
+      - family: "Tracy"
+        given: "L. M."
+      - family: "Ryan"
+        given: "C. M."
+      - family: "Slavin"
+        given: "M. D."
+      - family: "Singer"
+        given: "Y."
+      - family: "Ryan"
+        given: "T."
+      - family: "Scott"
+        given: "H."
+      - family: "Bailey"
+        given: "H. M."
+      - family: "Vasudevan"
+        given: "A."
+      - family: "Ni"
+        given: "P."
+      - family: "Edgar"
+        given: "D."
+    title: "Measuring the Social Impact of Burn Injuries in Australia: An Adaptation of the Life Impact Burn Recovery Evaluation: The Aus-LIBRE Profile"
+    container-title: "Burn Care & Research"
+    issued:
+      date-parts:
+        - [2024]
+    volume: 46
+    issue: 1
+    page: "107-112"
+    DOI: "10.1093/jbcr/irae134"
+    type: article-journal
+  - id: Dobson2019
+    author:
+      - family: "Dobson"
+        given: "H."
+      - family: "Lee"
+        given: "S."
+      - family: "Braedon"
+        given: "C."
+      - family: "Cleland"
+        given: "H."
+      - family: "Moncur"
+        given: "D."
+      - family: "Kulkarni"
+        given: "J."
+    title: "How Self-Inflicted Injury and Gender Impacted the Outcome Following a Severe Burn"
+    container-title: "Burns"
+    issued:
+      date-parts:
+        - [2019]
+    volume: 45
+    issue: 3
+    page: "612-626"
+    DOI: "10.1016/j.burns.2018.10.021"
+    type: article-journal
+  - id: Duke2018
+    author:
+      - family: "Duke"
+        given: "J. M."
+      - family: "Randall"
+        given: "S. M."
+      - family: "Vetrichevval"
+        given: "T. P."
+      - family: "McGarry"
+        given: "S."
+      - family: "Boyd"
+        given: "J. H."
+      - family: "Wood"
+        given: "F. M."
+    title: "Long-Term Mental Health Outcomes After Unintentional Burns Sustained During Childhood: Retrospective Cohort Study"
+    container-title: "Burns & Trauma"
+    issued:
+      date-parts:
+        - [2018]
+    volume: 6
+    issue: 1
+    page: "142-153"
+    DOI: "10.1186/s41038-018-0134-z"
+    type: article-journal
+  - id: Ford2025
+    author:
+      - family: "Ford"
+        given: "D."
+      - family: "Waller"
+        given: "M."
+      - family: "Das"
+        given: "A."
+      - family: "Cameron"
+        given: "C. M."
+      - family: "Warren"
+        given: "J."
+      - family: "Druery"
+        given: "M."
+    title: "Baseline Predictors of Depression and Post-Traumatic Stress Disorder Symptoms in Hospitalised Adult Burn Survivors: Longitudinal, Prospective Cohort Study"
+    container-title: "Injury"
+    issued:
+      date-parts:
+        - [267]
+    volume: 56
+    issue: 3
+    page: "254"
+    DOI: "10.1016/j.injury.2025.112151"
+    type: article-journal
+  - id: Gabbe2016
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Gus2021
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Holbert2024
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Hong2022
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Knol2019
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Kurmis2022
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Lo2023
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: McInnes2018
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Orda2024
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Perkin2020
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Perkin2021
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Phillips2022
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Reeder2022
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Ryder2020a
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Ryder2020b
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Toppi2019
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Wasik2014
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Wasik2016
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Tracy2019
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Tracy2020b
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Tracy2020b
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Tracy2020c
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Tracy2023
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Tracy2025b
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
+  - id: Tracy2025c
+    author:
+    title: ""
+    container-title: ""
+    volume: 
+    issue: 
+    page: ""
+    DOI: ""
+    type: article-journal
 ---
 
 % Chapters/00-Abstract.tex
@@ -21,7 +733,7 @@ chapterstyle: minimal
 
 # Introduction
 ## Clinical Scenario
-A 42-year-old construction worker presents to the emergency department following a workplace accident involving hot bitumen, sustaining burns to 35\% total body surface area (TBSA) affecting his chest, abdomen, and both arms. TBSA represents the percentage of body surface affected by burns, typically calculated using either the ``Rule of Nines'' (dividing body surface into sections representing 9\% or multiples thereof) or more precise Lund and Browder charts that account for age-related body proportions. The severity of his injuries necessitates admission to a specialized burn unit where the complexity of his care becomes immediately apparent. Beyond critical fluid resuscitation using the Parkland Formula (4mL/kg/\% TBSA of crystalloid over 24 hours), he requires multimodal pain management, early mobilization to prevent contractures, nutritional support exceeding 30 kcal/kg/day, psychological assistance for acute stress symptoms, and coordination with his family struggling to understand the lengthy recovery ahead.
+A 42-year-old construction worker presents to the emergency department following a workplace accident involving hot bitumen, sustaining burns to 35\% total body surface area (TBSA) affecting his chest, abdomen, and both arms. TBSA represents the percentage of body surface affected by burns, typically calculated using either the "Rule of Nines" (dividing body surface into sections representing 9\% or multiples thereof) or more precise Lund and Browder charts that account for age-related body proportions. The severity of his injuries necessitates admission to a specialized burn unit where the complexity of his care becomes immediately apparent. Beyond critical fluid resuscitation using the Parkland Formula (4mL/kg/\% TBSA of crystalloid over 24 hours), he requires multimodal pain management, early mobilization to prevent contractures, nutritional support exceeding 30 kcal/kg/day, psychological assistance for acute stress symptoms, and coordination with his family struggling to understand the lengthy recovery ahead.
 The burn unit team faces a fundamental question: will coordinated multidisciplinary care involving burn surgeons, intensivists, nurses, physiotherapists, occupational therapists, dietitians, psychologists, and social workers produce better outcomes than traditional sequential consultation models where each discipline operates independently? This scenario, replicated thousands of times annually across Australasian \glspl{burnunit}, illustrates why burn injury represents one of medicine's most complex management challenges.
 ## Background
 ### The Australasian Burn Care Context
@@ -42,10 +754,10 @@ A comprehensive review following \gls{prisma} guidelines was conducted between J
 Primary databases searched included PubMed/MEDLINE (2014-2025), CINAHL Complete (2014-2025), Cochrane Library including Cochrane Database of Systematic Reviews, EMBASE (2014-2025), and the \gls{branz} publications database. Secondary sources included Australian Indigenous HealthInfoNet, Google Scholar (first 200 results), reference lists of included studies, \gls{anzba} conference proceedings, and institutional repositories of major burn centers.
 Search terms were combined using Boolean operators:
 \begin{itemize}
-    \item Population: (burn* OR ``thermal injury'' OR scald*) AND (Australia* OR ``New Zealand'' OR ANZBA OR BRANZ)
-    \item Intervention: (multidisciplinary OR interdisciplinary OR ``team-based'' OR ``coordinated care'' OR ``collaborative management'')
-    \item Comparison: (traditional OR ``single discipline'' OR sequential OR ``usual care'')
-    \item Outcomes: (mortality OR survival OR ``length of stay'' OR function* OR ``quality of life'' OR recovery)
+    \item Population: (burn* OR "thermal injury" OR scald*) AND (Australia* OR "New Zealand" OR ANZBA OR BRANZ)
+    \item Intervention: (multidisciplinary OR interdisciplinary OR "team-based" OR "coordinated care" OR "collaborative management")
+    \item Comparison: (traditional OR "single discipline" OR sequential OR "usual care")
+    \item Outcomes: (mortality OR survival OR "length of stay" OR function* OR "quality of life" OR recovery)
 \end{itemize}
 \clearpage
 ## Selection Process
@@ -217,7 +929,7 @@ The most comprehensive evidence emerges from \gls{branz} registry analyses encom
 \textcite{Tracy2020} examined predictors of chronic pain and itch, demonstrating that early \gls{mdt} pain management protocols significantly influence long-term outcomes. Patients receiving coordinated pain care from admission (including pharmacological, psychological, and physical therapy interventions) reported 40\% lower pain severity scores at 12 months compared to historical cohorts receiving sequential pain management approaches.
 ### Cultural Safety Considerations
 \textcite{Hunter2024} provided crucial evidence about \gls{mdt} care for Aboriginal and Torres Strait Islander children through the Coolamon Study. This prospective cohort of 156 Indigenous children with burns revealed that culturally-adapted \gls{mdt} models incorporating Aboriginal Health Workers achieved dramatically improved outcomes. When Indigenous Health Workers participated as core \gls{mdt} members rather than cultural consultants, length of stay decreased by 2.8 days (95\% \gls{ci} 1.2-4.4) and follow-up attendance improved from 52\% to 84\%.
-\textcite{Coombes2020} conducted qualitative research with 18 Indigenous families, revealing how standard \gls{mdt} approaches may inadvertently create barriers through overwhelming information delivery, conflicting communication from multiple team members, and failure to accommodate extended family involvement in decision-making. Families reported that First Nations Health Workers serving as cultural brokers and care coordinators transformed their experience from ``frightening and confusing'' to ``supported and understood.''
+\textcite{Coombes2020} conducted qualitative research with 18 Indigenous families, revealing how standard \gls{mdt} approaches may inadvertently create barriers through overwhelming information delivery, conflicting communication from multiple team members, and failure to accommodate extended family involvement in decision-making. Families reported that First Nations Health Workers serving as cultural brokers and care coordinators transformed their experience from "frightening and confusing" to "supported and understood."
 These studies highlight that effective \gls{mdt} care requires adaptation to cultural contexts rather than universal application of standardized protocols. The evidence suggests that Indigenous patients benefit particularly from \gls{mdt} approaches when \gls{culturalsafety} principles integrate throughout team functioning rather than being addressed as separate considerations.
 ### Technology-Based MDT Delivery
 \textcite{Plaza2022} conducted the first Australasian \gls{rct} examining telerehabilitation within \gls{mdt} frameworks. Forty-five patients with burns affecting less than 25\% \gls{tbsa} were randomized to receive either traditional in-person \gls{mdt} rehabilitation or \gls{telehealth}-delivered therapy with remote \gls{mdt} coordination. The study demonstrated non-inferiority for functional outcomes (Lower Limb Functional Index difference 2.1 points, 95\% \gls{ci} -3.4 to 7.6) while reducing travel burden and improving rural access.

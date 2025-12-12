@@ -5,6 +5,921 @@ author: "Kiran Nath"
 date: "2025"
 lang: en
 chapterstyle: minimal
+references:
+  - id: AmericanPsychiatricAssociation2022
+    author:
+      - family: "Association"
+        given: "{American Psychiatric"
+    title: "Diagnostic and Statistical Manual of Mental Disorders"
+    issued:
+      date-parts:
+        - [2022]
+    publisher: "American Psychiatric Publishing"
+    publisher-place: "Washington, DC"
+    DOI: "10.1176/appi.books.9780890425787"
+    edition: "5th, text rev."
+    type: book
+  - id: Bai2019
+    author:
+      - family: "Bai"
+        given: "D."
+      - family: "Yip"
+        given: "B. H. K."
+      - family: "Windham"
+        given: "G. C."
+      - family: "Sourander"
+        given: "A."
+      - family: "Francis"
+        given: "R."
+      - family: "Yoffe"
+        given: "R."
+      - family: "Glasson"
+        given: "E."
+      - family: "Mahjani"
+        given: "B."
+      - family: "Suominen"
+        given: "A."
+      - family: "Leonard"
+        given: "H."
+      - family: "Gissler"
+        given: "M."
+      - family: "Buxbaum"
+        given: "J. D."
+      - family: "Wong"
+        given: "K."
+      - family: "Schendel"
+        given: "D."
+      - family: "Kodesh"
+        given: "A."
+      - family: "Breshnahan"
+        given: "M."
+      - family: "Levine"
+        given: "S. Z."
+      - family: "Parner"
+        given: "E. T."
+      - family: "Hansen"
+        given: "S. N."
+      - family: "Hultman"
+        given: "C."
+      - family: "Reichenberg"
+        given: "A."
+      - family: "Sandin"
+        given: "S."
+    title: "Association Of Genetic And Environmental Factors With Autism In A 5-Country Cohort"
+    container-title: "JAMA Psychiatry"
+    issued:
+      date-parts:
+        - [2019]
+    volume: 76
+    issue: 10
+    page: "1035-1043"
+    DOI: "10.1001/jamapsychiatry.2019.1411"
+    type: article-journal
+  - id: Bourke2016
+    author:
+      - family: "Bourke"
+        given: "J."
+      - family: "de Klerk"
+        given: "N."
+      - family: "Smith"
+        given: "T."
+      - family: "Leonard"
+        given: "H."
+    title: "Population-Based Prevalence Of Intellectual Disability And Autism Spectrum Disorders In Western Australia: A Comparison With Previous Estimates"
+    container-title: "Medicine"
+    issued:
+      date-parts:
+        - [2016]
+    volume: 95
+    issue: 21
+    page: "e3737"
+    DOI: "10.1097/MD.0000000000003737"
+    type: article-journal
+  - id: Charman2013
+    author:
+      - family: "Charman"
+        given: "T."
+      - family: "Gotham"
+        given: "K."
+    title: "Measurement Issues: Screening And Diagnostic Instruments For Autism Spectrum Disorders---Lessons From Research And Practice"
+    container-title: "Child and Adolescent Mental Health"
+    issued:
+      date-parts:
+        - [2013]
+    volume: 18
+    issue: 1
+    page: "52-63"
+    DOI: "10.1111/j.1475-3588.2012.00664.x"
+    type: article-journal
+  - id: Charman2011
+    author:
+      - family: "Charman"
+        given: "T."
+      - family: "Pickles"
+        given: "A."
+      - family: "Simonoff"
+        given: "E."
+      - family: "Chandler"
+        given: "S."
+      - family: "Loucas"
+        given: "T."
+      - family: "Baird"
+        given: "G."
+    title: "{IQ"
+    container-title: "Psychological Medicine"
+    issued:
+      date-parts:
+        - [2011]
+    volume: 41
+    issue: 3
+    page: "619-627"
+    DOI: "10.1017/S0033291710000991"
+    type: article-journal
+  - id: Daniels2014
+    author:
+      - family: "Daniels"
+        given: "A. M."
+      - family: "Mandell"
+        given: "D. S."
+    title: "Explaining Differences In Age At Autism Spectrum Disorder Diagnosis: A Critical Review"
+    container-title: "Autism"
+    issued:
+      date-parts:
+        - [2014]
+    volume: 18
+    issue: 5
+    page: "583-597"
+    DOI: "10.1177/1362361313480277"
+    type: article-journal
+  - id: Dawson2012
+    author:
+      - family: "Dawson"
+        given: "G."
+      - family: "Jones"
+        given: "E. J. H."
+      - family: "Merkle"
+        given: "K."
+      - family: "Venema"
+        given: "K."
+      - family: "Lowy"
+        given: "R."
+      - family: "Faja"
+        given: "S."
+      - family: "Kamara"
+        given: "D."
+      - family: "Murias"
+        given: "M."
+      - family: "Greenson"
+        given: "J."
+      - family: "Winter"
+        given: "J."
+      - family: "Smith"
+        given: "M."
+      - family: "Rogers"
+        given: "S. J."
+      - family: "Webb"
+        given: "S. J."
+    title: "Early Behavioral Intervention Is Associated With Normalized Brain Activity In Young Children With Autism"
+    container-title: "Journal of the American Academy of Child & Adolescent Psychiatry"
+    issued:
+      date-parts:
+        - [2012]
+    volume: 51
+    issue: 11
+    page: "1150-1159"
+    DOI: "10.1016/j.jaac.2012.08.018"
+    type: article-journal
+  - id: Dawson2010
+    author:
+      - family: "Dawson"
+        given: "G."
+      - family: "Rogers"
+        given: "S."
+      - family: "Munson"
+        given: "J."
+      - family: "Smith"
+        given: "M."
+      - family: "Winter"
+        given: "J."
+      - family: "Greenson"
+        given: "J."
+      - family: "Donaldson"
+        given: "A."
+      - family: "Varley"
+        given: "J."
+    title: "Randomized, Controlled Trial Of An Intervention For Toddlers With Autism: The Early Start Denver Model"
+    container-title: "Pediatrics"
+    issued:
+      date-parts:
+        - [2010]
+    volume: 125
+    issue: 1
+    page: "e17-e23"
+    DOI: "10.1542/peds.2009-0958"
+    type: article-journal
+  - id: Dunn2014
+    author:
+      - family: "Dunn"
+        given: "W."
+    title: "Sensory Profile 2: User's Manual"
+    issued:
+      date-parts:
+        - [2014]
+    publisher: "Pearson"
+    publisher-place: "Bloomington, MN"
+    type: book
+  - id: Elsabbagh2010
+    author:
+      - family: "Elsabbagh"
+        given: "M."
+      - family: "Johnson"
+        given: "M. H."
+    title: "Getting Answers From Babies About Autism"
+    container-title: "Trends in Cognitive Sciences"
+    issued:
+      date-parts:
+        - [2010]
+    volume: 14
+    issue: 2
+    page: "81-87"
+    DOI: "10.1016/j.tics.2009.12.005"
+    type: article-journal
+  - id: Feldman2009
+    author:
+      - family: "Feldman"
+        given: "R."
+      - family: "Granat"
+        given: "A."
+      - family: "Pariente"
+        given: "C."
+      - family: "Kanety"
+        given: "H."
+      - family: "Kuint"
+        given: "J."
+      - family: "Gilboa-Schechtman"
+        given: "E."
+    title: "Maternal Depression And Anxiety Across The Postpartum Year And Infant Social Engagement, Fear Regulation, And Stress Reactivity"
+    container-title: "Journal of the American Academy of Child & Adolescent Psychiatry"
+    issued:
+      date-parts:
+        - [2009]
+    volume: 48
+    issue: 9
+    page: "919-927"
+    DOI: "10.1097/CHI.0b013e3181b21651"
+    type: article-journal
+  - id: Flanagan1997
+    author:
+      - family: "Flanagan"
+        given: "D. P."
+      - family: "McGrew"
+        given: "K. S."
+    title: "A Cross-Battery Approach To Assessing And Interpreting Cognitive Abilities: Narrowing The Gap Between Practice And Cognitive Science"
+    container-title: "Contemporary Intellectual Assessment: Theories, Tests, And Issues"
+    issued:
+      date-parts:
+        - [1997]
+    page: "314-325"
+    publisher: "Guilford Press"
+    publisher-place: "New York, NY"
+    type: chapter
+  - id: Gotham2007
+    author:
+      - family: "Gotham"
+        given: "K."
+      - family: "Risi"
+        given: "S."
+      - family: "Pickles"
+        given: "A."
+      - family: "Lord"
+        given: "C."
+    title: "The Autism Diagnostic Observation Schedule: Revised Algorithms For Improved Diagnostic Validity"
+    container-title: "Journal of Autism and Developmental Disorders"
+    issued:
+      date-parts:
+        - [2007]
+    volume: 37
+    issue: 4
+    page: "613-627"
+    DOI: "10.1007/s10803-006-0280-1"
+    type: article-journal
+  - id: Johnson2011
+    author:
+      - family: "Johnson"
+        given: "S."
+      - family: "Marlow"
+        given: "N."
+    title: "Preterm Birth And Childhood Psychiatric Disorders"
+    container-title: "Pediatric Research"
+    issued:
+      date-parts:
+        - [2011]
+    volume: 69
+    issue: 5 Pt 2
+    page: "11R-18R"
+    DOI: "10.1203/PDR.0b013e318212faa0"
+    type: article-journal
+  - id: Kasari2010
+    author:
+      - family: "Kasari"
+        given: "C."
+      - family: "Gulsrud"
+        given: "A. C."
+      - family: "Wong"
+        given: "C."
+      - family: "Kwon"
+        given: "S."
+      - family: "Locke"
+        given: "J."
+    title: "Randomized Controlled Caregiver Mediated Joint Engagement Intervention For Toddlers With Autism"
+    container-title: "Journal of Autism and Developmental Disorders"
+    issued:
+      date-parts:
+        - [2010]
+    volume: 40
+    issue: 9
+    page: "1045-1056"
+    DOI: "10.1007/s10803-010-0955-5"
+    type: article-journal
+  - id: Klin2007
+    author:
+      - family: "Klin"
+        given: "A."
+      - family: "Saulnier"
+        given: "C. A."
+      - family: "Sparrow"
+        given: "S. S."
+      - family: "Cicchetti"
+        given: "D. V."
+      - family: "Volkmar"
+        given: "F. R."
+      - family: "Lord"
+        given: "C."
+    title: "Social And Communication Abilities And Disabilities In Higher Functioning Individuals With Autism Spectrum Disorders: The Vineland And The {ADOS"
+    container-title: "Journal of Autism and Developmental Disorders"
+    issued:
+      date-parts:
+        - [2007]
+    volume: 37
+    issue: 4
+    page: "748-759"
+    DOI: "10.1007/s10803-006-0229-4"
+    type: article-journal
+  - id: Leekam2011
+    author:
+      - family: "Leekam"
+        given: "S. R."
+      - family: "Prior"
+        given: "M. R."
+      - family: "Uljarevic"
+        given: "M."
+    title: "Restricted And Repetitive Behaviors In Autism Spectrum Disorders: A Review Of Research In The Last Decade"
+    container-title: "Psychological Bulletin"
+    issued:
+      date-parts:
+        - [2011]
+    volume: 137
+    issue: 4
+    page: "562-593"
+    DOI: "10.1037/a0023341"
+    type: article-journal
+  - id: Lord2000
+    author:
+      - family: "Lord"
+        given: "C."
+      - family: "Risi"
+        given: "S."
+      - family: "Lambrecht"
+        given: "L."
+      - family: "Cook"
+        given: "E. H."
+      - family: "Leventhal"
+        given: "B. L."
+      - family: "DiLavore"
+        given: "P. C."
+      - family: "Pickles"
+        given: "A."
+      - family: "Rutter"
+        given: "M."
+    title: "The Autism Diagnostic Observation Schedule-Generic: A Standard Measure Of Social And Communication Deficits Associated With The Spectrum Of Autism"
+    container-title: "Journal of Autism and Developmental Disorders"
+    issued:
+      date-parts:
+        - [2000]
+    volume: 30
+    issue: 3
+    page: "205-223"
+    DOI: "10.1023/A:1005592401947"
+    type: article-journal
+  - id: Lord1994
+    author:
+      - family: "Lord"
+        given: "C."
+      - family: "Rutter"
+        given: "M."
+      - family: "Le Couteur"
+        given: "A."
+    title: "Autism Diagnostic Interview-Revised: A Revised Version Of A Diagnostic Interview For Caregivers Of Individuals With Possible Pervasive Developmental Disorders"
+    container-title: "Journal of Autism and Developmental Disorders"
+    issued:
+      date-parts:
+        - [1994]
+    volume: 24
+    issue: 5
+    page: "659-685"
+    DOI: "10.1007/BF02172145"
+    type: article-journal
+  - id: Lord2012
+    author:
+      - family: "Lord"
+        given: "C."
+      - family: "Rutter"
+        given: "M."
+      - family: "DiLavore"
+        given: "P. C."
+      - family: "Risi"
+        given: "S."
+      - family: "Gotham"
+        given: "K."
+      - family: "Bishop"
+        given: "S. L."
+    title: "Autism Diagnostic Observation Schedule, Second Edition ({ADOS-2"
+    issued:
+      date-parts:
+        - [2012]
+    publisher: "Western Psychological Services"
+    publisher-place: "Torrance, CA"
+    type: book
+  - id: Maglione2012
+    author:
+      - family: "Maglione"
+        given: "M. A."
+      - family: "Gans"
+        given: "D."
+      - family: "Das"
+        given: "L."
+      - family: "Timbie"
+        given: "J."
+      - family: "Kasari"
+        given: "C."
+    title: "Nonmedical Interventions For Children With {ASD"
+    container-title: "Pediatrics"
+    issued:
+      date-parts:
+        - [2012]
+    volume: 130
+    issue: Suppl. 2
+    page: "S169-S178"
+    DOI: "10.1542/peds.2012-0900O"
+    type: article-journal
+  - id: Maski2011
+    author:
+      - family: "Maski"
+        given: "K. P."
+      - family: "Jeste"
+        given: "S. S."
+      - family: "Spence"
+        given: "S. J."
+    title: "Common Neurological Co-Morbidities In Autism Spectrum Disorders"
+    container-title: "Current Opinion in Pediatrics"
+    issued:
+      date-parts:
+        - [2011]
+    volume: 23
+    issue: 6
+    page: "609-615"
+    DOI: "10.1097/MOP.0b013e32834c9282"
+    type: article-journal
+  - id: Mefford2012
+    author:
+      - family: "Mefford"
+        given: "H. C."
+      - family: "Batshaw"
+        given: "M. L."
+      - family: "Hoffman"
+        given: "E. P."
+    title: "Genomics, Intellectual Disability, And Autism"
+    container-title: "New England Journal of Medicine"
+    issued:
+      date-parts:
+        - [2012]
+    volume: 366
+    issue: 8
+    page: "733-743"
+    DOI: "10.1056/NEJMra1114194"
+    type: article-journal
+  - id: Mundy2009
+    author:
+      - family: "Mundy"
+        given: "P."
+      - family: "Sullivan"
+        given: "L."
+      - family: "Mastergeorge"
+        given: "A. M."
+    title: "A Parallel And Distributed-Processing Model Of Joint Attention, Social Cognition And Autism"
+    container-title: "Autism Research"
+    issued:
+      date-parts:
+        - [2009]
+    volume: 2
+    issue: 1
+    page: "2-21"
+    DOI: "10.1002/aur.61"
+    type: article-journal
+  - id: Munson2008
+    author:
+      - family: "Munson"
+        given: "J."
+      - family: "Dawson"
+        given: "G."
+      - family: "Sterling"
+        given: "L."
+      - family: "Beauchaine"
+        given: "T."
+      - family: "Zhou"
+        given: "A."
+      - family: "Koehler"
+        given: "E."
+      - family: "Lord"
+        given: "C."
+      - family: "Rogers"
+        given: "S."
+      - family: "Sigman"
+        given: "M."
+      - family: "Estes"
+        given: "A."
+      - family: "Abbott"
+        given: "R."
+    title: "Evidence For Latent Classes Of {IQ"
+    container-title: "American Journal on Mental Retardation"
+    issued:
+      date-parts:
+        - [2008]
+    volume: 113
+    issue: 6
+    page: "439-452"
+    DOI: "10.1352/2008.113:439-452"
+    type: article-journal
+  - id: NationalResearchCouncil2001
+    author:
+      - family: "Council"
+        given: "{National Research"
+    title: "Educating Children With Autism"
+    issued:
+      date-parts:
+        - [2001]
+    publisher: "National Academy Press"
+    publisher-place: "Washington, DC"
+    type: book
+  - id: Ozonoff2005
+    author:
+      - family: "Ozonoff"
+        given: "S."
+      - family: "Goodlin-Jones"
+        given: "B. L."
+      - family: "Solomon"
+        given: "M."
+    title: "Evidence-Based Assessment Of Autism Spectrum Disorders In Children And Adolescents"
+    container-title: "Journal of Clinical Child and Adolescent Psychology"
+    issued:
+      date-parts:
+        - [2005]
+    volume: 34
+    issue: 3
+    page: "523-540"
+    DOI: "10.1207/s15374424jccp3403_8"
+    type: article-journal
+  - id: Reichow2012
+    author:
+      - family: "Reichow"
+        given: "B."
+      - family: "Barton"
+        given: "E. E."
+      - family: "Boyd"
+        given: "B. A."
+      - family: "Hume"
+        given: "K."
+    title: "Early Intensive Behavioral Intervention ({EIBI"
+    container-title: "Cochrane Database of Systematic Reviews"
+    issued:
+      date-parts:
+        - [2012]
+    volume: 10
+    page: "CD009260"
+    DOI: "10.1002/14651858.CD009260.pub2"
+    type: article-journal
+  - id: Rodgers2012
+    author:
+      - family: "Rodgers"
+        given: "J."
+      - family: "Glod"
+        given: "M."
+      - family: "Connolly"
+        given: "B."
+      - family: "McConachie"
+        given: "H."
+    title: "The Relationship Between Anxiety And Repetitive Behaviours In Autism Spectrum Disorder"
+    container-title: "Journal of Autism and Developmental Disorders"
+    issued:
+      date-parts:
+        - [2012]
+    volume: 42
+    issue: 11
+    page: "2404-2409"
+    DOI: "10.1007/s10803-012-1531-y"
+    type: article-journal
+  - id: Rogers2010
+    author:
+      - family: "Rogers"
+        given: "S. J."
+      - family: "Dawson"
+        given: "G."
+    title: "Early Start Denver Model For Young Children With Autism: Promoting Language, Learning, And Engagement"
+    issued:
+      date-parts:
+        - [2010]
+    publisher: "Guilford Press"
+    publisher-place: "New York, NY"
+    type: book
+  - id: Rogers2012
+    author:
+      - family: "Rogers"
+        given: "S. J."
+      - family: "Estes"
+        given: "A."
+      - family: "Lord"
+        given: "C."
+      - family: "Vismara"
+        given: "L."
+      - family: "Winter"
+        given: "J."
+      - family: "Fitzpatrick"
+        given: "A."
+      - family: "Guo"
+        given: "M."
+      - family: "Dawson"
+        given: "G."
+    title: "Effects Of A Brief Early Start Denver Model ({ESDM"
+    container-title: "Journal of the American Academy of Child & Adolescent Psychiatry"
+    issued:
+      date-parts:
+        - [2012]
+    volume: 51
+    issue: 10
+    page: "1052-1065"
+    DOI: "10.1016/j.jaac.2012.08.003"
+    type: article-journal
+  - id: Roid2013
+    author:
+      - family: "Roid"
+        given: "G. H."
+      - family: "Miller"
+        given: "L. J."
+      - family: "Pomplun"
+        given: "M."
+      - family: "Koch"
+        given: "C."
+    title: "Leiter International Performance Scale, Third Edition (Leiter-3)"
+    issued:
+      date-parts:
+        - [2013]
+    publisher: "Western Psychological Services"
+    publisher-place: "Torrance, CA"
+    type: book
+  - id: Schreibman2015
+    author:
+      - family: "Schreibman"
+        given: "L."
+      - family: "Dawson"
+        given: "G."
+      - family: "Stahmer"
+        given: "A. C."
+      - family: "Landa"
+        given: "R."
+      - family: "Rogers"
+        given: "S. J."
+      - family: "McGee"
+        given: "G. G."
+      - family: "Kasari"
+        given: "C."
+      - family: "Ingersoll"
+        given: "B."
+      - family: "Kaiser"
+        given: "A. P."
+      - family: "Bruinsma"
+        given: "Y."
+      - family: "McNerney"
+        given: "E."
+      - family: "Wetherby"
+        given: "A."
+      - family: "Halladay"
+        given: "A."
+    title: "Naturalistic Developmental Behavioral Interventions: Empirically Validated Treatments For Autism Spectrum Disorder"
+    container-title: "Journal of Autism and Developmental Disorders"
+    issued:
+      date-parts:
+        - [2015]
+    volume: 45
+    issue: 8
+    page: "2411-2428"
+    DOI: "10.1007/s10803-015-2407-8"
+    type: article-journal
+  - id: Sparrow2016
+    author:
+      - family: "Sparrow"
+        given: "S. S."
+      - family: "Cicchetti"
+        given: "D. V."
+      - family: "Saulnier"
+        given: "C. A."
+    title: "Vineland Adaptive Behavior Scales, Third Edition (Vineland-3)"
+    issued:
+      date-parts:
+        - [2016]
+    publisher: "Pearson"
+    publisher-place: "Bloomington, MN"
+    type: book
+  - id: Tasse2012
+    author:
+      - family: "Tassé"
+        given: "M. J."
+      - family: "Schalock"
+        given: "R. L."
+      - family: "Balboni"
+        given: "G."
+      - family: "Bersani"
+        given: "H."
+      - family: "Borthwick-Duffy"
+        given: "S. A."
+      - family: "Spreat"
+        given: "S."
+      - family: "Thissen"
+        given: "D."
+      - family: "Widaman"
+        given: "K. F."
+      - family: "Zhang"
+        given: "D."
+    title: "The Construct Of Adaptive Behavior: Its Conceptualization, Measurement, And Use In The Field Of Intellectual Disability"
+    container-title: "American Journal on Intellectual and Developmental Disabilities"
+    issued:
+      date-parts:
+        - [2012]
+    volume: 117
+    issue: 4
+    page: "291-303"
+    DOI: "10.1352/1944-7558-117.4.291"
+    type: article-journal
+  - id: Tick2016
+    author:
+      - family: "Tick"
+        given: "B."
+      - family: "Bolton"
+        given: "P."
+      - family: "Happé"
+        given: "F."
+      - family: "Rutter"
+        given: "M."
+      - family: "Rijsdijk"
+        given: "F."
+    title: "Heritability Of Autism Spectrum Disorders: A Meta-Analysis Of Twin Studies"
+    container-title: "Journal of Child Psychology and Psychiatry"
+    issued:
+      date-parts:
+        - [2016]
+    volume: 57
+    issue: 5
+    page: "585-595"
+    DOI: "10.1111/jcpp.12499"
+    type: article-journal
+  - id: Tomchek2007
+    author:
+      - family: "Tomchek"
+        given: "S. D."
+      - family: "Dunn"
+        given: "W."
+    title: "Sensory Processing In Children With And Without Autism: A Comparative Study Using The Short Sensory Profile"
+    container-title: "American Journal of Occupational Therapy"
+    issued:
+      date-parts:
+        - [2007]
+    volume: 61
+    issue: 2
+    page: "190-200"
+    DOI: "10.5014/ajot.61.2.190"
+    type: article-journal
+  - id: Vivanti2014
+    author:
+      - family: "Vivanti"
+        given: "G."
+      - family: "Paynter"
+        given: "J."
+      - family: "Duncan"
+        given: "E."
+      - family: "Fothergill"
+        given: "H."
+      - family: "Dissanayake"
+        given: "C."
+      - family: "Rogers"
+        given: "S. J."
+      - family: "Team"
+        given: "{Victorian ASELCC"
+    title: "Effectiveness And Feasibility Of The Early Start Denver Model Implemented In A Group-Based Community Childcare Setting"
+    container-title: "Journal of Autism and Developmental Disorders"
+    issued:
+      date-parts:
+        - [2014]
+    volume: 44
+    issue: 12
+    page: "3140-3153"
+    DOI: "10.1007/s10803-014-2168-9"
+    type: article-journal
+  - id: Warren2011
+    author:
+      - family: "Warren"
+        given: "Z."
+      - family: "McPheeters"
+        given: "M. L."
+      - family: "Sathe"
+        given: "N."
+      - family: "Foss-Feig"
+        given: "J. H."
+      - family: "Glasser"
+        given: "A."
+      - family: "Veenstra-VanderWeele"
+        given: "J."
+    title: "A Systematic Review Of Early Intensive Intervention For Autism Spectrum Disorders"
+    container-title: "Pediatrics"
+    issued:
+      date-parts:
+        - [2011]
+    volume: 127
+    issue: 5
+    page: "e1303-e1311"
+    DOI: "10.1542/peds.2011-0426"
+    type: article-journal
+  - id: Wechsler2012
+    author:
+      - family: "Wechsler"
+        given: "D."
+    title: "Wechsler Preschool and Primary Scale of Intelligence, Fourth Edition ({WPPSI-IV"
+    issued:
+      date-parts:
+        - [2012]
+    publisher: "Pearson"
+    publisher-place: "Bloomington, MN"
+    type: book
+  - id: Zwaigenbaum2009
+    author:
+      - family: "Zwaigenbaum"
+        given: "L."
+      - family: "Bryson"
+        given: "S."
+      - family: "Lord"
+        given: "C."
+      - family: "Rogers"
+        given: "S."
+      - family: "Carter"
+        given: "A."
+      - family: "Carver"
+        given: "L."
+      - family: "Chawarska"
+        given: "K."
+      - family: "Constantino"
+        given: "J."
+      - family: "Dawson"
+        given: "G."
+      - family: "Dobkins"
+        given: "K."
+      - family: "Fein"
+        given: "D."
+      - family: "Iverson"
+        given: "J."
+      - family: "Klin"
+        given: "A."
+      - family: "Landa"
+        given: "R."
+      - family: "Messinger"
+        given: "D."
+      - family: "Ozonoff"
+        given: "S."
+      - family: "Sigman"
+        given: "M."
+      - family: "Stone"
+        given: "W."
+      - family: "Tager-Flusberg"
+        given: "H."
+      - family: "Yirmiya"
+        given: "N."
+    title: "Clinical Assessment And Management Of Toddlers With Suspected Autism Spectrum Disorder: Insights From Studies Of High-Risk Infants"
+    container-title: "Pediatrics"
+    issued:
+      date-parts:
+        - [2009]
+    volume: 123
+    issue: 5
+    page: "1383-1391"
+    DOI: "10.1542/peds.2008-1606"
+    type: article-journal
 ---
 
 % Chapters/01-Formulation.tex
@@ -23,7 +938,7 @@ Adaptive functioning shows documented difficulties across conceptual domains (li
 ## Predisposing, Precipitating, Perpetuating, and Protective Factors
 ### Predisposing Factors
 Prematurity (35 weeks, 3 days) and low birth weight (2645 grams) may have contributed to neurological vulnerability, though good condition at delivery suggests resilience. Late preterm infants show elevated neurodevelopmental difficulty rates . Neonatal jaundice requiring phototherapy and severe infant gastroesophageal reflux represent early biological stressors potentially affecting neurodevelopment and early parent-child interactions.
-Family history of ASD (maternal nephew) suggests genetic vulnerability, with heritability estimates ranging from 37\% to over 90\% . Speech regression (acquiring ``cat'' at 15 months, then ceasing verbal output) suggests atypical language trajectory. Sensory sensitivities across auditory and tactile modalities may have contributed to affect regulation difficulties.
+Family history of ASD (maternal nephew) suggests genetic vulnerability, with heritability estimates ranging from 37\% to over 90\% . Speech regression (acquiring "cat" at 15 months, then ceasing verbal output) suggests atypical language trajectory. Sensory sensitivities across auditory and tactile modalities may have contributed to affect regulation difficulties.
 Stephanie's postnatal depression following Max's birth potentially affected early attachment during critical developmental windows. While maternal depression can influence parent-infant interaction quality , effects vary considerably based on severity, duration, and treatment access (details unspecified in referral).
 Max's Aboriginal heritage through his father requires respectful acknowledgment and integration into assessment and treatment planning. Aboriginal Australian children experience service access disparities, with IDD prevalence of 39 per 1,000 compared to 16 per 1,000 for non-Aboriginal children , differences likely reflecting systemic barriers rather than genetic factors. Cultural sensitivity and knowledge of sociostructural conditions prove essential . The family's Parramatta residence on Darug land suggests active connection to Charles's cultural identity, representing both protective factor and consideration for culturally responsive service provision.
 ### Precipitating and Perpetuating Factors

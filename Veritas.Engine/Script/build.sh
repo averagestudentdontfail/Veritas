@@ -41,11 +41,12 @@ convert_file() {
     echo "Converting: $input_file"
     echo "  → LaTeX: $tex_file"
     
-    # Convert MD to LaTeX using Pandoc
+    # Convert MD to LaTeX using Pandoc with citeproc for inline references
     pandoc "$input_file" \
         --from=markdown+yaml_metadata_block+tex_math_dollars+raw_tex \
         --to=latex \
         --template="$PANDOC_TEMPLATE" \
+        --citeproc \
         --standalone \
         --output="$tex_file"
     

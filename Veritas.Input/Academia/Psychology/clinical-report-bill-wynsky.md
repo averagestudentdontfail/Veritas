@@ -5,6 +5,695 @@ author: "Kiran Nath"
 date: "2025"
 lang: en
 chapterstyle: minimal
+references:
+  - id: apa2022
+    author:
+      - family: "Association"
+        given: "{American Psychiatric"
+    title: "Diagnostic and statistical manual of mental disorders"
+    issued:
+      date-parts:
+        - [2022]
+    publisher: "American Psychiatric Publishing"
+    DOI: "10.1176/appi.books.9780890425787"
+    edition: "5th"
+    type: book
+  - id: bhugra2005
+    author:
+      - family: "Bhugra"
+        given: "D."
+      - family: "Becker"
+        given: "M. A."
+    title: "Migration, cultural bereavement and cultural identity"
+    container-title: "World Psychiatry"
+    issued:
+      date-parts:
+        - [2005]
+    volume: 4
+    issue: 1
+    page: "18-24"
+    type: article-journal
+  - id: brewin2000
+    author:
+      - family: "Brewin"
+        given: "C. R."
+      - family: "Andrews"
+        given: "B."
+      - family: "Valentine"
+        given: "J. D."
+    title: "Meta-analysis of risk factors for posttraumatic stress disorder in trauma-exposed adults"
+    container-title: "Journal of Consulting and Clinical Psychology"
+    issued:
+      date-parts:
+        - [2000]
+    volume: 68
+    issue: 5
+    page: "748-766"
+    DOI: "10.1037/0022-006X.68.5.748"
+    type: article-journal
+  - id: briere2015
+    author:
+      - family: "Briere"
+        given: "J."
+      - family: "Scott"
+        given: "C."
+    title: "Principles of trauma therapy: A guide to symptoms, evaluation, and treatment"
+    issued:
+      date-parts:
+        - [2015]
+    publisher: "Sage Publications"
+    edition: "2nd"
+    type: book
+  - id: bryant2011
+    author:
+      - family: "Bryant"
+        given: "R. A."
+      - family: "Friedman"
+        given: "M. J."
+      - family: "Spiegel"
+        given: "D."
+      - family: "Ursano"
+        given: "R."
+      - family: "Strain"
+        given: "J."
+    title: "A review of acute stress disorder in {DSM-5"
+    container-title: "Depression and Anxiety"
+    issued:
+      date-parts:
+        - [2011]
+    volume: 28
+    issue: 9
+    page: "802-817"
+    DOI: "10.1002/da.20737"
+    type: article-journal
+  - id: phoenix2019
+    author:
+      - family: "Health"
+        given: "{Phoenix Australia -- Centre for Posttraumatic Mental"
+    title: "Australian guidelines for the prevention and treatment of acute stress disorder, posttraumatic stress disorder and complex {PTSD"
+    issued:
+      date-parts:
+        - [2019]
+    type: book
+  - id: cloitre2002
+    author:
+      - family: "Cloitre"
+        given: "M."
+      - family: "Koenen"
+        given: "K. C."
+      - family: "Cohen"
+        given: "L. R."
+      - family: "Han"
+        given: "H."
+    title: "Skills training in affective and interpersonal regulation followed by exposure: A phase-based treatment for {PTSD"
+    container-title: "Journal of Consulting and Clinical Psychology"
+    issued:
+      date-parts:
+        - [2002]
+    volume: 70
+    issue: 5
+    page: "1067-1074"
+    DOI: "10.1037/0022-006X.70.5.1067"
+    type: article-journal
+  - id: cloitre2011
+    author:
+      - family: "Cloitre"
+        given: "M."
+      - family: "Courtois"
+        given: "C. A."
+      - family: "Charuvastra"
+        given: "A."
+      - family: "Carapezza"
+        given: "R."
+      - family: "Stolbach"
+        given: "B. C."
+      - family: "Green"
+        given: "B. L."
+    title: "Treatment of complex {PTSD"
+    container-title: "Journal of Traumatic Stress"
+    issued:
+      date-parts:
+        - [2011]
+    volume: 24
+    issue: 6
+    page: "615-627"
+    DOI: "10.1002/jts.20697"
+    type: article-journal
+  - id: cloitre2013
+    author:
+      - family: "Cloitre"
+        given: "M."
+      - family: "Garvert"
+        given: "D. W."
+      - family: "Brewin"
+        given: "C. R."
+      - family: "Bryant"
+        given: "R. A."
+      - family: "Maercker"
+        given: "A."
+    title: "Evidence for proposed {ICD-11 PTSD"
+    container-title: "European Journal of Psychotraumatology"
+    issued:
+      date-parts:
+        - [2013]
+    volume: 4
+    issue: 1
+    page: "20706"
+    DOI: "10.3402/ejpt.v4i0.20706"
+    type: article-journal
+  - id: ehlers2000
+    author:
+      - family: "Ehlers"
+        given: "A."
+      - family: "Clark"
+        given: "D. M."
+    title: "A cognitive model of posttraumatic stress disorder"
+    container-title: "Behaviour Research and Therapy"
+    issued:
+      date-parts:
+        - [2000]
+    volume: 38
+    issue: 4
+    page: "319-345"
+    DOI: "10.1016/S0005-7967(99)00123-0"
+    type: article-journal
+  - id: foa1999
+    author:
+      - family: "Foa"
+        given: "E. B."
+      - family: "Ehlers"
+        given: "A."
+      - family: "Clark"
+        given: "D. M."
+      - family: "Tolin"
+        given: "D. F."
+      - family: "Orsillo"
+        given: "S. M."
+    title: "The {Posttraumatic Cognitions Inventory (PTCI)"
+    container-title: "Psychological Assessment"
+    issued:
+      date-parts:
+        - [1999]
+    volume: 11
+    issue: 3
+    page: "303-314"
+    DOI: "10.1037/1040-3590.11.3.303"
+    type: article-journal
+  - id: foa2007
+    author:
+      - family: "Foa"
+        given: "E. B."
+      - family: "Hembree"
+        given: "E. A."
+      - family: "Rothbaum"
+        given: "B. O."
+    title: "Prolonged exposure therapy for {PTSD"
+    issued:
+      date-parts:
+        - [2007]
+    publisher: "Oxford University Press"
+    type: book
+  - id: foa1986
+    author:
+      - family: "Foa"
+        given: "E. B."
+      - family: "Kozak"
+        given: "M. J."
+    title: "Emotional processing of fear: Exposure to corrective information"
+    container-title: "Psychological Bulletin"
+    issued:
+      date-parts:
+        - [1986]
+    volume: 99
+    issue: 1
+    page: "20-35"
+    DOI: "10.1037/0033-2909.99.1.20"
+    type: article-journal
+  - id: friedman2011
+    author:
+      - family: "Friedman"
+        given: "M. J."
+      - family: "Resick"
+        given: "P. A."
+      - family: "Bryant"
+        given: "R. A."
+      - family: "Brewin"
+        given: "C. R."
+    title: "Considering {PTSD"
+    container-title: "Depression and Anxiety"
+    issued:
+      date-parts:
+        - [2011]
+    volume: 28
+    issue: 9
+    page: "750-769"
+    DOI: "10.1002/da.20767"
+    type: article-journal
+  - id: herman1992
+    author:
+      - family: "Herman"
+        given: "J. L."
+    title: "Complex {PTSD"
+    container-title: "Journal of Traumatic Stress"
+    issued:
+      date-parts:
+        - [1992]
+    volume: 5
+    issue: 3
+    page: "377-391"
+    DOI: "10.1002/jts.2490050305"
+    type: article-journal
+  - id: hoge2004
+    author:
+      - family: "Hoge"
+        given: "C. W."
+      - family: "Castro"
+        given: "C. A."
+      - family: "Messer"
+        given: "S. C."
+      - family: "McGurk"
+        given: "D."
+      - family: "Cotting"
+        given: "D. I."
+      - family: "Koffman"
+        given: "R. L."
+    title: "Combat duty in {Iraq"
+    container-title: "New England Journal of Medicine"
+    issued:
+      date-parts:
+        - [2004]
+    volume: 351
+    issue: 1
+    page: "13-22"
+    DOI: "10.1056/NEJMoa040603"
+    type: article-journal
+  - id: kroenke2001
+    author:
+      - family: "Kroenke"
+        given: "K."
+      - family: "Spitzer"
+        given: "R. L."
+      - family: "Williams"
+        given: "J. B. W."
+    title: "The {PHQ-9"
+    container-title: "Journal of General Internal Medicine"
+    issued:
+      date-parts:
+        - [2001]
+    volume: 16
+    issue: 9
+    page: "606-613"
+    DOI: "10.1046/j.1525-1497.2001.016009606.x"
+    type: article-journal
+  - id: linehan2015
+    author:
+      - family: "Linehan"
+        given: "M. M."
+    title: "{DBT"
+    issued:
+      date-parts:
+        - [2015]
+    publisher: "Guilford Press"
+    edition: "2nd"
+    type: book
+  - id: litz2009
+    author:
+      - family: "Litz"
+        given: "B. T."
+      - family: "Stein"
+        given: "N."
+      - family: "Delaney"
+        given: "E."
+      - family: "Lebowitz"
+        given: "L."
+      - family: "Nash"
+        given: "W. P."
+      - family: "Silva"
+        given: "C."
+      - family: "Maguen"
+        given: "S."
+    title: "Moral injury and moral repair in war veterans: A preliminary model and intervention strategy"
+    container-title: "Clinical Psychology Review"
+    issued:
+      date-parts:
+        - [2009]
+    volume: 29
+    issue: 8
+    page: "695-706"
+    DOI: "10.1016/j.cpr.2009.07.003"
+    type: article-journal
+  - id: miller2013
+    author:
+      - family: "Miller"
+        given: "W. R."
+      - family: "Rollnick"
+        given: "S."
+    title: "Motivational interviewing: Helping people change"
+    issued:
+      date-parts:
+        - [2013]
+    publisher: "Guilford Press"
+    edition: "3rd"
+    type: book
+  - id: mysliwiec2014
+    author:
+      - family: "Mysliwiec"
+        given: "V."
+      - family: "O'Reilly"
+        given: "B."
+      - family: "Polchinski"
+        given: "J."
+      - family: "Kwon"
+        given: "H. P."
+      - family: "Germain"
+        given: "A."
+      - family: "Roth"
+        given: "B. J."
+    title: "Trauma associated sleep disorder: A proposed parasomnia encompassing disruptive nocturnal behaviors, nightmares, and {REM"
+    container-title: "Journal of Clinical Sleep Medicine"
+    issued:
+      date-parts:
+        - [2014]
+    volume: 10
+    issue: 10
+    page: "1143-1148"
+    DOI: "10.5664/jcsm.4120"
+    type: article-journal
+  - id: penk2002
+    author:
+      - family: "Penk"
+        given: "W."
+      - family: "Drebing"
+        given: "C. E."
+      - family: "Schutt"
+        given: "R. K."
+    title: "{PTSD"
+    container-title: "Handbook of mental health in the workplace"
+    issued:
+      date-parts:
+        - [2002]
+    page: "215-249"
+    publisher: "Sage Publications"
+    type: chapter
+  - id: posner2011
+    author:
+      - family: "Posner"
+        given: "K."
+      - family: "Brown"
+        given: "G. K."
+      - family: "Stanley"
+        given: "B."
+      - family: "Brent"
+        given: "D. A."
+      - family: "Yershova"
+        given: "K. V."
+      - family: "Oquendo"
+        given: "M. A."
+      - family: "Currier"
+        given: "G. W."
+      - family: "Melvin"
+        given: "G. A."
+      - family: "Greenhill"
+        given: "L."
+      - family: "Shen"
+        given: "S."
+      - family: "Mann"
+        given: "J. J."
+    title: "The {Columbia-Suicide Severity Rating Scale"
+    container-title: "American Journal of Psychiatry"
+    issued:
+      date-parts:
+        - [2011]
+    volume: 168
+    issue: 12
+    page: "1266-1277"
+    DOI: "10.1176/appi.ajp.2011.10111704"
+    type: article-journal
+  - id: prigerson2009
+    author:
+      - family: "Prigerson"
+        given: "H. G."
+      - family: "Horowitz"
+        given: "M. J."
+      - family: "Jacobs"
+        given: "S. C."
+      - family: "Parkes"
+        given: "C. M."
+      - family: "Aslan"
+        given: "M."
+      - family: "Goodkin"
+        given: "K."
+      - family: "Raphael"
+        given: "B."
+      - family: "Marwit"
+        given: "S. J."
+      - family: "Wortman"
+        given: "C."
+      - family: "Neimeyer"
+        given: "R. A."
+      - family: "Bonanno"
+        given: "G."
+      - family: "Block"
+        given: "S. D."
+      - family: "Kissane"
+        given: "D."
+      - family: "Boelen"
+        given: "P."
+      - family: "Maercker"
+        given: "A."
+      - family: "Litz"
+        given: "B. T."
+      - family: "Johnson"
+        given: "J. G."
+      - family: "First"
+        given: "M. B."
+      - family: "Maciejewski"
+        given: "P. K."
+    title: "Prolonged grief disorder: Psychometric validation of criteria proposed for {DSM-V"
+    container-title: "PLoS Medicine"
+    issued:
+      date-parts:
+        - [2009]
+    volume: 6
+    issue: 8
+    page: "e1000121"
+    DOI: "10.1371/journal.pmed.1000121"
+    type: article-journal
+  - id: raskind2013
+    author:
+      - family: "Raskind"
+        given: "M. A."
+      - family: "Peterson"
+        given: "K."
+      - family: "Williams"
+        given: "T."
+      - family: "Hoff"
+        given: "D. J."
+      - family: "Hart"
+        given: "K."
+      - family: "Holmes"
+        given: "H."
+      - family: "Homas"
+        given: "D."
+      - family: "Hill"
+        given: "J."
+      - family: "Daniels"
+        given: "C."
+      - family: "Calohan"
+        given: "J."
+      - family: "Millard"
+        given: "S. P."
+      - family: "Rohde"
+        given: "K."
+      - family: "O'Connell"
+        given: "J."
+      - family: "Pritzl"
+        given: "D."
+      - family: "Feiszli"
+        given: "K."
+      - family: "Petrie"
+        given: "E. C."
+      - family: "Gross"
+        given: "C."
+      - family: "Mayer"
+        given: "C. L."
+      - family: "Freed"
+        given: "M. C."
+      - family: "Engel"
+        given: "C."
+      - family: "Peskind"
+        given: "E. R."
+    title: "A trial of prazosin for combat trauma {PTSD"
+    container-title: "American Journal of Psychiatry"
+    issued:
+      date-parts:
+        - [2013]
+    volume: 170
+    issue: 9
+    page: "1003-1010"
+    DOI: "10.1176/appi.ajp.2013.12081133"
+    type: article-journal
+  - id: rauch2006
+    author:
+      - family: "Rauch"
+        given: "S."
+      - family: "Foa"
+        given: "E."
+    title: "Emotional processing theory ({EPT"
+    container-title: "Journal of Contemporary Psychotherapy"
+    issued:
+      date-parts:
+        - [2006]
+    volume: 36
+    issue: 2
+    page: "61-65"
+    DOI: "10.1007/s10879-006-9008-y"
+    type: article-journal
+  - id: resick2017
+    author:
+      - family: "Resick"
+        given: "P. A."
+      - family: "Monson"
+        given: "C. M."
+      - family: "Chard"
+        given: "K. M."
+    title: "Cognitive processing therapy for {PTSD"
+    issued:
+      date-parts:
+        - [2017]
+    publisher: "Guilford Press"
+    type: book
+  - id: saunders1993
+    author:
+      - family: "Saunders"
+        given: "J. B."
+      - family: "Aasland"
+        given: "O. G."
+      - family: "Babor"
+        given: "T. F."
+      - family: "de la Fuente"
+        given: "J. R."
+      - family: "Grant"
+        given: "M."
+    title: "Development of the {Alcohol Use Disorders Identification Test (AUDIT)"
+    container-title: "Addiction"
+    issued:
+      date-parts:
+        - [1993]
+    volume: 88
+    issue: 6
+    page: "791-804"
+    DOI: "10.1111/j.1360-0443.1993.tb02093.x"
+    type: article-journal
+  - id: schore2003
+    author:
+      - family: "Schore"
+        given: "A. N."
+    title: "Affect dysregulation and disorders of the self"
+    issued:
+      date-parts:
+        - [2003]
+    publisher: "W. W. Norton & Company"
+    type: book
+  - id: shin2010
+    author:
+      - family: "Shin"
+        given: "L. M."
+      - family: "Liberzon"
+        given: "I."
+    title: "The neurocircuitry of fear, stress, and anxiety disorders"
+    container-title: "Neuropsychopharmacology"
+    issued:
+      date-parts:
+        - [2010]
+    volume: 35
+    issue: 1
+    page: "169-191"
+    DOI: "10.1038/npp.2009.83"
+    type: article-journal
+  - id: stanley2012
+    author:
+      - family: "Stanley"
+        given: "B."
+      - family: "Brown"
+        given: "G. K."
+    title: "Safety planning intervention: A brief intervention to mitigate suicide risk"
+    container-title: "Cognitive and Behavioral Practice"
+    issued:
+      date-parts:
+        - [2012]
+    volume: 19
+    issue: 2
+    page: "256-264"
+    DOI: "10.1016/j.cbpra.2011.01.001"
+    type: article-journal
+  - id: tolin2006
+    author:
+      - family: "Tolin"
+        given: "D. F."
+      - family: "Foa"
+        given: "E. B."
+    title: "Sex differences in trauma and posttraumatic stress disorder: A quantitative review of 25 years of research"
+    container-title: "Psychological Bulletin"
+    issued:
+      date-parts:
+        - [2006]
+    volume: 132
+    issue: 6
+    page: "959-992"
+    DOI: "10.1037/0033-2909.132.6.959"
+    type: article-journal
+  - id: vanderkolk2005
+    author:
+      - family: "van der Kolk"
+        given: "B. A."
+      - family: "Roth"
+        given: "S."
+      - family: "Pelcovitz"
+        given: "D."
+      - family: "Sunday"
+        given: "S."
+      - family: "Spinazzola"
+        given: "J."
+    title: "Disorders of extreme stress: The empirical foundation of a complex adaptation to trauma"
+    container-title: "Journal of Traumatic Stress"
+    issued:
+      date-parts:
+        - [2005]
+    volume: 18
+    issue: 5
+    page: "389-399"
+    DOI: "10.1002/jts.20047"
+    type: article-journal
+  - id: weathers2013
+    author:
+      - family: "Weathers"
+        given: "F. W."
+      - family: "Litz"
+        given: "B. T."
+      - family: "Keane"
+        given: "T. M."
+      - family: "Palmieri"
+        given: "P. A."
+      - family: "Marx"
+        given: "B. P."
+      - family: "Schnurr"
+        given: "P. P."
+    title: "The {PTSD Checklist"
+    issued:
+      date-parts:
+        - [2013]
+    type: book
+  - id: who2018
+    author:
+      - family: "Organization"
+        given: "{World Health"
+    title: "International statistical classification of diseases and related health problems"
+    issued:
+      date-parts:
+        - [2018]
+    edition: "11th"
+    type: book
 ---
 
 # DIAGNOSES

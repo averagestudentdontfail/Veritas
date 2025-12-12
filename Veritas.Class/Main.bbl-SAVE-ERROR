@@ -16,5 +16,390 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{bratman2019}{article}{}
+      \name{author}{20}{}{%
+        {{hash=005e788d69416a07047537d836c7c3f9}{%
+           family={Bratman},
+           familyi={B\bibinitperiod},
+           given={Gregory\bibnamedelima N.},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=84f0ca2be3dde80eea554182d09e78c6}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Christopher\bibnamedelima B.},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=58991362ca1ea259613aa91f32ff16e8}{%
+           family={Berman},
+           familyi={B\bibinitperiod},
+           given={Marc\bibnamedelima G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=ab7c12ccd1c0006899349d81f5f210a1}{%
+           family={Cochran},
+           familyi={C\bibinitperiod},
+           given={Bobby},
+           giveni={B\bibinitperiod}}}%
+        {{hash=7b151f05069beba4bb24c44db7caeafa}{%
+           family={Vries},
+           familyi={V\bibinitperiod},
+           given={Sjerp},
+           giveni={S\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=29ac4060c0d4aa8b3f22f7c92a6ac83a}{%
+           family={Flanders},
+           familyi={F\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+        {{hash=33396b38f27fa7e13c6e1581623ba37c}{%
+           family={Folke},
+           familyi={F\bibinitperiod},
+           given={Carl},
+           giveni={C\bibinitperiod}}}%
+        {{hash=fa25440bed81fe8f0d2ccbfbc1856c44}{%
+           family={Frumkin},
+           familyi={F\bibinitperiod},
+           given={Howard},
+           giveni={H\bibinitperiod}}}%
+        {{hash=706bd7333d79e3e84cdf7c79bdd4db2a}{%
+           family={Gross},
+           familyi={G\bibinitperiod},
+           given={James\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=24fe096a5c248b594e4dacb61a5a68a8}{%
+           family={Hartig},
+           familyi={H\bibinitperiod},
+           given={Terry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=987c6e099d24827834dea2c3910b9627}{%
+           family={Kahn},
+           familyi={K\bibinitperiod},
+           given={Peter\bibnamedelima H.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=67a3353281aebc70ffdc0b40c56f51fd}{%
+           family={Kuo},
+           familyi={K\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f85a4d0074527ee05131ebe35f68276a}{%
+           family={Lawler},
+           familyi={L\bibinitperiod},
+           given={Joshua\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=ea6851079366046f39f7d9c761e48a08}{%
+           family={Levin},
+           familyi={L\bibinitperiod},
+           given={Phillip\bibnamedelima S.},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b13a4c2b73f8dc652a8b7a4600e91e2b}{%
+           family={Lindahl},
+           familyi={L\bibinitperiod},
+           given={Therese},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8ebbfae49f1821edf489d06caa5cc8fb}{%
+           family={Meyer-Lindenberg},
+           familyi={M\bibinithyphendelim L\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bc850b04d60bac3c1c32d2327a9397e7}{%
+           family={Mitchell},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bb8697f5e51e43c40228ba85aa854b97}{%
+           family={Ouyang},
+           familyi={O\bibinitperiod},
+           given={Zhiyun},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=1ff40ca05ea4ae6401eedb9d6b69421f}{%
+           family={Roe},
+           familyi={R\bibinitperiod},
+           given={Jenny},
+           giveni={J\bibinitperiod}}}%
+        {{hash=09fd36ed044404d947c61edc593eb9ba}{%
+           family={Daily},
+           familyi={D\bibinitperiod},
+           given={Gretchen\bibnamedelima C.},
+           giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{972f8d8c3a3824dc5f89b7df88014336}
+      \strng{fullhash}{5d35b939c0472250e0551c9c52eb6e1d}
+      \strng{bibnamehash}{5d35b939c0472250e0551c9c52eb6e1d}
+      \strng{authorbibnamehash}{5d35b939c0472250e0551c9c52eb6e1d}
+      \strng{authornamehash}{972f8d8c3a3824dc5f89b7df88014336}
+      \strng{authorfullhash}{5d35b939c0472250e0551c9c52eb6e1d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science Advances}
+      \field{number}{7}
+      \field{title}{Nature and mental health: An ecosystem service perspective}
+      \field{volume}{5}
+      \field{year}{2019}
+      \field{pages}{eaax0903}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1126/sciadv.aax0903
+      \endverb
+    \endentry
+    \entry{braun2006}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ea90dfebef3293c5af2151719ce2385e}{%
+           family={Braun},
+           familyi={B\bibinitperiod},
+           given={Virginia},
+           giveni={V\bibinitperiod}}}%
+        {{hash=f0513d29a647c5f1beea56b0aed1bd40}{%
+           family={Clarke},
+           familyi={C\bibinitperiod},
+           given={Victoria},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d3eb06fe3d6dd55dd140dc783327eb9}
+      \strng{fullhash}{5d3eb06fe3d6dd55dd140dc783327eb9}
+      \strng{bibnamehash}{5d3eb06fe3d6dd55dd140dc783327eb9}
+      \strng{authorbibnamehash}{5d3eb06fe3d6dd55dd140dc783327eb9}
+      \strng{authornamehash}{5d3eb06fe3d6dd55dd140dc783327eb9}
+      \strng{authorfullhash}{5d3eb06fe3d6dd55dd140dc783327eb9}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Qualitative Research in Psychology}
+      \field{number}{2}
+      \field{title}{Using thematic analysis in psychology}
+      \field{volume}{3}
+      \field{year}{2006}
+      \field{pages}{77\bibrangedash 101}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1191/1478088706qp063oa
+      \endverb
+    \endentry
+    \entry{braun2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ea90dfebef3293c5af2151719ce2385e}{%
+           family={Braun},
+           familyi={B\bibinitperiod},
+           given={Virginia},
+           giveni={V\bibinitperiod}}}%
+        {{hash=f0513d29a647c5f1beea56b0aed1bd40}{%
+           family={Clarke},
+           familyi={C\bibinitperiod},
+           given={Victoria},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d3eb06fe3d6dd55dd140dc783327eb9}
+      \strng{fullhash}{5d3eb06fe3d6dd55dd140dc783327eb9}
+      \strng{bibnamehash}{5d3eb06fe3d6dd55dd140dc783327eb9}
+      \strng{authorbibnamehash}{5d3eb06fe3d6dd55dd140dc783327eb9}
+      \strng{authornamehash}{5d3eb06fe3d6dd55dd140dc783327eb9}
+      \strng{authorfullhash}{5d3eb06fe3d6dd55dd140dc783327eb9}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Qualitative Research in Sport, Exercise and Health}
+      \field{number}{4}
+      \field{title}{Reflecting on reflexive thematic analysis}
+      \field{volume}{11}
+      \field{year}{2019}
+      \field{pages}{589\bibrangedash 597}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1080/2159676X.2019.1628806
+      \endverb
+    \endentry
+    \entry{cox2017}{article}{}
+      \name{author}{5}{}{%
+        {{hash=378c6f15ff505600371f78aa09d1ab50}{%
+           family={Cox},
+           familyi={C\bibinitperiod},
+           given={Daniel\bibnamedelimb T.\bibnamedelimi C.},
+           giveni={D\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=d26dd9bff4390d301bf35ffa2c47855d}{%
+           family={Hudson},
+           familyi={H\bibinitperiod},
+           given={Hilary\bibnamedelima L.},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=00962bcb82678f6ae1fd79bf8ddb6293}{%
+           family={Shanahan},
+           familyi={S\bibinitperiod},
+           given={Danielle\bibnamedelima F.},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=f63e08ec783205e7ffa5a9e1b1306b38}{%
+           family={Fuller},
+           familyi={F\bibinitperiod},
+           given={Richard\bibnamedelima A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6dd54b28abee73c6325d2772cb754dc9}{%
+           family={Gaston},
+           familyi={G\bibinitperiod},
+           given={Kevin\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1823e43b13687cd6eaf7779463da41a3}
+      \strng{fullhash}{4ec10532247644645724bfe4c5652aa2}
+      \strng{bibnamehash}{4ec10532247644645724bfe4c5652aa2}
+      \strng{authorbibnamehash}{4ec10532247644645724bfe4c5652aa2}
+      \strng{authornamehash}{1823e43b13687cd6eaf7779463da41a3}
+      \strng{authorfullhash}{4ec10532247644645724bfe4c5652aa2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Landscape and Urban Planning}
+      \field{title}{The rarity of direct experiences of nature in an urban population}
+      \field{volume}{160}
+      \field{year}{2017}
+      \field{pages}{79\bibrangedash 84}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.landurbplan.2016.12.006
+      \endverb
+    \endentry
+    \entry{gascon2015}{article}{}
+      \name{author}{7}{}{%
+        {{hash=1054973a239bb8574d7e546eadf79672}{%
+           family={Gascon},
+           familyi={G\bibinitperiod},
+           given={Mireia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=32bd66baf7451a26694362ebbf2f0df0}{%
+           family={Triguero-Mas},
+           familyi={T\bibinithyphendelim M\bibinitperiod},
+           given={Margarita},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6649e67042acb41e728d324befdb1eff}{%
+           family={Martínez},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=6382bfae12249e78a7175d5a598c67f4}{%
+           family={Dadvand},
+           familyi={D\bibinitperiod},
+           given={Payam},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5676529d4cbf7ccced78a0927939ba4f}{%
+           family={Forns},
+           familyi={F\bibinitperiod},
+           given={Joan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=191bebb93e82883310f3d5e5ff46c812}{%
+           family={Plasència},
+           familyi={P\bibinitperiod},
+           given={Antoni},
+           giveni={A\bibinitperiod}}}%
+        {{hash=948886cddd00c42214234f5703c8d534}{%
+           family={Nieuwenhuijsen},
+           familyi={N\bibinitperiod},
+           given={Mark\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9b8011dcdbd1860a046b427df7c5f5af}
+      \strng{fullhash}{1282a354a163658fc3744a4c2f422a12}
+      \strng{bibnamehash}{1282a354a163658fc3744a4c2f422a12}
+      \strng{authorbibnamehash}{1282a354a163658fc3744a4c2f422a12}
+      \strng{authornamehash}{9b8011dcdbd1860a046b427df7c5f5af}
+      \strng{authorfullhash}{1282a354a163658fc3744a4c2f422a12}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Environmental Research and Public Health}
+      \field{number}{4}
+      \field{title}{Mental health benefits of long-term exposure to residential green and blue spaces: A systematic review}
+      \field{volume}{12}
+      \field{year}{2015}
+      \field{pages}{4354\bibrangedash 4379}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.3390/ijerph120404354
+      \endverb
+    \endentry
+    \entry{kaplan1995}{article}{}
+      \name{author}{1}{}{%
+        {{hash=03561f3b10c24d2f4024878ecd725f57}{%
+           family={Kaplan},
+           familyi={K\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{03561f3b10c24d2f4024878ecd725f57}
+      \strng{fullhash}{03561f3b10c24d2f4024878ecd725f57}
+      \strng{bibnamehash}{03561f3b10c24d2f4024878ecd725f57}
+      \strng{authorbibnamehash}{03561f3b10c24d2f4024878ecd725f57}
+      \strng{authornamehash}{03561f3b10c24d2f4024878ecd725f57}
+      \strng{authorfullhash}{03561f3b10c24d2f4024878ecd725f57}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Environmental Psychology}
+      \field{number}{3}
+      \field{title}{The restorative benefits of nature: Toward an integrative framework}
+      \field{volume}{15}
+      \field{year}{1995}
+      \field{pages}{169\bibrangedash 182}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/0272-4944(95)90001-2
+      \endverb
+    \endentry
+    \entry{soga2023}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f38da33f22f26c54ffacd7e23c4aa248}{%
+           family={Soga},
+           familyi={S\bibinitperiod},
+           given={Masashi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6dd54b28abee73c6325d2772cb754dc9}{%
+           family={Gaston},
+           familyi={G\bibinitperiod},
+           given={Kevin\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fcf6d671c882a89d9c4cd0a201e57709}
+      \strng{fullhash}{fcf6d671c882a89d9c4cd0a201e57709}
+      \strng{bibnamehash}{fcf6d671c882a89d9c4cd0a201e57709}
+      \strng{authorbibnamehash}{fcf6d671c882a89d9c4cd0a201e57709}
+      \strng{authornamehash}{fcf6d671c882a89d9c4cd0a201e57709}
+      \strng{authorfullhash}{fcf6d671c882a89d9c4cd0a201e57709}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Conservation Letters}
+      \field{number}{3}
+      \field{title}{Nature benefit hypothesis: Direct experiences of nature predict self-reported pro-biodiversity behaviors}
+      \field{volume}{16}
+      \field{year}{2023}
+      \field{pages}{e12945}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1111/conl.12945
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

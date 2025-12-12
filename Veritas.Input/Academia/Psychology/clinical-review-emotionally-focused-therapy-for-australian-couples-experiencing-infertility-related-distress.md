@@ -5,6 +5,217 @@ author: "Kiran Nath"
 date: "2025"
 lang: en
 chapterstyle: minimal
+references:
+  - id: Beasley2019
+    author:
+      - family: "Beasley"
+        given: "C. C."
+      - family: "Ager"
+        given: "R."
+    title: "Emotionally Focused Couples Therapy: A Systematic Review Of Its Effectiveness Over The Past 19 Years"
+    container-title: "Journal Of Evidence-Based Social Work"
+    issued:
+      date-parts:
+        - [2019]
+    volume: 16
+    issue: 2
+    page: "144-159"
+    DOI: "10.1080/23761407.2018.1563013"
+    type: article-journal
+  - id: Boivin2011
+    author:
+      - family: "Boivin"
+        given: "J."
+      - family: "Takefman"
+        given: "J."
+      - family: "Braverman"
+        given: "A."
+    title: "The Fertility Quality Of Life ({FertiQoL"
+    container-title: "Human Reproduction"
+    issued:
+      date-parts:
+        - [2011]
+    volume: 26
+    issue: 8
+    page: "2084-2091"
+    DOI: "10.1093/humrep/der171"
+    type: article-journal
+  - id: Fraley2000
+    author:
+      - family: "Fraley"
+        given: "R. C."
+      - family: "Waller"
+        given: "N. G."
+      - family: "Brennan"
+        given: "K. A."
+    title: "An Item Response Theory Analysis Of Self-Report Measures Of Adult Attachment"
+    container-title: "Journal Of Personality And Social Psychology"
+    issued:
+      date-parts:
+        - [2000]
+    volume: 78
+    issue: 2
+    page: "350-365"
+    DOI: "10.1037/0022-3514.78.2.350"
+    type: article-journal
+  - id: Gozuyesil2019
+    author:
+      - family: "Gozuyesil"
+        given: "E."
+      - family: "Yikar"
+        given: "S. K."
+      - family: "Nazik"
+        given: "E."
+    title: "An Analysis Of The Anxiety And Hopelessness Levels Of Women During {IVF-ET"
+    container-title: "Perspectives In Psychiatric Care"
+    issued:
+      date-parts:
+        - [2019]
+    volume: 55
+    issue: 4
+    page: "709-717"
+    DOI: "10.1111/ppc.12436"
+    type: article-journal
+  - id: Horvath1989
+    author:
+      - family: "Horvath"
+        given: "A. O."
+      - family: "Greenberg"
+        given: "L. S."
+    title: "Development And Validation Of The Working Alliance Inventory"
+    container-title: "Journal Of Counseling Psychology"
+    issued:
+      date-parts:
+        - [1989]
+    volume: 36
+    issue: 2
+    page: "223-233"
+    DOI: "10.1037/0022-0167.36.2.223"
+    type: article-journal
+  - id: Johnson2019
+    author:
+      - family: "Johnson"
+        given: "S. M."
+    title: "Attachment Theory In Practice: Emotionally Focused Therapy ({EFT"
+    issued:
+      date-parts:
+        - [2019]
+    publisher: "Guilford Press"
+    publisher-place: "New York, NY"
+    type: book
+  - id: Lovibond1995
+    author:
+      - family: "Lovibond"
+        given: "S. H."
+      - family: "Jackson"
+        given: "P. F."
+    title: "Depression Anxiety Stress Scales"
+    issued:
+      date-parts:
+        - [1995]
+    publisher: "Psychology Foundation of Australia"
+    publisher-place: "Sydney, Australia"
+    edition: "2nd"
+    type: book
+  - id: Mikulincer2016
+    author:
+      - family: "Mikulincer"
+        given: "M."
+      - family: "Shaver"
+        given: "P. R."
+    title: "Attachment In Adulthood: Structure, Dynamics, And Change"
+    issued:
+      date-parts:
+        - [2016]
+    publisher: "Guilford Press"
+    publisher-place: "New York, NY"
+    edition: "2nd"
+    type: book
+  - id: Sharpley1982
+    author:
+      - family: "Sharpley"
+        given: "C. F."
+      - family: "Cross"
+        given: "D. G."
+    title: "A Confirmatory Analysis of the Dyadic Adjustment Scale"
+    container-title: "Journal Of Marriage And The Family"
+    issued:
+      date-parts:
+        - [1982]
+    volume: 44
+    issue: 3
+    page: "739-741"
+    DOI: "10.2307/351593"
+    type: article-journal
+  - id: Soltani2014
+    author:
+      - family: "Soltani"
+        given: "M."
+      - family: "Shairi"
+        given: "M. R."
+      - family: "Roshan"
+        given: "R."
+      - family: "Rahimi"
+        given: "C."
+    title: "The Impact Of Emotionally Focused Therapy On Emotional Distress In Infertile Couples"
+    container-title: "International Journal Of Fertility And Sterility"
+    issued:
+      date-parts:
+        - [2014]
+    volume: 7
+    issue: 4
+    page: "337-344"
+    type: article-journal
+  - id: Spanier1976
+    author:
+      - family: "Spanier"
+        given: "G. B."
+    title: "Measuring Dyadic Adjustment: New Scales For Assessing The Quality Of Marriage And Similar Dyads"
+    container-title: "Journal Of Marriage And The Family"
+    issued:
+      date-parts:
+        - [1976]
+    volume: 38
+    issue: 1
+    page: "15-28"
+    DOI: "10.2307/350547"
+    type: article-journal
+  - id: Zegers2017
+    author:
+      - family: "Zegers-Hochschild"
+        given: "F."
+      - family: "Adamson"
+        given: "G. D."
+      - family: "Dyer"
+        given: "S."
+      - family: "Racowsky"
+        given: "C."
+      - family: "de Mouzon"
+        given: "J."
+      - family: "Sokol"
+        given: "R."
+      - family: "Rienzi"
+        given: "L."
+      - family: "Sunde"
+        given: "A."
+      - family: "Schmidt"
+        given: "L."
+      - family: "Cooke"
+        given: "I. D."
+      - family: "Simpson"
+        given: "J. L."
+      - family: "van der Poel"
+        given: "S."
+    title: "The International Glossary On Infertility And Fertility Care, 2017"
+    container-title: "Human Reproduction"
+    issued:
+      date-parts:
+        - [2017]
+    volume: 32
+    issue: 9
+    page: "1786-1801"
+    DOI: "10.1093/humrep/dex234"
+    type: article-journal
 ---
 
 % Chapters/01-Introduction.tex
