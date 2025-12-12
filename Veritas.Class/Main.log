@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  12 DEC 2025 17:48
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  12 DEC 2025 17:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2224,9 +2224,9 @@ Package biblatex Info: ... and expl3
 (/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
 Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 ))
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 104.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 111.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 104.
+Package hyperref Info: Option `colorlinks' set `true' on input line 111.
 )
 (./Configuration/04-Headers.sty
 
@@ -2397,60 +2397,60 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 (./Main.aux (./Matter/Title-Page.aux))
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 39.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 35.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
- 39.
+ 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
-9.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 35.
 LaTeX Font Info:    Trying to load font information for U+npxexa on input line 
-39.
+35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 35.
 LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line
- 39.
+ 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 35.
 LaTeX Font Info:    Trying to load font information for LMX+npxexx on input lin
-e 39.
+e 35.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    ... okay on input line 35.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
@@ -2469,10 +2469,10 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 39.
-LaTeX Info: Command `\dddot' is already robust on input line 39.
-LaTeX Info: Command `\ddddot' is already robust on input line 39.
-Package hyperref Info: Link coloring ON on input line 39.
+or `english'. on input line 35.
+LaTeX Info: Command `\dddot' is already robust on input line 35.
+LaTeX Info: Command `\ddddot' is already robust on input line 35.
+Package hyperref Info: Link coloring ON on input line 35.
  (./Main.out) (./Main.out)
 \@outlinefile=\write7
 \openout7 = `Main.out'.
@@ -2534,8 +2534,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Main.bbl' found.
  (./Main.bbl)
-Package biblatex Info: Reference section=0 on input line 39.
-Package biblatex Info: Reference segment=0 on input line 39.
+Package biblatex Info: Reference section=0 on input line 35.
+Package biblatex Info: Reference segment=0 on input line 35.
 \openout2 = `Matter/Title-Page.aux'.
 
 (./Matter/Title-Page.tex
@@ -2613,98 +2613,85 @@ File: Figure/Theme/Front-Page.pdf Graphic file (type pdf)
 
 
 ])
-
-LaTeX Warning: Citation 'cox2017' on page 1 undefined on input line 56.
-
-
-LaTeX Warning: Citation 'bratman2019' on page 1 undefined on input line 60.
-
-
-LaTeX Warning: Citation 'gascon2015' on page 1 undefined on input line 60.
-
-
-LaTeX Warning: Citation 'braun2019' on page 1 undefined on input line 80.
-
-
-Overfull \hbox (7.15155pt too wide) in paragraph at lines 80--128
-\TU/lmtt/m/n/10.95 elicit intellectualized explanations divorced from experient
-ial immediacy.
+Overfull \hbox (7.15155pt too wide) in paragraph at lines 76--124
+\TU/lmtt/m/n/10.95 that might elicit intellectualized explanations divorced fro
+m experiential
  []
 
 
-Overfull \hbox (18.64905pt too wide) in paragraph at lines 80--128
-\TU/lmtt/m/n/10.95 The interview concluded with invitation for additional refle
-ctions and brief
+Overfull \hbox (24.3978pt too wide) in paragraph at lines 76--124
+\TU/lmtt/m/n/10.95 immediacy. The interview concluded with invitation for addit
+ional reflections
  []
 
 
-Overfull \hbox (12.9003pt too wide) in paragraph at lines 80--128
-\TU/lmtt/m/n/10.95 summary checking, providing opportunity to clarify misunders
-tandings or add
+Overfull \hbox (30.14655pt too wide) in paragraph at lines 76--124
+\TU/lmtt/m/n/10.95 and brief summary checking, providing opportunity to clarify
+ misunderstandings
  []
 
 
-Overfull \hbox (47.39279pt too wide) in paragraph at lines 80--128
-\TU/lmtt/m/n/10.95 dimensions not emerging through preceding questions. The aud
-io-recorded interview
+Overfull \hbox (30.14655pt too wide) in paragraph at lines 76--124
+\TU/lmtt/m/n/10.95 or add dimensions not emerging through preceding questions. 
+The audio-recorded
  []
 
 
-Overfull \hbox (12.9003pt too wide) in paragraph at lines 80--128
-\TU/lmtt/m/n/10.95 was transcribed verbatim, producing approximately 6,800 word
-s of text, with
+Overfull \hbox (7.15155pt too wide) in paragraph at lines 76--124
+\TU/lmtt/m/n/10.95 interview was transcribed verbatim, producing approximately 
+6,800 words of
  []
 
 
-Overfull \hbox (12.9003pt too wide) in paragraph at lines 80--128
-\TU/lmtt/m/n/10.95 transcription capturing paralinguistic features such as paus
-es and laughter
+Overfull \hbox (1.4028pt too wide) in paragraph at lines 76--124
+\TU/lmtt/m/n/10.95 text, with transcription capturing paralinguistic features s
+uch as pauses
  []
 
 
-Overfull \hbox (1.4028pt too wide) in paragraph at lines 80--128
-\TU/lmtt/m/n/10.95 that might convey emotional significance. ## Analytical Prot
-ocol Analysis
+Overfull \hbox (24.3978pt too wide) in paragraph at lines 76--124
+\TU/lmtt/m/n/10.95 and laughter that might convey emotional significance. ## An
+alytical Protocol
  []
 
 
-Overfull \hbox (12.9003pt too wide) in paragraph at lines 80--128
-\TU/lmtt/m/n/10.95 followed \citet{braun2006} reflexive approach through six re
-cursive phases.
+Overfull \hbox (18.64905pt too wide) in paragraph at lines 76--124
+\TU/lmtt/m/n/10.95 Analysis followed \citet{braun2006} reflexive approach throu
+gh six recursive
  []
 
 
-Overfull \hbox (24.3978pt too wide) in paragraph at lines 80--128
-\TU/lmtt/m/n/10.95 Phase 1 involved repeated reading of the transcript while li
-stening to audio,
+Overfull \hbox (12.9003pt too wide) in paragraph at lines 76--124
+\TU/lmtt/m/n/10.95 phases. Phase 1 involved repeated reading of the transcript 
+while listening
  []
 
 
-Overfull \hbox (12.9003pt too wide) in paragraph at lines 80--128
-\TU/lmtt/m/n/10.95 developing familiarity with both semantic content and emotio
-nal tone. Phase
+Overfull \hbox (1.4028pt too wide) in paragraph at lines 76--124
+\TU/lmtt/m/n/10.95 to audio, developing familiarity with both semantic content 
+and emotional
  []
 
 
-Overfull \hbox (1.4028pt too wide) in paragraph at lines 80--128
-\TU/lmtt/m/n/10.95 2 generated 78 initial codes through systematic line-by-line
- examination,
+Overfull \hbox (70.38779pt too wide) in paragraph at lines 76--124
+\TU/lmtt/m/n/10.95 tone. Phase 2 generated 78 initial codes through systematic 
+line-by-line examination,
  []
 
 
-Overfull \hbox (41.64404pt too wide) in paragraph at lines 80--128
+Overfull \hbox (41.64404pt too wide) in paragraph at lines 76--124
 \TU/lmtt/m/n/10.95 capturing both semantic content and latent meanings while ma
 intaining sufficient
  []
 
 
-Overfull \hbox (1.5889pt too wide) in paragraph at lines 80--128
+Overfull \hbox (1.5889pt too wide) in paragraph at lines 76--124
 \TU/lmtt/m/n/10.95 surrounding context to preserve meaning. Examples included\T
 U/MinionPro(0)/m/n/10.95 childhood nature as
  []
 
 
-Overfull \hbox (5.27457pt too wide) in paragraph at lines 80--128
+Overfull \hbox (5.27457pt too wide) in paragraph at lines 76--124
 \TU/MinionPro(0)/m/n/10.95 freedom,’’ \TU/lmtt/m/n/10.95 nature reducing mental
  clutter,[][]\TU/MinionPro(0)/m/n/10.95 feeling small in natural settings,’’ an
 d “guilt
@@ -2717,167 +2704,222 @@ d “guilt
 ]
 
 LaTeX Warning: Reference `tab:thematic-structure' on page 2 undefined on input 
-line 134.
+line 130.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 []|\TU/MinionPro(0)/m/n/10 Nature experiences providing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 \TU/MinionPro(0)/m/n/10 mental relief from cognitive
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--152
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
 []|\TU/MinionPro(0)/m/n/10 Immersive nature experiences
  []
 
 
-Underfull \hbox (badness 5403) in paragraph at lines 152--152
+Underfull \hbox (badness 5403) in paragraph at lines 148--148
 \TU/MinionPro(0)/m/n/10 realities, sometimes intensified
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 152--152
+Underfull \hbox (badness 1087) in paragraph at lines 148--148
 \TU/MinionPro(0)/m/n/10 places motivating conservation-
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 152--152
+Underfull \hbox (badness 2635) in paragraph at lines 148--148
 \TU/MinionPro(0)/m/n/10 oriented actions despite recog-
  []
 
 
-Underfull \hbox (badness 4229) in paragraph at lines 152--152
+Underfull \hbox (badness 4229) in paragraph at lines 148--148
 \TU/MinionPro(0)/m/n/10 nized limitations of individual
  []
 
 [2]
-Overfull \hbox (4.14662pt too wide) in paragraph at lines 159--179
+Overfull \hbox (4.14662pt too wide) in paragraph at lines 155--175
 \TU/MinionPro(0)/m/n/10.95 nitive demands, characterizing urban work environmen
 ts as producing what they termed \TU/lmtt/m/n/10.95 mental
  []
 
 
-Overfull \hbox (18.64905pt too wide) in paragraph at lines 159--179
+Overfull \hbox (18.64905pt too wide) in paragraph at lines 155--175
 \TU/lmtt/m/n/10.95 clutter[][] requiring constant attention management: \begin{
 displayquote} When
  []
 
 
-Overfull \hbox (18.64905pt too wide) in paragraph at lines 159--179
+Overfull \hbox (18.64905pt too wide) in paragraph at lines 155--175
 \TU/lmtt/m/n/10.95 I[]m in the office all day, it[]s like my brain gets... clut
 tered. There[]s too
  []
 
 
-Overfull \hbox (7.15155pt too wide) in paragraph at lines 159--179
+Overfull \hbox (7.15155pt too wide) in paragraph at lines 155--175
 \TU/lmtt/m/n/10.95 much going on, too many things competing for attention. Even
  just stepping
  []
 
 
-Overfull \hbox (1.4028pt too wide) in paragraph at lines 159--179
+Overfull \hbox (1.4028pt too wide) in paragraph at lines 155--175
 \TU/lmtt/m/n/10.95 out to the park at lunch, there[]s something about being aro
 und trees that
  []
 
 
-Overfull \hbox (64.63904pt too wide) in paragraph at lines 159--179
+Overfull \hbox (64.63904pt too wide) in paragraph at lines 155--175
 \TU/lmtt/m/n/10.95 makes that feeling ease up. \end{displayquote} This restorat
 ion involved attentional
  []
 
 
-Overfull \hbox (7.15155pt too wide) in paragraph at lines 159--179
+Overfull \hbox (7.15155pt too wide) in paragraph at lines 155--175
 \TU/lmtt/m/n/10.95 shifts rather than mental emptiness. The participant disting
 uished between
  []
 
 
-Overfull \hbox (35.8953pt too wide) in paragraph at lines 159--179
+Overfull \hbox (35.8953pt too wide) in paragraph at lines 155--175
 \TU/lmtt/m/n/10.95 effortful attention required by work tasks and a more recept
 ive, less demanding
  []
 
 
-Overfull \hbox (12.9003pt too wide) in paragraph at lines 159--179
+Overfull \hbox (12.9003pt too wide) in paragraph at lines 155--175
 \TU/lmtt/m/n/10.95 quality of attention experienced during nature contact, char
 acterizing this
  []
 
 
-Overfull \hbox (76.13654pt too wide) in paragraph at lines 159--179
+Overfull \hbox (76.13654pt too wide) in paragraph at lines 155--175
 \TU/lmtt/m/n/10.95 not merely as relaxation but as specific cognitive replenish
 ment: \begin{displayquote}
  []
 
 
-Overfull \hbox (12.9003pt too wide) in paragraph at lines 159--179
+Overfull \hbox (12.9003pt too wide) in paragraph at lines 155--175
 \TU/lmtt/m/n/10.95 After a walk in natural areas, I notice I can focus better. 
 Tasks that felt
  []
 
 
-Overfull \hbox (30.14655pt too wide) in paragraph at lines 159--179
+Overfull \hbox (30.14655pt too wide) in paragraph at lines 155--175
 \TU/lmtt/m/n/10.95 overwhelming before seem more manageable. It[]s like my capa
 city to concentrate
  []
 
 
-Overfull \hbox (12.9003pt too wide) in paragraph at lines 159--179
+Overfull \hbox (12.9003pt too wide) in paragraph at lines 155--175
 \TU/lmtt/m/n/10.95 gets recharged somehow. \end{displayquote} The restorative q
 uality appeared
  []
 
 
-Overfull \hbox (1.20235pt too wide) in paragraph at lines 159--179
+Overfull \hbox (1.20235pt too wide) in paragraph at lines 155--175
 \TU/lmtt/m/n/10.95 to emerge from what the participant termed nature[]s\TU/Mini
 onPro(0)/m/n/10.95 gentle’’ engagement of atten-
  []
 
 [3]
-Overfull \hbox (0.43889pt too wide) in paragraph at lines 184--190
+Overfull \hbox (0.43889pt too wide) in paragraph at lines 180--186
 \TU/MinionPro(0)/m/n/10.95 ing feelings the participant characterized as both h
 umbling and oddly comforting; and extending
  []
 
 [4] [5
 
-] [6]
+] [6] [7
 
-LaTeX Warning: Citation 'bratman2019' on page 7 undefined on input line 322.
+] [8] [9
 
-
-LaTeX Warning: Citation 'kaplan1995' on page 7 undefined on input line 323.
-
-
-LaTeX Warning: Citation 'soga2023' on page 7 undefined on input line 324.
-
-
-LaTeX Warning: Citation 'kaplan1995' on page 7 undefined on input line 330.
-
-
-Overfull \hbox (0.23741pt too wide) in paragraph at lines 313--374
-\TU/MinionPro(0)/m/n/10.95 and pro-environmental action, suggesting that these 
-relationships may be mediated by structural
- []
-
-
-Overfull \hbox (0.12135pt too wide) in paragraph at lines 313--374
-\TU/MinionPro(0)/m/n/10.95 locations or access to natural environments. The int
-erview method relied on retrospective reflec-
- []
-
-[7
 
 ]
+Overfull \hbox (8.16736pt too wide) in paragraph at lines 373--373
+\TU/MinionPro(0)/m/n/10.95 5th. text rev. American Psychiatric Publishing. \TU/
+MinionPro(0)/m/sc/10.95 doi\TU/MinionPro(0)/m/n/10.95 : [][]$[][] [] [][][][] [
+] [][][][] [] [][][][][] [] [][][][][][][][][][][][][]$[][]. 
+ []
 
-LaTeX Warning: Empty bibliography on input line 377.
 
-[8] (./Main.aux (./Matter/Title-Page.aux))
+Overfull \hbox (6.20494pt too wide) in paragraph at lines 373--373
+\TU/MinionPro(0)/m/n/10.95 Development And General Psychometric Properties”. In
+: \TU/MinionPro(0)/m/it/10.95 Human Reproduction \TU/MinionPro(0)/m/n/10.95 26.
+8, pp. 2084–
+ []
+
+
+Overfull \hbox (16.42027pt too wide) in paragraph at lines 373--373
+\TU/MinionPro(0)/m/n/10.95 Kahn, Ming Kuo, Joshua J. Lawler, Phillip S. Levin, 
+Therese Lindahl, Andreas Meyer-Lindenberg,
+ []
+
+[10]
+Overfull \hbox (1.11168pt too wide) in paragraph at lines 373--373
+\TU/MinionPro(0)/m/n/10.95 (SNAP)”. In: \TU/MinionPro(0)/m/it/10.95 Psychologic
+al Medicine \TU/MinionPro(0)/m/n/10.95 41.3, pp. 619–627. \TU/MinionPro(0)/m/sc
+/10.95 doi\TU/MinionPro(0)/m/n/10.95 : [][]$[][] [] [][][][] [] [][][][][][][][
+][][][][][][][][][]$[][]. 
+ []
+
+[11]
+Overfull \hbox (44.52904pt too wide) in paragraph at lines 373--373
+\TU/MinionPro(0)/m/n/10.95 order Diagnosis: A Critical Review”. In: \TU/MinionP
+ro(0)/m/it/10.95 Autism \TU/MinionPro(0)/m/n/10.95 18.5, pp. 583–597. \TU/Minio
+nPro(0)/m/sc/10.95 doi\TU/MinionPro(0)/m/n/10.95 : [][]$[][] [] [][][][] [] [][
+][][][][][][][][][][][][][][]$[][]. 
+ []
+
+[12] [13]
+Overfull \hbox (1.56645pt too wide) in paragraph at lines 373--373
+[][]\TU/MinionPro(0)/m/n/10.95 Hunter, K., C. Ryder, J. Coombes, K. Clapham, T.
+ Mackean, A.J.A. Holland, S. Fraser, H. Williams,
+ []
+
+
+Overfull \hbox (0.71884pt too wide) in paragraph at lines 373--373
+[][]\TU/MinionPro(0)/m/n/10.95 Leekam, S. R., M. R. Prior & M. Uljarevic (2011)
+. “  Restricted And Repetitive Behaviors In Autism
+ []
+
+[14]
+Overfull \hbox (23.88768pt too wide) in paragraph at lines 373--373
+\TU/MinionPro(0)/m/n/10.95 Autism”. In: \TU/MinionPro(0)/m/it/10.95 New England
+ Journal of Medicine \TU/MinionPro(0)/m/n/10.95 366.8, pp. 733–743. \TU/MinionP
+ro(0)/m/sc/10.95 doi\TU/MinionPro(0)/m/n/10.95 : [][]$[][] [] [][][][] [] [][][
+][][][][][][][][][][]$[][]. 
+ []
+
+
+Overfull \hbox (4.56741pt too wide) in paragraph at lines 373--373
+[][]\TU/MinionPro(0)/m/n/10.95 Mikulincer, M. & P. R. Shaver (2016). \TU/Minion
+Pro(0)/m/it/10.95 Attachment In Adulthood: Structure, Dynamics, And Change\TU/M
+inionPro(0)/m/n/10.95 .
+ []
+
+[15] [16]
+Overfull \hbox (10.33098pt too wide) in paragraph at lines 373--373
+\TU/MinionPro(0)/m/n/10.95 ralistic Developmental Behavioral Interventions: Emp
+irically Validated Treatments For Autism
+ []
+
+[17] [18]
+Overfull \hbox (1.1216pt too wide) in paragraph at lines 373--373
+[][]\TU/MinionPro(0)/m/n/10.95 Vivanti, G., J. Paynter, E. Duncan, H. Fothergil
+l, C. Dissanayake, S. J. Rogers & Victorian ASELCC
+ []
+
+
+Overfull \hbox (0.37419pt too wide) in paragraph at lines 373--373
+[][]\TU/MinionPro(0)/m/n/10.95 Wechsler, D. (2012). \TU/MinionPro(0)/m/it/10.95
+ Wechsler Preschool and Primary Scale of Intelligence, Fourth Edition (WPPSI-
+ []
+
+[19] (./Main.aux (./Matter/Title-Page.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -2887,23 +2929,18 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: D7FCED0E20B915E59F32DB33A75E60F2;988.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Main
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 8B11699DC4AD82E96452FDD486BA3EDC;1082.
 Package logreq Info: Writing requests to 'Main.run.xml'.
 \openout1 = `Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64507 strings out of 474878
- 1343531 string characters out of 5762517
- 2355578 words of memory out of 5000000
- 85426 multiletter control sequences out of 15000+600000
- 600125 words of font info for 141 fonts, out of 8000000 for 9000
+ 65133 strings out of 474878
+ 1365025 string characters out of 5762517
+ 2367266 words of memory out of 5000000
+ 86048 multiletter control sequences out of 15000+600000
+ 600149 words of font info for 144 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 123i,12n,121p,2368b,3870s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,12n,121p,2368b,5628s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Main.xdv (9 pages, 234552 bytes).
+Output written on Main.xdv (20 pages, 577180 bytes).

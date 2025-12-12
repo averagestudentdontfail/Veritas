@@ -2360,6 +2360,11 @@
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
     <bcf:datasource type="file" datatype="bibtex" glob="false">Bibliography/Bibliography.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">Bibliography/environmental-agency.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">Bibliography/bill-wynsky.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">Bibliography/max-verstappen.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">Bibliography/infertility-therapy.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">Bibliography/burn-injury.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">cox2017</bcf:citekey>
