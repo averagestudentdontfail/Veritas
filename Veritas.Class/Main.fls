@@ -692,3 +692,8 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT /usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 OUTPUT Main.bcf
+INPUT Main.bbl
+INPUT ./Main.bbl
+INPUT ./Main.bbl
+INPUT ./Main.bbl
+INPUT Main.bbl

@@ -26,6 +26,8 @@ $if(author.name)$
 $else$
 \FirstAuthor{$author$}
 $endif$
+$else$
+\FirstAuthor{}
 $endif$
 $if(date)$\Date{$date$}$else$\Date{\today}$endif$
 
