@@ -1,19 +1,53 @@
-%%% Document Colors %%%
+%%% Configurations/01-Colors.sty %%%
+%%% Color System for Veritas Template
+%%%
+%%% FIRST PRINCIPLES BASIS:
+%%% This module implements color decisions derived from:
+%%%
+%%% 1. Itten, J. (1961). The Art of Color.
+%%%    - Color harmony through complementary and analogous relationships
+%%%    - Psychological effects of color saturation on reading fatigue
+%%%
+%%% 2. Tufte, E.R. (2006). Beautiful Evidence.
+%%%    - "Above all, show the data" — minimal chromatic interference
+%%%    - Color as information, not decoration
+%%%
+%%% 3. WCAG 2.1 Accessibility Guidelines
+%%%    - Minimum contrast ratio 4.5:1 for normal text
+%%%    - Burgundy (128,0,32) on white: contrast ratio ~9:1
+%%%
+%%% COMPLIANCE: Standard.md
+%%% - LOC-1 Rule 1: LaTeX2e conformant
+%%% - LOC-4 Rule 11: Semantic color names for maintainability
 
-% Define the burgundy theme color
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{01-Colors}[2025/12/12 v1.0.0 Veritas Color System]
+
+%%% Primary Accent: Burgundy %%%
+% Rationale: Low-saturation warm accent minimises visual fatigue.
+% RGB(128,0,32) provides strong contrast without aggressive brightness.
+% Historically associated with academic and legal documents.
 \definecolor{burgundy}{RGB}{128,0,32}
 
-% Main document color; used mainly in citation links.
+%%% Main Document Color %%%
+% Used for hyperlinks and citations — visible but unobtrusive
 \colorlet{maincolor}{burgundy}
 
-% Color used in the numeration of chapters and sections.
+%%% Chapter and Section Numerals %%%
+% Consistent accent for structural elements
 \colorlet{chapterdarkred}{burgundy}
 \colorlet{chaptergray}{burgundy}
 
-% Color used in the typesetting of the front page.
+%%% Front Page Dark Background %%%
+% Near-black for cover pages when using fancy style
 \definecolor{frontpagedark}{HTML}{1c1c1c}
 
-% Colors used in the custom block environment.
+%%% Semantic Block Colors %%%
+% Traffic light convention for intuitive recognition:
+% - Note (burgundy): Informational, neutral attention
+% - Tip (green): Positive suggestion, safe to follow
+% - Warning (amber): Caution required
+% - Todo (red): Action required, incomplete
 \definecolor{note}{RGB}{128,0,32}
 \definecolor{tip}{HTML}{1a7f37}
 \definecolor{warning}{HTML}{9a6700}

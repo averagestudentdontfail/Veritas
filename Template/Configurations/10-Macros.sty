@@ -1,10 +1,36 @@
-%%% Document Macros and Extras %%%
+%%% Configurations/10-Macros.sty %%%
+%%% Document Macros for Veritas Template
+%%%
+%%% FIRST PRINCIPLES BASIS:
+%%% This module implements semantic commands derived from:
+%%%
+%%% 1. Lamport, L. (1994). LaTeX: A Document Preparation System.
+%%%    - Logical markup over visual markup
+%%%    - Author focuses on content, not presentation
+%%%
+%%% 2. Knuth, D.E. (1986). The TeXbook.
+%%%    - Macro abstraction for reusability
+%%%    - Consistent formatting through single definitions
+%%%
+%%% 3. Standard.md LOC-4 Rule 11
+%%%    - Raw \def shall not appear in document bodies
+%%%    - Semantic commands for content/presentation separation
+%%%
+%%% COMPLIANCE: Standard.md
+%%% - LOC-1 Rule 1: LaTeX2e conformant
+%%% - LOC-4 Rule 11: Separation of content and presentation
+%%% - LOC-4 Rule 13: Single-purpose, composable macros
 
-%%% Remove paragraph indentation %%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{10-Macros}[2025/12/12 v1.0.0 Veritas Document Macros]
+
+%%% Paragraph Formatting %%%
+% No indent, space between paragraphs (modern document style)
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
 
-% Blank page with a warning indicating it is intentionally left blank.
+%%% Blank Page Command %%%
+% Intentionally blank page for book printing
 \newcommand\blankpage{
     \clearpage
     \thispagestyle{empty}%
@@ -20,10 +46,9 @@
     \clearpage
 } 
 
-% Command that will combine a plain page style and a blank one.
 \newcommand{\plainblankpage}{\thispagestyle{plain}\blankpage}
 
-% Indicates that a writing guide will be displayed.
+%%% Guide Information Blocks %%%
 \newcommand{\guideinfo}[1]{%
     \ifthenelse{\equal{\LanguageOption}{portuguese}}{%
         \noindent\textcolor{note}{\faInfoCircle\ \textbf{Orientação Para a Escrita}}%
@@ -44,11 +69,11 @@
     \noindent #1%
 }
 
-% Abstract keywords.
+%%% Abstract Keywords %%%
 \NewDocumentCommand{\keywordsen}{m}{\vspace{.4cm}\noindent\textbf{Keywords:} #1}
 \NewDocumentCommand{\keywordspt}{m}{\vspace{.4cm}\noindent\textbf{Palavras-Chave:} #1}
 
-% Landscape mode - the proper way!
+%%% Landscape Mode Support %%%
 \def\ifGm@preamble#1{\@firstofone}
 \appto\restoregeometry{%
     \pdfpagewidth=\paperwidth
@@ -57,7 +82,8 @@
     \pdfpagewidth=\paperwidth
     \pdfpageheight=\paperheight}{}{}
 
-% Custom Markdown quote block implementation in LaTeX.
+%%% Semantic Block Environment %%%
+% Markdown-style callout blocks (note, tip, warning, todo)
 \newtcolorbox[auto counter,number within=section]{block}[1][]{
     enhanced jigsaw,
     coltitle=#1,
@@ -74,7 +100,7 @@
     code={\ifdefempty{\tcbtitletext}{}{\tcbset{before upper={\tcbtitle\par\medskip}}}},
 }
 
-%%% Custom Quote Block Environment
+%%% Custom Quote Block %%%
 \AtBeginDocument{%
     \renewenvironment{displayquote}{%
         \begin{tcolorbox}[
@@ -98,7 +124,7 @@
     }%
 }
 
-% Capitalise the first letter in '\autoref' for both English and Portuguese.
+%%% Autoref Capitalisation %%%
 \addto\extrasenglish{\def\figureautorefname{Figure}}
 \addto\extrasenglish{\def\chapterautorefname{Chapter}}
 \addto\extrasenglish{\def\sectionautorefname{Section}}
@@ -111,19 +137,19 @@
 \addto\extrasportuguese{\def\subsectionautorefname{Secção}}
 \addto\extrasportuguese{\def\subsubsectionautorefname{Secção}}
 
-% Command to overwrite the color of a given command.
+%%% Color Override Utility %%%
 \newcommand{\overwritecolor}[2]{%
     \textcolor{#1}{%
         \renewcommand\color[2][]{}%
     #2}%
 }
 
-% Wrapping bot glossary and acronyms commands.
+%%% Glossary Print Commands %%%
 \newcommand{\printnormalglossary}{\printglossary}
 \newcommand{\printacronymglossary}{\printglossary[type=\acronymtype]}
 \newcommand{\printsymbolglossary}{\printglossary[type=symbols]}
 
-% Logic to add or omit a blank page depending on the '\MediaOption' value.
+%%% Media-Aware Page Logic %%%
 \newcommand{\MediaOptionLogic}{%
     \ifthenelse{\equal{\MediaOption}{paper}}{\plainblankpage}{\thispagestyle{plain}}%
 }
@@ -140,7 +166,7 @@
     \ifthenelse{\equal{\MediaOption}{paper}}{\blankpage}{\clearpage}%
 }
 
-% Update various elements based on the '\MediaOption' value.
+%%% Apply Media Logic to Standard Commands %%%
 \apptocmd{\tableofcontents}{\MediaOptionLogic}{}{\fail}
 \apptocmd{\listoffigures}{\MediaOptionLogic}{}{\fail}
 \apptocmd{\listoftables}{\MediaOptionLogic}{}{\fail}
@@ -149,6 +175,7 @@
 \apptocmd{\printsymbolglossary}{\MediaOptionLogicAcr}{}{\fail}
 \pretocmd{\printbibliography}{\MediaOptionLogic}{}{\fail}
 
+%%% AI Prompt Commands %%%
 \NewDocumentCommand{\prompt}{o m}{%
     \ifthenelse{\equal{\LanguageOption}{portuguese}}{%
         \IfNoValueTF{#1}

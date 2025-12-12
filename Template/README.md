@@ -1,50 +1,129 @@
-<p align="center">
-    <img width="90%" src="https://github.com/joseareia/ipleiria-thesis/blob/master/Assets/04_Logo.png" alt="Logo">
-</p>
+# Veritas LaTeX Template
 
-<p align="center">
-    <a href="https://github.com/joseareia/ipleiria-thesis/issues/new?labels=bug" target="_blank">Report a Bug</a>
-·
-    <a href="https://github.com/joseareia/ipleiria-thesis/issues/new?labels=enhancement" target="_blank">Request a Feature</a>
-·
-    <a href="https://github.com/joseareia/ipleiria-thesis/issues/new?labels=question" target="_blank">Ask a Question</a>
-·
-    <a href="https://github.com/joseareia/ipleiria-thesis/wiki" target="_blank">Read the Wiki</a>
-</p>
+**Version:** 1.0.0  
+**Date:** December 2025  
+**License:** LPPL 1.3c  
+**Compliance:** Standard.md (LOC-1 through LOC-5)
 
-<p align="center">
-    <a href="https://www.latex-project.org"><img src="https://img.shields.io/badge/Made%20with-LaTeX-red.svg?style=flat-square"></a>
-    <a href="https://www.latex-project.org/lppl/lppl-1-3c"><img src="https://img.shields.io/badge/License-LPPL%20v1.3c-yellow.svg?style=flat-square"></a>
-    <a href="https://github.com/joseareia/ipleiria-thesis/releases"><img src="https://img.shields.io/github/v/tag/joseareia/ipleiria-thesis?style=flat-square&label=Release&color=8892BF"></a>
-    <a href="https://github.com/joseareia/ipleiria-thesis/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained-Yes-brightgreen.svg?style=flat-square"></a>
-    <a href=""><img src="https://img.shields.io/badge/Build-Passing-brightgreen.svg?style=flat-square"></a>
-</p>
-<br/>
+## Overview
 
-<p float="left">
-<a href="https://github.com/joseareia/ipleiria-thesis">IPLeiria Thesis</a> is an open-source LaTeX template <b>designed for creating professional thesis, dissertations, and academic reports</b> specifically tailored for the <a href="https://www.ipleiria.pt/" target="_blank">Polytechnic University of Leiria</a> students. It was developed to ensure a <b>clean, aesthetically pleasing, and professional design</b> while remaining highly customizable to suit various needs. The template is also user-friendly, making it accessible even for newcomers.
+Veritas is a general-purpose academic LaTeX template for theses, dissertations, and technical reports. It provides a clean, professional design with comprehensive configuration options while maintaining strict compliance with documented coding standards.
 
-Curious to see it in action? Check out the <a href="https://www.overleaf.com/latex/templates/polytechnic-university-of-leiria-thesis-template/tqgbrncfhwgt" target="_blank">PDF</a> demo for a preview!
-</p>
+## Features
 
-<p align="center">
-  <img src="https://github.com/joseareia/ipleiria-thesis/blob/master/Assets/01_B.png" width="273"/>
-  <img src="https://github.com/joseareia/ipleiria-thesis/blob/master/Assets/02_B.png" width="273"/>
-  <img src="https://github.com/joseareia/ipleiria-thesis/blob/master/Assets/03_B.png" width="273"/>
-</p>
+- **Typography**: Minion Pro serif with optical size variants (Display, Subhead, Semibold)
+- **Chapter Styles**: Classic, Fancy, and Modern heading designs
+- **Media Modes**: Screen (continuous) and Paper (with blank pages for binding)
+- **Internationalisation**: English and Portuguese language support
+- **Bibliography**: Author-year citations via biblatex/biber
+- **Code Highlighting**: Pygments-based syntax highlighting via minted
 
-<p float="left">
-This repository contains all the <b>source code for the template</b>, organised into a clear and well-structured file hierarchy. It also includes various tools and <b>configuration files necessary for compiling</b> the template across different workspaces.
-</p>
+## Quick Start
 
-## Installation and Documentation
-This template is available online on [Overleaf](https://www.overleaf.com/latex/templates/polytechnic-university-of-leiria-thesis-template/tqgbrncfhwgt), providing a **hassle-free way to compile it without the need to install any dependencies**. If you plan to use the template locally or have any questions, please refer to our [GitHub Wiki](https://github.com/joseareia/ipleiria-thesis/wiki) for comprehensive guidance. However, before you start using the template, be sure to read the [Instructions for Using the Template](https://github.com/joseareia/ipleiria-thesis/wiki/Instructions-for-Using-the-Template) to gain a better understanding of its features and setup.
+```latex
+\documentclass[
+    language=english,
+    chapterstyle=fancy,
+    media=screen
+]{Veritas}
 
-## Getting Help
-If you have any questions regarding the template, its usage, or encounter any errors you're struggling with, please feel free to open an [issue](https://github.com/joseareia/ipleiria-thesis/issues), start a new [discussion](https://github.com/joseareia/ipleiria-thesis/discussions), or email me at <a href="mailto:jose.apareia@gmail.com">jose.apareia@gmail.com</a>.
+\input{Metadata/Metadata}
 
-## Contributing
-Contributions to this template are welcome! If you encounter any issues, have suggestions for improvements, or would like to add new features, please submit a [pull request](https://github.com/joseareia/ipleiria-thesis/pulls). We appreciate your feedback and contributions to make this template even better.
+\begin{document}
+\include{Chapters/01-Introduction}
+\printbibliography
+\end{document}
+```
+
+## Build Instructions
+
+```bash
+# Single build
+make
+
+# Watch for changes
+make watch
+
+# Clean auxiliary files
+make clean
+
+# Verify Standard.md compliance
+make verify
+```
+
+**Requirements**: XeLaTeX, latexmk, biber, and optionally minted (requires Pygments).
+
+## Class Options
+
+| Option | Values | Default | Description |
+|--------|--------|---------|-------------|
+| `language` | english, portuguese | english | Document language |
+| `chapterstyle` | classic, fancy, modern | classic | Chapter heading style |
+| `coverstyle` | classic, bw, fancy | classic | Cover page style |
+| `media` | screen, paper | paper | Output media (blank pages) |
+| `docstage` | working, final | working | Draft watermark |
+| `doctype` | thesis, report, article | thesis | Document type |
+| `bookprint` | true, false | false | Asymmetric margins for binding |
+| `aiack` | true, false | true | AI acknowledgement section |
+| `linkcolor` | any xcolor | black | Hyperlink color |
+
+## Directory Structure
+
+```
+Template/
+├── Main.tex                    # Primary document
+├── Veritas.cls                 # Document class
+├── Veritas.ist                 # Glossary style
+├── Makefile                    # Build automation
+├── Configurations/             # Modular settings
+│   ├── 00-Fonts.sty           # Typography (Bringhurst)
+│   ├── 01-Colors.sty          # Color system (Itten, WCAG)
+│   ├── 02-Margins.sty         # Page geometry (Tschichold)
+│   ├── 03-References.sty      # Bibliography (Chicago)
+│   ├── 04-Headers.sty         # Page headers
+│   ├── 05-Contents.sty        # Table of contents
+│   ├── 06-Glossary.sty        # Terminology (ISO 704)
+│   ├── 07-Chapters.sty        # Chapter formatting
+│   ├── 08-Tables.sty          # Table design (Tufte)
+│   ├── 09-Code.sty            # Code listings (Knuth)
+│   ├── 10-Macros.sty          # Semantic commands (Lamport)
+│   ├── 11-Metadata.sty        # PDF metadata (Dublin Core)
+│   └── 12-Floats.sty          # Float placement (LaTeX Companion)
+├── Chapters/                   # Main content
+├── Matter/                     # Front/back matter
+├── Bibliography/               # .bib files
+├── Figures/                    # Images
+└── Assets/                     # Template assets
+```
+
+## Standard.md Compliance
+
+This template adheres to the Veritas LaTeX Coding Standard:
+
+| Level | Focus | Implementation |
+|-------|-------|---------------|
+| LOC-1 | Language Compliance | LaTeX2e, no deprecated syntax |
+| LOC-2 | Predictable Compilation | Explicit float placement [htbp] |
+| LOC-3 | Defensive Authoring | Package guards, `\PackageError` |
+| LOC-4 | Document Clarity | Semantic commands, separation of concerns |
+| LOC-5 | Production Assurance | Reproducible builds, version metadata |
+
+## First-Principles Design
+
+Each configuration module documents its theoretical basis:
+
+- **Typography**: Bringhurst's *Elements of Typographic Style*
+- **Page Layout**: Tschichold's *The Form of the Book*
+- **Color**: Itten's *The Art of Color*, WCAG accessibility
+- **Tables**: Tufte's *Visual Display of Quantitative Information*
+- **Citations**: Chicago Manual of Style, APA 7th Edition
+- **Code**: Knuth's Literate Programming
+
+## Credits
+
+Based on [IPLeiria Thesis](https://github.com/joseareia/ipleiria-thesis) by José Areia.  
+Refactored for general academic use with Standard.md compliance.
 
 ## License
-The **IPLeiria Thesis** project is released under the terms of the [LPPL 1.3c License](https://www.latex-project.org/lppl/lppl-1-3c/).
+
+Released under the [LaTeX Project Public License v1.3c](https://www.latex-project.org/lppl/lppl-1-3c/).

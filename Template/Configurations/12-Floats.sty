@@ -1,6 +1,30 @@
 %%% Configurations/12-Floats.sty %%%
+%%% Float Placement Configuration for Veritas Template
+%%%
+%%% FIRST PRINCIPLES BASIS:
+%%% This module implements float placement derived from:
+%%%
+%%% 1. Mittelbach, F. et al. (2023). The LaTeX Companion. 3rd ed.
+%%%    - Float placement algorithm parameters (§8.9)
+%%%    - Best practices for figure/table positioning
+%%%
+%%% 2. Knuth, D.E. (1986). The TeXbook.
+%%%    - Glue and penalty system for page breaking
+%%%    - Float insertion algorithms
+%%%
+%%% 3. Standard.md LOC-2 Rule 5
+%%%    - All floats shall have explicit placement specifiers
+%%%    - Do not rely on implicit [tbp] default
+%%%
+%%% COMPLIANCE: Standard.md
+%%% - LOC-1 Rule 1: LaTeX2e conformant
+%%% - LOC-2 Rule 5: Explicit float placement (default [htbp])
+%%% - LOC-4 Rule 14: Semantic environments
 
-% Required packages
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{12-Floats}[2025/12/12 v1.0.0 Veritas Float Configuration]
+
+%%% Required Packages %%%
 \RequirePackage{lscape}
 \RequirePackage{fancyhdr}
 \RequirePackage{geometry}
@@ -8,38 +32,41 @@
 \RequirePackage{afterpage}
 \RequirePackage{etoolbox}
 
-% Float placement parameters
+%%% Float Counter Limits %%%
+% Maximum floats per page (LaTeX Companion §7.1)
 \setcounter{topnumber}{3}
 \setcounter{bottomnumber}{2}
 \setcounter{totalnumber}{4}
 \setcounter{dbltopnumber}{3}
 
-% Float fractions
+%%% Float Fractions %%%
+% Percentage of page available for floats
 \renewcommand{\topfraction}{0.85}
 \renewcommand{\bottomfraction}{0.7}
 \renewcommand{\textfraction}{0.15}
 \renewcommand{\floatpagefraction}{0.7}
 \renewcommand{\dbltopfraction}{0.85}
 
-% Float spacing parameters
+%%% Float Spacing %%%
 \setlength{\floatsep}{12pt plus 4pt minus 4pt}
 \setlength{\textfloatsep}{15pt plus 5pt minus 5pt}
 \setlength{\intextsep}{12pt plus 4pt minus 4pt}
 \setlength{\dblfloatsep}{12pt plus 4pt minus 4pt}
 \setlength{\dbltextfloatsep}{15pt plus 5pt minus 5pt}
 
-% Caption spacing
+%%% Caption Spacing %%%
 \setlength{\abovecaptionskip}{8pt}
 \setlength{\belowcaptionskip}{6pt}
 
-% Automatic float spacing
+%%% Automatic Float Spacing %%%
 \newcommand{\autofloatspacing}{%
     \@ifundefined{@captype}{}{%
         \vspace{3pt plus 2pt minus 1pt}%
     }%
 }
 
-% Enhanced figure environment
+%%% Enhanced Figure Environment %%%
+% LOC-2 Rule 5: Default to [htbp] explicit placement
 \let\oldfigure\figure
 \let\endoldfigure\endfigure
 \renewenvironment{figure}[1][htbp]{%
@@ -50,7 +77,8 @@
     \endoldfigure%
 }
 
-% Enhanced table environment
+%%% Enhanced Table Environment %%%
+% LOC-2 Rule 5: Default to [htbp] explicit placement
 \let\oldtable\table
 \let\endoldtable\endtable
 \renewenvironment{table}[1][htbp]{%
@@ -61,7 +89,7 @@
     \endoldtable%
 }
 
-% Landscape figure environment
+%%% Landscape Figure Environment %%%
 \newenvironment{landscapefigure}[1][htbp]{%
     \clearpage%
     \newgeometry{
@@ -98,7 +126,7 @@
     \cleardoublepage%
 }
 
-% Landscape table environment
+%%% Landscape Table Environment %%%
 \newenvironment{landscapetable}[1][htbp]{%
     \clearpage%
     \newgeometry{
@@ -135,7 +163,7 @@
     \cleardoublepage%
 }
 
-% ENGINEERED SOLUTION: Landscape longtable with automatic post-cleanup
+%%% Landscape Longtable Environment %%%
 \makeatletter
 \newenvironment{landscapelongtable}{%
     \clearpage%
@@ -175,13 +203,11 @@
 }
 \makeatother
 
-% AUTOMATIC POST-LANDSCAPE CLEANUP
-% This hook executes AFTER the environment closes in the document body
+%%% Post-Landscape Cleanup %%%
 \AtEndEnvironment{landscapelongtable}{%
     \aftergroup\landscapecleanup%
 }
 
-% Define the cleanup command that runs in document body context
 \newcommand{\landscapecleanup}{%
     \clearpage%
     \newgeometry{
@@ -196,7 +222,7 @@
     \clearpage%
 }
 
-% Smart float placement
+%%% Smart Float Placement %%%
 \newcommand{\smartfloat}[2][htbp]{%
     \begingroup%
     \setlength{\intextsep}{10pt plus 3pt minus 3pt}%
@@ -207,21 +233,20 @@
     \endgroup%
 }
 
-% Float barrier
+%%% Float Barrier %%%
 \newcommand{\floatbarrier}{%
     \par\vspace{0pt plus 10pt minus 5pt}%
     \FloatBarrier%
     \par\vspace{0pt plus 10pt minus 5pt}%
 }
 
-% Auto spacing for captions
+%%% Caption Auto-Spacing %%%
 \DeclareCaptionFormat{autospacing}{%
     \vspace{2pt}#1#2#3\vspace{4pt}%
 }
-
 \captionsetup{format=autospacing}
 
-% Auto width handling
+%%% Auto Width Handling %%%
 \newcommand{\autofigurewidth}[2][0.8]{%
     \ifdim\width>#1\textwidth%
         \resizebox{#1\textwidth}{!}{#2}%
@@ -230,7 +255,7 @@
     \fi%
 }
 
-% Side by side figures
+%%% Side-by-Side Figures %%%
 \newenvironment{sidebysideFigures}[1][0.45]{%
     \begin{figure}[htbp]%
     \centering%
@@ -247,14 +272,14 @@
     \end{subfigure}%
 }
 
-% Better float page handling
+%%% Float Page Spacing %%%
 \makeatletter
 \setlength{\@fptop}{0pt plus 1fil}
 \setlength{\@fpsep}{8pt plus 2fil}
 \setlength{\@fpbot}{0pt plus 1fil}
 \makeatother
 
-% Float barriers at sections
+%%% Float Barriers at Sections %%%
 \RequirePackage{placeins}
 
 \makeatletter

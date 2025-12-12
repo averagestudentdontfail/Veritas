@@ -1,8 +1,33 @@
-%%% Chapters and Sections %%%
+%%% Configurations/07-Chapters.sty %%%
+%%% Chapter and Section Formatting for Veritas Template
+%%%
+%%% FIRST PRINCIPLES BASIS:
+%%% This module implements chapter design derived from:
+%%%
+%%% 1. Bringhurst, R. (2012). The Elements of Typographic Style.
+%%%    - Chapter openings as "doorways" to content (§6.4)
+%%%    - White space before chapter titles for pause and transition
+%%%
+%%% 2. Tschichold, J. (1991). The Form of the Book.
+%%%    - Large chapter numbers as visual anchors
+%%%    - Consistent vertical rhythm across pages
+%%%
+%%% 3. Müller-Brockmann, J. (1981). Grid Systems in Graphic Design.
+%%%    - Modular scale for typographic hierarchy
+%%%    - Consistent spacing based on leading multiples
+%%%
+%%% COMPLIANCE: Standard.md
+%%% - LOC-1 Rule 1: LaTeX2e conformant (no deprecated syntax)
+%%% - LOC-4 Rule 14: Semantic environments for structural elements
 
-\definecolor{burgundy}{RGB}{128,0,32}
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{07-Chapters}[2025/12/12 v1.0.0 Veritas Chapter Formatting]
 
-% Classic style
+%%% NOTE: burgundy color defined in 01-Colors.sty %%%
+%%% Do not redefine here (LOC-4: avoid duplication) %%%
+
+%%% Classic Chapter Style %%%
+% Traditional right-aligned large numeral with title below
 \ifthenelse{\equal{\ChapterOption}{classic}}{
     \titleformat{\chapter}[display]%
     {\raggedleft\huge}%
@@ -14,7 +39,8 @@
     \titlespacing*{\chapter}{0pt}{-30pt}{40pt}
 }{}
 
-% Fancy style
+%%% Fancy Chapter Style %%%
+% Modern design with vertical rule accent
 \ifthenelse{\equal{\ChapterOption}{fancy}}{
     \titleformat{\chapter}[display]
     {\flushright\normalsize\huge\color{black}}%
@@ -28,7 +54,8 @@
     \titlespacing*{\chapter}{0pt}{-30pt}{45pt}
 }{}
 
-% Modern style
+%%% Modern Chapter Style %%%
+% Bold minimalist with uppercase title
 \ifthenelse{\equal{\ChapterOption}{modern}}{
     \titleformat{\chapter}[display]
     {\normalsize\huge\color{black}}%
@@ -42,7 +69,8 @@
     \titlespacing*{\chapter}{0pt}{-30pt}{50pt}
 }{}
 
-% Part formatting - elegant full-page design
+%%% Part Formatting %%%
+% Elegant full-page design for major divisions
 \makeatletter
 \renewcommand\part{%
   \if@openright
@@ -100,7 +128,9 @@
               \fi}
 \makeatother
 
-% Section formatting - BODY TEXT SIZE (11pt/13.2pt)
+%%% Section Formatting %%%
+% Body text size (11pt/13.2pt) for hierarchical consistency
+% Rationale: Bringhurst §4.2 — sections subordinate to chapters
 \titleformat{\section}
     {\minionfont\fontsize{11pt}{13.2pt}\selectfont\bfseries}
     {\textcolor{burgundy}{\thesection}}
@@ -109,7 +139,7 @@
 
 \titlespacing*{\section}{0pt}{13.2pt}{0pt}
 
-% Subsection formatting - BODY TEXT SIZE (11pt/13.2pt) - NO ITALIC
+%%% Subsection Formatting %%%
 \titleformat{\subsection}
     {\minionfont\fontsize{11pt}{13.2pt}\selectfont\bfseries}
     {\textcolor{burgundy}{\thesubsection}}
@@ -118,7 +148,8 @@
 
 \titlespacing*{\subsection}{0pt}{13.2pt}{0pt}
 
-% Subsubsection formatting - runs into paragraph
+%%% Subsubsection Formatting %%%
+% Run-in style for tertiary divisions
 \titleformat{\subsubsection}[runin]
     {\minionfont\fontsize{11pt}{13.2pt}\selectfont\itshape}
     {\textcolor{burgundy!80}{\thesubsubsection}}

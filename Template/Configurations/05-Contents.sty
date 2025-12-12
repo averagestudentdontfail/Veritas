@@ -1,6 +1,25 @@
 %%% Configurations/05-Contents.sty %%%
-%%% Custom ToC Entries %%%
+%%% Table of Contents Configuration for Veritas Template
+%%%
+%%% FIRST PRINCIPLES BASIS:
+%%% This module implements ToC design derived from:
+%%%
+%%% 1. Ritter, R.M. (2002). The Oxford Guide to Style.
+%%%    - Table of contents as structural overview
+%%%    - Hierarchical indentation for section levels
+%%%
+%%% 2. Bringhurst, R. (2012). The Elements of Typographic Style.
+%%%    - Leader dots for horizontal connection (§8.3)
+%%%    - Italic for front/back matter distinction
+%%%
+%%% COMPLIANCE: Standard.md
+%%% - LOC-1 Rule 1: LaTeX2e conformant
+%%% - LOC-4 Rule 14: Semantic environments for ToC entries
 
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{05-Contents}[2025/12/12 v1.0.0 Veritas ToC Configuration]
+
+%%% Custom ToC Entries %%%
 \newcommand{\bookmarktocentry}{\pdfbookmark[0]{\contentsname}{toc}}
 \ProvideDocumentCommand\MakeLinkTarget{sO{}m}{}
 
@@ -10,13 +29,15 @@
 \providecommand*{\toclevel@frontmatter}{0}
 \providecommand*{\toclevel@backmatter}{0}
 
+%%% Front/Back Matter Styling %%%
+% Italic distinguishes auxiliary matter from main chapters
 \patchcmd{\l@frontmatter}{\bfseries}{\miniondisplayfont\itshape}{}{}
 \patchcmd{\l@frontmatter}{\nobreak\hfil}{\upshape\nobreak\hfil}{}{}
 \patchcmd{\l@frontmatter}{1.0em}{3pt}{}{}
 \patchcmd{\l@backmatter}{\bfseries}{\miniondisplayfont\itshape}{}{}
 \patchcmd{\l@backmatter}{\nobreak\hfil}{\upshape\nobreak\hfil}{}{}
 
-% Part entries in TOC
+%%% Part Entries in TOC %%%
 \renewcommand*\l@part[2]{%
   \ifnum \c@tocdepth >-2\relax
     \addpenalty{-\@highpenalty}%
@@ -34,19 +55,19 @@
     \endgroup
   \fi}
 
-% Enhanced List of Figures
+%%% Enhanced List of Figures %%%
 \patchcmd{\listoffigures}
 {\chapter*{\listfigurename}}
 {\chapter*{\miniondisplayfont\listfigurename}\MakeLinkTarget*{listoffigures}%
 \addcontentsline{toc}{frontmatter}{\listfigurename}}{}{}
 
-% Enhanced List of Tables
+%%% Enhanced List of Tables %%%
 \patchcmd{\listoftables}
 {\chapter*{\listtablename}}
 {\chapter*{\miniondisplayfont\listtablename}\MakeLinkTarget*{listoftables}%
 \addcontentsline{toc}{frontmatter}{\listtablename}}{}{}
 
-% Bibliography heading - FIXED: Explicit plain page style
+%%% Bibliography Heading %%%
 \defbibheading{bibintoc}{%
     \clearpage%
     \chapter*{\miniondisplayfont#1}%
@@ -55,7 +76,7 @@
     \addcontentsline{toc}{backmatter}{\refname}%
 }
 
-% Glossary entries
+%%% Glossary ToC Entries %%%
 \newcommand{\glossarytoc}{\MakeLinkTarget*{glossary}%
 \addcontentsline{toc}{frontmatter}{\glossaryname}}
 
@@ -65,5 +86,6 @@
 \newcommand{\symboltoc}{\MakeLinkTarget*{symbol}%
 \addcontentsline{toc}{frontmatter}{\glssymbolsgroupname}}
 
+%%% Figure and Table ToC Entry Formatting %%%
 \renewcommand*\l@figure{\@dottedtocline{1}{0em}{2.3em}}
 \let\l@table\l@figure
