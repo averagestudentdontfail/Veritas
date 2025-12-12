@@ -39,7 +39,11 @@ Attachment and Moral Distress}
 %%% Main Content %%%
 \pagenumbering{arabic}
 \pagestyle{mainmatter}
-\setcounter{section}{0}
+
+% Fix section numbering for article mode (remove chapter prefix)
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
 
 \hypertarget{rationale}{%
 \section{RATIONALE}\label{rationale}}
@@ -131,7 +135,7 @@ structure with brief definitions.
 \caption{Thematic Structure Overview}
 \begin{tabularx}{\textwidth}{>{\bfseries}l X}
 \toprule
-**Theme** & **Definition** \\
+\textbf{Theme} & \textbf{Definition} \\
 \midrule
 1. Nature as Cognitive Restoration & Nature experiences providing mental relief from cognitive demands through shift in attentional mode \\
 \addlinespace

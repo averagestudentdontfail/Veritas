@@ -1,18 +1,18 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'Main.blg'
-[53] biber:340> INFO - === Fri Dec 12, 2025, 17:58:19
-[63] Biber.pm:419> INFO - Reading 'Main.bcf'
-[94] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
-[100] Biber.pm:4419> INFO - Processing section 0
-[106] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography/Bibliography.bib' for section 0
-[106] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography/environmental-agency.bib' for section 0
-[106] bibtex.pm:1713> INFO - LaTeX decoding ...
-[110] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography/environmental-agency.bib'
-[166] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[166] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[166] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[166] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[170] bbl.pm:660> INFO - Writing 'Main.bbl' with encoding 'UTF-8'
-[172] bbl.pm:763> INFO - Output to Main.bbl
-[172] Biber.pm:131> WARN - Data source 'Bibliography/Bibliography.bib' is empty, ignoring
-[172] Biber.pm:133> INFO - WARNINGS: 1
+[47] biber:340> INFO - === Fri Dec 12, 2025, 18:03:04
+[55] Biber.pm:419> INFO - Reading 'Main.bcf'
+[86] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
+[92] Biber.pm:4419> INFO - Processing section 0
+[98] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography/Bibliography.bib' for section 0
+[98] Biber.pm:4610> INFO - Looking for bibtex file 'Bibliography/environmental-agency.bib' for section 0
+[98] bibtex.pm:1713> INFO - LaTeX decoding ...
+[102] bibtex.pm:1519> INFO - Found BibTeX data source 'Bibliography/environmental-agency.bib'
+[154] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[155] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[155] Biber.pm:4239> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[155] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[159] bbl.pm:660> INFO - Writing 'Main.bbl' with encoding 'UTF-8'
+[161] bbl.pm:763> INFO - Output to Main.bbl
+[161] Biber.pm:131> WARN - Data source 'Bibliography/Bibliography.bib' is empty, ignoring
+[161] Biber.pm:133> INFO - WARNINGS: 1

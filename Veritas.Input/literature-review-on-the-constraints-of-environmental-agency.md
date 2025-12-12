@@ -25,7 +25,7 @@ Analysis identified four themes characterizing how this participant understood p
 \caption{Thematic Structure Overview}
 \begin{tabularx}{\textwidth}{>{\bfseries}l X}
 \toprule
-**Theme** & **Definition** \\
+\textbf{Theme} & \textbf{Definition} \\
 \midrule
 1. Nature as Cognitive Restoration & Nature experiences providing mental relief from cognitive demands through shift in attentional mode \\
 \addlinespace
