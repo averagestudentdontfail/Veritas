@@ -1,5 +1,4 @@
-# Veritas LaTeX configuration for latexmk
-# Forces XeLaTeX as the compiler engine (required for fontspec)
+# LaTeX configuration for latexmk
 
 # Use XeLaTeX for PDF output
 $pdf_mode = 5;  # 5 = use xelatex

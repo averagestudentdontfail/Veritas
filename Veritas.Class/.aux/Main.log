@@ -1,6 +1,7 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  13 DEC 2025 11:57
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  13 DEC 2025 12:00
 entering extended mode
  \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **Main.tex
 (./Main.tex
@@ -2396,14 +2397,13 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
 
-(./Main.aux (./Matter/Title-Page.aux))
+(.aux/Main.aux)
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 47.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
  47.
-
-(/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
 LaTeX Font Info:    ... okay on input line 47.
@@ -2475,9 +2475,12 @@ or `english'. on input line 47.
 LaTeX Info: Command `\dddot' is already robust on input line 47.
 LaTeX Info: Command `\ddddot' is already robust on input line 47.
 Package hyperref Info: Link coloring ON on input line 47.
- (./Main.out) (./Main.out)
 \@outlinefile=\write7
 \openout7 = `Main.out'.
+
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-months-dictionar
@@ -2538,120 +2541,25 @@ Package biblatex Info: ... file 'Main.bbl' found.
  (./Main.bbl)
 Package biblatex Info: Reference section=0 on input line 47.
 Package biblatex Info: Reference segment=0 on input line 47.
-\openout2 = `Matter/Title-Page.aux'.
-
-(./Matter/Title-Page.tex
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: xetex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
-* v-part:(T,H,B)=(85.35826pt, 688.5567pt, 71.13188pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=455.24411pt
-* \textheight=688.5567pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
-* \topmargin=-28.25128pt
-* \headheight=20.0pt
-* \headsep=21.33955pt
-* \topskip=11.0pt
-* \footskip=45.52458pt
-* \marginparwidth=59.7508pt
-* \marginparsep=12.8401pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-4.
- (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+npxmia on input line 
-34.
-
-(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxmia.fd
-File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
-)
-LaTeX Font Info:    Trying to load font information for U+npxsym on input line 
-34.
-
-(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsym.fd
-File: unpxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/npxsym.
-)
-LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 
-34.
-
-(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsyc.fd
-File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
-)
-File: Figure/Theme/Front-Page.pdf Graphic file (type pdf)
-<use Figure/Theme/Front-Page.pdf>
- [1
-
-
-
-]) [1
-
-
-
-] [2]
-[3] [4]
-Underfull \hbox (badness 10000) in alignment at lines 289--293
- [] [] []
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 293--295
- [] [] []
- []
-
-
-Underfull \hbox (badness 10000) in alignment at lines 295--302
- [] [] []
- []
-
-[5] [6] [7] [8] (./Main.aux (./Matter/Title-Page.aux))
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
- ***********
-Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: ADFF4ABDAD1443591336CF6019861F10;2813.
-Package logreq Info: Writing requests to 'Main.run.xml'.
-\openout1 = `Main.run.xml'.
-
- ) 
+./Main.tex:51: I can't write on file `Matter/Title-Page.aux'.
+\@include ...mmediate \openout \@partaux "#1.aux" 
+                                                  \immediate \write \@partau...
+l.51 \include{Matter/Title-Page}
+                                
+(Press Enter to retry, or Control-D to exit; default file extension is `.tex')
+Please type another output file name
+./Main.tex:51: Emergency stop.
+\@include ...mmediate \openout \@partaux "#1.aux" 
+                                                  \immediate \write \@partau...
+l.51 \include{Matter/Title-Page}
+                                 
 Here is how much of TeX's memory you used:
- 64313 strings out of 474878
- 1340081 string characters out of 5762517
- 2360160 words of memory out of 5000000
- 85236 multiletter control sequences out of 15000+600000
- 600101 words of font info for 138 fonts, out of 8000000 for 9000
+ 64025 strings out of 474878
+ 1333015 string characters out of 5762517
+ 2334359 words of memory out of 5000000
+ 85016 multiletter control sequences out of 15000+600000
+ 561924 words of font info for 63 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 123i,13n,121p,2368b,3870s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,2n,121p,2368b,852s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Main.xdv (9 pages, 102508 bytes).
+No pages of output.
