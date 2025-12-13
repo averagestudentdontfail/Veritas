@@ -100,16 +100,17 @@ factors over \(\mathbb{R}\) as follows:}
 
 \emph{Case II (\(n\) even):} \[x^n + 1 = \prod_{k=0}^{n/2-1} Q_k(x)\]
 
-\emph{Proof.} Each conjugate pair \(\omega_j, \overline{\omega_j}\)
-(corresponding to some \(\theta_k \in (0, \pi)\)) contributes the real
-quadratic
+\emph{Proof.} Each conjugate pair \(\omega_j, \overline{\omega_j}\) with
+argument \(\theta \in (0, \pi)\) (i.e., \(\omega_j = e^{i\theta}\),
+\(\overline{\omega_j} = e^{-i\theta}\) for a unique
+\(\theta = \theta_k\)) contributes the real quadratic
 \((x - \omega_j)(x - \overline{\omega_j}) = x^2 - 2\operatorname{Re}(\omega_j)x + |\omega_j|^2 = Q_k(x)\).
 The quadratics are irreducible over \(\mathbb{R}\) since their
 discriminant \(4c_k^2 - 4 = -4s_k^2 < 0\). For odd \(n\), the real root
 \(\omega_{(n-1)/2} = -1\) contributes the linear factor \((x + 1)\).
 Counting degrees: for odd \(n\), \((n-1)/2\) quadratics contribute
 degree \(n - 1\), plus one linear factor, totalling \(n\); for even
-\(n\), \(n/2\) quadratics contribute degree \(n\). ∎
+\(n\), \(n/2\) quadratics contribute degree \(n\). \(\blacksquare\)
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -243,7 +244,7 @@ Substituting \(A/2 = -c/n\) and \(\beta/s = 2s^2/(ns) = 2s/n\):
 
 \textbf{Assembly.} Summing over all conjugate pairs (indexed by \(k\))
 and including the linear term \((1/n)\ln|x + 1|\) when \(n\) is odd
-yields the stated formula. ∎
+yields the stated formula. \(\blacksquare\)
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -257,17 +258,18 @@ fixed branch of \(\log\) on \(D\):}
 \[\int\frac{dx}{x^n+1} = -\frac{1}{n}\sum_{j=0}^{n-1}\omega_j\log(x - \omega_j) + C\]
 
 \emph{Proof.} Integrate the complex partial fraction decomposition term
-by term. ∎
+by term. \(\blacksquare\)
 
 \textbf{Remark on branches.} On a simply connected domain avoiding the
 poles, fixing a branch of \(\log\) renders the expression single-valued.
 Changing branches shifts the result by a constant, since the derivative
-is unchanged. On \(\mathbb{R}\), note that
-\(\overline{x - \omega} = x - \bar{\omega}\). On any domain where the
-chosen branch of \(\log\) is compatible with complex conjugation,
+is unchanged. Choose \(D\) to be conjugation-invariant (i.e.,
+\(z \in D \Rightarrow \bar{z} \in D\)) and choose a branch of \(\log\)
+on \(D\) satisfying \(\log(\bar{z}) = \overline{\log z}\). Then for real
+\(x \in D\), we have \(\overline{x - \omega} = x - \bar{\omega}\), so
 \(\log(x - \bar{\omega}) = \overline{\log(x - \omega)}\). Hence
 \(\omega\log(x - \omega) + \bar{\omega}\log(x - \bar{\omega})\) is real,
-so pairing conjugates yields a real-valued antiderivative; branch
+and pairing conjugates yields a real-valued antiderivative; branch
 changes affect only the additive constant on each component.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
@@ -418,6 +420,8 @@ not simplify to such universal expressions, though the
 decomposition-and-pairing method remains fully applicable.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\newpage
 
 \hypertarget{appendix-algorithmic-summary}{%
 \section{Appendix: Algorithmic
