@@ -16,43 +16,5 @@
   {}
 \endgroup
 
-
-\refsection{0}
-  \datalist[entry]{nyt/global//global/global}
-    \entry{briere2015}{book}{}
-      \name{author}{2}{}{%
-        {{hash=43a5dba32e6566e322583c3cd2612f94}{%
-           family={Briere},
-           familyi={B\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
-        {{hash=598d227e628423b0a50e4bc0aae645a8}{%
-           family={Scott},
-           familyi={S\bibinitperiod},
-           given={C.},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Sage Publications}%
-      }
-      \strng{namehash}{914a7fe1aaf5fa69412f167ce5f98a7f}
-      \strng{fullhash}{914a7fe1aaf5fa69412f167ce5f98a7f}
-      \strng{bibnamehash}{914a7fe1aaf5fa69412f167ce5f98a7f}
-      \strng{authorbibnamehash}{914a7fe1aaf5fa69412f167ce5f98a7f}
-      \strng{authornamehash}{914a7fe1aaf5fa69412f167ce5f98a7f}
-      \strng{authorfullhash}{914a7fe1aaf5fa69412f167ce5f98a7f}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{2nd}
-      \field{note}{DSM-5 update}
-      \field{title}{Principles of trauma therapy: A guide to symptoms, evaluation, and treatment}
-      \field{year}{2015}
-    \endentry
-  \enddatalist
-\endrefsection
 \endinput
 

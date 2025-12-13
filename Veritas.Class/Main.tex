@@ -18,10 +18,10 @@
 ]{Veritas}
 
 %%% Metadata from YAML %%%
-\Title{Clinical Report: Bill Wynsky}
-\Subtitle{Diagnosis, Formulation, and Treatment Processes}
-\FirstAuthor{Kiran Nath}
-\Date{2025}
+\Title{The Integral of 1/(xⁿ + 1)}
+\Subtitle{A Complete Treatment}
+\FirstAuthor{}
+\Date{December 2025}
 
 %%% Pandoc Compatibility %%%
 \providecommand{\tightlist}{%
@@ -61,318 +61,391 @@
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
 
-\hypertarget{diagnoses}{%
-\section{DIAGNOSES}\label{diagnoses}}
+\hypertarget{preliminaries}{%
+\section{Preliminaries}\label{preliminaries}}
 
-\hypertarget{provisional-diagnoses}{%
-\subsection{Provisional Diagnoses}\label{provisional-diagnoses}}
+Let \(n \geq 2\) be a positive integer. The polynomial
+\(P(x) = x^n + 1\) has \(n\) distinct roots in \(\mathbb{C}\), obtained
+by solving \(x^n = -1 = e^{i\pi(2m+1)}\) for any integer \(m\):
 
-Bill's clinical presentation meets criteria for multiple DSM-5-TR
-diagnoses requiring careful differential assessment . Post-Traumatic
-Stress Disorder {[}309.81{]} emerges as the primary diagnosis, with
-Criterion A unequivocally met through direct combat exposure and
-witnessing his closest friend's death via gunshot to the head in
-Afghanistan. Bill demonstrates all required symptom clusters with
-clinically significant severity: intrusive symptoms manifest through
-vivid combat-themed nightmares occurring biweekly, unwanted trauma
-memories intruding during waking hours, and physiological reactivity to
-trauma cues (touching friend's dog tag); persistent avoidance evidenced
-by steadfast refusal discussing military experiences, emotional numbing
-during trauma recounting, and avoidance of reminders including military
-media; negative cognition and mood alterations encompassing persistent
-negative beliefs (``I am weak,'' ``I'm a bad person''), persistent shame
-and guilt, markedly diminished interest in previously enjoyed activities
-(soccer, socialising), emotional detachment from family members, and
-constricted positive affect; marked arousal and reactivity alterations
-including irritability culminating in property destruction (punching
-walls), hypervigilance, exaggerated startle responses, concentration
-impairment affecting daily functioning, and severe sleep disturbance
-with new-onset parasomnias. Symptoms persist beyond one month with
-profound functional impairment across interpersonal, occupational, and
-social domains . Major Depressive Disorder, Moderate {[}296.22{]}
-diagnosis appears warranted given persistent depressed mood described as
-feeling ``low'' and ``empty,'' anhedonia affecting previously
-pleasurable activities, excessive worthlessness and inappropriate guilt
-unrelated to trauma, diminished concentration capacity, and recurrent
-death thoughts with passive suicidal ideation (visualising throwing
-himself under buses), persisting several months representing marked
-change from premorbid functioning . Alcohol Use Disorder, Mild
-{[}305.00{]} reflects problematic consumption patterns demonstrating
-tolerance development (increased quantities: 20--40g weeknights, 100g
-weekends versus previous social drinking), unsuccessful control efforts
-despite recognition of problems, continued use despite persistent
-interpersonal consequences (relationship breakdown), and psychological
-dependence using alcohol for stress management, meeting three DSM-5-TR
-criteria .
+\[\omega_j := e^{i\pi(2j+1)/n}, \qquad j = 0, 1, \ldots, n-1\]
 
-\hypertarget{differential-diagnoses}{%
-\subsection{Differential Diagnoses}\label{differential-diagnoses}}
+These roots lie on the unit circle, equally spaced at angular intervals
+of \(2\pi/n\), with the first root at angle \(\pi/n\) from the positive
+real axis.
 
-Complex PTSD (ICD-11) warrants primary differential consideration given
-comprehensive symptom presentation meeting all diagnostic requirements:
-core PTSD symptoms plus self-organisation disturbances encompassing
-affect dysregulation (anger outbursts, emotional numbing), negative
-self-concept (``bad person,'' persistent shame), and interpersonal
-difficulties (detachment, relationship failures), though this diagnosis
-exists outside DSM-5-TR nosology . Persistent Complex Bereavement
-Disorder remains differential given traumatic loss circumstances, though
-broader symptomatology exceeds bereavement-specific criteria .
-Adjustment Disorder with Mixed Anxiety and Depressed Mood {[}309.28{]}
-appears insufficient given symptom severity, duration exceeding six
-months, and specific PTSD criteria fulfilment. REM Sleep Behavior
-Disorder necessitates polysomnography evaluation given new-onset
-sleepwalking potentially representing dream enactment behaviour
-associated with combat nightmares .
+\textbf{Conjugate structure.} The roots satisfy
+\(\overline{\omega_j} = \omega_{n-1-j}\). When \(n\) is odd, exactly one
+root is real: \(\omega_{(n-1)/2} = e^{i\pi} = -1\). When \(n\) is even,
+all roots are non-real.
 
-\hypertarget{dsm-5-diagnostic-challenges}{%
-\subsection{DSM-5 Diagnostic
-Challenges}\label{dsm-5-diagnostic-challenges}}
+\textbf{Index convention.} For each
+\(k \in \{0, 1, \ldots, \lfloor(n-2)/2\rfloor\}\), define:
 
-The DSM-5-TR categorical framework presents substantial limitations
-capturing Bill's complex phenomenology. Artificial diagnostic boundaries
-separate interconnected symptoms; alcohol use, depression, and PTSD
-manifestations likely represent integrated affect regulation attempts
-rather than discrete, independent disorders, risking fragmented
-treatment approaches . The framework inadequately conceptualises
-developmental trauma's profound personality organisation impact; Bill's
-childhood domestic violence witnessing, perceived maternal protection
-failure during psychiatric hospitalisation, and immigration-related
-cultural dislocation created foundational vulnerabilities that military
-trauma subsequently reactivated, yet this developmental trajectory
-receives minimal diagnostic weight within current nosology .
-Additionally, DSM-5-TR fails adequately addressing moral injury: Bill's
-profound survivor guilt and witnessing civilian abuse without
-intervening represents violated deeply-held moral beliefs requiring
-different therapeutic approaches than fear-based traumatic stress .
+\[\theta_k := \frac{\pi(2k+1)}{n} \in (0, \pi)\]
 
-\hypertarget{formulation}{%
-\section{FORMULATION}\label{formulation}}
+\[c_k := \cos\theta_k, \qquad s_k := \sin\theta_k > 0\]
 
-\hypertarget{biopsychosocial-framework}{%
-\subsection{Biopsychosocial Framework}\label{biopsychosocial-framework}}
+\[Q_k(x) := x^2 - 2c_k x + 1 = (x - c_k)^2 + s_k^2\]
 
-Bill's presentation reflects complex developmental vulnerability and
-military trauma interactions within an integrated biopsychosocial
-framework requiring multifaceted conceptualisation.
+The restriction \(\theta_k \in (0, \pi)\) ensures \(s_k > 0\) and
+selects exactly one representative from each conjugate pair of non-real
+roots.
 
-\hypertarget{predisposing-vulnerabilities}{%
-\subsubsection{Predisposing
-Vulnerabilities}\label{predisposing-vulnerabilities}}
+\textbf{Lemma (Real Factorisation).} \emph{The polynomial \(x^n + 1\)
+factors over \(\mathbb{R}\) as follows:}
 
-Multiple childhood experiences created intersecting vulnerability
-pathways. Immigration from South Africa aged six coincided with parental
-conflict escalation during critical attachment formation periods,
-disrupting secure base establishment essential for emotional regulation
-development . Witnessing father's alcohol-fuelled violence toward mother
-established trauma exposure templates, dysregulating neurobiological
-stress response systems and creating hypervigilance patterns, emotional
-dysregulation vulnerabilities, and maladaptive coping strategies
-modelling substance use for distress management . Mother's psychiatric
-hospitalisation when Bill was eight represented critical attachment
-rupture, with expressed shame regarding protection failure (``couldn't
-protect her'') establishing enduring schemas of personal inadequacy,
-excessive responsibility, and fundamental helplessness subsequently
-reactivated by military experiences. Parental separation at twelve
-created additional losses and divided loyalties (``guilty leaving his
-father''). School bullying targeting perceived intellectual deficits
-(``dumb'') compounded negative self-concept development, with early
-educational discontinuation limiting vocational opportunities beyond
-military service. These accumulated adversities created what
-\textcite{briere2015} conceptualise as ``complex developmental trauma'':
-disrupted attachment patterns, impaired self-concept formation, emotion
-dysregulation vulnerabilities, and interpersonal difficulties increasing
-susceptibility to subsequent traumatic stress.
+\emph{Case I (\(n\) odd):}
+\[x^n + 1 = (x + 1)\prod_{k=0}^{(n-3)/2} Q_k(x)\]
 
-\hypertarget{precipitating-factors}{%
-\subsubsection{Precipitating Factors}\label{precipitating-factors}}
+\emph{Case II (\(n\) even):} \[x^n + 1 = \prod_{k=0}^{n/2-1} Q_k(x)\]
 
-Military service initially provided compensatory experiences addressing
-earlier developmental deficits: structure, belonging, identity, and
-meaningful peer connections (``real friends for the first time''). This
-environment temporarily scaffolded self-organisation capacities
-compromised by developmental trauma. However, Afghanistan combat
-exposure overwhelmed these compensatory mechanisms through multiple
-pathways. Witnessing his closest friend's death activated profound
-survivor guilt whilst shattering assumptions about predictability,
-control, and fairness. Forced retreat leaving friend's body triggered
-abandonment schemas established during childhood maternal protection
-failures. Equally significant, witnessing civilian abuse by service
-members without intervening created moral injury: deep psychological
-wounds resulting from perpetrating, witnessing, or failing preventing
-acts violating core moral beliefs, generating shame, self-condemnation,
-and existential crisis distinct from fear-based responses . Subsequent
-medical discharge following knee injury removed military identity
-scaffolding, precipitating psychological decompensation as underlying
-vulnerabilities re-emerged without environmental supports.
+\emph{Proof.} Each conjugate pair \(\omega_j, \overline{\omega_j}\)
+(corresponding to some \(\theta_k \in (0, \pi)\)) contributes the real
+quadratic
+\((x - \omega_j)(x - \overline{\omega_j}) = x^2 - 2\operatorname{Re}(\omega_j)x + |\omega_j|^2 = Q_k(x)\).
+The quadratics are irreducible over \(\mathbb{R}\) since their
+discriminant \(4c_k^2 - 4 = -4s_k^2 < 0\). For odd \(n\), the real root
+\(\omega_{(n-1)/2} = -1\) contributes the linear factor \((x + 1)\).
+Counting degrees: for odd \(n\), \((n-1)/2\) quadratics contribute
+degree \(n - 1\), plus one linear factor, totalling \(n\); for even
+\(n\), \(n/2\) quadratics contribute degree \(n\). ∎
 
-\hypertarget{perpetuating-mechanisms}{%
-\subsubsection{Perpetuating Mechanisms}\label{perpetuating-mechanisms}}
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-Multiple interconnected factors maintain Bill's difficulties through
-self-reinforcing cycles. Cognitive factors include persistent negative
-trauma-related cognitions (``I should have saved him,'' ``Good people
-die while bad people survive'') creating information processing biases
-selectively attending to confirmatory evidence whilst dismissing
-disconfirmatory information . Behavioural patterns perpetuate
-dysfunction: alcohol provides temporary numbing but prevents processing
-whilst creating additional shame (``becoming like father''), social
-withdrawal maintains disconnection preventing corrective experiences,
-and avoidance prevents habituation. Neurobiological alterations sustain
-symptoms through chronically dysregulated stress systems evidenced by
-hypervigilance, exaggerated startle, and anger dyscontrol, suggesting
-altered amygdala-hippocampal-prefrontal circuitry characteristic of PTSD
-. Environmental factors including temporary accommodation, employment
-uncertainty, and family separation create ongoing instability
-maintaining threat perception.
+\hypertarget{main-theorem}{%
+\section{Main Theorem}\label{main-theorem}}
 
-\hypertarget{protective-factors}{%
-\subsubsection{Protective Factors}\label{protective-factors}}
+\textbf{Theorem.} \emph{An antiderivative of \(\dfrac{1}{x^n + 1}\) is
+given by:}
 
-Despite severity, Bill demonstrates important strengths: help-seeking
-despite reluctance indicates motivation; family connections provide
-potential support; military identity offers belonging; future goals
-suggest hope; previous adaptive functioning indicates recovery capacity;
-absence of active suicide planning reduces immediate risk. \emph{(See
-Appendix A for formulation schematic)}
+\emph{Case I (\(n\) odd):}
+\[\int\frac{dx}{x^n+1} = \frac{1}{n}\ln|x+1| + \sum_{k=0}^{(n-3)/2}\left[-\frac{c_k}{n}\ln Q_k(x) + \frac{2s_k}{n}\arctan\frac{x - c_k}{s_k}\right] + C\]
 
-\hypertarget{intervention}{%
-\section{INTERVENTION}\label{intervention}}
+\emph{Case II (\(n\) even):}
+\[\int\frac{dx}{x^n+1} = \sum_{k=0}^{n/2-1}\left[-\frac{c_k}{n}\ln Q_k(x) + \frac{2s_k}{n}\arctan\frac{x - c_k}{s_k}\right] + C\]
 
-\hypertarget{risk-and-safety-considerations}{%
-\subsection{Risk and Safety
-Considerations}\label{risk-and-safety-considerations}}
+\emph{where \(c_k = \cos\theta_k\), \(s_k = \sin\theta_k\),
+\(\theta_k = \pi(2k+1)/n\), and \(Q_k(x) = x^2 - 2c_k x + 1\).}
 
-Three critical safety domains require immediate stabilisation preceding
-trauma-focused intervention. Suicidal ideation management represents
-highest priority given passive ideation with specific method
-contemplation. Implementation requires collaborative safety planning
-using Stanley-Brown Safety Planning Intervention: identifying personal
-warning signs (increased isolation, hopelessness), internal coping
-strategies (distraction techniques, self-soothing), social distractions,
-family/friend crisis contacts, professional resources, and means
-restriction including medication security and avoiding high-risk
-locations . Weekly Columbia Suicide Severity Rating Scale administration
-ensures systematic monitoring with clear escalation protocols . Alcohol
-use stabilisation necessitates immediate intervention given escalating
-patterns potentially compromising treatment engagement and increasing
-impulsivity. Motivational interviewing explores ambivalence, developing
-discrepancy between current consumption and valued goals (military
-service, future family) whilst supporting self-efficacy for change .
-Psychoeducation addresses bidirectional trauma-alcohol relationships,
-introducing self-medication concepts whilst highlighting perpetuation of
-symptoms. AUDIT-C provides validated monitoring throughout treatment.
-Anger and behavioural dysregulation manifesting through property
-destruction requires immediate skill development preventing
-interpersonal violence escalation. Dialectical Behaviour Therapy
-distress tolerance modules offer concrete strategies: TIPP (Temperature
-change, Intense exercise, Paced breathing, Paired muscle relaxation) for
-acute crises; ACCEPTS (Activities, Contributing, Comparisons, Emotions,
-Pushing away, Thoughts, Sensations) for sustained distress without
-destructive behaviour .
+\textbf{Domain of validity.} For odd \(n\), the formula holds on
+\((-\infty, -1)\) and \((-1, \infty)\) separately, with potentially
+different constants of integration on each interval. For even \(n\), the
+formula holds on all of \(\mathbb{R}\).
 
-\hypertarget{social-and-cultural-considerations}{%
-\subsection{Social and Cultural
-Considerations}\label{social-and-cultural-considerations}}
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-Bill's treatment requires careful attention to intersecting
-sociocultural factors. South African immigration during childhood family
-dysfunction suggests acculturation stress affecting identity formation
-and belonging . Treatment should explore how cultural dislocation
-compounded trauma impacts, potentially incorporating narrative therapy
-examining cultural identity stories. Military culture's emphasis on
-strength, self-reliance, and stoicism conflicts with vulnerability
-required for trauma processing; reframing treatment using
-military-consistent language (``operational readiness,'' ``psychological
-fitness,'' ``mission planning'') whilst acknowledging service meaning
-may enhance engagement . Masculine socialisation creates additional
-emotional expression barriers; psychoeducation normalising
-neurobiological trauma responses rather than character weakness, using
-medical analogies comparing psychological to physical injuries, may
-reduce shame-based resistance .
+\hypertarget{proof}{%
+\section{Proof}\label{proof}}
 
-\hypertarget{treatment-interventions}{%
-\subsection{Treatment Interventions}\label{treatment-interventions}}
+The argument proceeds in three steps: partial fraction decomposition via
+residues, reduction to real form by pairing conjugate roots, and
+integration of each component term.
 
-Comprehensive treatment requires coordinated multidisciplinary
-intervention. Psychiatric evaluation for evidence-based pharmacotherapy:
-SSRIs (sertraline 50--200mg or paroxetine 20--60mg daily) demonstrating
-efficacy for military PTSD; prazosin (1--15mg nocte) specifically
-targeting trauma nightmares through noradrenergic blockade . Sleep
-medicine consultation for comprehensive polysomnography evaluating
-parasomnia presentation differentiating PTSD-related disturbance from
-primary sleep disorders. Occupational therapy assessing functional
-capacity, vocational rehabilitation needs, and return-to-duty fitness .
-Three evidence-based therapeutic interventions demonstrate strong
-empirical support for military PTSD. Cognitive Processing Therapy (CPT)
-directly targets maladaptive cognitions maintaining PTSD through
-systematic examination of ``stuck points'' where traumatic experiences
-conflict with pre-existing beliefs . Bill's survivor guilt, moral
-injury, and negative self-concept represent cognitive maintenance
-factors CPT specifically addresses through Socratic dialogue and
-cognitive restructuring. Prolonged Exposure (PE) facilitates emotional
-processing through systematic confrontation of avoided memories and
-situations, demonstrating robust military PTSD efficacy . Bill's marked
-avoidance and emotional numbing suggest habituation-based intervention
-could reduce symptoms through fear structure modification . Skills
-Training in Affective and Interpersonal Regulation/Modified Prolonged
-Exposure (STAIR-MPE) provides phased treatment prioritising emotion
-regulation before trauma processing, particularly suited for complex
-presentations with developmental trauma .
+\hypertarget{step-1.-partial-fraction-decomposition}{%
+\subsection{Step 1. Partial Fraction
+Decomposition}\label{step-1.-partial-fraction-decomposition}}
 
-\hypertarget{cognitive-processing-therapy-protocol}{%
-\subsection{Cognitive Processing Therapy
-Protocol}\label{cognitive-processing-therapy-protocol}}
+Since \(P(x) = x^n + 1\) has derivative \(P'(x) = nx^{n-1}\), and
+\(P'(\omega_j) = n\omega_j^{n-1} \neq 0\) for all \(j\), the roots are
+simple. For a polynomial with simple roots \(\{\alpha_j\}\), the partial
+fraction decomposition of \(1/P(x)\) takes the form:
 
-CPT follows manualised twelve-session protocol adapted for military
-populations . Sessions 1--2: Psychoeducation establishing cognitive
-model; impact statement exploring trauma's belief effects. Session 3:
-ABC worksheets teaching thought-emotion connections; Socratic
-questioning challenging initial stuck points. Sessions 4--5: Written
-trauma accounts facilitating emotional processing whilst identifying
-maintaining cognitions. Sessions 6--7: Challenging Questions Worksheets
-systematically examining evidence, alternatives, thinking patterns.
-Sessions 8--12: Five thematic modules comprising Safety (threat
-assessment), Trust (rebuilding capacity), Power/Control (accepting
-limitations, identifying genuine control), Esteem (balanced self-worth),
-Intimacy (connection capacity despite trauma). Effectiveness monitoring:
-PCL-5 weekly (10-point reduction indicates clinically significant
-change); PHQ-9 tracking depression; Posttraumatic Cognitions Inventory
-assessing mechanism change .
+\[\frac{1}{P(x)} = \sum_j \frac{r_j}{x - \alpha_j}, \qquad r_j = \operatorname{Res}_{x = \alpha_j}\frac{1}{P(x)} = \frac{1}{P'(\alpha_j)}\]
 
-\hypertarget{reflection}{%
-\section{REFLECTION}\label{reflection}}
+To verify this identity, observe that both sides are rational functions
+with the same simple poles and the same principal part at each pole.
+Their difference is therefore a rational function with no poles, hence a
+polynomial. Since this difference tends to \(0\) as \(x \to \infty\), it
+must be identically \(0\).
 
-\hypertarget{strengths-and-limitations}{%
-\subsection{Strengths and Limitations}\label{strengths-and-limitations}}
+Applying this to \(P(x) = x^n + 1\) with roots \(\omega_j\):
 
-I believe this report comprehensively integrates complex trauma
-presentations within evidence-based frameworks, acknowledging
-developmental vulnerabilities without deterministic conclusions. I was
-selective in the intervention selection, and was careful to balance
-empirical support with practical engagement considerations addressing
-military culture. However, I do admit that neurobiological factors
-including potential traumatic brain injury received insufficient
-consideration. Social determinants (housing instability, employment
-uncertainty) warranted greater therapeutic planning emphasis. There were
-also systemic military institutional factors perpetuating tigma that
-deserved deeper critical analysis.
+\[r_j = \frac{1}{P'(\omega_j)} = \frac{1}{n\omega_j^{n-1}}\]
 
-\hypertarget{personal-clinical-challenges}{%
-\subsection{Personal Clinical
-Challenges}\label{personal-clinical-challenges}}
+To simplify, observe that \(\omega_j^n = -1\) implies
+\(\omega_j^{n-1} = \omega_j^n / \omega_j = -\omega_j^{-1}\). Therefore:
 
-Bill's moral injury narratives would certaintly activate my personal
-distress regarding institutional failures permitting atrocities. I think
-maintaining therapeutic neutrality whilst validating legitimate moral
-concerns requires careful self-monitoring preventing either dismissing
-ethical violations or reinforcing paralysing guilt which i would find
-difficult. My cognitive intervention preference might overshadow
-necessary emotional processing given Bill's defensive numbing. His
-suicidal ideation would trigger personal anxiety potentially leading to
-overly cautious risk management compromising therapeutic alliance. I
-would certaintly need extensive supervision to explore
-countertransference, and would need to rely on my peers to help me
-manage the disclosure of such traumas, and of course, personal therapy
-to process any vicarious traumatisation.
+\[r_j = \frac{1}{n(-\omega_j^{-1})} = -\frac{\omega_j}{n}\]
+
+This yields the complex partial fraction decomposition:
+
+\[\frac{1}{x^n + 1} = -\frac{1}{n}\sum_{j=0}^{n-1}\frac{\omega_j}{x - \omega_j}\]
+
+When \(n\) is odd, the index \(j = (n-1)/2\) corresponds to
+\(\omega_j = e^{i\pi} = -1\), and the associated term is:
+
+\[-\frac{1}{n} \cdot \frac{-1}{x - (-1)} = \frac{1}{n} \cdot \frac{1}{x + 1}\]
+
+\hypertarget{step-2.-pairing-conjugate-roots}{%
+\subsection{Step 2. Pairing Conjugate
+Roots}\label{step-2.-pairing-conjugate-roots}}
+
+For each index \(k\) in the range
+\(\{0, 1, \ldots, \lfloor(n-2)/2\rfloor\}\), let
+\(\omega = \omega_k = e^{i\theta_k}\) and
+\(\bar{\omega} = e^{-i\theta_k}\) be the corresponding conjugate pair
+(indeed \(\bar{\omega} = \omega_{n-1-k}\)). Their combined contribution
+to the partial fraction decomposition is:
+
+\[-\frac{1}{n}\left(\frac{\omega}{x - \omega} + \frac{\bar{\omega}}{x - \bar{\omega}}\right) = -\frac{1}{n} \cdot \frac{\omega(x - \bar{\omega}) + \bar{\omega}(x - \omega)}{(x - \omega)(x - \bar{\omega})}\]
+
+\textbf{Denominator.} Using
+\(\omega + \bar{\omega} = 2\cos\theta_k = 2c_k\) and
+\(\omega\bar{\omega} = |\omega|^2 = 1\):
+
+\[(x - \omega)(x - \bar{\omega}) = x^2 - (\omega + \bar{\omega})x + \omega\bar{\omega} = x^2 - 2c_k x + 1 = Q_k(x)\]
+
+\textbf{Numerator.} Expanding:
+
+\[\omega(x - \bar{\omega}) + \bar{\omega}(x - \omega) = (\omega + \bar{\omega})x - \omega\bar{\omega} - \bar{\omega}\omega = 2c_k x - 2\]
+
+Therefore the paired fraction becomes:
+
+\[-\frac{1}{n} \cdot \frac{2c_k x - 2}{Q_k(x)} = \frac{A_k x + B_k}{Q_k(x)}\]
+
+with coefficients:
+
+\[A_k = -\frac{2c_k}{n}, \qquad B_k = \frac{2}{n}\]
+
+\hypertarget{step-3.-integration-of-quadratic-terms}{%
+\subsection{Step 3. Integration of Quadratic
+Terms}\label{step-3.-integration-of-quadratic-terms}}
+
+Fix an index \(k\), and write \(c = c_k\), \(s = s_k\),
+\(Q(x) = Q_k(x) = (x - c)^2 + s^2\), \(A = A_k\), \(B = B_k\). Note that
+\(Q'(x) = 2(x - c)\).
+
+\textbf{Numerator decomposition.} We seek constants \(\alpha\) and
+\(\beta\) such that:
+
+\[Ax + B = \alpha \cdot Q'(x) + \beta = 2\alpha(x - c) + \beta\]
+
+Matching coefficients: \(2\alpha = A\) and \(-2\alpha c + \beta = B\).
+Hence \(\alpha = A/2\) and \(\beta = B + Ac\).
+
+\textbf{Evaluation of \(\beta\):}
+
+\[\beta = B + Ac = \frac{2}{n} + \left(-\frac{2c}{n}\right)c = \frac{2}{n}(1 - c^2) = \frac{2s^2}{n}\]
+
+\textbf{Integration.} The integral separates into two standard forms:
+
+\[\int\frac{Ax + B}{Q(x)}\,dx = \frac{A}{2}\int\frac{Q'(x)}{Q(x)}\,dx + \beta\int\frac{dx}{(x-c)^2 + s^2}\]
+
+The first integral is \(\ln Q(x)\). For the second, the substitution
+\(u = (x - c)/s\) gives \(du = dx/s\), whence:
+
+\[\int\frac{dx}{(x-c)^2 + s^2} = \int\frac{s\,du}{s^2(u^2 + 1)} = \frac{1}{s}\arctan u = \frac{1}{s}\arctan\frac{x-c}{s}\]
+
+Substituting \(A/2 = -c/n\) and \(\beta/s = 2s^2/(ns) = 2s/n\):
+
+\[\int\frac{Ax + B}{Q(x)}\,dx = -\frac{c}{n}\ln Q(x) + \frac{2s}{n}\arctan\frac{x - c}{s} + C\]
+
+\textbf{Assembly.} Summing over all conjugate pairs (indexed by \(k\))
+and including the linear term \((1/n)\ln|x + 1|\) when \(n\) is odd
+yields the stated formula. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{complex-logarithmic-form}{%
+\section{Complex Logarithmic Form}\label{complex-logarithmic-form}}
+
+\textbf{Corollary.} \emph{On any simply connected domain
+\(D \subset \mathbb{C}\) avoiding the roots \(\{\omega_j\}\), with a
+fixed branch of \(\log\) on \(D\):}
+
+\[\int\frac{dx}{x^n+1} = -\frac{1}{n}\sum_{j=0}^{n-1}\omega_j\log(x - \omega_j) + C\]
+
+\emph{Proof.} Integrate the complex partial fraction decomposition term
+by term. ∎
+
+\textbf{Remark on branches.} On a simply connected domain avoiding the
+poles, fixing a branch of \(\log\) renders the expression single-valued.
+Changing branches shifts the result by a constant, since the derivative
+is unchanged. On \(\mathbb{R}\), note that
+\(\overline{x - \omega} = x - \bar{\omega}\). On any domain where the
+chosen branch of \(\log\) is compatible with complex conjugation,
+\(\log(x - \bar{\omega}) = \overline{\log(x - \omega)}\). Hence
+\(\omega\log(x - \omega) + \bar{\omega}\log(x - \bar{\omega})\) is real,
+so pairing conjugates yields a real-valued antiderivative; branch
+changes affect only the additive constant on each component.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{application-the-case-n-5}{%
+\section{\texorpdfstring{Application: The Case
+\(n = 5\)}{Application: The Case n = 5}}\label{application-the-case-n-5}}
+
+Setting \(n = 5\), the index set is \(k \in \{0, 1\}\), corresponding to
+angles \(\theta_0 = \pi/5\) and \(\theta_1 = 3\pi/5\).
+
+\textbf{Trigonometric values.} The cosine values follow from the
+identity \(\cos(\pi/5) = (1 + \sqrt{5})/4\) and
+\(\cos(3\pi/5) = -\cos(2\pi/5) = (1 - \sqrt{5})/4\). The sine values
+follow from \(\sin^2\theta + \cos^2\theta = 1\):
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+& \(k = 0\) & \(k = 1\) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(\theta_k\) & \(\pi/5\) & \(3\pi/5\) \\
+\(c_k\) & \((1 + \sqrt{5})/4\) & \((1 - \sqrt{5})/4\) \\
+\(s_k\) & \(\sqrt{10 - 2\sqrt{5}}/4\) & \(\sqrt{10 + 2\sqrt{5}}/4\) \\
+\(-c_k/5\) & \(-(1 + \sqrt{5})/20\) & \((\sqrt{5} - 1)/20\) \\
+\(2s_k/5\) & \(\sqrt{10 - 2\sqrt{5}}/10\) &
+\(\sqrt{10 + 2\sqrt{5}}/10\) \\
+\end{longtable}
+
+\textbf{Arctangent arguments.} For \(k = 0\):
+
+\[\frac{x - c_0}{s_0} = \frac{x - \frac{1 + \sqrt{5}}{4}}{\frac{\sqrt{10 - 2\sqrt{5}}}{4}} = \frac{4x - 1 - \sqrt{5}}{\sqrt{10 - 2\sqrt{5}}}\]
+
+For \(k = 1\):
+
+\[\frac{x - c_1}{s_1} = \frac{x - \frac{1 - \sqrt{5}}{4}}{\frac{\sqrt{10 + 2\sqrt{5}}}{4}} = \frac{4x - 1 + \sqrt{5}}{\sqrt{10 + 2\sqrt{5}}}\]
+
+\textbf{Final formula:}
+
+\[\int\frac{dx}{x^5 + 1} = \frac{1}{5}\ln|x+1| - \frac{1 + \sqrt{5}}{20}\ln\left(x^2 - \frac{1+\sqrt{5}}{2}x + 1\right) + \frac{\sqrt{5}-1}{20}\ln\left(x^2 + \frac{\sqrt{5}-1}{2}x + 1\right)\]
+
+\[+ \frac{\sqrt{10 - 2\sqrt{5}}}{10}\arctan\frac{4x - 1 - \sqrt{5}}{\sqrt{10 - 2\sqrt{5}}} + \frac{\sqrt{10 + 2\sqrt{5}}}{10}\arctan\frac{4x - 1 + \sqrt{5}}{\sqrt{10 + 2\sqrt{5}}} + C\]
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{generalisations}{%
+\section{Generalisations}\label{generalisations}}
+
+\hypertarget{the-family-xn-an}{%
+\subsection{\texorpdfstring{6.1. The family
+\(x^n + a^n\)}{6.1. The family x\^{}n + a\^{}n}}\label{the-family-xn-an}}
+
+For real \(a \neq 0\), the substitution \(x = au\) yields:
+
+\[\int\frac{dx}{x^n + a^n} = \frac{1}{a^{n-1}}\int\frac{du}{u^n + 1}\]
+
+The main theorem then applies directly to the transformed integral.
+
+\hypertarget{the-family-xn---1}{%
+\subsection{\texorpdfstring{6.2. The family
+\(x^n - 1\)}{6.2. The family x\^{}n - 1}}\label{the-family-xn---1}}
+
+The roots of \(x^n - 1 = 0\) are \(\zeta_j = e^{2\pi i j/n}\) for
+\(j = 0, 1, \ldots, n-1\). The same method yields residues:
+
+\[r_j = \frac{1}{n\zeta_j^{n-1}} = \frac{\zeta_j}{n}\]
+
+since \(\zeta_j^n = 1\) implies \(\zeta_j^{n-1} = \zeta_j^{-1}\). The
+decomposition becomes:
+
+\[\frac{1}{x^n - 1} = \frac{1}{n}\sum_{j=0}^{n-1}\frac{\zeta_j}{x - \zeta_j}\]
+
+\textbf{Real roots.} The polynomial \(x^n - 1\) always has the real root
+\(\zeta_0 = 1\), contributing a term:
+
+\[\frac{1}{n} \cdot \frac{1}{x - 1}\]
+
+When \(n\) is even, \(\zeta_{n/2} = -1\) is also a root, contributing:
+
+\[\frac{1}{n} \cdot \frac{-1}{x - (-1)} = -\frac{1}{n(x + 1)}\]
+
+\textbf{Quadratic factors.} The non-real roots pair at angles
+\(\phi_k = 2\pi k/n\) for appropriate \(k\), yielding quadratics
+\(x^2 - 2\cos\phi_k \cdot x + 1\). The integration proceeds analogously,
+with coefficients determined by the same residue-pairing method.
+
+\hypertarget{general-rational-integrands}{%
+\subsection{6.3. General rational
+integrands}\label{general-rational-integrands}}
+
+The methodology extends to any integral
+\(\displaystyle\int\frac{R(x)}{P(x)}\,dx\) where \(P\) has simple roots
+\(\{\alpha_j\}\). After polynomial long division if
+\(\deg R \geq \deg P\), the proper rational part decomposes as:
+
+\[\frac{R(x)}{P(x)} = \sum_j \frac{R(\alpha_j)}{P'(\alpha_j)} \cdot \frac{1}{x - \alpha_j} + \text{(polynomial terms)}\]
+
+The procedure then follows three steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Decompose} using the residue formula above.
+\item
+  \textbf{Pair conjugates} to obtain real quadratic denominators.
+\item
+  \textbf{Integrate} each quadratic term via the identity:
+\end{enumerate}
+
+\[\int\frac{Ax + B}{(x - c)^2 + s^2}\,dx = \frac{A}{2}\ln\bigl((x-c)^2 + s^2\bigr) + \frac{B + Ac}{s}\arctan\frac{x - c}{s} + C\]
+
+When \(P\) has repeated roots, the partial fraction decomposition
+includes higher-order terms \((x - \alpha)^{-m}\), which integrate to
+rational functions (for \(m \geq 2\)) plus logarithms (for \(m = 1\)).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{concluding-remarks}{%
+\section{Concluding Remarks}\label{concluding-remarks}}
+
+The integral \(\displaystyle\int\frac{dx}{x^n + 1}\) admits a closed
+form expressible as a finite sum of logarithmic and arctangent terms.
+The derivation rests on three principles:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Residue-based partial fractions.} For simple roots,
+  \(r_j = 1/P'(\alpha_j)\).
+\item
+  \textbf{Conjugate pairing.} Non-real roots \(\omega, \bar{\omega}\)
+  contribute the real quadratic
+  \((x - \omega)(x - \bar{\omega}) = x^2 - 2\operatorname{Re}(\omega)x + 1\).
+\item
+  \textbf{Quadratic integration.} The numerator decomposes into a
+  multiple of the derivative (yielding \(\ln\)) plus a constant
+  (yielding \(\arctan\)).
+\end{enumerate}
+
+The particularly elegant coefficient formulae \(A_k = -2c_k/n\) and
+\(B_k = 2/n\) arise from the algebraic relation \(\omega_j^n = -1\),
+which forces \(r_j = -\omega_j/n\). For the family \(x^n - 1\), the
+relation \(\zeta_j^n = 1\) yields \(r_j = \zeta_j/n\) instead. For
+general polynomials, the residues \(r_j = R(\alpha_j)/P'(\alpha_j)\) do
+not simplify to such universal expressions, though the
+decomposition-and-pairing method remains fully applicable.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{appendix-algorithmic-summary}{%
+\section{Appendix: Algorithmic
+Summary}\label{appendix-algorithmic-summary}}
+
+To evaluate \(\displaystyle\int\frac{dx}{x^n + 1}\):
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Compute} \(\theta_k = \pi(2k+1)/n\) for
+  \(k = 0, 1, \ldots, \lfloor(n-2)/2\rfloor\).
+\item
+  \textbf{Evaluate} \(c_k = \cos\theta_k\) and \(s_k = \sin\theta_k\).
+\item
+  \textbf{If \(n\) is odd}, include the term \(\dfrac{1}{n}\ln|x + 1|\).
+\item
+  \textbf{For each \(k\)}, add:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \(-\dfrac{c_k}{n}\ln(x^2 - 2c_k x + 1)\)
+  \item
+    \(\dfrac{2s_k}{n}\arctan\dfrac{x - c_k}{s_k}\)
+  \end{itemize}
+\item
+  \textbf{Add} the constant of integration \(C\).
+\end{enumerate}
 
 \end{document}
