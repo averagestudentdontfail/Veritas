@@ -1,7 +1,0 @@
-# LaTeX configuration for latexmk
-
-# Use XeLaTeX for PDF output
-$pdf_mode = 5;  # 5 = use xelatex
-
-# Enable shell escape (required for minted)
-$xelatex = 'xelatex -shell-escape -synctex=1 -interaction=nonstopmode -file-line-error %O %S';
