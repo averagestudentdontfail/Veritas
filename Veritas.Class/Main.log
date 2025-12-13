@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  13 DEC 2025 11:21
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  13 DEC 2025 11:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2646,10 +2646,10 @@ Package logreq Info: Writing requests to 'Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64313 strings out of 474878
- 1340081 string characters out of 5762517
- 2360160 words of memory out of 5000000
- 85236 multiletter control sequences out of 15000+600000
+ 64306 strings out of 474878
+ 1339948 string characters out of 5762517
+ 2360525 words of memory out of 5000000
+ 85229 multiletter control sequences out of 15000+600000
  600101 words of font info for 138 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  123i,13n,121p,2368b,3870s stack positions out of 10000i,1000n,20000p,200000b,200000s
