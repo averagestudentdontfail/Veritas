@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  13 DEC 2025 12:08
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  16 DEC 2025 23:59
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2615,44 +2615,449 @@ File: Figure/Theme/Front-Page.pdf Graphic file (type pdf)
 
 
 
-]) [1
+])
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℂ (U+2102) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ˣ (U+02E3) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℚ (U+211A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵈ (U+1D48) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵈ (U+1D48) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⋃ (U+22C3) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+[1
 
 
 
-] [2]
-[3] [4]
-Underfull \hbox (badness 10000) in alignment at lines 289--293
+]
+Missing character: There is no ℂ (U+2102) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∎ (U+220E) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Bold.ttf]/OT
+:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℚ (U+211A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℚ (U+211A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℚ (U+211A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℚ (U+211A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵢ (U+1D62) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⁱ (U+2071) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵢ (U+1D62) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∉ (U+2209) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵢ (U+1D62) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵢ (U+1D62) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵢ (U+1D62) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⱼ (U+2C7C) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⱼ (U+2C7C) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₖ (U+2096) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵢ (U+1D62) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵢ (U+1D62) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⱼ (U+2C7C) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∎ (U+220E) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+[2]
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℂ (U+2102) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℚ (U+211A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⊆ (U+2286) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℂ (U+2102) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℚ (U+211A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℚ (U+211A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∎ (U+220E) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℕ (U+2115) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+[3]
+Missing character: There is no ↦ (U+21A6) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℚ (U+211A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∎ (U+220E) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℚ (U+211A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⁻ (U+207B) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⁻ (U+207B) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⁻ (U+207B) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⁻ (U+207B) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℚ (U+211A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⁻ (U+207B) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵖ (U+1D56) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₚ (U+209A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₚ (U+209A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∎ (U+220E) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ʲ (U+02B2) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+[4]
+Missing character: There is no ∎ (U+220E) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵖ (U+1D56) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵖ (U+1D56) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵖ (U+1D56) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₚ (U+209A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵖ (U+1D56) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵖ (U+1D56) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵖ (U+1D56) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∎ (U+220E) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵃ (U+1D43) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∪ (U+222A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+[5]
+Missing character: There is no ∎ (U+220E) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵃ (U+1D43) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∤ (U+2224) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∎ (U+220E) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⋯ (U+22EF) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵣ (U+1D63) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵣ (U+1D63) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⋯ (U+22EF) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵣ (U+1D63) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⋯ (U+22EF) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵣ (U+1D63) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+[6]
+Missing character: There is no ⊆ (U+2286) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Italic.ttf]/
+OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵢ (U+1D62) in font [Font/Minion-Pro-Italic.ttf]/
+OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∉ (U+2209) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵢ (U+1D62) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∎ (U+220E) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+
+Underfull \hbox (badness 10000) in alignment at lines 407--411
  [] [] []
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 293--295
+Underfull \hbox (badness 10000) in alignment at lines 411--413
  [] [] []
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 295--302
+Underfull \hbox (badness 10000) in alignment at lines 413--426
  [] [] []
  []
 
-[5] [6] [7] [8] (.aux/Main.aux (.aux/Matter/Title-Page.aux))
+[7]
+Missing character: There is no ₘ (U+2098) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₘ (U+2098) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∎ (U+220E) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+[8]
+Missing character: There is no ₚ (U+209A) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ʲ (U+02B2) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵃ (U+1D43) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵃ (U+1D43) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ʲ (U+02B2) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵃ (U+1D43) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∎ (U+220E) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+[9]
+Missing character: There is no ᵃ (U+1D43) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₘ (U+2098) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₘ (U+2098) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₘ (U+2098) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₘ (U+2098) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵏ (U+1D4F) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵃ (U+1D43) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵃ (U+1D43) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∎ (U+220E) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no 𝔽 (U+1D53D) in font [Font/Minion-Pro-Regular.ttf
+]/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ̄ (U+0304) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no 𝔽 (U+1D53D) in font [Font/Minion-Pro-Regular.ttf
+]/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+[10]
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ∈ (U+2208) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ℤ (U+2124) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ʳ (U+02B3) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+[11]
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⋯ (U+22EF) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵣ (U+1D63) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵣ (U+1D63) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⋯ (U+22EF) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵣ (U+1D63) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ⋯ (U+22EF) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵣ (U+1D63) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵣ (U+1D63) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₘ (U+2098) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₙ (U+2099) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ₘ (U+2098) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+Missing character: There is no ᵉ (U+1D49) in font [Font/Minion-Pro-Regular.ttf]
+/OT:script=latn;language=dflt;letterspace=0.7;mapping=tex-text;!
+[12] (.aux/Main.aux (.aux/Matter/Title-Page.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 1B7EF9194BA713CB19535A388421D61F;2729.
+(rerunfilecheck)             Checksum: B2950A3DE06041A46759100B14DDA815;3201.
 Package logreq Info: Writing requests to 'Main.run.xml'.
 \openout1 = `Main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64315 strings out of 474878
- 1340156 string characters out of 5762517
- 2360050 words of memory out of 5000000
- 85236 multiletter control sequences out of 15000+600000
- 600101 words of font info for 138 fonts, out of 8000000 for 9000
+ 64285 strings out of 474878
+ 1339796 string characters out of 5762517
+ 2354588 words of memory out of 5000000
+ 85209 multiletter control sequences out of 15000+600000
+ 581069 words of font info for 108 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  123i,13n,121p,2368b,3870s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on .aux/Main.xdv (9 pages, 102268 bytes).
+Output written on .aux/Main.xdv (13 pages, 159628 bytes).

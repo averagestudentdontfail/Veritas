@@ -5,25 +5,23 @@
   "Main.bbl"
   "Main.blg"
   (rewritten before read)
-["xdvipdfmx"] 1765588121.21879 ".aux/Main.xdv" "Main.pdf" "Main" 1765588121.40985 0
-  ".aux/Main.xdv" 1765588121.0825 102268 f1a5d6ba6f765bec12bf095060d5b298 "xelatex"
+["xdvipdfmx"] 1765889982.58487 ".aux/Main.xdv" "Main.pdf" "Main" 1765889982.76824 0
+  ".aux/Main.xdv" 1765889982.41923 159628 1d65e1cb7b03c4f706cf84ebdd79c383 "xelatex"
   (generated)
   "Main.pdf"
   (rewritten before read)
-["xelatex"] 1765588119.06914 "Main.tex" ".aux/Main.xdv" "Main" 1765588121.40676 0
-  ".aux/Main.aux" 1765588121.07088 3756 42b1ca27c2b55eab03126c3847f6da74 "xelatex"
-  ".aux/Main.out" 1765588121.07476 2729 1b7ef9194ba713cb19535a388421d61f "xelatex"
-  ".aux/Main.run.xml" 1765588121.0825 2655 e8819a2f7885923f35536a77c550fb64 "xelatex"
-  ".aux/Matter/Title-Page.aux" 1765588121.01666 5582 44a27db1014de8374b32f87ea6fae393 "xelatex"
+["xelatex"] 1765889980.2833 "Main.tex" ".aux/Main.xdv" "Main" 1765889982.76536 0
+  ".aux/Main.aux" 1765889982.41122 4014 141b33e110c7d1c6699162b04ae8825c "xelatex"
+  ".aux/Main.out" 1765889982.41523 3201 b2950a3de06041a46759100b14dda815 "xelatex"
+  ".aux/Main.run.xml" 1765889982.41923 2655 e8819a2f7885923f35536a77c550fb64 "xelatex"
+  ".aux/Matter/Title-Page.aux" 1765889982.35116 5582 44a27db1014de8374b32f87ea6fae393 "xelatex"
   "/etc/texmf/web2c/texmf.cnf" 1751854650.88492 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1246382020 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/zplexa.tfm" 1589834291 760 1bbb6b93780440b947a1a84c0a1886d8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/zplexx.tfm" 1699652218 1788 6330755b94fc63d40588b98071d174ed ""
@@ -354,7 +352,6 @@
   "/usr/share/texmf/fonts/tfm/public/lm/ec-lmr10.tfm" 1254269338 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmr10.tfm" 1254269338 11868 4f81e9b6033c032bdaf9884f4d7ef412 ""
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmr6.tfm" 1254269338 11836 e3b6ce3e601aec94f64a536e7f4224d5 ""
-  "/usr/share/texmf/fonts/tfm/public/lm/rm-lmr7.tfm" 1254269338 11852 5a9022f105fd1ee2797df861e79ae9a0 ""
   "/usr/share/texmf/fonts/tfm/public/lm/rm-lmr8.tfm" 1254269338 11864 309fd7f43e4a0ba39f6f7644d76e8edf ""
   "/usr/share/texmf/tex/latex/lm/ot1lmr.fd" 1616454256 1882 28c08db1407ebff35a658fd141753d16 ""
   "/usr/share/texmf/tex/latex/lm/t1lmr.fd" 1616454256 1867 996fe743d88a01aca041ed22cc10e1bb ""
@@ -376,7 +373,7 @@
   "Configuration/13-Mathematics.sty" 1765513509.07948 5532 8fe6f7175ba3081639e61e2b7f0a3246 ""
   "Figure/Theme/Front-Page.pdf" 1765509980.0906 100016 0a71fbe20eff016b56e8b47f5d8bd3b4 ""
   "Main.bbl" 1765587453.15531 466 ee04f40f768daeed26442158e95aba61 "bibtex Main"
-  "Main.tex" 1765588114.40128 17304 1fa915b7d054dd12145ab583e7766148 ""
+  "Main.tex" 1765889975.57468 23681 e29e47dcc60b04c1ff7b58a9d2aff075 ""
   "Matter/Title-Page.tex" 1765518519.93363 4587 526f545cb47e4e50fb69e67fe25af1a0 ""
   "Veritas.cls" 1765513055.0348 7276 4b2fcececab89b56cd0c6ef129797cbb ""
   (generated)

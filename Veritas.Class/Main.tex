@@ -18,7 +18,7 @@
 ]{Veritas}
 
 %%% Metadata from YAML %%%
-\Title{The Integral of 1/(xⁿ + 1)}
+\Title{Cyclotomic Polynomials}
 \Subtitle{A Complete Treatment}
 \FirstAuthor{}
 \Date{December 2025}
@@ -64,360 +64,537 @@
 \hypertarget{preliminaries}{%
 \section{Preliminaries}\label{preliminaries}}
 
-Let \(n \geq 2\) be a positive integer. The polynomial
-\(P(x) = x^n + 1\) has \(n\) distinct roots in \(\mathbb{C}\), obtained
-by solving \(x^n = -1 = e^{i\pi(2m+1)}\) for any integer \(m\):
+\textbf{Definition 1.1 (Primitive Root of Unity).} Let n ≥ 1 be a
+positive integer. A complex number ζ is a \emph{primitive n-th root of
+unity} if ζⁿ = 1 and ζᵏ ≠ 1 for all 1 ≤ k \textless{} n.~Equivalently, ζ
+is primitive if and only if ord(ζ) = n in the multiplicative group ℂˣ.
 
-\[\omega_j := e^{i\pi(2j+1)/n}, \qquad j = 0, 1, \ldots, n-1\]
+The n-th roots of unity are precisely ζₙᵏ := e\^{}\{2πik/n\} for k = 0,
+1, \ldots, n−1. Among these, ζₙᵏ is primitive if and only if gcd(k, n) =
+1. The number of primitive n-th roots of unity is therefore φ(n),
+Euler's totient function.
 
-These roots lie on the unit circle, equally spaced at angular intervals
-of \(2\pi/n\), with the first root at angle \(\pi/n\) from the positive
-real axis.
+\textbf{Definition 1.2 (Cyclotomic Polynomial).} The \emph{n-th
+cyclotomic polynomial} is defined as:
 
-\textbf{Conjugate structure.} The roots satisfy
-\(\overline{\omega_j} = \omega_{n-1-j}\). When \(n\) is odd, exactly one
-root is real: \(\omega_{(n-1)/2} = e^{i\pi} = -1\). When \(n\) is even,
-all roots are non-real.
+\[\Phi_n(x) := \prod_{\substack{1 \leq k \leq n \\ \gcd(k,n) = 1}} \left( x - \zeta_n^k \right)\]
 
-\textbf{Index convention.} For each
-\(k \in \{0, 1, \ldots, \lfloor(n-2)/2\rfloor\}\), define:
+where ζₙ = e\^{}\{2πi/n\}. Equivalently, Φₙ(x) is the minimal polynomial
+over ℚ of any primitive n-th root of unity.
 
-\[\theta_k := \frac{\pi(2k+1)}{n} \in (0, \pi)\]
+By construction, Φₙ(x) is a monic polynomial of degree φ(n) with roots
+precisely the primitive n-th roots of unity.
 
-\[c_k := \cos\theta_k, \qquad s_k := \sin\theta_k > 0\]
-
-\[Q_k(x) := x^2 - 2c_k x + 1 = (x - c_k)^2 + s_k^2\]
-
-The restriction \(\theta_k \in (0, \pi)\) ensures \(s_k > 0\) and
-selects exactly one representative from each conjugate pair of non-real
-roots.
-
-\textbf{Lemma (Real Factorisation).} \emph{The polynomial \(x^n + 1\)
-factors over \(\mathbb{R}\) as follows:}
-
-\emph{Case I (\(n\) odd):}
-\[x^n + 1 = (x + 1)\prod_{k=0}^{(n-3)/2} Q_k(x)\]
-
-\emph{Case II (\(n\) even):} \[x^n + 1 = \prod_{k=0}^{n/2-1} Q_k(x)\]
-
-\emph{Proof.} Each conjugate pair \(\omega_j, \overline{\omega_j}\) with
-argument \(\theta \in (0, \pi)\) (i.e., \(\omega_j = e^{i\theta}\),
-\(\overline{\omega_j} = e^{-i\theta}\) for a unique
-\(\theta = \theta_k\)) contributes the real quadratic
-\((x - \omega_j)(x - \overline{\omega_j}) = x^2 - 2\operatorname{Re}(\omega_j)x + |\omega_j|^2 = Q_k(x)\).
-The quadratics are irreducible over \(\mathbb{R}\) since their
-discriminant \(4c_k^2 - 4 = -4s_k^2 < 0\). For odd \(n\), the real root
-\(\omega_{(n-1)/2} = -1\) contributes the linear factor \((x + 1)\).
-Counting degrees: for odd \(n\), \((n-1)/2\) quadratics contribute
-degree \(n - 1\), plus one linear factor, totalling \(n\); for even
-\(n\), \(n/2\) quadratics contribute degree \(n\). \(\blacksquare\)
+\textbf{Index convention.} For a divisor d \textbar{} n, each n-th root
+of unity ζₙᵏ is a primitive d-th root of unity for exactly one d, namely
+d = n/gcd(k, n). This partitions the roots of xⁿ − 1 by their primitive
+order.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{main-theorem}{%
-\section{Main Theorem}\label{main-theorem}}
+\hypertarget{the-fundamental-factorisation}{%
+\section{The Fundamental
+Factorisation}\label{the-fundamental-factorisation}}
 
-\textbf{Theorem.} \emph{An antiderivative of \(\dfrac{1}{x^n + 1}\) is
-given by:}
+\textbf{Theorem 2.1 (Divisor Product Identity).} For all positive
+integers n:
 
-\emph{Case I (\(n\) odd):}
-\[\int\frac{dx}{x^n+1} = \frac{1}{n}\ln|x+1| + \sum_{k=0}^{(n-3)/2}\left[-\frac{c_k}{n}\ln Q_k(x) + \frac{2s_k}{n}\arctan\frac{x - c_k}{s_k}\right] + C\]
+\[x^n - 1 = \prod_{d \mid n} \Phi_d(x)\]
 
-\emph{Case II (\(n\) even):}
-\[\int\frac{dx}{x^n+1} = \sum_{k=0}^{n/2-1}\left[-\frac{c_k}{n}\ln Q_k(x) + \frac{2s_k}{n}\arctan\frac{x - c_k}{s_k}\right] + C\]
+\emph{Proof.} Both sides are monic polynomials of degree n.~The left
+side has roots \{ζₙᵏ : 0 ≤ k ≤ n−1\}. Each such root ζₙᵏ has
+multiplicative order d := n/gcd(k, n), which divides n.~Thus ζₙᵏ is a
+primitive d-th root of unity and hence a root of Φ\_d(x).
 
-\emph{where \(c_k = \cos\theta_k\), \(s_k = \sin\theta_k\),
-\(\theta_k = \pi(2k+1)/n\), and \(Q_k(x) = x^2 - 2c_k x + 1\).}
+Conversely, every primitive d-th root of unity (for d \textbar{} n)
+satisfies ζᵈ = 1, hence ζⁿ = (ζᵈ)\^{}\{n/d\} = 1, so it is an n-th root
+of unity.
 
-\textbf{Domain of validity.} For odd \(n\), the formula holds on
-\((-\infty, -1)\) and \((-1, \infty)\) separately, with potentially
-different constants of integration on each interval. For even \(n\), the
-formula holds on all of \(\mathbb{R}\).
+This establishes a bijection between the roots of xⁿ − 1 and the union
+⋃\_\{d \textbar{} n\} \{roots of Φ\_d(x)\}. Since the Φ\_d(x) have
+pairwise disjoint root sets (a primitive d-th root has order exactly d),
+and since
 
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+\[\sum_{d \mid n} \deg \Phi_d(x) = \sum_{d \mid n} \phi(d) = n,\]
 
-\hypertarget{proof}{%
-\section{Proof}\label{proof}}
+the factorisation follows from unique factorisation in ℂ{[}x{]}. ∎
 
-The argument proceeds in three steps: partial fraction decomposition via
-residues, reduction to real form by pairing conjugate roots, and
-integration of each component term.
+\textbf{Corollary 2.2.} The cyclotomic polynomial admits the recursive
+formula:
 
-\hypertarget{step-1.-partial-fraction-decomposition}{%
-\subsection{Step 1. Partial Fraction
-Decomposition}\label{step-1.-partial-fraction-decomposition}}
-
-Since \(P(x) = x^n + 1\) has derivative \(P'(x) = nx^{n-1}\), and
-\(P'(\omega_j) = n\omega_j^{n-1} \neq 0\) for all \(j\), the roots are
-simple. For a polynomial with simple roots \(\{\alpha_j\}\), the partial
-fraction decomposition of \(1/P(x)\) takes the form:
-
-\[\frac{1}{P(x)} = \sum_j \frac{r_j}{x - \alpha_j}, \qquad r_j = \operatorname{Res}_{x = \alpha_j}\frac{1}{P(x)} = \frac{1}{P'(\alpha_j)}\]
-
-To verify this identity, observe that both sides are rational functions
-with the same simple poles and the same principal part at each pole.
-Their difference is therefore a rational function with no poles, hence a
-polynomial. Since this difference tends to \(0\) as \(x \to \infty\), it
-must be identically \(0\).
-
-Applying this to \(P(x) = x^n + 1\) with roots \(\omega_j\):
-
-\[r_j = \frac{1}{P'(\omega_j)} = \frac{1}{n\omega_j^{n-1}}\]
-
-To simplify, observe that \(\omega_j^n = -1\) implies
-\(\omega_j^{n-1} = \omega_j^n / \omega_j = -\omega_j^{-1}\). Therefore:
-
-\[r_j = \frac{1}{n(-\omega_j^{-1})} = -\frac{\omega_j}{n}\]
-
-This yields the complex partial fraction decomposition:
-
-\[\frac{1}{x^n + 1} = -\frac{1}{n}\sum_{j=0}^{n-1}\frac{\omega_j}{x - \omega_j}\]
-
-When \(n\) is odd, the index \(j = (n-1)/2\) corresponds to
-\(\omega_j = e^{i\pi} = -1\), and the associated term is:
-
-\[-\frac{1}{n} \cdot \frac{-1}{x - (-1)} = \frac{1}{n} \cdot \frac{1}{x + 1}\]
-
-\hypertarget{step-2.-pairing-conjugate-roots}{%
-\subsection{Step 2. Pairing Conjugate
-Roots}\label{step-2.-pairing-conjugate-roots}}
-
-For each index \(k\) in the range
-\(\{0, 1, \ldots, \lfloor(n-2)/2\rfloor\}\), let
-\(\omega = \omega_k = e^{i\theta_k}\) and
-\(\bar{\omega} = e^{-i\theta_k}\) be the corresponding conjugate pair
-(indeed \(\bar{\omega} = \omega_{n-1-k}\)). Their combined contribution
-to the partial fraction decomposition is:
-
-\[-\frac{1}{n}\left(\frac{\omega}{x - \omega} + \frac{\bar{\omega}}{x - \bar{\omega}}\right) = -\frac{1}{n} \cdot \frac{\omega(x - \bar{\omega}) + \bar{\omega}(x - \omega)}{(x - \omega)(x - \bar{\omega})}\]
-
-\textbf{Denominator.} Using
-\(\omega + \bar{\omega} = 2\cos\theta_k = 2c_k\) and
-\(\omega\bar{\omega} = |\omega|^2 = 1\):
-
-\[(x - \omega)(x - \bar{\omega}) = x^2 - (\omega + \bar{\omega})x + \omega\bar{\omega} = x^2 - 2c_k x + 1 = Q_k(x)\]
-
-\textbf{Numerator.} Expanding:
-
-\[\omega(x - \bar{\omega}) + \bar{\omega}(x - \omega) = (\omega + \bar{\omega})x - \omega\bar{\omega} - \bar{\omega}\omega = 2c_k x - 2\]
-
-Therefore the paired fraction becomes:
-
-\[-\frac{1}{n} \cdot \frac{2c_k x - 2}{Q_k(x)} = \frac{A_k x + B_k}{Q_k(x)}\]
-
-with coefficients:
-
-\[A_k = -\frac{2c_k}{n}, \qquad B_k = \frac{2}{n}\]
-
-\hypertarget{step-3.-integration-of-quadratic-terms}{%
-\subsection{Step 3. Integration of Quadratic
-Terms}\label{step-3.-integration-of-quadratic-terms}}
-
-Fix an index \(k\), and write \(c = c_k\), \(s = s_k\),
-\(Q(x) = Q_k(x) = (x - c)^2 + s^2\), \(A = A_k\), \(B = B_k\). Note that
-\(Q'(x) = 2(x - c)\).
-
-\textbf{Numerator decomposition.} We seek constants \(\alpha\) and
-\(\beta\) such that:
-
-\[Ax + B = \alpha \cdot Q'(x) + \beta = 2\alpha(x - c) + \beta\]
-
-Matching coefficients: \(2\alpha = A\) and \(-2\alpha c + \beta = B\).
-Hence \(\alpha = A/2\) and \(\beta = B + Ac\).
-
-\textbf{Evaluation of \(\beta\):}
-
-\[\beta = B + Ac = \frac{2}{n} + \left(-\frac{2c}{n}\right)c = \frac{2}{n}(1 - c^2) = \frac{2s^2}{n}\]
-
-\textbf{Integration.} The integral separates into two standard forms:
-
-\[\int\frac{Ax + B}{Q(x)}\,dx = \frac{A}{2}\int\frac{Q'(x)}{Q(x)}\,dx + \beta\int\frac{dx}{(x-c)^2 + s^2}\]
-
-The first integral is \(\ln Q(x)\). For the second, the substitution
-\(u = (x - c)/s\) gives \(du = dx/s\), whence:
-
-\[\int\frac{dx}{(x-c)^2 + s^2} = \int\frac{s\,du}{s^2(u^2 + 1)} = \frac{1}{s}\arctan u = \frac{1}{s}\arctan\frac{x-c}{s}\]
-
-Substituting \(A/2 = -c/n\) and \(\beta/s = 2s^2/(ns) = 2s/n\):
-
-\[\int\frac{Ax + B}{Q(x)}\,dx = -\frac{c}{n}\ln Q(x) + \frac{2s}{n}\arctan\frac{x - c}{s} + C\]
-
-\textbf{Assembly.} Summing over all conjugate pairs (indexed by \(k\))
-and including the linear term \((1/n)\ln|x + 1|\) when \(n\) is odd
-yields the stated formula. \(\blacksquare\)
+\[\Phi_n(x) = \frac{x^n - 1}{\displaystyle\prod_{\substack{d \mid n \\ d < n}} \Phi_d(x)}\]
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{complex-logarithmic-form}{%
-\section{Complex Logarithmic Form}\label{complex-logarithmic-form}}
+\hypertarget{integrality-of-coefficients}{%
+\section{Integrality of
+Coefficients}\label{integrality-of-coefficients}}
 
-\textbf{Corollary.} \emph{On any simply connected domain
-\(D \subset \mathbb{C}\) avoiding the roots \(\{\omega_j\}\), with a
-fixed branch of \(\log\) on \(D\):}
+\textbf{Lemma 3.1 (Monic Division in ℤ{[}x{]}).} Let f(x), g(x) ∈
+ℤ{[}x{]} with g(x) monic. If g(x) \textbar{} f(x) in ℚ{[}x{]}, then g(x)
+\textbar{} f(x) in ℤ{[}x{]}; that is, f(x)/g(x) ∈ ℤ{[}x{]}.
 
-\[\int\frac{dx}{x^n+1} = -\frac{1}{n}\sum_{j=0}^{n-1}\omega_j\log(x - \omega_j) + C\]
+\emph{Proof.} By the division algorithm in ℚ{[}x{]}, write f(x) =
+g(x)q(x) + r(x) where q(x), r(x) ∈ ℚ{[}x{]} and deg r \textless{} deg g.
+Since g \textbar{} f in ℚ{[}x{]}, we have r(x) = 0, so f(x) = g(x)q(x).
 
-\emph{Proof.} Integrate the complex partial fraction decomposition term
-by term. \(\blacksquare\)
+We claim q(x) ∈ ℤ{[}x{]}. Suppose not; let q(x) = ∑\_\{i=0\}\^{}\{m\}
+qᵢxⁱ with some qᵢ ∉ ℤ. Write qᵢ = aᵢ/bᵢ in lowest terms. Let p be a
+prime dividing some denominator bⱼ, and let j be maximal such that p
+\textbar{} bⱼ.
 
-\textbf{Remark on branches.} On a simply connected domain avoiding the
-poles, fixing a branch of \(\log\) renders the expression single-valued.
-Changing branches shifts the result by a constant, since the derivative
-is unchanged. Choose \(D\) to be conjugation-invariant (i.e.,
-\(z \in D \Rightarrow \bar{z} \in D\)) and choose a branch of \(\log\)
-on \(D\) satisfying \(\log(\bar{z}) = \overline{\log z}\). Then for real
-\(x \in D\), we have \(\overline{x - \omega} = x - \bar{\omega}\), so
-\(\log(x - \bar{\omega}) = \overline{\log(x - \omega)}\). Hence
-\(\omega\log(x - \omega) + \bar{\omega}\log(x - \bar{\omega})\) is real,
-and pairing conjugates yields a real-valued antiderivative; branch
-changes affect only the additive constant on each component.
+Consider the coefficient of x\^{}\{j + deg g\} in f(x) = g(x)q(x). Since
+g is monic of degree d := deg g, this coefficient is:
+
+\[q_j + \sum_{i > j} g_{d-(i-j)} q_i\]
+
+where we set gₖ = 0 for k \textless{} 0. By maximality of j, each qᵢ
+with i \textgreater{} j has denominator coprime to p, and g\_\{d−(i−j)\}
+∈ ℤ. Thus the sum ∑\emph{\{i\textgreater j\} g}\{d−(i−j)\} qᵢ has
+denominator coprime to p.~But qⱼ has p in its denominator, so the total
+cannot be an integer, contradicting f ∈ ℤ{[}x{]}. ∎
+
+\textbf{Theorem 3.2 (Integrality).} For all n ≥ 1, Φₙ(x) ∈ ℤ{[}x{]}.
+
+\emph{Proof.} We proceed by strong induction on n.
+
+\emph{Base case.} Φ₁(x) = x − 1 ∈ ℤ{[}x{]}.
+
+\emph{Inductive step.} Assume Φ\_d(x) ∈ ℤ{[}x{]} for all d \textless{}
+n.~Define:
+
+\[D_n(x) := \prod_{\substack{d \mid n \\ d < n}} \Phi_d(x)\]
+
+By the inductive hypothesis, each factor lies in ℤ{[}x{]}, hence Dₙ(x) ∈
+ℤ{[}x{]}. Moreover, Dₙ(x) is monic (being a product of monic
+polynomials).
+
+By Corollary 2.2:
+
+\[\Phi_n(x) = \frac{x^n - 1}{D_n(x)}\]
+
+Both xⁿ − 1 ∈ ℤ{[}x{]} and Dₙ(x) ∈ ℤ{[}x{]} is monic. By Theorem 2.1,
+this division is exact in ℂ{[}x{]}. Since ℚ{[}x{]} ⊆ ℂ{[}x{]},
+polynomial division of xⁿ − 1 by Dₙ(x) in ℚ{[}x{]} yields zero
+remainder, so the quotient lies in ℚ{[}x{]}. By Lemma 3.1, Φₙ(x) ∈
+ℤ{[}x{]}. ∎
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{application-the-case-n-5}{%
-\section{\texorpdfstring{Application: The Case
-\(n = 5\)}{Application: The Case n = 5}}\label{application-the-case-n-5}}
+\hypertarget{the-muxf6bius-inversion-formula}{%
+\section{The Möbius Inversion
+Formula}\label{the-muxf6bius-inversion-formula}}
 
-Setting \(n = 5\), the index set is \(k \in \{0, 1\}\), corresponding to
-angles \(\theta_0 = \pi/5\) and \(\theta_1 = 3\pi/5\).
+The divisor product identity admits an explicit inversion via the Möbius
+function.
 
-\textbf{Trigonometric values.} The cosine values follow from the
-identity \(\cos(\pi/5) = (1 + \sqrt{5})/4\) and
-\(\cos(3\pi/5) = -\cos(2\pi/5) = (1 - \sqrt{5})/4\). The sine values
-follow from \(\sin^2\theta + \cos^2\theta = 1\):
+\textbf{Definition 4.1 (Möbius Function).} The \emph{Möbius function} μ:
+ℕ → \{−1, 0, 1\} is defined by:
+
+\[\mu(n) = \begin{cases} 1 & \text{if } n = 1 \\ (-1)^k & \text{if } n = p_1 p_2 \cdots p_k \text{ for distinct primes } p_i \\ 0 & \text{if } p^2 \mid n \text{ for some prime } p \end{cases}\]
+
+The fundamental property is:
+
+\[\sum_{d \mid n} \mu(d) = \begin{cases} 1 & \text{if } n = 1 \\ 0 & \text{if } n > 1 \end{cases}\]
+
+\textbf{Theorem 4.2 (Möbius Inversion for Cyclotomic Polynomials).} For
+all n ≥ 1:
+
+\[\Phi_n(x) = \prod_{d \mid n} \left( x^{n/d} - 1 \right)^{\mu(d)} = \prod_{d \mid n} \left( x^d - 1 \right)^{\mu(n/d)}\]
+
+\emph{Proof.} Taking formal logarithms of the divisor product identity
+(Theorem 2.1):
+
+\[\log(x^n - 1) = \sum_{d \mid n} \log \Phi_d(x)\]
+
+Define f(n) := log Φₙ(x) and g(n) := log(xⁿ − 1). The identity states
+g(n) = ∑\_\{d \textbar{} n\} f(d). By Möbius inversion on the divisor
+poset:
+
+\[f(n) = \sum_{d \mid n} \mu(n/d) \, g(d) = \sum_{d \mid n} \mu(n/d) \log(x^d - 1)\]
+
+Exponentiating:
+
+\[\Phi_n(x) = \exp\left( \sum_{d \mid n} \mu(n/d) \log(x^d - 1) \right) = \prod_{d \mid n} (x^d - 1)^{\mu(n/d)}\]
+
+The substitution d ↦ n/d yields the equivalent form ∏\_\{d \textbar{}
+n\} (x\^{}\{n/d\} − 1)\^{}\{μ(d)\}.
+
+Although the right-hand side is a priori in ℚ(x), it equals Φₙ(x) by
+inversion of Theorem 2.1, hence lies in ℤ{[}x{]} by Theorem 3.2. ∎
+
+\textbf{Remark 4.3 (Validity of the formal argument).} The logarithmic
+manipulation is justified in the ring of formal power series
+ℚ{[}{[}x⁻¹{]}{]}. Writing xⁿ − 1 = xⁿ(1 − x⁻ⁿ), the expression log(1 −
+x⁻ⁿ) = −∑\_\{k≥1\} x⁻ⁿᵏ/k is a well-defined element of ℚ{[}{[}x⁻¹{]}{]}.
+The identity holds in this ring, and the resulting polynomial identity
+can be verified by observing that both sides are polynomials (by Theorem
+3.2) agreeing as formal Laurent series.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{explicit-formulae-for-special-cases}{%
+\section{Explicit Formulae for Special
+Cases}\label{explicit-formulae-for-special-cases}}
+
+\textbf{Proposition 5.1 (Prime Index).} For prime p:
+
+\[\Phi_p(x) = \frac{x^p - 1}{x - 1} = x^{p-1} + x^{p-2} + \cdots + x + 1 = \sum_{k=0}^{p-1} x^k\]
+
+\emph{Proof.} The divisors of p are 1 and p.~Thus xᵖ − 1 = Φ₁(x)Φₚ(x) =
+(x−1)Φₚ(x). ∎
+
+\textbf{Proposition 5.2 (Prime Power Index).} For prime p and k ≥ 1:
+
+\[\Phi_{p^k}(x) = \Phi_p(x^{p^{k-1}}) = \sum_{j=0}^{p-1} x^{j \cdot p^{k-1}}\]
+
+In particular, deg Φ\_\{pᵏ\} = φ(pᵏ) = p\^{}\{k−1\}(p−1).
+
+\emph{Proof.} The divisors of pᵏ are 1, p, p², \ldots, pᵏ. Among these,
+μ(pʲ) ≠ 0 only for j ∈ \{0, 1\}, with μ(1) = 1 and μ(p) = −1. By Theorem
+4.2:
+
+\[\Phi_{p^k}(x) = \frac{(x^{p^k} - 1)^{\mu(1)}}{(x^{p^{k-1}} - 1)^{-\mu(p)}} = \frac{x^{p^k} - 1}{x^{p^{k-1}} - 1}\]
+
+The substitution y = x\textsuperscript{\{p}\{k−1\}\} gives:
+
+\[\Phi_{p^k}(x) = \frac{y^p - 1}{y - 1} = \Phi_p(y) = \Phi_p(x^{p^{k-1}}) \qquad \blacksquare\]
+
+\textbf{Proposition 5.3 (Product of Two Distinct Primes).} For distinct
+primes p \textless{} q:
+
+\[\Phi_{pq}(x) = \frac{(x^{pq} - 1)(x - 1)}{(x^p - 1)(x^q - 1)}\]
+
+\emph{Proof.} The divisors of pq are \{1, p, q, pq\} with Möbius values
+μ(1) = 1, μ(p) = μ(q) = −1, μ(pq) = 1. The formula follows from Theorem
+4.2. ∎
+
+\textbf{Proposition 5.4 (The Case 2p for Odd Prime p).} For odd prime p:
+
+\[\Phi_{2p}(x) = \Phi_p(-x) = x^{p-1} - x^{p-2} + x^{p-3} - \cdots - x + 1 = \sum_{k=0}^{p-1} (-1)^{p-1-k} x^k\]
+
+\emph{Proof.} By Proposition 5.3 with the pair (2, p):
+
+\[\Phi_{2p}(x) = \frac{(x^{2p} - 1)(x - 1)}{(x^2 - 1)(x^p - 1)} = \frac{(x^{2p} - 1)(x - 1)}{(x-1)(x+1)(x^p - 1)} = \frac{x^{2p} - 1}{(x+1)(x^p - 1)}\]
+
+Observe that x\^{}\{2p\} − 1 = (xᵖ)² − 1 = (xᵖ − 1)(xᵖ + 1). Thus:
+
+\[\Phi_{2p}(x) = \frac{x^p + 1}{x + 1}\]
+
+Now Φₚ(−x) = ((−x)ᵖ − 1)/((−x) − 1) = (−xᵖ − 1)/(−x − 1) = (xᵖ + 1)/(x +
+1), using that p is odd. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{reduction-formulae}{%
+\section{Reduction Formulae}\label{reduction-formulae}}
+
+\textbf{Theorem 6.1 (Reduction Formulae).} Let n \textgreater{} 1 and
+let p be a prime dividing n.~Write n = pᵃm where gcd(p, m) = 1.
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\tightlist
+\item
+  If a = 1 (so n = pm):
+\end{enumerate}
+
+\[\Phi_{pm}(x) = \frac{\Phi_m(x^p)}{\Phi_m(x)}\]
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  If a ≥ 2 (so p² \textbar{} n):
+\end{enumerate}
+
+\[\Phi_n(x) = \Phi_{n/p}(x^p)\]
+
+\emph{Proof of (i).} The divisors of pm partition as \{d : d \textbar{}
+m\} ∪ \{pd : d \textbar{} m\}. By Theorem 4.2:
+
+\[\Phi_{pm}(x) = \prod_{d \mid pm} (x^d - 1)^{\mu(pm/d)}\]
+
+Splitting by whether p divides the divisor:
+
+\[= \prod_{d \mid m} (x^d - 1)^{\mu(pm/d)} \cdot \prod_{d \mid m} (x^{pd} - 1)^{\mu(m/d)}\]
+
+Since gcd(p, m) = 1, for d \textbar{} m we have μ(pm/d) = μ(p)μ(m/d) =
+−μ(m/d). Thus:
+
+\[\Phi_{pm}(x) = \prod_{d \mid m} (x^d - 1)^{-\mu(m/d)} \cdot \prod_{d \mid m} (x^{pd} - 1)^{\mu(m/d)} = \frac{\Phi_m(x^p)}{\Phi_m(x)}\]
+
+where the final identification uses Theorem 4.2 applied to m. ∎
+
+\emph{Proof of (ii).} Write n = pᵃm with a ≥ 2 and gcd(p, m) = 1. By
+Theorem 4.2:
+
+\[\Phi_n(x) = \prod_{d \mid n} (x^d - 1)^{\mu(n/d)}\]
+
+For μ(n/d) ≠ 0, we require n/d to be squarefree. If p ∤ d, then p²
+\textbar{} (n/d), so n/d is not squarefree, hence μ(n/d) = 0. Thus only
+divisors d with p \textbar{} d contribute.
+
+Writing d = pe for e \textbar{} (n/p), and noting that n/d = n/(pe) =
+(n/p)/e:
+
+\[\Phi_n(x) = \prod_{e \mid (n/p)} (x^{pe} - 1)^{\mu((n/p)/e)} = \prod_{e \mid (n/p)} ((x^p)^e - 1)^{\mu((n/p)/e)}\]
+
+The final product is precisely Φ\_\{n/p\}(x\^{}p) by Theorem 4.2 applied
+to n/p.~∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{the-general-closed-form}{%
+\section{The General Closed Form}\label{the-general-closed-form}}
+
+\textbf{Theorem 7.1 (Canonical Form).} Let n = p₁\^{}\{a₁\} p₂\^{}\{a₂\}
+⋯ pᵣ\^{}\{aᵣ\} be the prime factorisation of n \textgreater{} 1. Define
+the \emph{radical} rad(n) := p₁p₂⋯pᵣ. Then:
+
+\[\Phi_n(x) = \Phi_{\mathrm{rad}(n)}\!\left( x^{n/\mathrm{rad}(n)} \right)\]
+
+For the squarefree case n = p₁p₂⋯pᵣ:
+
+\[\Phi_n(x) = \prod_{S \subseteq \{1,\ldots,r\}} \left( x^{n/\prod_{i \in S} p_i} - 1 \right)^{(-1)^{|S|}}\]
+
+Equivalently:
+
+\[\Phi_n(x) = \prod_{d \mid n} (x^d - 1)^{\mu(n/d)}\]
+
+\emph{Proof.} For the first identity, apply Theorem 6.1(ii) repeatedly
+for each prime p with exponent a ≥ 2 in n, reducing the exponent by one
+at each step until all exponents equal one, yielding rad(n).
+
+For the squarefree expansion, note that μ(d) ≠ 0 precisely when d is
+squarefree. For n squarefree with r prime factors, the divisors d
+\textbar{} n biject with subsets S ⊆ \{1, \ldots, r\} via d = ∏\emph{\{i
+∈ S\} pᵢ. Then μ(d) = (−1)\^{}\{\textbar S\textbar\} and n/d = ∏}\{i ∉
+S\} pᵢ. ∎
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{application-explicit-computation-of-ux3c6ux2081ux2082x}{%
+\section{Application: Explicit Computation of
+Φ₁₂(x)}\label{application-explicit-computation-of-ux3c6ux2081ux2082x}}
+
+Setting n = 12 = 2² · 3, we have rad(12) = 6 and 12/rad(12) = 2.
+
+\textbf{Step 1.} Compute Φ₆(x). Since 6 = 2 · 3, by Proposition 5.3:
+
+\[\Phi_6(x) = \frac{(x^6 - 1)(x - 1)}{(x^2 - 1)(x^3 - 1)}\]
+
+Factoring: x⁶ − 1 = (x³ − 1)(x³ + 1) and x² − 1 = (x−1)(x+1). Thus:
+
+\[\Phi_6(x) = \frac{(x^3 - 1)(x^3 + 1)(x - 1)}{(x-1)(x+1)(x^3 - 1)} = \frac{x^3 + 1}{x + 1} = x^2 - x + 1\]
+
+\textbf{Step 2.} Apply Theorem 7.1:
+
+\[\Phi_{12}(x) = \Phi_6(x^2) = (x^2)^2 - (x^2) + 1 = x^4 - x^2 + 1\]
+
+\textbf{Verification.} The degree is φ(12) = φ(4)φ(3) = 2 · 2 = 4. ✓
+
+The roots are e\^{}\{2πik/12\} for gcd(k, 12) = 1, i.e., k ∈ \{1, 5, 7,
+11\}. ✓
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{table-of-cyclotomic-polynomials}{%
+\section{Table of Cyclotomic
+Polynomials}\label{table-of-cyclotomic-polynomials}}
 
 \begin{longtable}[]{@{}lll@{}}
 \toprule\noalign{}
-& \(k = 0\) & \(k = 1\) \\
+n & Φₙ(x) & deg Φₙ = φ(n) \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\(\theta_k\) & \(\pi/5\) & \(3\pi/5\) \\
-\(c_k\) & \((1 + \sqrt{5})/4\) & \((1 - \sqrt{5})/4\) \\
-\(s_k\) & \(\sqrt{10 - 2\sqrt{5}}/4\) & \(\sqrt{10 + 2\sqrt{5}}/4\) \\
-\(-c_k/5\) & \(-(1 + \sqrt{5})/20\) & \((\sqrt{5} - 1)/20\) \\
-\(2s_k/5\) & \(\sqrt{10 - 2\sqrt{5}}/10\) &
-\(\sqrt{10 + 2\sqrt{5}}/10\) \\
+1 & x − 1 & 1 \\
+2 & x + 1 & 1 \\
+3 & x² + x + 1 & 2 \\
+4 & x² + 1 & 2 \\
+5 & x⁴ + x³ + x² + x + 1 & 4 \\
+6 & x² − x + 1 & 2 \\
+7 & x⁶ + x⁵ + x⁴ + x³ + x² + x + 1 & 6 \\
+8 & x⁴ + 1 & 4 \\
+9 & x⁶ + x³ + 1 & 6 \\
+10 & x⁴ − x³ + x² − x + 1 & 4 \\
+12 & x⁴ − x² + 1 & 4 \\
+15 & x⁸ − x⁷ + x⁵ − x⁴ + x³ − x + 1 & 8 \\
 \end{longtable}
 
-\textbf{Arctangent arguments.} For \(k = 0\):
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\[\frac{x - c_0}{s_0} = \frac{x - \frac{1 + \sqrt{5}}{4}}{\frac{\sqrt{10 - 2\sqrt{5}}}{4}} = \frac{4x - 1 - \sqrt{5}}{\sqrt{10 - 2\sqrt{5}}}\]
+\hypertarget{values-at-special-points}{%
+\section{Values at Special Points}\label{values-at-special-points}}
 
-For \(k = 1\):
+\textbf{Lemma 10.0.} For all odd m \textgreater{} 1:
 
-\[\frac{x - c_1}{s_1} = \frac{x - \frac{1 - \sqrt{5}}{4}}{\frac{\sqrt{10 + 2\sqrt{5}}}{4}} = \frac{4x - 1 + \sqrt{5}}{\sqrt{10 + 2\sqrt{5}}}\]
+\[\Phi_{2m}(x) = \Phi_m(-x)\]
 
-\textbf{Final formula:}
+\emph{Proof.} By Theorem 6.1(i) with p = 2 and gcd(2, m) = 1:
 
-\[\int\frac{dx}{x^5 + 1} = \frac{1}{5}\ln|x+1| - \frac{1 + \sqrt{5}}{20}\ln\left(x^2 - \frac{1+\sqrt{5}}{2}x + 1\right) + \frac{\sqrt{5}-1}{20}\ln\left(x^2 + \frac{\sqrt{5}-1}{2}x + 1\right)\]
+\[\Phi_{2m}(x) = \frac{\Phi_m(x^2)}{\Phi_m(x)}\]
 
-\[+ \frac{\sqrt{10 - 2\sqrt{5}}}{10}\arctan\frac{4x - 1 - \sqrt{5}}{\sqrt{10 - 2\sqrt{5}}} + \frac{\sqrt{10 + 2\sqrt{5}}}{10}\arctan\frac{4x - 1 + \sqrt{5}}{\sqrt{10 + 2\sqrt{5}}} + C\]
+We show this equals Φₘ(−x). By Theorem 4.2:
+
+\[\frac{\Phi_m(x^2)}{\Phi_m(x)} = \prod_{d \mid m} \frac{(x^{2d} - 1)^{\mu(m/d)}}{(x^d - 1)^{\mu(m/d)}} = \prod_{d \mid m} \left( \frac{x^{2d} - 1}{x^d - 1} \right)^{\mu(m/d)} = \prod_{d \mid m} (x^d + 1)^{\mu(m/d)}\]
+
+For the right-hand side, since m is odd, every divisor d \textbar{} m is
+odd, so (−x)\^{}d = −x\^{}d.~Thus:
+
+\[\Phi_m(-x) = \prod_{d \mid m} ((-x)^d - 1)^{\mu(m/d)} = \prod_{d \mid m} (-x^d - 1)^{\mu(m/d)} = \prod_{d \mid m} (-(x^d + 1))^{\mu(m/d)}\]
+
+Since μ(m/d) ∈ \{−1, 0, 1\}, each factor contributes either 1 or −1
+accordingly. The total sign is (−1)\^{}\{∑\emph{\{d \textbar{} m\}
+μ(m/d)\} = (−1)\^{}0 = 1, since ∑}\{d \textbar{} m\} μ(m/d) = 0 for m
+\textgreater{} 1. Hence Φ\_\{2m\}(x) = Φₘ(−x). ∎
+
+\textbf{Proposition 10.1.}
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\tightlist
+\item
+  For n \textgreater{} 1:
+\end{enumerate}
+
+\[\Phi_n(1) = \begin{cases} p & \text{if } n = p^k \text{ for some prime } p \\ 1 & \text{otherwise} \end{cases}\]
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  For n ≥ 1:
+\end{enumerate}
+
+\[\Phi_n(-1) = \begin{cases} -2 & \text{if } n = 1 \\ 0 & \text{if } n = 2 \\ 2 & \text{if } n = 2^k \text{ for } k \geq 2 \\ p & \text{if } n = 2p^k \text{ for an odd prime } p, \, k \geq 1 \\ 1 & \text{otherwise} \end{cases}\]
+
+\emph{Proof of (i).} From Theorem 2.1, xⁿ − 1 = ∏\_\{d \textbar{} n\}
+Φ\_d(x). Differentiating and evaluating at x = 1:
+
+\[n = \left. \frac{d}{dx}(x^n - 1) \right|_{x=1} = \sum_{d \mid n} \Phi_d'(1) \prod_{\substack{e \mid n \\ e \neq d}} \Phi_e(1)\]
+
+Since Φ₁(1) = 0, only the term d = 1 survives, yielding:
+
+\[n = \Phi_1'(1) \cdot \prod_{\substack{d \mid n \\ d > 1}} \Phi_d(1) = 1 \cdot \prod_{\substack{d \mid n \\ d > 1}} \Phi_d(1)\]
+
+Thus ∏\_\{d \textbar{} n, d \textgreater{} 1\} Φ\_d(1) = n.~We prove the
+closed form by strong induction on n.
+
+For n = p prime, the only divisor greater than 1 is p itself, so Φₚ(1) =
+p.
+
+For n = pᵏ with k ≥ 2, the divisors greater than 1 are p, p², \ldots,
+pᵏ. By induction, Φ\_\{pʲ\}(1) = p for j \textless{} k. Thus:
+
+\[\prod_{j=1}^{k} \Phi_{p^j}(1) = p^k \implies p^{k-1} \cdot \Phi_{p^k}(1) = p^k \implies \Phi_{p^k}(1) = p\]
+
+For n with at least two distinct prime factors, write n = pᵃm with
+gcd(p, m) = 1 and m \textgreater{} 1. The divisors of n greater than 1
+include all divisors of m greater than 1, all divisors of pᵃ greater
+than 1, and mixed divisors. By the multiplicative structure:
+
+\[\prod_{\substack{d \mid n \\ d > 1}} \Phi_d(1) = n = p^a \cdot m\]
+
+The divisors pʲ for 1 ≤ j ≤ a contribute pᵃ (by induction). The divisors
+of m greater than 1 contribute m (by induction on m). The remaining
+divisors (those involving both p and primes of m) must therefore
+contribute 1. Each such Φ\_d(1) is a positive integer: it lies in ℤ by
+Theorem 3.2, and Φ\_d(1) \textgreater{} 0 because pairing conjugate
+roots gives Φ\_d(1) = ∏ \textbar1 − ζ\textbar² \textgreater{} 0. Since
+their product is 1 and each factor is a positive integer, each equals 1.
+In particular, Φₙ(1) = 1. ∎
+
+\emph{Proof of (ii).} Write n = 2ᵃm with m odd.
+
+\textbf{Case 1: a = 0 (n odd).} For n = 1, direct computation gives
+Φ₁(−1) = −2. For odd n \textgreater{} 1, Lemma 10.0 gives Φ\_\{2n\}(x) =
+Φₙ(−x), so Φₙ(−1) = Φ\_\{2n\}(1). Because n \textgreater{} 1 is odd, it
+has an odd prime divisor p, so 2n is divisible by both 2 and p.~Hence 2n
+is not a prime power, and Φ\_\{2n\}(1) = 1 by part (i).
+
+\textbf{Case 2: a = 1 (n = 2m with m odd).} For m = 1, direct
+computation gives Φ₂(−1) = 0. For m \textgreater{} 1, Lemma 10.0 gives
+Φ\_\{2m\}(x) = Φₘ(−x), hence Φ\_\{2m\}(−1) = Φₘ(1). By part (i), Φₘ(1) =
+p if m = pᵏ for some odd prime p, and Φₘ(1) = 1 otherwise. This yields
+Φ\_\{2pᵏ\}(−1) = p for odd primes p, and Φ\_\{2m\}(−1) = 1 for other odd
+m \textgreater{} 1.
+
+\textbf{Case 3: a ≥ 2 (4 \textbar{} n).} Apply Theorem 6.1(ii)
+repeatedly with p = 2:
+
+\[\Phi_{2^a m}(x) = \Phi_{2m}(x^{2^{a-1}})\]
+
+Evaluating at x = −1:
+
+\[\Phi_{2^a m}(-1) = \Phi_{2m}\left((-1)^{2^{a-1}}\right) = \Phi_{2m}(1)\]
+
+since 2\^{}\{a−1\} ≥ 2 implies (−1)\textsuperscript{\{2}\{a−1\}\} = 1.
+If m = 1, this gives Φ\_\{2ᵃ\}(−1) = Φ₂(1) = 2. If m \textgreater{} 1,
+then 2m is not a prime power (having both 2 and an odd prime as
+factors), so Φ\_\{2m\}(1) = 1 by part (i), yielding Φ\_\{2ᵃm\}(−1) = 1.
+∎
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \hypertarget{generalisations}{%
 \section{Generalisations}\label{generalisations}}
 
-\hypertarget{the-family-xn-an}{%
-\subsection{\texorpdfstring{The family
-\(x^n + a^n\)}{The family x\^{}n + a\^{}n}}\label{the-family-xn-an}}
+\hypertarget{cyclotomic-polynomials-over-finite-fields}{%
+\subsection{Cyclotomic Polynomials over Finite
+Fields}\label{cyclotomic-polynomials-over-finite-fields}}
 
-For real \(a \neq 0\), the substitution \(x = au\) yields:
+For a finite field 𝔽\_q with gcd(q, n) = 1, the polynomial Φₙ(x) ∈
+ℤ{[}x{]} reduces to Φ̄ₙ(x) ∈ 𝔽\_q{[}x{]}. This reduced polynomial factors
+into irreducible factors of equal degree d, where d is the
+multiplicative order of q modulo n.~The number of irreducible factors is
+φ(n)/d.
 
-\[\int\frac{dx}{x^n + a^n} = \frac{1}{a^{n-1}}\int\frac{du}{u^n + 1}\]
+\hypertarget{generalised-cyclotomic-polynomials}{%
+\subsection{Generalised Cyclotomic
+Polynomials}\label{generalised-cyclotomic-polynomials}}
 
-The main theorem then applies directly to the transformed integral.
+For integers a, b with gcd(a, b) = 1, define:
 
-\hypertarget{the-family-xn---1}{%
-\subsection{\texorpdfstring{The family
-\(x^n - 1\)}{The family x\^{}n - 1}}\label{the-family-xn---1}}
+\[\Phi_n(a, b) := \prod_{\substack{1 \leq k \leq n \\ \gcd(k,n) = 1}} \left( a - \zeta_n^k b \right)\]
 
-The roots of \(x^n - 1 = 0\) are \(\zeta_j = e^{2\pi i j/n}\) for
-\(j = 0, 1, \ldots, n-1\). The same method yields residues:
-
-\[r_j = \frac{1}{n\zeta_j^{n-1}} = \frac{\zeta_j}{n}\]
-
-since \(\zeta_j^n = 1\) implies \(\zeta_j^{n-1} = \zeta_j^{-1}\). The
-decomposition becomes:
-
-\[\frac{1}{x^n - 1} = \frac{1}{n}\sum_{j=0}^{n-1}\frac{\zeta_j}{x - \zeta_j}\]
-
-\textbf{Real roots.} The polynomial \(x^n - 1\) always has the real root
-\(\zeta_0 = 1\), contributing a term:
-
-\[\frac{1}{n} \cdot \frac{1}{x - 1}\]
-
-When \(n\) is even, \(\zeta_{n/2} = -1\) is also a root, contributing:
-
-\[\frac{1}{n} \cdot \frac{-1}{x - (-1)} = -\frac{1}{n(x + 1)}\]
-
-\textbf{Quadratic factors.} The non-real roots pair at angles
-\(\phi_k = 2\pi k/n\) for appropriate \(k\), yielding quadratics
-\(x^2 - 2\cos\phi_k \cdot x + 1\). The integration proceeds analogously,
-with coefficients determined by the same residue-pairing method.
-
-\hypertarget{general-rational-integrands}{%
-\subsection{General rational
-integrands}\label{general-rational-integrands}}
-
-The methodology extends to any integral
-\(\displaystyle\int\frac{R(x)}{P(x)}\,dx\) where \(P\) has simple roots
-\(\{\alpha_j\}\). After polynomial long division if
-\(\deg R \geq \deg P\), the proper rational part decomposes as:
-
-\[\frac{R(x)}{P(x)} = \sum_j \frac{R(\alpha_j)}{P'(\alpha_j)} \cdot \frac{1}{x - \alpha_j} + \text{(polynomial terms)}\]
-
-The procedure then follows three steps:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  \textbf{Decompose} using the residue formula above.
-\item
-  \textbf{Pair conjugates} to obtain real quadratic denominators.
-\item
-  \textbf{Integrate} each quadratic term via the identity:
-\end{enumerate}
-
-\[\int\frac{Ax + B}{(x - c)^2 + s^2}\,dx = \frac{A}{2}\ln\bigl((x-c)^2 + s^2\bigr) + \frac{B + Ac}{s}\arctan\frac{x - c}{s} + C\]
-
-When \(P\) has repeated roots, the partial fraction decomposition
-includes higher-order terms \((x - \alpha)^{-m}\), which integrate to
-rational functions (for \(m \geq 2\)) plus logarithms (for \(m = 1\)).
+This is a homogeneous polynomial in a, b of degree φ(n) with integer
+coefficients. The substitution a = x, b = 1 recovers Φₙ(x).
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \hypertarget{concluding-remarks}{%
 \section{Concluding Remarks}\label{concluding-remarks}}
 
-The integral \(\displaystyle\int\frac{dx}{x^n + 1}\) admits a closed
-form expressible as a finite sum of logarithmic and arctangent terms.
-The derivation rests on three principles:
+The cyclotomic polynomial Φₙ(x) admits a closed form via Möbius
+inversion:
+
+\[\Phi_n(x) = \prod_{d \mid n} (x^d - 1)^{\mu(n/d)}\]
+
+The integrality Φₙ(x) ∈ ℤ{[}x{]} follows from strong induction using
+monic polynomial division. The derivation rests on three principles:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \textbf{Residue-based partial fractions.} For simple roots,
-  \(r_j = 1/P'(\alpha_j)\).
+  \textbf{Divisor partition.} The n-th roots of unity partition by
+  primitive order into disjoint sets indexed by d \textbar{} n.
 \item
-  \textbf{Conjugate pairing.} Non-real roots \(\omega, \bar{\omega}\)
-  contribute the real quadratic
-  \((x - \omega)(x - \bar{\omega}) = x^2 - 2\operatorname{Re}(\omega)x + 1\).
+  \textbf{Möbius inversion.} The divisor sum g(n) = ∑\emph{\{d
+  \textbar{} n\} f(d) inverts to f(n) = ∑}\{d \textbar{} n\} μ(n/d)
+  g(d).
 \item
-  \textbf{Quadratic integration.} The numerator decomposes into a
-  multiple of the derivative (yielding \(\ln\)) plus a constant
-  (yielding \(\arctan\)).
+  \textbf{Monic divisibility.} Division by monic polynomials preserves
+  integrality in ℤ{[}x{]}.
 \end{enumerate}
 
-The particularly elegant coefficient formulae \(A_k = -2c_k/n\) and
-\(B_k = 2/n\) arise from the algebraic relation \(\omega_j^n = -1\),
-which forces \(r_j = -\omega_j/n\). For the family \(x^n - 1\), the
-relation \(\zeta_j^n = 1\) yields \(r_j = \zeta_j/n\) instead. For
-general polynomials, the residues \(r_j = R(\alpha_j)/P'(\alpha_j)\) do
-not simplify to such universal expressions, though the
-decomposition-and-pairing method remains fully applicable.
+The reduction Φₙ(x) = Φ\_\{rad(n)\}(x\^{}\{n/rad(n)\}) shows that
+computation of Φₙ(x) reduces to the squarefree case, where the Möbius
+formula involves 2ʳ terms for r distinct prime factors.
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -427,29 +604,32 @@ decomposition-and-pairing method remains fully applicable.
 \section{Appendix: Algorithmic
 Summary}\label{appendix-algorithmic-summary}}
 
-To evaluate \(\displaystyle\int\frac{dx}{x^n + 1}\):
+To compute Φₙ(x):
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \textbf{Compute} \(\theta_k = \pi(2k+1)/n\) for
-  \(k = 0, 1, \ldots, \lfloor(n-2)/2\rfloor\).
+  Compute the prime factorisation n = p₁\^{}\{a₁\} ⋯ pᵣ\^{}\{aᵣ\}.
 \item
-  \textbf{Evaluate} \(c_k = \cos\theta_k\) and \(s_k = \sin\theta_k\).
+  Compute m := rad(n) = p₁ ⋯ pᵣ and e := n/m = p₁\^{}\{a₁−1\} ⋯
+  pᵣ\^{}\{aᵣ−1\}.
 \item
-  \textbf{If \(n\) is odd}, include the term \(\dfrac{1}{n}\ln|x + 1|\).
-\item
-  \textbf{For each \(k\)}, add:
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \(-\dfrac{c_k}{n}\ln(x^2 - 2c_k x + 1)\)
-  \item
-    \(\dfrac{2s_k}{n}\arctan\dfrac{x - c_k}{s_k}\)
-  \end{itemize}
-\item
-  \textbf{Add} the constant of integration \(C\).
+  Compute Φₘ(x) via:
 \end{enumerate}
+
+\[\Phi_m(x) = \prod_{S \subseteq \{1, \ldots, r\}} \left( x^{m / \prod_{i \in S} p_i} - 1 \right)^{(-1)^{|S|}}\]
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Return Φₙ(x) = Φₘ(xᵉ).
+\end{enumerate}
+
+For implementation, the product in step 3 is computed iteratively:
+initialise P(x) := 1 (empty product), then for each subset S, multiply
+or divide by x\^{}\{m/d\_S\} − 1 according to the parity of
+\textbar S\textbar.
 
 \end{document}
