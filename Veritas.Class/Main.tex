@@ -18,7 +18,7 @@
 ]{Veritas}
 
 %%% Metadata from YAML %%%
-\Title{Cyclotomic Polynomials}
+\Title{The Insolvability of the Quintic}
 \Subtitle{A Complete Treatment}
 \FirstAuthor{}
 \Date{December 2025}
@@ -61,613 +61,666 @@
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
 \renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
 
-\hypertarget{preliminaries}{%
-\section{Preliminaries}\label{preliminaries}}
-
-\textbf{Definition 1.1 (Primitive Root of Unity).} Let \(n \geq 1\) be a
-positive integer. A complex number \(\zeta\) is a \emph{primitive
-\(n\)-th root of unity} if \(\zeta^n = 1\) and \(\zeta^k \neq 1\) for
-all \(1 \leq k < n\). Equivalently, \(\zeta\) is primitive if and only
-if \(\operatorname{ord}(\zeta) = n\) in the multiplicative group
-\(\mathbb{C}^\times\).
-
-The \(n\)-th roots of unity are precisely \(\zeta_n^k := e^{2\pi ik/n}\)
-for \(k = 0, 1, \ldots, n-1\). Among these, \(\zeta_n^k\) is primitive
-if and only if \(\gcd(k, n) = 1\). The number of primitive \(n\)-th
-roots of unity is therefore \(\varphi(n)\), Euler's totient function.
-
-\textbf{Definition 1.2 (Cyclotomic Polynomial).} The \emph{\(n\)-th
-cyclotomic polynomial} is defined as:
-
-\[\Phi_n(x) := \prod_{\substack{1 \leq k \leq n \\ \gcd(k,n) = 1}} \left( x - \zeta_n^k \right)\]
-
-where \(\zeta_n = e^{2\pi i/n}\). Equivalently, \(\Phi_n(x)\) is the
-minimal polynomial over \(\mathbb{Q}\) of any primitive \(n\)-th root of
-unity.
-
-By construction, \(\Phi_n(x)\) is a monic polynomial of degree
-\(\varphi(n)\) with roots precisely the primitive \(n\)-th roots of
-unity.
-
-\textbf{Index convention.} For a divisor \(d \mid n\), each \(n\)-th
-root of unity \(\zeta_n^k\) is a primitive \(d\)-th root of unity for
-exactly one \(d\), namely \(d = n/\gcd(k, n)\). This partitions the
-roots of \(x^n - 1\) by their primitive order.
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{the-fundamental-factorisation}{%
-\section{The Fundamental
-Factorisation}\label{the-fundamental-factorisation}}
-
-\textbf{Theorem 2.1 (Divisor Product Identity).} For all positive
-integers \(n\):
-
-\[x^n - 1 = \prod_{d \mid n} \Phi_d(x)\]
-
-\emph{Proof.} Both sides are monic polynomials of degree \(n\). The left
-side has roots \(\{\zeta_n^k : 0 \leq k \leq n-1\}\). Each such root
-\(\zeta_n^k\) has multiplicative order \(d := n/\gcd(k, n)\), which
-divides \(n\). Thus \(\zeta_n^k\) is a primitive \(d\)-th root of unity
-and hence a root of \(\Phi_d(x)\).
-
-Conversely, every primitive \(d\)-th root of unity (for \(d \mid n\))
-satisfies \(\zeta^d = 1\), hence \(\zeta^n = (\zeta^d)^{n/d} = 1\), so
-it is an \(n\)-th root of unity.
-
-This establishes a bijection between the roots of \(x^n - 1\) and the
-union \(\bigcup_{d \mid n} \{\text{roots of } \Phi_d(x)\}\). Since the
-\(\Phi_d(x)\) have pairwise disjoint root sets (a primitive \(d\)-th
-root has order exactly \(d\)), and since
-
-\[\sum_{d \mid n} \deg \Phi_d(x) = \sum_{d \mid n} \varphi(d) = n,\]
-
-the factorisation follows from unique factorisation in
-\(\mathbb{C}[x]\). \(\blacksquare\)
-
-\textbf{Corollary 2.2.} The cyclotomic polynomial admits the recursive
-formula:
-
-\[\Phi_n(x) = \frac{x^n - 1}{\displaystyle\prod_{\substack{d \mid n \\ d < n}} \Phi_d(x)}\]
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{integrality-of-coefficients}{%
-\section{Integrality of
-Coefficients}\label{integrality-of-coefficients}}
-
-\textbf{Lemma 3.1 (Monic Division in \(\mathbb{Z}[x]\)).} Let
-\(f(x), g(x) \in \mathbb{Z}[x]\) with \(g(x)\) monic. If
-\(g(x) \mid f(x)\) in \(\mathbb{Q}[x]\), then \(g(x) \mid f(x)\) in
-\(\mathbb{Z}[x]\); that is, \(f(x)/g(x) \in \mathbb{Z}[x]\).
-
-\emph{Proof.} By the division algorithm in \(\mathbb{Q}[x]\), write
-\(f(x) = g(x)q(x) + r(x)\) where \(q(x), r(x) \in \mathbb{Q}[x]\) and
-\(\deg r < \deg g\). Since \(g \mid f\) in \(\mathbb{Q}[x]\), we have
-\(r(x) = 0\), so \(f(x) = g(x)q(x)\).
-
-We claim \(q(x) \in \mathbb{Z}[x]\). Suppose not; let
-\(q(x) = \sum_{i=0}^{m} q_i x^i\) with some \(q_i \notin \mathbb{Z}\).
-Write \(q_i = a_i/b_i\) in lowest terms. Let \(p\) be a prime dividing
-some denominator \(b_j\), and let \(j\) be maximal such that
-\(p \mid b_j\).
-
-Consider the coefficient of \(x^{j + \deg g}\) in \(f(x) = g(x)q(x)\).
-Since \(g\) is monic of degree \(d := \deg g\), this coefficient is:
-
-\[q_j + \sum_{i > j} g_{d-(i-j)} q_i\]
-
-where we set \(g_k = 0\) for \(k < 0\). By maximality of \(j\), each
-\(q_i\) with \(i > j\) has denominator coprime to \(p\), and
-\(g_{d-(i-j)} \in \mathbb{Z}\). Thus the sum
-\(\sum_{i>j} g_{d-(i-j)} q_i\) has denominator coprime to \(p\). But
-\(q_j\) has \(p\) in its denominator, so the total cannot be an integer,
-contradicting \(f \in \mathbb{Z}[x]\). \(\blacksquare\)
-
-\textbf{Theorem 3.2 (Integrality).} For all \(n \geq 1\),
-\(\Phi_n(x) \in \mathbb{Z}[x]\).
-
-\emph{Proof.} We proceed by strong induction on \(n\).
-
-\emph{Base case.} \(\Phi_1(x) = x - 1 \in \mathbb{Z}[x]\).
-
-\emph{Inductive step.} Assume \(\Phi_d(x) \in \mathbb{Z}[x]\) for all
-\(d < n\). Define:
-
-\[D_n(x) := \prod_{\substack{d \mid n \\ d < n}} \Phi_d(x)\]
-
-By the inductive hypothesis, each factor lies in \(\mathbb{Z}[x]\),
-hence \(D_n(x) \in \mathbb{Z}[x]\). Moreover, \(D_n(x)\) is monic (being
-a product of monic polynomials).
-
-By Corollary 2.2:
-
-\[\Phi_n(x) = \frac{x^n - 1}{D_n(x)}\]
-
-Both \(x^n - 1 \in \mathbb{Z}[x]\) and \(D_n(x) \in \mathbb{Z}[x]\) is
-monic. By Theorem 2.1, this division is exact in \(\mathbb{C}[x]\).
-Since \(\mathbb{Q}[x] \subseteq \mathbb{C}[x]\), polynomial division of
-\(x^n - 1\) by \(D_n(x)\) in \(\mathbb{Q}[x]\) yields zero remainder, so
-the quotient lies in \(\mathbb{Q}[x]\). By Lemma 3.1,
-\(\Phi_n(x) \in \mathbb{Z}[x]\). \(\blacksquare\)
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{the-muxf6bius-inversion-formula}{%
-\section{The Möbius Inversion
-Formula}\label{the-muxf6bius-inversion-formula}}
-
-The divisor product identity admits an explicit inversion via the Möbius
-function.
-
-\textbf{Definition 4.1 (Möbius Function).} The \emph{Möbius function}
-\(\mu: \mathbb{N} \to \{-1, 0, 1\}\) is defined by:
-
-\[\mu(n) = \begin{cases} 1 & \text{if } n = 1 \\ (-1)^k & \text{if } n = p_1 p_2 \cdots p_k \text{ for distinct primes } p_i \\ 0 & \text{if } p^2 \mid n \text{ for some prime } p \end{cases}\]
-
-The fundamental property is:
-
-\[\sum_{d \mid n} \mu(d) = \begin{cases} 1 & \text{if } n = 1 \\ 0 & \text{if } n > 1 \end{cases}\]
-
-\textbf{Theorem 4.2 (Möbius Inversion for Cyclotomic Polynomials).} For
-all \(n \geq 1\):
-
-\[\Phi_n(x) = \prod_{d \mid n} \left( x^{n/d} - 1 \right)^{\mu(d)} = \prod_{d \mid n} \left( x^d - 1 \right)^{\mu(n/d)}\]
-
-\emph{Proof.} Taking formal logarithms of the divisor product identity
-(Theorem 2.1):
-
-\[\log(x^n - 1) = \sum_{d \mid n} \log \Phi_d(x)\]
-
-Define \(f(n) := \log \Phi_n(x)\) and \(g(n) := \log(x^n - 1)\). The
-identity states \(g(n) = \sum_{d \mid n} f(d)\). By Möbius inversion on
-the divisor poset:
-
-\[f(n) = \sum_{d \mid n} \mu(n/d) \, g(d) = \sum_{d \mid n} \mu(n/d) \log(x^d - 1)\]
-
-Exponentiating:
-
-\[\Phi_n(x) = \exp\left( \sum_{d \mid n} \mu(n/d) \log(x^d - 1) \right) = \prod_{d \mid n} (x^d - 1)^{\mu(n/d)}\]
-
-The substitution \(d \mapsto n/d\) yields the equivalent form
-\(\prod_{d \mid n} (x^{n/d} - 1)^{\mu(d)}\).
-
-Although the right-hand side is a priori in \(\mathbb{Q}(x)\), it equals
-\(\Phi_n(x)\) by inversion of Theorem 2.1, hence lies in
-\(\mathbb{Z}[x]\) by Theorem 3.2. \(\blacksquare\)
-
-\textbf{Remark 4.3 (Validity of the formal argument).} The logarithmic
-manipulation is justified in the ring of formal power series
-\(\mathbb{Q}[[x^{-1}]]\). Writing \(x^n - 1 = x^n(1 - x^{-n})\), the
-expression \(\log(1 - x^{-n}) = -\sum_{k\geq 1} x^{-nk}/k\) is a
-well-defined element of \(\mathbb{Q}[[x^{-1}]]\). The identity holds in
-this ring, and the resulting polynomial identity can be verified by
-observing that both sides are polynomials (by Theorem 3.2) agreeing as
-formal Laurent series.
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{explicit-formulae-for-special-cases}{%
-\section{Explicit Formulae for Special
-Cases}\label{explicit-formulae-for-special-cases}}
-
-\textbf{Proposition 5.1 (Prime Index).} For prime \(p\):
-
-\[\Phi_p(x) = \frac{x^p - 1}{x - 1} = x^{p-1} + x^{p-2} + \cdots + x + 1 = \sum_{k=0}^{p-1} x^k\]
-
-\emph{Proof.} The divisors of \(p\) are \(1\) and \(p\). Thus
-\(x^p - 1 = \Phi_1(x)\Phi_p(x) = (x-1)\Phi_p(x)\). \(\blacksquare\)
-
-\textbf{Proposition 5.2 (Prime Power Index).} For prime \(p\) and
-\(k \geq 1\):
-
-\[\Phi_{p^k}(x) = \Phi_p(x^{p^{k-1}}) = \sum_{j=0}^{p-1} x^{j \cdot p^{k-1}}\]
-
-In particular, \(\deg \Phi_{p^k} = \varphi(p^k) = p^{k-1}(p-1)\).
-
-\emph{Proof.} The divisors of \(p^k\) are \(1, p, p^2, \ldots, p^k\).
-Among these, \(\mu(p^j) \neq 0\) only for \(j \in \{0, 1\}\), with
-\(\mu(1) = 1\) and \(\mu(p) = -1\). By Theorem 4.2:
-
-\[\Phi_{p^k}(x) = \frac{(x^{p^k} - 1)^{\mu(1)}}{(x^{p^{k-1}} - 1)^{-\mu(p)}} = \frac{x^{p^k} - 1}{x^{p^{k-1}} - 1}\]
-
-The substitution \(y = x^{p^{k-1}}\) gives:
-
-\[\Phi_{p^k}(x) = \frac{y^p - 1}{y - 1} = \Phi_p(y) = \Phi_p(x^{p^{k-1}}) \qquad \blacksquare\]
-
-\textbf{Proposition 5.3 (Product of Two Distinct Primes).} For distinct
-primes \(p < q\):
-
-\[\Phi_{pq}(x) = \frac{(x^{pq} - 1)(x - 1)}{(x^p - 1)(x^q - 1)}\]
-
-\emph{Proof.} The divisors of \(pq\) are \(\{1, p, q, pq\}\) with Möbius
-values \(\mu(1) = 1\), \(\mu(p) = \mu(q) = -1\), \(\mu(pq) = 1\). The
-formula follows from Theorem 4.2. \(\blacksquare\)
-
-\textbf{Proposition 5.4 (The Case \(2p\) for Odd Prime \(p\)).} For odd
-prime \(p\):
-
-\[\Phi_{2p}(x) = \Phi_p(-x) = x^{p-1} - x^{p-2} + x^{p-3} - \cdots - x + 1 = \sum_{k=0}^{p-1} (-1)^{p-1-k} x^k\]
-
-\emph{Proof.} By Proposition 5.3 with the pair \((2, p)\):
-
-\[\Phi_{2p}(x) = \frac{(x^{2p} - 1)(x - 1)}{(x^2 - 1)(x^p - 1)} = \frac{(x^{2p} - 1)(x - 1)}{(x-1)(x+1)(x^p - 1)} = \frac{x^{2p} - 1}{(x+1)(x^p - 1)}\]
-
-Observe that \(x^{2p} - 1 = (x^p)^2 - 1 = (x^p - 1)(x^p + 1)\). Thus:
-
-\[\Phi_{2p}(x) = \frac{x^p + 1}{x + 1}\]
-
-Now
-\(\Phi_p(-x) = ((-x)^p - 1)/((-x) - 1) = (-x^p - 1)/(-x - 1) = (x^p + 1)/(x + 1)\),
-using that \(p\) is odd. \(\blacksquare\)
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{reduction-formulae}{%
-\section{Reduction Formulae}\label{reduction-formulae}}
-
-\textbf{Theorem 6.1 (Reduction Formulae).} Let \(n > 1\) and let \(p\)
-be a prime dividing \(n\). Write \(n = p^a m\) where \(\gcd(p, m) = 1\).
-
-\begin{enumerate}
-\def\labelenumi{(\roman{enumi})}
-\tightlist
-\item
-  If \(a = 1\) (so \(n = pm\)):
-\end{enumerate}
-
-\[\Phi_{pm}(x) = \frac{\Phi_m(x^p)}{\Phi_m(x)}\]
-
-\begin{enumerate}
-\def\labelenumi{(\roman{enumi})}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  If \(a \geq 2\) (so \(p^2 \mid n\)):
-\end{enumerate}
-
-\[\Phi_n(x) = \Phi_{n/p}(x^p)\]
-
-\emph{Proof of (i).} The divisors of \(pm\) partition as
-\(\{d : d \mid m\} \cup \{pd : d \mid m\}\). By Theorem 4.2:
-
-\[\Phi_{pm}(x) = \prod_{d \mid pm} (x^d - 1)^{\mu(pm/d)}\]
-
-Splitting by whether \(p\) divides the divisor:
-
-\[= \prod_{d \mid m} (x^d - 1)^{\mu(pm/d)} \cdot \prod_{d \mid m} (x^{pd} - 1)^{\mu(m/d)}\]
-
-Since \(\gcd(p, m) = 1\), for \(d \mid m\) we have
-\(\mu(pm/d) = \mu(p)\mu(m/d) = -\mu(m/d)\). Thus:
-
-\[\Phi_{pm}(x) = \prod_{d \mid m} (x^d - 1)^{-\mu(m/d)} \cdot \prod_{d \mid m} (x^{pd} - 1)^{\mu(m/d)} = \frac{\Phi_m(x^p)}{\Phi_m(x)}\]
-
-where the final identification uses Theorem 4.2 applied to \(m\).
-\(\blacksquare\)
-
-\emph{Proof of (ii).} Write \(n = p^a m\) with \(a \geq 2\) and
-\(\gcd(p, m) = 1\). By Theorem 4.2:
-
-\[\Phi_n(x) = \prod_{d \mid n} (x^d - 1)^{\mu(n/d)}\]
-
-For \(\mu(n/d) \neq 0\), we require \(n/d\) to be squarefree. If
-\(p \nmid d\), then \(p^2 \mid (n/d)\), so \(n/d\) is not squarefree,
-hence \(\mu(n/d) = 0\). Thus only divisors \(d\) with \(p \mid d\)
-contribute.
-
-Writing \(d = pe\) for \(e \mid (n/p)\), and noting that
-\(n/d = n/(pe) = (n/p)/e\):
-
-\[\Phi_n(x) = \prod_{e \mid (n/p)} (x^{pe} - 1)^{\mu((n/p)/e)} = \prod_{e \mid (n/p)} ((x^p)^e - 1)^{\mu((n/p)/e)}\]
-
-The final product is precisely \(\Phi_{n/p}(x^p)\) by Theorem 4.2
-applied to \(n/p\). \(\blacksquare\)
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{the-general-closed-form}{%
-\section{The General Closed Form}\label{the-general-closed-form}}
-
-\textbf{Theorem 7.1 (Canonical Form).} Let
-\(n = p_1^{a_1} p_2^{a_2} \cdots p_r^{a_r}\) be the prime factorisation
-of \(n > 1\). Define the \emph{radical}
-\(\operatorname{rad}(n) := p_1 p_2 \cdots p_r\). Then:
-
-\[\Phi_n(x) = \Phi_{\operatorname{rad}(n)}\!\left( x^{n/\operatorname{rad}(n)} \right)\]
-
-For the squarefree case \(n = p_1 p_2 \cdots p_r\):
-
-\[\Phi_n(x) = \prod_{S \subseteq \{1,\ldots,r\}} \left( x^{n/\prod_{i \in S} p_i} - 1 \right)^{(-1)^{|S|}}\]
-
-Equivalently:
-
-\[\Phi_n(x) = \prod_{d \mid n} (x^d - 1)^{\mu(n/d)}\]
-
-\emph{Proof.} For the first identity, apply Theorem 6.1(ii) repeatedly
-for each prime \(p\) with exponent \(a \geq 2\) in \(n\), reducing the
-exponent by one at each step until all exponents equal one, yielding
-\(\operatorname{rad}(n)\).
-
-For the squarefree expansion, note that \(\mu(d) \neq 0\) precisely when
-\(d\) is squarefree. For \(n\) squarefree with \(r\) prime factors, the
-divisors \(d \mid n\) biject with subsets
-\(S \subseteq \{1, \ldots, r\}\) via \(d = \prod_{i \in S} p_i\). Then
-\(\mu(d) = (-1)^{|S|}\) and \(n/d = \prod_{i \notin S} p_i\).
+\hypertarget{preliminaries-groups-and-permutations}{%
+\section{Preliminaries: Groups and
+Permutations}\label{preliminaries-groups-and-permutations}}
+
+\textbf{Definition 1.1 (Symmetric Group).} For a positive integer \(n\),
+the symmetric group \(S_n\) is the group of all bijections from
+\(\{1, 2, \ldots, n\}\) to itself, with composition as the group
+operation. The order of \(S_n\) is \(n!\).
+
+\textbf{Convention 1.2 (Composition Order).} Throughout this document,
+composition of permutations is performed right-to-left: for
+\(\sigma, \tau \in S_n\), the product \(\sigma\tau\) means ``first apply
+\(\tau\), then apply \(\sigma\)''. That is,
+\((\sigma\tau)(x) = \sigma(\tau(x))\).
+
+\textbf{Definition 1.3 (Transposition and Cycle).} A transposition is a
+permutation that exchanges exactly two elements and fixes all others. A
+\(k\)-cycle \((a_1 \, a_2 \, \cdots \, a_k)\) is the permutation sending
+\(a_1 \to a_2 \to \cdots \to a_k \to a_1\) and fixing all other
+elements.
+
+\textbf{Definition 1.4 (Even and Odd Permutations).} A permutation
+\(\sigma \in S_n\) is even if it can be expressed as a product of an
+even number of transpositions, and odd otherwise. The parity is
+well-defined.
+
+\textbf{Definition 1.5 (Alternating Group).} The alternating group
+\(A_n\) is the subgroup of \(S_n\) consisting of all even permutations.
+The order of \(A_n\) is \(n!/2\) for \(n \geq 2\).
+
+\textbf{Definition 1.6 (Support).} The support of a permutation
+\(\sigma\) is
+\(\operatorname{supp}(\sigma) = \{x : \sigma(x) \neq x\}\).
+
+\textbf{Lemma 1.7 (Generation by 3-Cycles).} For \(n \geq 3\), the
+alternating group \(A_n\) is generated by 3-cycles.
+
+\emph{Proof.} Every even permutation is a product of an even number of
+transpositions. It suffices to show that any product of two
+transpositions is a product of 3-cycles.
+
+\emph{Case 1:} \((a \, b)(a \, b) = e\), the identity.
+
+\emph{Case 2:} \((a \, b)(b \, c)\) with \(a, b, c\) distinct.
+Verification that \((a \, b)(b \, c) = (a \, b \, c)\): -
+\(a \to (b \, c)\) fixes \(a \to (a \, b)\) sends \(a \to b\). Result:
+\(a \to b\). ✓ - \(b \to (b \, c)\) sends \(b \to c \to (a \, b)\) fixes
+\(c\). Result: \(b \to c\). ✓ - \(c \to (b \, c)\) sends
+\(c \to b \to (a \, b)\) sends \(b \to a\). Result: \(c \to a\). ✓
+
+\emph{Case 3:} \((a \, b)(c \, d)\) with \(a, b, c, d\) distinct. We
+claim \((a \, b)(c \, d) = (a \, c \, b)(a \, c \, d)\). Verification: -
+\(a \to (a \, c \, d)\) sends \(a \to c \to (a \, c \, b)\) sends
+\(c \to b\). Result: \(a \to b\). ✓ - \(b \to (a \, c \, d)\) fixes
+\(b \to (a \, c \, b)\) sends \(b \to a\). Result: \(b \to a\). ✓ -
+\(c \to (a \, c \, d)\) sends \(c \to d \to (a \, c \, b)\) fixes \(d\).
+Result: \(c \to d\). ✓ - \(d \to (a \, c \, d)\) sends
+\(d \to a \to (a \, c \, b)\) sends \(a \to c\). Result: \(d \to c\). ✓
 \(\blacksquare\)
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{application-explicit-computation-of-phi_12x}{%
-\section{\texorpdfstring{Application: Explicit Computation of
-\(\Phi_{12}(x)\)}{Application: Explicit Computation of \textbackslash Phi\_\{12\}(x)}}\label{application-explicit-computation-of-phi_12x}}
+\hypertarget{normal-subgroups-and-quotients}{%
+\section{Normal Subgroups and
+Quotients}\label{normal-subgroups-and-quotients}}
 
-Setting \(n = 12 = 2^2 \cdot 3\), we have \(\operatorname{rad}(12) = 6\)
-and \(12/\operatorname{rad}(12) = 2\).
+\textbf{Definition 2.1 (Normal Subgroup).} A subgroup \(N\) of \(G\) is
+normal, written \(N \trianglelefteq G\), if \(gNg^{-1} = N\) for all
+\(g \in G\).
 
-\textbf{Step 1.} Compute \(\Phi_6(x)\). Since \(6 = 2 \cdot 3\), by
-Proposition 5.3:
+\textbf{Definition 2.2 (Quotient Group).} For \(N \trianglelefteq G\),
+the quotient \(G/N\) is the set of cosets \(\{gN : g \in G\}\) with
+multiplication \((gN)(hN) := (gh)N\).
 
-\[\Phi_6(x) = \frac{(x^6 - 1)(x - 1)}{(x^2 - 1)(x^3 - 1)}\]
+\textbf{Definition 2.3 (Simple Group).} A group \(G\) is simple if
+\(|G| > 1\) and the only normal subgroups are \(\{e\}\) and \(G\).
 
-Factoring: \(x^6 - 1 = (x^3 - 1)(x^3 + 1)\) and
-\(x^2 - 1 = (x-1)(x+1)\). Thus:
+\textbf{Lemma 2.4 (Conjugacy of 3-Cycles).} In \(S_n\) for \(n \geq 3\),
+any two 3-cycles are conjugate.
 
-\[\Phi_6(x) = \frac{(x^3 - 1)(x^3 + 1)(x - 1)}{(x-1)(x+1)(x^3 - 1)} = \frac{x^3 + 1}{x + 1} = x^2 - x + 1\]
+\emph{Proof.} Given 3-cycles \((a \, b \, c)\) and \((d \, e \, f)\),
+choose \(\sigma \in S_n\) with \(\sigma(a) = d\), \(\sigma(b) = e\),
+\(\sigma(c) = f\). Then
+\(\sigma(a \, b \, c)\sigma^{-1} = (d \, e \, f)\) by direct
+verification on each element. \(\blacksquare\)
 
-\textbf{Step 2.} Apply Theorem 7.1:
+\textbf{Lemma 2.5 (Commutator in Normal Subgroups).} If
+\(N \trianglelefteq G\) and \(\sigma \in N\), then
+\([\sigma, \tau] := \sigma\tau\sigma^{-1}\tau^{-1} \in N\) for all
+\(\tau \in G\).
 
-\[\Phi_{12}(x) = \Phi_6(x^2) = (x^2)^2 - (x^2) + 1 = x^4 - x^2 + 1\]
-
-\textbf{Verification.} The degree is
-\(\varphi(12) = \varphi(4)\varphi(3) = 2 \cdot 2 = 4\). \(\checkmark\)
-
-The roots are \(e^{2\pi ik/12}\) for \(\gcd(k, 12) = 1\), i.e.,
-\(k \in \{1, 5, 7, 11\}\). \(\checkmark\)
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{table-of-cyclotomic-polynomials}{%
-\section{Table of Cyclotomic
-Polynomials}\label{table-of-cyclotomic-polynomials}}
-
-\begin{longtable}[]{@{}lll@{}}
-\toprule\noalign{}
-\(n\) & \(\Phi_n(x)\) & \(\deg \Phi_n = \varphi(n)\) \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-1 & \(x - 1\) & 1 \\
-2 & \(x + 1\) & 1 \\
-3 & \(x^2 + x + 1\) & 2 \\
-4 & \(x^2 + 1\) & 2 \\
-5 & \(x^4 + x^3 + x^2 + x + 1\) & 4 \\
-6 & \(x^2 - x + 1\) & 2 \\
-7 & \(x^6 + x^5 + x^4 + x^3 + x^2 + x + 1\) & 6 \\
-8 & \(x^4 + 1\) & 4 \\
-9 & \(x^6 + x^3 + 1\) & 6 \\
-10 & \(x^4 - x^3 + x^2 - x + 1\) & 4 \\
-12 & \(x^4 - x^2 + 1\) & 4 \\
-15 & \(x^8 - x^7 + x^5 - x^4 + x^3 - x + 1\) & 8 \\
-\end{longtable}
-
-\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
-
-\hypertarget{values-at-special-points}{%
-\section{Values at Special Points}\label{values-at-special-points}}
-
-\textbf{Lemma 10.0.} For all odd \(m > 1\):
-
-\[\Phi_{2m}(x) = \Phi_m(-x)\]
-
-\emph{Proof.} By Theorem 6.1(i) with \(p = 2\) and \(\gcd(2, m) = 1\):
-
-\[\Phi_{2m}(x) = \frac{\Phi_m(x^2)}{\Phi_m(x)}\]
-
-We show this equals \(\Phi_m(-x)\). By Theorem 4.2:
-
-\[\frac{\Phi_m(x^2)}{\Phi_m(x)} = \prod_{d \mid m} \frac{(x^{2d} - 1)^{\mu(m/d)}}{(x^d - 1)^{\mu(m/d)}} = \prod_{d \mid m} \left( \frac{x^{2d} - 1}{x^d - 1} \right)^{\mu(m/d)} = \prod_{d \mid m} (x^d + 1)^{\mu(m/d)}\]
-
-For the right-hand side, since \(m\) is odd, every divisor \(d \mid m\)
-is odd, so \((-x)^d = -x^d\). Thus:
-
-\[\Phi_m(-x) = \prod_{d \mid m} ((-x)^d - 1)^{\mu(m/d)} = \prod_{d \mid m} (-x^d - 1)^{\mu(m/d)} = \prod_{d \mid m} (-(x^d + 1))^{\mu(m/d)}\]
-
-Since \(\mu(m/d) \in \{-1, 0, 1\}\), each factor contributes either
-\(1\) or \(-1\) accordingly. The total sign is
-\((-1)^{\sum_{d \mid m} \mu(m/d)} = (-1)^0 = 1\), since
-\(\sum_{d \mid m} \mu(m/d) = 0\) for \(m > 1\). Hence
-\(\Phi_{2m}(x) = \Phi_m(-x)\). \(\blacksquare\)
-
-\textbf{Proposition 10.1.}
-
-\begin{enumerate}
-\def\labelenumi{(\roman{enumi})}
-\tightlist
-\item
-  For \(n > 1\):
-\end{enumerate}
-
-\[\Phi_n(1) = \begin{cases} p & \text{if } n = p^k \text{ for some prime } p \\ 1 & \text{otherwise} \end{cases}\]
-
-\begin{enumerate}
-\def\labelenumi{(\roman{enumi})}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  For \(n \geq 1\):
-\end{enumerate}
-
-\[\Phi_n(-1) = \begin{cases} -2 & \text{if } n = 1 \\ 0 & \text{if } n = 2 \\ 2 & \text{if } n = 2^k \text{ for } k \geq 2 \\ p & \text{if } n = 2p^k \text{ for an odd prime } p, \, k \geq 1 \\ 1 & \text{otherwise} \end{cases}\]
-
-\emph{Proof of (i).} From Theorem 2.1,
-\(x^n - 1 = \prod_{d \mid n} \Phi_d(x)\). Differentiating and evaluating
-at \(x = 1\):
-
-\[n = \left. \frac{d}{dx}(x^n - 1) \right|_{x=1} = \sum_{d \mid n} \Phi_d'(1) \prod_{\substack{e \mid n \\ e \neq d}} \Phi_e(1)\]
-
-Since \(\Phi_1(1) = 0\), only the term \(d = 1\) survives, yielding:
-
-\[n = \Phi_1'(1) \cdot \prod_{\substack{d \mid n \\ d > 1}} \Phi_d(1) = 1 \cdot \prod_{\substack{d \mid n \\ d > 1}} \Phi_d(1)\]
-
-Thus \(\prod_{d \mid n, d > 1} \Phi_d(1) = n\). We prove the closed form
-by strong induction on \(n\).
-
-For \(n = p\) prime, the only divisor greater than \(1\) is \(p\)
-itself, so \(\Phi_p(1) = p\).
-
-For \(n = p^k\) with \(k \geq 2\), the divisors greater than \(1\) are
-\(p, p^2, \ldots, p^k\). By induction, \(\Phi_{p^j}(1) = p\) for
-\(j < k\). Thus:
-
-\[\prod_{j=1}^{k} \Phi_{p^j}(1) = p^k \implies p^{k-1} \cdot \Phi_{p^k}(1) = p^k \implies \Phi_{p^k}(1) = p\]
-
-For \(n\) with at least two distinct prime factors, write \(n = p^a m\)
-with \(\gcd(p, m) = 1\) and \(m > 1\). The divisors of \(n\) greater
-than \(1\) include all divisors of \(m\) greater than \(1\), all
-divisors of \(p^a\) greater than \(1\), and mixed divisors. By the
-multiplicative structure:
-
-\[\prod_{\substack{d \mid n \\ d > 1}} \Phi_d(1) = n = p^a \cdot m\]
-
-The divisors \(p^j\) for \(1 \leq j \leq a\) contribute \(p^a\) (by
-induction). The divisors of \(m\) greater than \(1\) contribute \(m\)
-(by induction on \(m\)). The remaining divisors (those involving both
-\(p\) and primes of \(m\)) must therefore contribute \(1\). Each such
-\(\Phi_d(1)\) is a positive integer: it lies in \(\mathbb{Z}\) by
-Theorem 3.2, and \(\Phi_d(1) > 0\) because pairing conjugate roots gives
-\(\Phi_d(1) = \prod |1 - \zeta|^2 > 0\). Since their product is \(1\)
-and each factor is a positive integer, each equals \(1\). In particular,
-\(\Phi_n(1) = 1\). \(\blacksquare\)
-
-\emph{Proof of (ii).} Write \(n = 2^a m\) with \(m\) odd.
-
-\textbf{Case 1: \(a = 0\) (\(n\) odd).} For \(n = 1\), direct
-computation gives \(\Phi_1(-1) = -2\). For odd \(n > 1\), Lemma 10.0
-gives \(\Phi_{2n}(x) = \Phi_n(-x)\), so \(\Phi_n(-1) = \Phi_{2n}(1)\).
-Because \(n > 1\) is odd, it has an odd prime divisor \(p\), so \(2n\)
-is divisible by both \(2\) and \(p\). Hence \(2n\) is not a prime power,
-and \(\Phi_{2n}(1) = 1\) by part (i).
-
-\textbf{Case 2: \(a = 1\) (\(n = 2m\) with \(m\) odd).} For \(m = 1\),
-direct computation gives \(\Phi_2(-1) = 0\). For \(m > 1\), Lemma 10.0
-gives \(\Phi_{2m}(x) = \Phi_m(-x)\), hence
-\(\Phi_{2m}(-1) = \Phi_m(1)\). By part (i), \(\Phi_m(1) = p\) if
-\(m = p^k\) for some odd prime \(p\), and \(\Phi_m(1) = 1\) otherwise.
-This yields \(\Phi_{2p^k}(-1) = p\) for odd primes \(p\), and
-\(\Phi_{2m}(-1) = 1\) for other odd \(m > 1\).
-
-\textbf{Case 3: \(a \geq 2\) (\(4 \mid n\)).} Apply Theorem 6.1(ii)
-repeatedly with \(p = 2\):
-
-\[\Phi_{2^a m}(x) = \Phi_{2m}(x^{2^{a-1}})\]
-
-Evaluating at \(x = -1\):
-
-\[\Phi_{2^a m}(-1) = \Phi_{2m}\left((-1)^{2^{a-1}}\right) = \Phi_{2m}(1)\]
-
-since \(2^{a-1} \geq 2\) implies \((-1)^{2^{a-1}} = 1\). If \(m = 1\),
-this gives \(\Phi_{2^a}(-1) = \Phi_2(1) = 2\). If \(m > 1\), then \(2m\)
-is not a prime power (having both \(2\) and an odd prime as factors), so
-\(\Phi_{2m}(1) = 1\) by part (i), yielding \(\Phi_{2^a m}(-1) = 1\).
+\emph{Proof.} We have
+\([\sigma, \tau] = \sigma(\tau\sigma^{-1}\tau^{-1})\). Since \(N\) is
+normal, \(\tau\sigma^{-1}\tau^{-1} \in N\), so \([\sigma, \tau] \in N\).
 \(\blacksquare\)
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{generalisations}{%
-\section{Generalisations}\label{generalisations}}
+\hypertarget{simplicity-of-the-alternating-group}{%
+\section{Simplicity of the Alternating
+Group}\label{simplicity-of-the-alternating-group}}
 
-\hypertarget{cyclotomic-polynomials-over-finite-fields}{%
-\subsection{Cyclotomic Polynomials over Finite
-Fields}\label{cyclotomic-polynomials-over-finite-fields}}
+\textbf{Lemma 3.1 (Conjugation of Cycles).} For any permutation
+\(\sigma\) and cycle \((x \, y \, z)\), we have
+\(\sigma(x \, y \, z)\sigma^{-1} = (\sigma(x) \, \sigma(y) \, \sigma(z))\).
 
-For a finite field \(\mathbb{F}_q\) with \(\gcd(q, n) = 1\), the
-polynomial \(\Phi_n(x) \in \mathbb{Z}[x]\) reduces to
-\(\bar{\Phi}_n(x) \in \mathbb{F}_q[x]\). This reduced polynomial factors
-into irreducible factors of equal degree \(d\), where \(d\) is the
-multiplicative order of \(q\) modulo \(n\). The number of irreducible
-factors is \(\varphi(n)/d\).
+\emph{Proof.} For any element \(w\): if \(w = \sigma(x)\), then
+\(\sigma(x \, y \, z)\sigma^{-1}(w) = \sigma(x \, y \, z)(x) = \sigma(y)\).
+Similarly for \(\sigma(y)\) and \(\sigma(z)\). If
+\(w \notin \{\sigma(x), \sigma(y), \sigma(z)\}\), then
+\(\sigma^{-1}(w) \notin \{x, y, z\}\), so \((x \, y \, z)\) fixes
+\(\sigma^{-1}(w)\), and \(\sigma(x \, y \, z)\sigma^{-1}(w) = w\).
+\(\blacksquare\)
 
-\hypertarget{generalised-cyclotomic-polynomials}{%
-\subsection{Generalised Cyclotomic
-Polynomials}\label{generalised-cyclotomic-polynomials}}
+\textbf{Lemma 3.2 (Reduction from Long Cycles).} Let \(\sigma \in A_n\)
+contain a cycle of length \(r \geq 4\), with \(\sigma(a_1) = a_2\),
+\(\sigma(a_2) = a_3\), \(\sigma(a_3) = a_4\). Let
+\(\tau = (a_1 \, a_2 \, a_3)\). Then
+\([\sigma, \tau] = (a_1 \, a_4 \, a_2)\), a 3-cycle.
 
-For integers \(a, b\) with \(\gcd(a, b) = 1\), define:
+\emph{Proof.} By Lemma 3.1,
+\(\sigma\tau\sigma^{-1} = (\sigma(a_1) \, \sigma(a_2) \, \sigma(a_3)) = (a_2 \, a_3 \, a_4)\).
 
-\[\Phi_n(a, b) := \prod_{\substack{1 \leq k \leq n \\ \gcd(k,n) = 1}} \left( a - \zeta_n^k b \right)\]
+Computing \([\sigma, \tau] = (a_2 \, a_3 \, a_4)(a_1 \, a_3 \, a_2)\)
+where \(\tau^{-1} = (a_1 \, a_3 \, a_2)\): - \(a_1\):
+\((a_1 \, a_3 \, a_2)\) sends \(a_1 \to a_3\); \((a_2 \, a_3 \, a_4)\)
+sends \(a_3 \to a_4\). Result: \(a_1 \to a_4\). - \(a_2\):
+\((a_1 \, a_3 \, a_2)\) sends \(a_2 \to a_1\); \((a_2 \, a_3 \, a_4)\)
+fixes \(a_1\). Result: \(a_2 \to a_1\). - \(a_3\):
+\((a_1 \, a_3 \, a_2)\) sends \(a_3 \to a_2\); \((a_2 \, a_3 \, a_4)\)
+sends \(a_2 \to a_3\). Result: \(a_3 \to a_3\) (fixed). - \(a_4\):
+\((a_1 \, a_3 \, a_2)\) fixes \(a_4\); \((a_2 \, a_3 \, a_4)\) sends
+\(a_4 \to a_2\). Result: \(a_4 \to a_2\).
 
-This is a homogeneous polynomial in \(a, b\) of degree \(\varphi(n)\)
-with integer coefficients. The substitution \(a = x\), \(b = 1\)
-recovers \(\Phi_n(x)\).
+Hence \([\sigma, \tau] = (a_1 \, a_4 \, a_2)\), a 3-cycle with
+\(\operatorname{supp}([\sigma, \tau]) = \{a_1, a_2, a_4\}\).
+\(\blacksquare\)
+
+\textbf{Lemma 3.3 (Reduction from Multiple Transpositions to Double
+Transposition).} Let \(\sigma = (a \, b)(c \, d)\sigma'\) where
+\(\sigma'\) is a product of transpositions disjoint from
+\(\{a, b, c, d\}\). Let \(\tau = (a \, b \, c)\). Then
+\([\sigma, \tau] = (a \, c)(b \, d)\).
+
+\emph{Proof.} Since \(\sigma'\) is disjoint from \(\{a, b, c\}\), it
+commutes with \(\tau = (a \, b \, c)\). Hence
+
+\[[\sigma, \tau] = [(a \, b)(c \, d)\sigma', \tau] = [(a \, b)(c \, d), \tau].\]
+
+(We do \textbf{not} cancel \((c \, d)\), since it does not commute with
+\(\tau\).)
+
+We now compute \([(a \, b)(c \, d), (a \, b \, c)]\) directly. For
+\(\sigma_0 = (a \, b)(c \, d)\) and \(\tau = (a \, b \, c)\), note that
+\(\sigma_0^{-1} = \sigma_0\) (since \(\sigma_0\) is a product of
+disjoint transpositions). We find \(\sigma_0\tau\sigma_0^{-1}\) by
+tracking each element: - \(a\): \(\sigma_0(a) = b\), \(\tau(b) = c\),
+\(\sigma_0^{-1}(c) = d\). So \(\sigma_0\tau\sigma_0^{-1}(a) = d\). -
+\(b\): \(\sigma_0(b) = a\), \(\tau(a) = b\), \(\sigma_0^{-1}(b) = a\).
+So \(\sigma_0\tau\sigma_0^{-1}(b) = a\). - \(c\): \(\sigma_0(c) = d\),
+\(\tau(d) = d\), \(\sigma_0^{-1}(d) = c\). So
+\(\sigma_0\tau\sigma_0^{-1}(c) = c\). - \(d\): \(\sigma_0(d) = c\),
+\(\tau(c) = a\), \(\sigma_0^{-1}(a) = b\). So
+\(\sigma_0\tau\sigma_0^{-1}(d) = b\).
+
+So \(\sigma_0\tau\sigma_0^{-1}\): \(a \to d\), \(b \to a\), \(c \to c\),
+\(d \to b\). This is \((a \, d \, b)\).
+
+Now \([\sigma_0, \tau] = (a \, d \, b)(a \, c \, b)\) where
+\(\tau^{-1} = (a \, c \, b)\): - \(a\): \((a \, c \, b)(a) = c\),
+\((a \, d \, b)(c) = c\). Result: \(a \to c\). - \(b\):
+\((a \, c \, b)(b) = a\), \((a \, d \, b)(a) = d\). Result: \(b \to d\).
+- \(c\): \((a \, c \, b)(c) = b\), \((a \, d \, b)(b) = a\). Result:
+\(c \to a\). - \(d\): \((a \, c \, b)(d) = d\),
+\((a \, d \, b)(d) = b\). Result: \(d \to b\).
+
+Hence \([\sigma, \tau] = (a \, c)(b \, d)\), a double transposition.
+\(\blacksquare\)
+
+\textbf{Lemma 3.4 (From Double Transposition to 3-Cycle).} Let
+\(n \geq 5\) and let \(\delta = (a \, c)(b \, d)\). Choose
+\(e \in \{1,\ldots,n\} \setminus \{a,b,c,d\}\) and let
+\(\rho = (a \, c \, e)\). Then \([\delta, \rho] = (a \, c \, e)\), a
+3-cycle.
+
+\emph{Proof.} We compute \(\delta\rho\delta^{-1}\) directly. Since
+\(\delta = \delta^{-1}\), we compute \(\delta\rho\delta\) by tracking
+each element: - \(a\): \(\delta(a) = c\), \(\rho(c) = e\),
+\(\delta(e) = e\). So \(\delta\rho\delta(a) = e\). - \(c\):
+\(\delta(c) = a\), \(\rho(a) = c\), \(\delta(c) = a\). So
+\(\delta\rho\delta(c) = a\). - \(e\): \(\delta(e) = e\),
+\(\rho(e) = a\), \(\delta(a) = c\). So \(\delta\rho\delta(e) = c\). -
+\(b\): \(\delta(b) = d\), \(\rho(d) = d\), \(\delta(d) = b\). So
+\(\delta\rho\delta(b) = b\). - \(d\): \(\delta(d) = b\),
+\(\rho(b) = b\), \(\delta(b) = d\). So \(\delta\rho\delta(d) = d\).
+
+Hence \(\delta\rho\delta^{-1} = (a \, e \, c)\).
+
+Now we compute
+\([\delta, \rho] = (\delta\rho\delta^{-1})\rho^{-1} = (a \, e \, c)(a \, e \, c)\),
+since \(\rho^{-1} = (a \, e \, c)\): - \(a\): \((a \, e \, c)(a) = e\),
+\((a \, e \, c)(e) = c\). Result: \(a \to c\). - \(c\):
+\((a \, e \, c)(c) = a\), \((a \, e \, c)(a) = e\). Result: \(c \to e\).
+- \(e\): \((a \, e \, c)(e) = c\), \((a \, e \, c)(c) = a\). Result:
+\(e \to a\).
+
+Hence \([\delta, \rho] = (a \, e \, c)^2 = (a \, c \, e)\), a 3-cycle.
+\(\blacksquare\)
+
+\textbf{Lemma 3.5 (Two Disjoint 3-Cycles to 5-Cycle).} Let
+\(\sigma = (a \, b \, c)(d \, e \, f)\sigma'\) where \(\sigma'\) is
+disjoint from \(\{a,b,c,d,e,f\}\). Let \(\tau = (a \, b \, d)\). Then
+\([\sigma, \tau] = (a \, d \, c \, e \, b)\), a 5-cycle.
+
+\emph{Proof.} Since \(\sigma'\) is disjoint from \(\{a, b, d\}\), it
+commutes with \(\tau\) and cancels in the commutator.
+
+By Lemma 3.1,
+\(\sigma\tau\sigma^{-1} = (\sigma(a) \, \sigma(b) \, \sigma(d)) = (b \, c \, e)\).
+
+Computing \([\sigma, \tau] = (b \, c \, e)(a \, d \, b)\) where
+\(\tau^{-1} = (a \, d \, b)\): - \(a\): \((a \, d \, b)(a) = d\),
+\((b \, c \, e)(d) = d\). Result: \(a \to d\). - \(b\):
+\((a \, d \, b)(b) = a\), \((b \, c \, e)(a) = a\). Result: \(b \to a\).
+- \(c\): \((a \, d \, b)(c) = c\), \((b \, c \, e)(c) = e\). Result:
+\(c \to e\). - \(d\): \((a \, d \, b)(d) = b\),
+\((b \, c \, e)(b) = c\). Result: \(d \to c\). - \(e\):
+\((a \, d \, b)(e) = e\), \((b \, c \, e)(e) = b\). Result: \(e \to b\).
+
+Hence \([\sigma, \tau] = (a \, d \, c \, e \, b)\), a 5-cycle.
+\(\blacksquare\)
+
+\textbf{Theorem 3.6 (Simplicity of \(A_n\)).} For \(n \geq 5\), the
+alternating group \(A_n\) is simple.
+
+\emph{Proof.} Let \(N \trianglelefteq A_n\) with \(N \neq \{e\}\). We
+show \(N = A_n\).
+
+\textbf{Step 1: \(N\) contains a 3-cycle.}
+
+Choose \(\sigma \in N \setminus \{e\}\) with
+\(|\operatorname{supp}(\sigma)|\) minimal. We show
+\(|\operatorname{supp}(\sigma)| = 3\) by contradiction.
+
+Suppose \(|\operatorname{supp}(\sigma)| > 3\). We derive a contradiction
+by producing a non-identity element in \(N\) with strictly smaller
+support.
+
+\emph{Case A: \(\sigma\) contains a cycle of length \(\geq 4\).}
+
+By Lemma 3.2, \([\sigma, \tau]\) is a 3-cycle in \(N\). Since a 3-cycle
+is non-identity with
+\(|\operatorname{supp}| = 3 < |\operatorname{supp}(\sigma)|\), this
+contradicts minimality.
+
+\emph{Case B: \(\sigma\) is a product of disjoint 3-cycles, with at
+least two.}
+
+Then \(|\operatorname{supp}(\sigma)| \geq 6\). By Lemma 3.5,
+\([\sigma, \tau]\) is a 5-cycle in \(N\). Since a 5-cycle has length
+\(\geq 4\), Lemma 3.2 applies and yields a 3-cycle in \(N\) with
+\(|\operatorname{supp}| = 3 < 6 \leq |\operatorname{supp}(\sigma)|\),
+contradicting minimality.
+
+\emph{Case C: \(\sigma\) is a product of disjoint transpositions.}
+
+Since \(\sigma \in A_n\), \(\sigma\) has at least 2 transpositions, so
+\(|\operatorname{supp}(\sigma)| \geq 4\).
+
+\emph{Subcase C1:} \(|\operatorname{supp}(\sigma)| > 4\) (at least 3
+transpositions).
+
+By Lemma 3.3, \([\sigma, \tau] = (a \, c)(b \, d) \in N\). Since
+\((a \, c)(b \, d) \neq e\) (it moves four elements), this is a
+non-identity element of \(N\) with
+\(|\operatorname{supp}| = 4 < |\operatorname{supp}(\sigma)|\),
+contradicting minimality.
+
+\emph{Subcase C2:} \(|\operatorname{supp}(\sigma)| = 4\) (exactly a
+double transposition).
+
+Write \(\sigma = (a \, c)(b \, d)\). By Lemma 3.4,
+\([\sigma, \rho] = (a \, c \, e) \in N\). Since \((a \, c \, e) \neq e\)
+(it is a 3-cycle), this is a non-identity element of \(N\) with
+\(|\operatorname{supp}| = 3 < 4\), contradicting minimality.
+
+\emph{Exhaustiveness:} In the disjoint cycle decomposition of
+\(\sigma\), if any cycle has length \(\geq 4\), we are in Case A.
+Otherwise all nontrivial cycles have length 2 or 3. If there are at
+least two 3-cycles, we are in Case B. If there are no 3-cycles, we are
+in Case C.
+
+Since all cases yield contradictions,
+\(|\operatorname{supp}(\sigma)| \leq 3\). Since \(\sigma \neq e\) and
+\(\sigma \in A_n\), we have \(|\operatorname{supp}(\sigma)| \geq 2\). A
+non-identity even permutation with \(|\operatorname{supp}(\sigma)| = 2\)
+would be a single transposition, which is odd---contradiction. Thus
+\(|\operatorname{supp}(\sigma)| = 3\).
+
+An even permutation with support exactly 3 must be a 3-cycle. Therefore
+\(\sigma\) is a 3-cycle, and \(N\) contains a 3-cycle.
+
+\textbf{Step 2: \(N\) contains all 3-cycles.}
+
+Let \((a \, b \, c) \in N\). For any 3-cycle \((d \, e \, f)\), by Lemma
+2.4 there exists \(\sigma \in S_n\) with
+\(\sigma(a \, b \, c)\sigma^{-1} = (d \, e \, f)\).
+
+If \(\sigma \in A_n\), then \((d \, e \, f) \in N\) by normality.
+
+If \(\sigma \notin A_n\), choose distinct
+\(p, q \in \{1,\ldots,n\} \setminus \{a,b,c\}\). Such \(p, q\) exist
+since \(n \geq 5\). Let \(\rho = (p \, q)\). Then \(\sigma\rho \in A_n\)
+(product of two odd permutations). Since \(\rho\) is disjoint from
+\((a \, b \, c)\), we have
+\(\rho(a \, b \, c)\rho^{-1} = (a \, b \, c)\). Thus:
+
+\[(\sigma\rho)(a \, b \, c)(\sigma\rho)^{-1} = \sigma\rho(a \, b \, c)\rho^{-1}\sigma^{-1} = \sigma(a \, b \, c)\sigma^{-1} = (d \, e \, f) \in N.\]
+
+By Lemma 1.7, \(N = A_n\). \(\blacksquare\)
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\hypertarget{concluding-remarks}{%
-\section{Concluding Remarks}\label{concluding-remarks}}
+\hypertarget{solvable-groups}{%
+\section{Solvable Groups}\label{solvable-groups}}
 
-The cyclotomic polynomial \(\Phi_n(x)\) admits a closed form via Möbius
-inversion:
+\textbf{Definition 4.1 (Solvable Group).} A group \(G\) is solvable if
+there exists a chain
+\(\{e\} = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_k = G\)
+with each \(G_{i+1}/G_i\) abelian.
 
-\[\Phi_n(x) = \prod_{d \mid n} (x^d - 1)^{\mu(n/d)}\]
+\textbf{Lemma 4.2 (Non-Abelian Simple \(\Rightarrow\) Not Solvable).} A
+non-abelian simple group is not solvable.
 
-The integrality \(\Phi_n(x) \in \mathbb{Z}[x]\) follows from strong
-induction using monic polynomial division. The derivation rests on three
-principles:
+\emph{Proof.} Let \(G\) be simple and non-abelian. In any solvable
+series \(\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_k = G\),
+simplicity forces \(G_{k-1} \in \{\{e\}, G\}\). If \(G_{k-1} = G\), the
+term is redundant. Removing redundancies, we reach
+\(\{e\} \trianglelefteq G\), requiring \(G/\{e\} \cong G\) to be
+abelian, contradicting non-abelianity. \(\blacksquare\)
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  \textbf{Divisor partition.} The \(n\)-th roots of unity partition by
-  primitive order into disjoint sets indexed by \(d \mid n\).
-\item
-  \textbf{Möbius inversion.} The divisor sum
-  \(g(n) = \sum_{d \mid n} f(d)\) inverts to
-  \(f(n) = \sum_{d \mid n} \mu(n/d) g(d)\).
-\item
-  \textbf{Monic divisibility.} Division by monic polynomials preserves
-  integrality in \(\mathbb{Z}[x]\).
-\end{enumerate}
+\textbf{Lemma 4.3 (Subgroups of Solvable Groups).} If \(G\) is solvable
+and \(H \leq G\), then \(H\) is solvable.
 
-The reduction
-\(\Phi_n(x) = \Phi_{\operatorname{rad}(n)}(x^{n/\operatorname{rad}(n)})\)
-shows that computation of \(\Phi_n(x)\) reduces to the squarefree case,
-where the Möbius formula involves \(2^r\) terms for \(r\) distinct prime
-factors.
+\emph{Proof.} Given a solvable series
+\(\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_k = G\), define
+\(H_i = G_i \cap H\). Then \(H_i \trianglelefteq H_{i+1}\), and the map
+\(H_{i+1} \to G_{i+1}/G_i\) given by \(h \mapsto hG_i\) has kernel
+\(H_i\). By the first isomorphism theorem, \(H_{i+1}/H_i\) embeds into
+the abelian group \(G_{i+1}/G_i\), hence is abelian. \(\blacksquare\)
+
+\textbf{Theorem 4.4 (\(S_n\) Not Solvable for \(n \geq 5\)).} For
+\(n \geq 5\), \(S_n\) is not solvable.
+
+\emph{Proof.} By Theorem 3.6, \(A_n\) is simple. It is non-abelian:
+\((1 \, 2 \, 3)(1 \, 2 \, 4) = (1 \, 3)(2 \, 4) \neq (1 \, 4)(2 \, 3) = (1 \, 2 \, 4)(1 \, 2 \, 3)\).
+By Lemma 4.2, \(A_n\) is not solvable. Since \(A_n \leq S_n\), Lemma 4.3
+implies \(S_n\) is not solvable. \(\blacksquare\)
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
-\newpage
+\hypertarget{field-extensions}{%
+\section{Field Extensions}\label{field-extensions}}
 
-\hypertarget{appendix-algorithmic-summary}{%
-\section{Appendix: Algorithmic
-Summary}\label{appendix-algorithmic-summary}}
+\textbf{Definition 5.1 (Field Extension).} A field extension \(L/K\) is
+an inclusion \(K \subseteq L\). The degree \([L : K]\) is \(\dim_K(L)\).
 
-To compute \(\Phi_n(x)\):
+\textbf{Definition 5.2 (Algebraic Element).} \(\alpha \in L\) is
+algebraic over \(K\) if it satisfies some non-zero \(f(x) \in K[x]\).
+The minimal polynomial is the unique monic irreducible polynomial in
+\(K[x]\) with \(\alpha\) as a root.
+
+\textbf{Definition 5.3 (Splitting Field).} A splitting field of
+\(f(x) \in K[x]\) over \(K\) is an extension \(L\) where \(f\) factors
+completely as \(f(x) = c\prod(x - \alpha_i)\) and
+\(L = K(\alpha_1,\ldots,\alpha_n)\).
+
+\textbf{Lemma 5.4 (Tower Law).} For \(K \subseteq M \subseteq L\) with
+finite degrees, \([L : K] = [L : M][M : K]\).
+
+\emph{Proof.} If \(\{u_1,\ldots,u_m\}\) is a \(K\)-basis for \(M\) and
+\(\{v_1,\ldots,v_n\}\) is an \(M\)-basis for \(L\), then \(\{u_i v_j\}\)
+is a \(K\)-basis for \(L\). \(\blacksquare\)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{galois-theory}{%
+\section{Galois Theory}\label{galois-theory}}
+
+\textbf{Definition 6.1 (Galois Group).} For \(L/K\), the Galois group
+\(\operatorname{Gal}(L/K)\) is the group of \(K\)-automorphisms of
+\(L\).
+
+\textbf{Lemma 6.2 (Automorphisms Permute Roots).} Let \(f(x) \in K[x]\)
+have roots \(\alpha_1,\ldots,\alpha_n\) in \(L\). Every
+\(\sigma \in \operatorname{Gal}(L/K)\) permutes
+\(\{\alpha_1,\ldots,\alpha_n\}\).
+
+\emph{Proof.} For \(f(x) = \sum a_i x^i\) with \(a_i \in K\):
+\(f(\sigma(\alpha)) = \sum a_i \sigma(\alpha)^i = \sum \sigma(a_i)\sigma(\alpha)^i = \sigma(\sum a_i \alpha^i) = \sigma(0) = 0\).
+\(\blacksquare\)
+
+\textbf{Definition 6.3 (Separable Polynomial).} A polynomial
+\(f \in K[x]\) is separable if it has no repeated roots in any extension
+of \(K\). In characteristic 0, every irreducible polynomial is
+separable.
+
+\textbf{Theorem 6.4 (Characterisation of Galois Extensions).} A finite
+extension \(L/K\) is Galois (meaning
+\(|\operatorname{Gal}(L/K)| = [L : K]\)) if and only if \(L\) is the
+splitting field of a separable polynomial over \(K\).
+
+\textbf{Theorem 6.5 (Galois Correspondence).} For a finite Galois
+extension \(L/K\) with \(G = \operatorname{Gal}(L/K)\), there is an
+inclusion-reversing bijection between intermediate fields
+\(K \subseteq M \subseteq L\) and subgroups \(H \leq G\). Moreover,
+\(M/K\) is Galois iff \(\operatorname{Gal}(L/M) \trianglelefteq G\), in
+which case \(\operatorname{Gal}(M/K) \cong G/\operatorname{Gal}(L/M)\).
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{symmetric-functions-and-the-generic-polynomial}{%
+\section{Symmetric Functions and the Generic
+Polynomial}\label{symmetric-functions-and-the-generic-polynomial}}
+
+\textbf{Definition 7.1 (Elementary Symmetric Polynomials).} For
+indeterminates \(x_1,\ldots,x_n\), define \(e_1 = \sum x_i\),
+\(e_2 = \sum_{i<j} x_i x_j\), \(\ldots\), \(e_n = x_1 \cdots x_n\), so
+that \(\prod(t - x_i) = t^n - e_1 t^{n-1} + \cdots + (-1)^n e_n\).
+
+\textbf{Theorem 7.2 (Fundamental Theorem of Symmetric Functions).} Let
+\(F = k(x_1,\ldots,x_n)\) with \(S_n\) acting by permuting variables.
+Then \(F^{S_n} = k(e_1,\ldots,e_n)\).
+
+\emph{Proof.} Let \(E = k(e_1,\ldots,e_n)\). Clearly
+\(E \subseteq F^{S_n}\).
+
+For the reverse: let \(g \in k[x_1,\ldots,x_n]\) be symmetric. Among all
+monomials of \(g\), choose one with maximal exponent sequence
+\((a_1,\ldots,a_n)\) in lexicographic order. Since \(g\) is symmetric
+and this monomial is maximal, we have
+\(a_1 \geq a_2 \geq \cdots \geq a_n\) (otherwise permuting would yield a
+larger monomial).
+
+The polynomial \(e_1^{a_1-a_2} e_2^{a_2-a_3} \cdots e_n^{a_n}\) has
+leading monomial \(x_1^{a_1} \cdots x_n^{a_n}\). Subtracting an
+appropriate scalar multiple from \(g\) reduces the maximal monomial. By
+induction on the well-ordered set of monomial sequences,
+\(g \in k[e_1,\ldots,e_n]\).
+
+For \(f/g \in F^{S_n}\) with \(f,g \in k[x_1,\ldots,x_n]\) and
+\(g \neq 0\): the product \(\prod_{\sigma \in S_n}(\sigma \cdot g)\) is
+symmetric (applying any \(\tau \in S_n\) permutes the factors), hence
+lies in \(k[e_1,\ldots,e_n]\). The numerator
+\(f \cdot \prod_{\sigma \neq e}(\sigma \cdot g)\) equals
+\((f/g) \cdot \prod_{\sigma \in S_n}(\sigma \cdot g)\), which is the
+product of the \(S_n\)-invariant element \(f/g\) with a symmetric
+polynomial, hence symmetric, hence in \(k[e_1,\ldots,e_n]\). Thus
+\(f/g \in k(e_1,\ldots,e_n)\). \(\blacksquare\)
+
+\textbf{Theorem 7.3 (Galois Group of the Generic Polynomial).} Let \(k\)
+have characteristic 0, \(E = k(e_1,\ldots,e_n)\),
+\(F = k(x_1,\ldots,x_n)\). Then:
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
+\def\labelenumi{(\roman{enumi})}
 \item
-  Compute the prime factorisation \(n = p_1^{a_1} \cdots p_r^{a_r}\).
+  \(F\) is the splitting field of
+  \(P(t) = t^n - e_1 t^{n-1} + \cdots + (-1)^n e_n\) over \(E\).
 \item
-  Compute \(m := \operatorname{rad}(n) = p_1 \cdots p_r\) and
-  \(e := n/m = p_1^{a_1-1} \cdots p_r^{a_r-1}\).
+  \(F/E\) is Galois with \(\operatorname{Gal}(F/E) \cong S_n\).
 \item
-  Compute \(\Phi_m(x)\) via:
+  \([F : E] = n!\).
 \end{enumerate}
 
-\[\Phi_m(x) = \prod_{S \subseteq \{1, \ldots, r\}} \left( x^{m / \prod_{i \in S} p_i} - 1 \right)^{(-1)^{|S|}}\]
+\emph{Proof.}
 
 \begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+\def\labelenumi{(\roman{enumi})}
+\item
+  By definition, \(P(t) = \prod(t - x_i)\), so the roots are
+  \(x_1,\ldots,x_n \in F\), and \(F = E(x_1,\ldots,x_n)\).
+\item
+  The roots \(x_1,\ldots,x_n\) are distinct elements of \(F\) (they are
+  independent indeterminates). Over characteristic 0,
+  \(P(t) = \prod(t - x_i)\) is therefore separable. Thus \(F/E\) is
+  Galois by Theorem 6.4.
+\end{enumerate}
+
+Each \(\sigma \in S_n\) induces an \(E\)-automorphism \(\varphi_\sigma\)
+of \(F\) by
+\(\varphi_\sigma(f(x_1,\ldots,x_n)) = f(x_{\sigma(1)},\ldots,x_{\sigma(n)})\).
+This defines a homomorphism
+\(\varphi: S_n \to \operatorname{Gal}(F/E)\).
+
+\emph{Injectivity:} If \(\sigma \neq \tau\), then
+\(\sigma(i) \neq \tau(i)\) for some \(i\), so
+\(\varphi_\sigma(x_i) \neq \varphi_\tau(x_i)\).
+
+\emph{Surjectivity:} Any \(\psi \in \operatorname{Gal}(F/E)\) permutes
+\(\{x_1,\ldots,x_n\}\) by Lemma 6.2. If \(\psi(x_i) = x_{\sigma(i)}\),
+then \(\psi = \varphi_\sigma\) since \(F = E(x_1,\ldots,x_n)\).
+
+\begin{enumerate}
+\def\labelenumi{(\roman{enumi})}
+\setcounter{enumi}{2}
 \tightlist
 \item
-  Return \(\Phi_n(x) = \Phi_m(x^e)\).
+  Since \(F/E\) is Galois,
+  \([F : E] = |\operatorname{Gal}(F/E)| = |S_n| = n!\). \(\blacksquare\)
 \end{enumerate}
 
-For implementation, the product in step 3 is computed iteratively:
-initialise \(P(x) := 1\) (empty product), then for each subset \(S\),
-multiply or divide by \(x^{m/d_S} - 1\) according to the parity of
-\(|S|\).
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{radical-extensions}{%
+\section{Radical Extensions}\label{radical-extensions}}
+
+\textbf{Definition 8.1 (Radical Extension).} \(L/K\) is a radical
+extension if there exists
+\(K = K_0 \subseteq K_1 \subseteq \cdots \subseteq K_r = L\) with
+\(K_{i+1} = K_i(\alpha_i)\) and \(\alpha_i^{n_i} \in K_i\).
+
+\textbf{Definition 8.2 (Solvable by Radicals).} \(f(x) \in K[x]\) is
+solvable by radicals if some radical extension of \(K\) contains all
+roots of \(f\).
+
+\textbf{Lemma 8.3 (Radical Expressions Lie in Radical Extensions).} Any
+expression built from elements of \(K\) using \(+, -, \times, \div\) and
+extraction of \(n\)-th roots lies in some radical extension of \(K\).
+
+\emph{Proof.} Such an expression is constructed in finitely many steps.
+Each arithmetic operation stays within the current field. Each \(n\)-th
+root extraction \(K_i(\alpha)\) with \(\alpha^n \in K_i\) is a simple
+radical extension. The composition of finitely many simple radical
+extensions is a radical extension. \(\blacksquare\)
+
+\textbf{Lemma 8.4 (Cyclic Galois Groups from \(n\)-th Roots).} Let \(K\)
+contain a primitive \(n\)-th root of unity \(\zeta\), let \(a \in K\),
+and let \(L = K(\alpha)\) where \(\alpha^n = a\). Then \(L/K\) is Galois
+with cyclic Galois group of order dividing \(n\).
+
+\emph{Proof.} The roots of \(x^n - a\) are
+\(\alpha, \zeta\alpha, \zeta^2\alpha, \ldots, \zeta^{n-1}\alpha\). Since
+\(\zeta \in K \subseteq L\), all roots lie in \(L\), so \(L\) is the
+splitting field of \(x^n - a\) over \(K\). In characteristic 0,
+\(x^n - a\) is separable. By Theorem 6.4, \(L/K\) is Galois.
+
+For \(\sigma \in \operatorname{Gal}(L/K)\), we have
+\(\sigma(\alpha)^n = a\), so \(\sigma(\alpha) = \zeta^{k_\sigma}\alpha\)
+for some \(k_\sigma\). The map \(\sigma \mapsto k_\sigma \pmod{n}\) is
+an injective homomorphism
+\(\operatorname{Gal}(L/K) \to \mathbb{Z}/n\mathbb{Z}\). Thus
+\(\operatorname{Gal}(L/K)\) is cyclic of order dividing \(n\).
+\(\blacksquare\)
+
+\textbf{Lemma 8.5 (Roots of Unity).} For \(K\) of characteristic 0, the
+splitting field of \(x^n - 1\) over \(K\) has abelian Galois group.
+
+\emph{Proof.} Let \(L = K(\zeta)\) for a primitive \(n\)-th root of
+unity. Each \(\sigma \in \operatorname{Gal}(L/K)\) satisfies
+\(\sigma(\zeta) = \zeta^{a_\sigma}\) for some
+\(a_\sigma \in (\mathbb{Z}/n\mathbb{Z})^\times\). The map
+\(\sigma \mapsto a_\sigma\) embeds \(\operatorname{Gal}(L/K)\) into the
+abelian group \((\mathbb{Z}/n\mathbb{Z})^\times\). \(\blacksquare\)
+
+\textbf{Lemma 8.6 (Compositum of Abelian Extensions).} Let
+\(L_1/K, \ldots, L_m/K\) be finite Galois extensions with abelian Galois
+groups, all contained in some field \(\Omega\). The compositum
+\(L = L_1 \cdots L_m\) satisfies: \(L/K\) is Galois, and
+\(\operatorname{Gal}(L/K)\) is abelian.
+
+\emph{Proof.} Each \(L_i\) is the splitting field of a separable
+polynomial \(f_i\) over \(K\). Then \(L\) is the splitting field of
+\(f_1 \cdots f_m\) over \(K\), hence Galois.
+
+Define
+\(\varphi: \operatorname{Gal}(L/K) \to \prod \operatorname{Gal}(L_i/K)\)
+by \(\varphi(\sigma) = (\sigma|_{L_1}, \ldots, \sigma|_{L_m})\). This is
+injective: if \(\sigma|_{L_i} = \mathrm{id}\) for all \(i\), then
+\(\sigma\) fixes \(L\). Thus \(\operatorname{Gal}(L/K)\) embeds into an
+abelian group, hence is abelian. \(\blacksquare\)
+
+\textbf{Theorem 8.7 (Solvable by Radicals \(\Rightarrow\) Solvable
+Galois Group).} Let \(K\) have characteristic 0. If \(f(x) \in K[x]\) is
+solvable by radicals, then \(\operatorname{Gal}(f/K)\) is solvable.
+
+\emph{Proof.} Let \(L\) be the splitting field of \(f\), and let
+\(M \supseteq L\) be a radical extension of \(K\) with tower
+\(K = K_0 \subseteq K_1 \subseteq \cdots \subseteq K_r = M\), where
+\(K_{i+1} = K_i(\alpha_i)\) with \(\alpha_i^{n_i} \in K_i\).
+
+\textbf{Step 1: Adjoin roots of unity.} Let
+\(N = \operatorname{lcm}(n_0,\ldots,n_{r-1})\) and let \(\zeta\) be a
+primitive \(N\)-th root of unity. Define \(K' = K(\zeta)\) and
+\(K'_i = K_i(\zeta)\). The tower
+\(K' \subseteq K'_1 \subseteq \cdots \subseteq M' = M(\zeta)\) still has
+\(K'_{i+1} = K'_i(\alpha_i)\) with \(\alpha_i^{n_i} \in K'_i\).
+
+\textbf{Step 2: Each step is Galois with cyclic group.} Since \(K'_i\)
+contains a primitive \(n_i\)-th root of unity, Lemma 8.4 implies
+\(K'_{i+1}/K'_i\) is Galois with cyclic Galois group.
+
+\textbf{Step 3: Pass to normal closures.} Let \(M''\) be the normal
+closure of \(M'\) over \(K\). For each \(i\), let \(L_i\) be the normal
+closure of \(K'_i\) over \(K\) within \(M''\).
+
+\textbf{Step 4: Build solvable series.} The extension \(L_{i+1}/L_i\) is
+generated by conjugates of \(\alpha_i\) over \(K\). Each conjugate
+\(\beta\) satisfies \(\beta^{n_i} \in L_i\), and since \(L_i\) contains
+all \(n_i\)-th roots of unity, \(L_i(\beta)/L_i\) is Galois with cyclic
+Galois group by Lemma 8.4.
+
+The extension \(L_{i+1}/L_i\) is the compositum of these cyclic
+extensions. By Lemma 8.6, \(\operatorname{Gal}(L_{i+1}/L_i)\) is
+abelian.
+
+\textbf{Step 5: Conclude solvability.} The chain
+\(K \subseteq K(\zeta) = L_0 \subseteq L_1 \subseteq \cdots \subseteq L_r = M''\)
+has \(\operatorname{Gal}(L_0/K)\) abelian by Lemma 8.5 and each
+\(\operatorname{Gal}(L_{i+1}/L_i)\) abelian by Step 4. Thus
+\(G = \operatorname{Gal}(M''/K)\) has a subnormal series with abelian
+quotients, so \(G\) is solvable.
+
+\textbf{Step 6: Conclude for \(f\).} We have
+\(K \subseteq L \subseteq M''\). By the Galois correspondence,
+\(\operatorname{Gal}(L/K) \cong G/\operatorname{Gal}(M''/L)\). A
+quotient of a solvable group is solvable. Thus
+\(\operatorname{Gal}(L/K)\) is solvable. \(\blacksquare\)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{the-main-theorem}{%
+\section{The Main Theorem}\label{the-main-theorem}}
+
+\textbf{Theorem 9.1 (Abel--Ruffini).} For \(n \geq 5\), the generic
+polynomial of degree \(n\) is not solvable by radicals.
+
+\emph{Proof.} Let \(k\) have characteristic 0, let
+\(E = k(e_1,\ldots,e_n)\), and let
+\(P(t) = t^n - e_1 t^{n-1} + \cdots + (-1)^n e_n\).
+
+By Theorem 7.3, \(\operatorname{Gal}(P/E) \cong S_n\).
+
+By Theorem 4.4, \(S_n\) is not solvable for \(n \geq 5\).
+
+If \(P\) were solvable by radicals, Theorem 8.7 would imply \(S_n\) is
+solvable, a contradiction.
+
+Therefore \(P\) is not solvable by radicals. \(\blacksquare\)
+
+\textbf{Corollary 9.2 (No General Algebraic Formula).} There is no
+algebraic formula expressing the roots of a general polynomial of degree
+\(n \geq 5\) in terms of its coefficients using only
+\(+, -, \times, \div\) and extraction of radicals.
+
+\emph{Proof.} Such a formula, applied to \(P(t)\) with indeterminate
+coefficients \(e_1,\ldots,e_n\), would express the roots
+\(x_1,\ldots,x_n \in k(x_1,\ldots,x_n)\) in terms of \(e_1,\ldots,e_n\)
+using radicals. By Lemma 8.3, the roots would then lie in a radical
+extension of \(E = k(e_1,\ldots,e_n)\), meaning \(P\) is solvable by
+radicals. This contradicts Theorem 9.1. \(\blacksquare\)
 
 \end{document}

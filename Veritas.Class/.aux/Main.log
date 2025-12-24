@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  17 DEC 2025 13:23
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2025.7.7)  18 DEC 2025 11:55
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2010,4 +2010,673 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \c@minnames=\count531
 \c@maxitems=\count532
 \c@minitems=\count533
-\c@c
+\c@citecounter=\count534
+\c@maxcitecounter=\count535
+\c@savedcitecounter=\count536
+\c@uniquelist=\count537
+\c@uniquename=\count538
+\c@refsection=\count539
+\c@refsegment=\count540
+\c@maxextratitle=\count541
+\c@maxextratitleyear=\count542
+\c@maxextraname=\count543
+\c@maxextradate=\count544
+\c@maxextraalpha=\count545
+\c@abbrvpenalty=\count546
+\c@highnamepenalty=\count547
+\c@lownamepenalty=\count548
+\c@maxparens=\count549
+\c@parenlevel=\count550
+\blx@tempcnta=\count551
+\blx@tempcntb=\count552
+\blx@tempcntc=\count553
+\c@blx@maxsection=\count554
+\blx@maxsegment@0=\count555
+\blx@notetype=\count556
+\blx@parenlevel@text=\count557
+\blx@parenlevel@foot=\count558
+\blx@sectionciteorder@0=\count559
+\blx@sectionciteorderinternal@0=\count560
+\blx@entrysetcounter=\count561
+\blx@biblioinstance=\count562
+\labelnumberwidth=\skip89
+\labelalphawidth=\skip90
+\biblabelsep=\skip91
+\bibitemsep=\skip92
+\bibnamesep=\skip93
+\bibinitsep=\skip94
+\bibparsep=\skip95
+\bibhang=\skip96
+\blx@bcfin=\read8
+\blx@bcfout=\write6
+\blx@langwohyphens=\language90
+\c@mincomprange=\count563
+\c@maxcomprange=\count564
+\c@mincompwidth=\count565
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex citestyle data model...
+Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count566
+\c@savedafterword=\count567
+\c@annotator=\count568
+\c@savedannotator=\count569
+\c@author=\count570
+\c@savedauthor=\count571
+\c@bookauthor=\count572
+\c@savedbookauthor=\count573
+\c@commentator=\count574
+\c@savedcommentator=\count575
+\c@editor=\count576
+\c@savededitor=\count577
+\c@editora=\count578
+\c@savededitora=\count579
+\c@editorb=\count580
+\c@savededitorb=\count581
+\c@editorc=\count582
+\c@savededitorc=\count583
+\c@foreword=\count584
+\c@savedforeword=\count585
+\c@holder=\count586
+\c@savedholder=\count587
+\c@introduction=\count588
+\c@savedintroduction=\count589
+\c@namea=\count590
+\c@savednamea=\count591
+\c@nameb=\count592
+\c@savednameb=\count593
+\c@namec=\count594
+\c@savednamec=\count595
+\c@translator=\count596
+\c@savedtranslator=\count597
+\c@shortauthor=\count598
+\c@savedshortauthor=\count599
+\c@shorteditor=\count600
+\c@savedshorteditor=\count601
+\c@labelname=\count602
+\c@savedlabelname=\count603
+\c@institution=\count604
+\c@savedinstitution=\count605
+\c@lista=\count606
+\c@savedlista=\count607
+\c@listb=\count608
+\c@savedlistb=\count609
+\c@listc=\count610
+\c@savedlistc=\count611
+\c@listd=\count612
+\c@savedlistd=\count613
+\c@liste=\count614
+\c@savedliste=\count615
+\c@listf=\count616
+\c@savedlistf=\count617
+\c@location=\count618
+\c@savedlocation=\count619
+\c@organization=\count620
+\c@savedorganization=\count621
+\c@origlocation=\count622
+\c@savedoriglocation=\count623
+\c@origpublisher=\count624
+\c@savedorigpublisher=\count625
+\c@publisher=\count626
+\c@savedpublisher=\count627
+\c@language=\count628
+\c@savedlanguage=\count629
+\c@origlanguage=\count630
+\c@savedoriglanguage=\count631
+\c@pageref=\count632
+\c@savedpageref=\count633
+\shorthandwidth=\skip97
+\shortjournalwidth=\skip98
+\shortserieswidth=\skip99
+\shorttitlewidth=\skip100
+\shortauthorwidth=\skip101
+\shorteditorwidth=\skip102
+\locallabelnumberwidth=\skip103
+\locallabelalphawidth=\skip104
+\localshorthandwidth=\skip105
+\localshortjournalwidth=\skip106
+\localshortserieswidth=\skip107
+\localshorttitlewidth=\skip108
+\localshortauthorwidth=\skip109
+\localshorteditorwidth=\skip110
+Package biblatex Info: Trying to load enhanced support for Unicode engines...
+Package biblatex Info: ... file 'blx-unicode.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-unicode.def)
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+\c@textcitecount=\count634
+\c@textcitetotal=\count635
+\c@textcitemaxnames=\count636
+\c@biburlbigbreakpenalty=\count637
+\c@biburlbreakpenalty=\count638
+\c@biburlnumpenalty=\count639
+\c@biburlucpenalty=\count640
+\c@biburllcpenalty=\count641
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count642
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+)
+Package biblatex Info: Trying to load bibliography style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/authoryear.bbx
+File: authoryear.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count643
+\c@bbx:relatedtotal=\count644
+))
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
+File: authoryear.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2024-01-22 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
+Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+))
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 111.
+
+Package hyperref Info: Option `colorlinks' set `true' on input line 111.
+)
+(./Configuration/04-Headers.sty
+
+LaTeX Warning: You have requested package `Configuration/04-Headers',
+               but the package provides `04-Headers'.
+
+Package: 04-Headers 2025/12/12 v1.0.0 Veritas Page Headers
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip111
+\f@nch@O@elh=\skip112
+\f@nch@O@erh=\skip113
+\f@nch@O@olh=\skip114
+\f@nch@O@orh=\skip115
+\f@nch@O@elf=\skip116
+\f@nch@O@erf=\skip117
+\f@nch@O@olf=\skip118
+\f@nch@O@orf=\skip119
+)
+(/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2023/07/05 v6.0f a miscellany of footnote facilities
+\FN@temptoken=\toks81
+\footnotemargin=\dimen403
+\@outputbox@depth=\dimen404
+Package footmisc Info: Declaring symbol style bringhurst on input line 696.
+Package footmisc Info: Declaring symbol style chicago on input line 704.
+Package footmisc Info: Declaring symbol style wiley on input line 713.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 724.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 744.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 765
+.
+))
+(./Configuration/05-Contents.sty
+
+LaTeX Warning: You have requested package `Configuration/05-Contents',
+               but the package provides `05-Contents'.
+
+Package: 05-Contents 2025/12/12 v1.0.0 Veritas ToC Configuration
+) (./Configuration/06-Glossary.sty
+
+LaTeX Warning: You have requested package `Configuration/06-Glossary',
+               but the package provides `06-Glossary'.
+
+Package: 06-Glossary 2025/12/12 v1.0.0 Veritas Glossary Configuration
+) (./Configuration/07-Chapters.sty
+
+LaTeX Warning: You have requested package `Configuration/07-Chapters',
+               but the package provides `07-Chapters'.
+
+Package: 07-Chapters 2025/12/12 v2.0.0 Veritas Chapter Formatting
+) (./Configuration/08-Tables.sty
+
+LaTeX Warning: You have requested package `Configuration/08-Tables',
+               but the package provides `08-Tables'.
+
+Package: 08-Tables 2025/12/12 v1.0.0 Veritas Table Design
+) (./Configuration/09-Code.sty
+
+LaTeX Warning: You have requested package `Configuration/09-Code',
+               but the package provides `09-Code'.
+
+Package: 09-Code 2025/12/12 v1.0.0 Veritas Code Listing Configuration
+) (./Configuration/10-Macros.sty
+
+LaTeX Warning: You have requested package `Configuration/10-Macros',
+               but the package provides `10-Macros'.
+
+Package: 10-Macros 2025/12/12 v1.0.0 Veritas Document Macros
+\c@tcb@cnt@block=\count645
+) (./Configuration/11-Metadata.sty
+
+LaTeX Warning: You have requested package `Configuration/11-Metadata',
+               but the package provides `11-Metadata'.
+
+Package: 11-Metadata 2025/12/12 v1.0.0 Veritas PDF Metadata Configuration
+) (./Configuration/12-Floats.sty
+
+LaTeX Warning: You have requested package `Configuration/12-Floats',
+               but the package provides `12-Floats'.
+
+Package: 12-Floats 2025/12/12 v1.0.0 Veritas Float Configuration
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+))
+(./Configuration/13-Mathematics.sty
+
+LaTeX Warning: You have requested package `Configuration/13-Mathematics',
+               but the package provides `13-Mathematics'.
+
+Package: 13-Mathematics 2025/12/12 v1.0.0 Veritas Mathematical Typesetting
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks82
+\thm@bodyfont=\toks83
+\thm@headfont=\toks84
+\thm@notefont=\toks85
+\thm@headpunct=\toks86
+\thm@preskip=\skip120
+\thm@postskip=\skip121
+\thm@headsep=\skip122
+\dth@everypar=\toks87
+LaTeX Info: Redefining \textsquare on input line 427.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+
+(/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count646
+\l_MT_multwidth_dim=\dimen405
+\origjot=\skip123
+\l_MT_shortvdotswithinadjustabove_dim=\dimen406
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen407
+\l_MT_above_intertext_sep=\dimen408
+\l_MT_below_intertext_sep=\dimen409
+\l_MT_above_shortintertext_sep=\dimen410
+\l_MT_below_shortintertext_sep=\dimen411
+\xmathstrut@box=\box115
+\xmathstrut@dim=\dimen412
+)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thmtools.sty
+Package: thmtools 2023/05/04 v0.76
+\thmt@toks=\toks88
+\c@thmt@dummyctr=\count647
+
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-patch.sty
+Package: thm-patch 2023/05/04 v0.76
+
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/parseargs.sty
+Package: parseargs 2023/05/04 v0.76
+\@parsespec=\toks89
+))
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-kv.sty
+Package: thm-kv 2023/05/04 v0.76
+Package thm-kv Info: Theorem names will be uppercased on input line 42.
+Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 158.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-autoref.sty
+Package: thm-autoref 2023/05/04 v0.76
+
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/aliasctr.sty
+Package: aliasctr 2023/05/04 v0.76
+))
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-listof.sty
+Package: thm-listof 2023/05/04 v0.76
+)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-restate.sty
+Package: thm-restate 2023/05/04 v0.76
+)
+(/usr/share/texlive/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
+Package: thm-amsthm 2023/05/04 v0.76
+\thmt@style@headstyle=\toks90
+))
+\c@theorem=\count648
+))
+\cslhangindent=\skip124
+\csllabelwidth=\skip125
+runsystem(command -v pygmentize && touch Main.aex)...executed.
+
+runsystem(rm Main.aex)...executed.
+
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
+
+(.aux/Main.aux (.aux/Matter/Title-Page.aux))
+\openout1 = `Main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 47.
+LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
+ 47.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
+File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
+)
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
+7.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 47.
+LaTeX Font Info:    Trying to load font information for U+npxexa on input line 
+47.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxexa.fd
+File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
+)
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 47.
+LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line
+ 47.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
+File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
+)
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 47.
+LaTeX Font Info:    Trying to load font information for LMX+npxexx on input lin
+e 47.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
+File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
+)
+LaTeX Font Info:    ... okay on input line 47.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
+nary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 47.
+LaTeX Info: Command `\dddot' is already robust on input line 47.
+LaTeX Info: Command `\ddddot' is already robust on input line 47.
+Package hyperref Info: Link coloring ON on input line 47.
+ (.aux/Main.out) (.aux/Main.out)
+\@outlinefile=\write7
+\openout7 = `Main.out'.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/translator/translator-months-dictionar
+y-English.dict
+Dictionary: translator-months-dictionary, Language: English 
+)
+Package newfloat Info: Trying Plan B...
+Package newfloat Info: `float' package detected.
+\c@lstlisting=\count649
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(89.626pt, 418.25586pt, 89.626pt)
+* v-part:(T,H,B)=(72.2698pt, 700.50723pt, 72.2698pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=418.25586pt
+* \textheight=680.50723pt
+* \oddsidemargin=17.35602pt
+* \evensidemargin=17.35602pt
+* \topmargin=-38.33974pt
+* \headheight=20.0pt
+* \headsep=21.33955pt
+* \topskip=11.0pt
+* \footskip=45.52458pt
+* \marginparwidth=59.7508pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+)
+Package biblatex Info: XeTeX detected.
+(biblatex)             Assuming input encoding 'utf8'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout6 = `Main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'Main.bbl' found.
+ (./Main.bbl)
+Package biblatex Info: Reference section=0 on input line 47.
+Package biblatex Info: Reference segment=0 on input line 47.
+\openout2 = `Matter/Title-Page.aux'.
+
+(./Matter/Title-Page.tex
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 688.5567pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=688.5567pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-28.25128pt
+* \headheight=20.0pt
+* \headsep=21.33955pt
+* \topskip=11.0pt
+* \footskip=45.52458pt
+* \marginparwidth=59.7508pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
+4.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+npxmia on input line 
+34.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxmia.fd
+File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
+)
+LaTeX Font Info:    Trying to load font information for U+npxsym on input line 
+34.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsym.fd
+File: unpxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/npxsym.
+)
+LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 
+34.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsyc.fd
+File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
+)
+File: Figure/Theme/Front-Page.pdf Graphic file (type pdf)
+<use Figure/Theme/Front-Page.pdf>
+ [1
+
+
+
+]) [1
+
+
+
+]
+Overfull \hbox (24.19933pt too wide) in paragraph at lines 166--169
+\TU/MinionPro(0)/b/n/10.95 Lemma 3.1 (Conjugation of Cycles). \TU/MinionPro(0)/
+m/n/10.95 For any permutation $\OML/npxmi/m/it/10.95 ^^[$ \TU/MinionPro(0)/m/n/
+10.95 and cycle $\LMS/npxsy/m/n/10.95 ¹\OML/npxmi/m/it/10.95 x y z\LMS/npxsy/m/
+n/10.95 º$\TU/MinionPro(0)/m/n/10.95 , we have $\OML/npxmi/m/it/10.95 ^^[\LMS/n
+pxsy/m/n/10.95 ¹\OML/npxmi/m/it/10.95 x y z\LMS/npxsy/m/n/10.95 º\OML/npxmi/m/i
+t/10.95 ^^[[] \U/npxmia/m/it/10.95 =
+ []
+
+[2] [3] [4]
+Overfull \hbox (28.29643pt too wide) in paragraph at lines 453--456
+\TU/MinionPro(0)/b/n/10.95 Definition 6.1 (Galois Group). \TU/MinionPro(0)/m/n/
+10.95 For $\OML/npxmi/m/it/10.95 L\LMS/npxsy/m/n/10.95 ^^9d\OML/npxmi/m/it/10.9
+5 K$\TU/MinionPro(0)/m/n/10.95 , the Galois group $[]\LMS/npxsy/m/n/10.95 ¹\OML
+/npxmi/m/it/10.95 L\LMS/npxsy/m/n/10.95 ^^9d\OML/npxmi/m/it/10.95 K\LMS/npxsy/m
+/n/10.95 º$ \TU/MinionPro(0)/m/n/10.95 is the group of $\OML/npxmi/m/it/10.95 K
+$\TU/MinionPro(0)/m/n/10.95 -automorphisms
+ []
+
+[5] [6] [7]
+Overfull \hbox (1.91418pt too wide) in paragraph at lines 676--679
+[]\TU/MinionPro(0)/m/n/10.95 The extension $\OML/npxmi/m/it/10.95 L[]\LMS/npxsy
+/m/n/10.95 ^^9d\OML/npxmi/m/it/10.95 L[]$ \TU/MinionPro(0)/m/n/10.95 is the com
+positum of these cyclic extensions. By Lemma 8.6, $[]\LMS/npxsy/m/n/10.95 ¹\OML
+/npxmi/m/it/10.95 L[]\LMS/npxsy/m/n/10.95 ^^9d\OML/npxmi/m/it/10.95 L[]\LMS/npx
+sy/m/n/10.95 º$
+ []
+
+
+Overfull \hbox (7.2828pt too wide) in paragraph at lines 680--686
+[]\LMS/npxsy/m/n/10.95 ¹\OML/npxmi/m/it/10.95 L[]\LMS/npxsy/m/n/10.95 ^^9d\OML/
+npxmi/m/it/10.95 K\LMS/npxsy/m/n/10.95 º$ \TU/MinionPro(0)/m/n/10.95 abelian by
+ Lemma 8.5 and each $[]\LMS/npxsy/m/n/10.95 ¹\OML/npxmi/m/it/10.95 L[]\LMS/npxs
+y/m/n/10.95 ^^9d\OML/npxmi/m/it/10.95 L[]\LMS/npxsy/m/n/10.95 º$ \TU/MinionPro(
+0)/m/n/10.95 abelian by Step 4. Thus $\OML/npxmi/m/it/10.95 G \U/npxmia/m/it/10
+.95 = []\LMS/npxsy/m/n/10.95 ¹\OML/npxmi/m/it/10.95 M[]\LMS/npxsy/m/n/10.95 ^^9
+d\OML/npxmi/m/it/10.95 K\LMS/npxsy/m/n/10.95 º$
+ []
+
+[8] [9] (.aux/Main.aux (.aux/Matter/Title-Page.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+Package rerunfilecheck Info: File `Main.out' has not changed.
+(rerunfilecheck)             Checksum: F9D9FB282688FDE0FBB96B3F6255AB4B;1765.
+Package logreq Info: Writing requests to 'Main.run.xml'.
+\openout1 = `Main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 64259 strings out of 474878
+ 1338999 string characters out of 5762517
+ 2359672 words of memory out of 5000000
+ 85186 multiletter control sequences out of 15000+600000
+ 581045 words of font info for 105 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 123i,13n,121p,2368b,3870s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on .aux/Main.xdv (10 pages, 175944 bytes).
